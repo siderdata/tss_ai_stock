@@ -31,10 +31,10 @@
 
 ### 主要交易标的
 **专注中小宽基指数ETF：**
-- **中证系列**：中证500 ETF、中证1000 ETF、科创100 ETF
+- **中证系列**：中证500 ETF、中证1000 ETF、中证2000 ETF
 - **创业板系列**：创成长ETF、创业50ETF、双创50ETF、创业200ETF
 - **深证系列**：深100ETF、深50ETF等深证相关指数
-- **科创板系列**：科创50ETF、科创100ETF等
+- **科创板系列**：科创50ETF、科创100ETF、科创200ETF等
 
 ### 选择标准
 1. **流动性充足**：日均成交额 > 5000万
@@ -186,61 +186,6 @@ tss_ai_stock/
    pip install -r requirements.txt
    ```
 
-3. **配置环境**
-   ```bash
-   cp config/strategy.yaml.example config/strategy.yaml
-   cp config/risk_config.yaml.example config/risk_config.yaml
-   # 编辑配置文件，设置你的参数
-   ```
-
-4. **初始化数据库**
-   ```bash
-   python src/utils/init_db.py
-   ```
-
-### 基本使用
-
-#### 数据采集
-```python
-from src.data.collector import DataCollector
-
-collector = DataCollector()
-data = collector.fetch_etf_data('510500')  # 中证500ETF
-```
-
-#### 策略回测
-```python
-from src.trading.backtest import BacktestEngine
-
-engine = BacktestEngine()
-result = engine.run_strategy('ma_crossover', start_date='2023-01-01', end_date='2023-12-31')
-```
-
-#### 实时监控
-```python
-from src.trading.executor import TradingExecutor
-
-executor = TradingExecutor()
-executor.start_monitoring()
-```
-
-## 📊 性能指标
-
-### 策略表现（回测结果）
-| 指标 | 数值 | 说明 |
-|------|------|------|
-| 年化收益率 | 18.5% | 策略年化收益 |
-| 最大回撤 | -4.2% | 历史最大回撤 |
-| 夏普比率 | 1.85 | 风险调整收益 |
-| 胜率 | 65.3% | 交易胜率 |
-| 盈亏比 | 2.1 | 平均盈利/平均亏损 |
-
-### 风险指标
-| 指标 | 控制目标 | 实际情况 |
-|------|----------|----------|
-| 月度回撤 | < 5% | 3.8% |
-| 单笔最大亏损 | < 2% | 1.6% |
-| 年化波动率 | < 20% | 15.2% |
 
 ## 📝 操作日志
 
@@ -274,7 +219,6 @@ executor.start_monitoring()
 ## 📞 联系方式
 
 - 项目维护者: siderdata
-- 邮箱: [your-email@example.com]
 - 项目链接: https://github.com/siderdata/tss_ai_stock
 
 ---
