@@ -1,0 +1,2037 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>综合报告 - 2025年12月24日</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Hiragino Sans GB', 'Microsoft YaHei', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        .header h1 {
+            color: #2c3e50;
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .header .subtitle {
+            color: #7f8c8d;
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+        }
+
+        .date-time {
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 1.1rem;
+        }
+
+        .section {
+            background: rgba(255, 255, 255, 0.95);
+            backdrop-filter: blur(10px);
+            border-radius: 20px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            font-size: 1.8rem;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #3498db;
+            position: relative;
+        }
+
+        .section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background: linear-gradient(45deg, #3498db, #9b59b6);
+        }
+
+        .multi-timeframe-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        .timeframe-card {
+            background: white;
+            border-radius: 15px;
+            padding: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            border-top: 5px solid #3498db;
+        }
+
+        .timeframe-card h3 {
+            color: #2c3e50;
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .metric-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 8px 0;
+            border-bottom: 1px solid #ecf0f1;
+            font-size: 0.9rem;
+        }
+
+        .metric-item:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            color: #7f8c8d;
+        }
+
+        .metric-value {
+            font-weight: 600;
+        }
+
+        .positive {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .negative {
+            color: #e74c3c;
+            font-weight: 600;
+        }
+
+        .neutral {
+            color: #f39c12;
+            font-weight: 600;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+
+        .stats-card {
+            background: white;
+            border-radius: 15px;
+            padding: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+        }
+
+        .stats-card h4 {
+            color: #2c3e50;
+            font-size: 1.1rem;
+            margin-bottom: 15px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .signal-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            background: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+            font-size: 0.85rem;
+        }
+
+        .signal-table th {
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            color: white;
+            padding: 12px 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .signal-table td {
+            padding: 10px 8px;
+            border-bottom: 1px solid #ecf0f1;
+            text-align: center;
+        }
+
+        .signal-table tr:hover {
+            background-color: #f8f9fa;
+        }
+
+        .signal-strong-buy {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .signal-buy {
+            background: linear-gradient(135deg, #2ecc71, #58d68d);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .signal-neutral {
+            background: linear-gradient(135deg, #f39c12, #f7dc6f);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .signal-sell {
+            background: linear-gradient(135deg, #e74c3c, #ec7063);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .signal-strong-sell {
+            background: linear-gradient(135deg, #c0392b, #e74c3c);
+            color: white;
+            padding: 3px 6px;
+            border-radius: 8px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+
+        .bar {
+            width: 40px;
+            background: linear-gradient(135deg, #3498db, #2980b9);
+            border-radius: 5px;
+            position: relative;
+            text-align: center;
+            color: white;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 5px 0;
+        }
+
+        .bar.daily {
+            background: linear-gradient(135deg, #e74c3c, #ec7063);
+        }
+
+        .bar.hour120 {
+            background: linear-gradient(135deg, #f39c12, #f7dc6f);
+        }
+
+        .bar.hour60 {
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+        }
+
+        .bar.hour30 {
+            background: linear-gradient(135deg, #9b59b6, #bb8fce);
+        }
+
+        .alert {
+            background: linear-gradient(135deg, #3498db, #5dade2);
+            color: white;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #3498db;
+            font-weight: 500;
+        }
+
+        .alert.info {
+            background: linear-gradient(135deg, #3498db, #5dade2);
+            border-left-color: #3498db;
+        }
+
+        .text-success {
+            color: #27ae60 !important;
+        }
+
+        .text-info {
+            color: #17a2b8 !important;
+        }
+
+        .text-secondary {
+            color: #6c757d !important;
+        }
+
+        .text-warning {
+            color: #f39c12 !important;
+        }
+
+        .text-danger {
+            color: #e74c3c !important;
+        }
+
+        .table-success {
+            background-color: rgba(40, 167, 69, 0.1) !important;
+        }
+
+        .table-info {
+            background-color: rgba(23, 162, 184, 0.1) !important;
+        }
+
+        .table-warning {
+            background-color: rgba(255, 193, 7, 0.1) !important;
+        }
+
+        .table-danger {
+            background-color: rgba(220, 53, 69, 0.1) !important;
+        }
+
+        .table-secondary {
+            background-color: rgba(108, 117, 125, 0.1) !important;
+        }
+
+        .stats-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 5px 0;
+            font-size: 0.9rem;
+        }
+
+        .percentage-bar {
+            width: 100%;
+            height: 8px;
+            background-color: #ecf0f1;
+            border-radius: 4px;
+            margin: 8px 0;
+            overflow: hidden;
+        }
+
+        .percentage-fill {
+            height: 100%;
+            background: linear-gradient(135deg, #27ae60, #2ecc71);
+            border-radius: 4px;
+            color: white;
+            font-size: 0.7rem;
+            line-height: 8px;
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .unified-index-table {
+            margin: 30px 0;
+        }
+
+        .unified-index-table .signal-table {
+            font-size: 0.9rem;
+        }
+
+        .unified-index-table .signal-table th {
+            background: linear-gradient(135deg, #2c3e50, #34495e);
+            padding: 15px 10px;
+            font-size: 0.95rem;
+        }
+
+        .unified-index-table .signal-table td {
+            padding: 12px 8px;
+            vertical-align: middle;
+        }
+
+        .unified-index-table .category-header {
+            background: linear-gradient(135deg, #ecf0f1, #bdc3c7) !important;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .unified-index-table .badge {
+            font-size: 0.8rem;
+            padding: 4px 8px;
+        }
+
+        /* 信号分布可视化样式 */
+        .signal-bar-chart {
+            margin: 20px 0;
+            padding: 20px;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .signal-bar {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+            min-height: 40px;
+        }
+
+        .signal-label {
+            width: 100px;
+            font-weight: 600;
+            color: #2c3e50;
+            font-size: 0.9rem;
+        }
+
+        .signal-segments {
+            flex: 1;
+            display: flex;
+            height: 30px;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .signal-segment {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-weight: 600;
+            font-size: 0.8rem;
+            transition: all 0.3s ease;
+        }
+
+        .signal-segment:hover {
+            transform: scaleY(1.1);
+            filter: brightness(1.1);
+        }
+
+        /* 信号颜色定义 - 按照要求使用大红色到绿色 */
+        .signal-strong-buy { background: linear-gradient(135deg, #8B0000, #B22222); } /* 大红色 - 强烈买入 */
+        .signal-buy { background: linear-gradient(135deg, #FF0000, #DC143C); } /* 红色 - 买入 */
+        .signal-neutral { background: linear-gradient(135deg, #FFD700, #FFA500); } /* 黄色 - 中性 */
+        .signal-sell { background: linear-gradient(135deg, #32CD32, #228B22); } /* 绿色 - 卖出 */
+        .signal-strong-sell { background: linear-gradient(135deg, #006400, #008000); } /* 大绿色 - 强烈卖出 */
+
+        .chart-legend {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 15px 0;
+            flex-wrap: wrap;
+        }
+
+        .legend-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 12px;
+            border-radius: 3px;
+        }
+
+        /* 实时数据仪表盘样式 */
+        .realtime-dashboard {
+            margin-bottom: 30px;
+        }
+
+        .realtime-dashboard .update-time {
+            text-align: center;
+            color: #e74c3c;
+            font-weight: 600;
+            font-size: 1rem;
+            margin: 10px 0 20px 0;
+        }
+
+        /* 四大指数网格布局 - PC端4列，移动端单列 */
+        .realtime-indices-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 20px;
+            margin: 25px 0;
+        }
+
+        @media (max-width: 1200px) {
+            .realtime-indices-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .realtime-indices-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* 实时指数卡片 */
+        .realtime-index-card {
+            border-radius: 15px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .realtime-index-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0,0,0,0.3);
+        }
+
+        .index-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 12px;
+            border-bottom: 1px solid rgba(255,255,255,0.3);
+            padding-bottom: 8px;
+        }
+
+        .index-name {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+
+        .index-code {
+            font-size: 0.85rem;
+            opacity: 0.9;
+        }
+
+        .index-price {
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin: 10px 0;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .index-rise {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .rise-up {
+            color: #fff;
+        }
+
+        .rise-down {
+            color: #fff;
+        }
+
+        .rise-neutral {
+            color: #fff;
+            opacity: 0.8;
+        }
+
+        .index-metrics {
+            margin-top: 15px;
+        }
+
+        .metric-row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 6px 0;
+            border-bottom: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.9rem;
+        }
+
+        .metric-row:last-child {
+            border-bottom: none;
+        }
+
+        .metric-label {
+            opacity: 0.85;
+        }
+
+        .metric-value {
+            font-weight: 600;
+        }
+
+        .signal-positive {
+            color: #fff;
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        .signal-negative {
+            color: #fff;
+            background: rgba(255,255,255,0.2);
+            padding: 2px 8px;
+            border-radius: 10px;
+        }
+
+        .signal-neutral {
+            color: #fff;
+            opacity: 0.7;
+        }
+
+        /* 市场聚合数据区域 */
+        .market-aggregate-section {
+            margin-top: 30px;
+            background: white;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .market-aggregate-section h3 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.4rem;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .aggregate-grid {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+        }
+
+        @media (max-width: 1200px) {
+            .aggregate-grid {
+                grid-template-columns: repeat(3, 1fr);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .aggregate-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .aggregate-item {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            transition: transform 0.2s ease;
+        }
+
+        .aggregate-item:hover {
+            transform: scale(1.05);
+        }
+
+        .agg-label {
+            font-size: 0.85rem;
+            color: #7f8c8d;
+            margin-bottom: 8px;
+        }
+
+        .agg-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #2c3e50;
+        }
+
+        .sentiment-positive {
+            color: #27ae60 !important;
+        }
+
+        .sentiment-neutral {
+            color: #f39c12 !important;
+        }
+
+        .sentiment-negative {
+            color: #e74c3c !important;
+        }
+
+        /* 图表容器响应式样式 */
+        @media (max-width: 768px) {
+            .realtime-dashboard .chart-grid {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>A股多周期技术分析综合报告</h1>
+            <div class="subtitle">基于日线/120分钟/60分钟/30分钟级别的跨周期技术分析</div>
+            <div class="date-time">报告生成时间：2025年12月24日 23:02</div>
+        </div>
+
+        
+        <div class="section realtime-dashboard">
+            <h2>📊 A股核心指数实时监控</h2>
+            <div class="update-time">数据更新时间: 2025年12月24日 15:00:00</div>
+
+            <!-- 四大核心指数卡片（4列横向布局）-->
+            <div class="realtime-indices-grid">
+        
+                <div class="realtime-index-card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);">
+                    <div class="index-header">
+                        <div class="index-name">上证指数</div>
+                        <div class="index-code">SH000001</div>
+                    </div>
+                    <div class="index-price">3940.95</div>
+                    <div class="index-rise rise-up">
+                        ↑ +0.54%
+                    </div>
+                    <div class="index-metrics">
+                        <div class="metric-row">
+                            <span class="metric-label">预测</span>
+                            <span class="metric-value">7871亿</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">量比</span>
+                            <span class="metric-value">1.02</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">上涨</span>
+                            <span class="metric-value">78.0%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">信号</span>
+                            <span class="metric-value signal-positive">+3</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="realtime-index-card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);">
+                    <div class="index-header">
+                        <div class="index-name">深证成指</div>
+                        <div class="index-code">SZ399001</div>
+                    </div>
+                    <div class="index-price">13486.42</div>
+                    <div class="index-rise rise-up">
+                        ↑ +0.88%
+                    </div>
+                    <div class="index-metrics">
+                        <div class="metric-row">
+                            <span class="metric-label">预测</span>
+                            <span class="metric-value">11285亿</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">量比</span>
+                            <span class="metric-value">1.07</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">上涨</span>
+                            <span class="metric-value">81.0%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">信号</span>
+                            <span class="metric-value signal-positive">+4</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="realtime-index-card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);">
+                    <div class="index-header">
+                        <div class="index-name">创业板指</div>
+                        <div class="index-code">SZ399006</div>
+                    </div>
+                    <div class="index-price">3229.58</div>
+                    <div class="index-rise rise-up">
+                        ↑ +0.77%
+                    </div>
+                    <div class="index-metrics">
+                        <div class="metric-row">
+                            <span class="metric-label">预测</span>
+                            <span class="metric-value">5245亿</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">量比</span>
+                            <span class="metric-value">1.07</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">上涨</span>
+                            <span class="metric-value">84.9%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">信号</span>
+                            <span class="metric-value signal-positive">+4</span>
+                        </div>
+                    </div>
+                </div>
+            
+                <div class="realtime-index-card" style="background: linear-gradient(135deg, #ff6b6b, #ee5a6f);">
+                    <div class="index-header">
+                        <div class="index-name">科创综指</div>
+                        <div class="index-code">SH000680</div>
+                    </div>
+                    <div class="index-price">1622.73</div>
+                    <div class="index-rise rise-up">
+                        ↑ +1.26%
+                    </div>
+                    <div class="index-metrics">
+                        <div class="metric-row">
+                            <span class="metric-label">预测</span>
+                            <span class="metric-value">1972亿</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">量比</span>
+                            <span class="metric-value">1.10</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">上涨</span>
+                            <span class="metric-value">84.9%</span>
+                        </div>
+                        <div class="metric-row">
+                            <span class="metric-label">信号</span>
+                            <span class="metric-value signal-positive">+3</span>
+                        </div>
+                    </div>
+                </div>
+            
+            </div>
+
+            <!-- 全市场综合数据 -->
+            <div class="market-aggregate-section">
+                <h3>🌐 A股市场综合数据（沪深两市）</h3>
+                <div class="aggregate-grid">
+        
+                    <div class="aggregate-item">
+                        <div class="agg-label">市场成交额</div>
+                        <div class="agg-value">18803亿</div>
+                    </div>
+                    <div class="aggregate-item">
+                        <div class="agg-label">预测全天成交</div>
+                        <div class="agg-value">19156亿</div>
+                    </div>
+                    <div class="aggregate-item">
+                        <div class="agg-label">上涨家数</div>
+                        <div class="agg-value text-success">4029</div>
+                    </div>
+                    <div class="aggregate-item">
+                        <div class="agg-label">下跌家数</div>
+                        <div class="agg-value text-danger">1029</div>
+                    </div>
+                    <div class="aggregate-item">
+                        <div class="agg-label">上涨比例</div>
+                        <div class="agg-value sentiment-positive">79.7%</div>
+                    </div>
+                    <div class="aggregate-item">
+                        <div class="agg-label">市场情绪</div>
+                        <div class="agg-value sentiment-positive">偏多🔥</div>
+                    </div>
+        
+                </div>
+            </div>
+
+        </div>
+
+        
+
+        
+        <div class="section">
+            <h2>🎯 市场状态定性分析</h2>
+
+            <!-- 当前市场状态卡片 -->
+            <div class="market-status-card" style="background: linear-gradient(135deg, #27ae60, #1e8449); border: 3px solid #1e8449; border-radius: 20px; padding: 30px; margin-bottom: 30px; color: white; box-shadow: 0 10px 30px rgba(0,0,0,0.2);">
+                <div style="text-align: center; margin-bottom: 20px;">
+                    <div style="font-size: 4rem; margin-bottom: 10px;">🚀</div>
+                    <h3 style="font-size: 2.5rem; font-weight: 700; margin: 0; text-shadow: 2px 2px 4px rgba(0,0,0,0.3);">
+                        强势上涨阶段
+                    </h3>
+                    <p style="font-size: 1.3rem; margin: 10px 0 0 0; opacity: 0.9;">
+                        全面走强
+                    </p>
+                </div>
+
+                <!-- 技术评分展示 -->
+                <div style="display: grid; grid-template-columns: repeat(4, 1fr); gap: 15px; margin: 25px 0; background: rgba(255,255,255,0.15); border-radius: 15px; padding: 20px;">
+                    <div style="text-align: center;">
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 5px;">日线</div>
+                        <div style="font-size: 2rem; font-weight: 700;">8.7</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">分</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 5px;">120分钟</div>
+                        <div style="font-size: 2rem; font-weight: 700;">9.3</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">分</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 5px;">60分钟</div>
+                        <div style="font-size: 2rem; font-weight: 700;">9.4</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">分</div>
+                    </div>
+                    <div style="text-align: center;">
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 5px;">30分钟</div>
+                        <div style="font-size: 2rem; font-weight: 700;">8.8</div>
+                        <div style="font-size: 0.8rem; opacity: 0.7;">分</div>
+                    </div>
+                </div>
+
+                <!-- 操作建议和风险等级 -->
+                <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-top: 20px;">
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 15px;">
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 5px;">💡 操作建议</div>
+                        <div style="font-size: 1.3rem; font-weight: 600;">持股为主，回调加仓</div>
+                    </div>
+                    <div style="background: rgba(255,255,255,0.2); border-radius: 12px; padding: 15px;">
+                        <div style="font-size: 0.9rem; opacity: 0.8; margin-bottom: 5px;">⚠️ 风险等级</div>
+                        <div style="font-size: 1.3rem; font-weight: 600;">
+                            <span style="background: #27ae60; padding: 5px 15px; border-radius: 20px; color: white;">
+                                极低
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 市场特征 -->
+            <div style="background: white; border-radius: 15px; padding: 25px; box-shadow: 0 5px 15px rgba(0,0,0,0.08); margin-bottom: 25px;">
+                <h4 style="color: #2c3e50; font-size: 1.2rem; margin-bottom: 15px; border-left: 4px solid #1e8449; padding-left: 15px;">
+                    📊 市场特征分析
+                </h4>
+                <ul style="margin: 0; padding-left: 25px; line-height: 1.8;">
+        <li style='color: #34495e; font-size: 1rem;'>多周期共振向上，趋势强劲</li>
+<li style='color: #34495e; font-size: 1rem;'>各级别技术指标全面走强</li>
+<li style='color: #34495e; font-size: 1rem;'>资金持续流入，情绪积极</li>
+
+                </ul>
+            </div>
+
+            <!-- 市场定性规则说明（折叠） -->
+            <details style="background: linear-gradient(135deg, #ecf0f1, #bdc3c7); border-radius: 15px; padding: 25px; margin-bottom: 20px; cursor: pointer;">
+                <summary style="color: #2c3e50; margin-bottom: 15px; font-weight: 600; font-size: 1.1rem; list-style: none; cursor: pointer;">
+                    📖 市场定性规则体系 <span style="font-size: 0.9rem; color: #7f8c8d;">(点击展开/收起)</span>
+                </summary>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 15px; margin-top: 15px;">
+        
+                    <div style="background: white; border-left: 4px solid #27ae60; border-radius: 8px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                            <span style="font-size: 1.5rem;">🚀</span>
+                            <strong style="color: #27ae60; font-size: 1rem;">强势上涨</strong>
+                        </div>
+                        <div style="font-size: 0.85rem; color: #7f8c8d;">所有周期 > 8分</div>
+                    </div>
+            
+                    <div style="background: white; border-left: 4px solid #e74c3c; border-radius: 8px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                            <span style="font-size: 1.5rem;">📉</span>
+                            <strong style="color: #e74c3c; font-size: 1rem;">单边下跌</strong>
+                        </div>
+                        <div style="font-size: 0.85rem; color: #7f8c8d;">所有周期 < 3分</div>
+                    </div>
+            
+                    <div style="background: white; border-left: 4px solid #f39c12; border-radius: 8px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                            <span style="font-size: 1.5rem;">⚡</span>
+                            <strong style="color: #f39c12; font-size: 1rem;">抄底反弹</strong>
+                        </div>
+                        <div style="font-size: 0.85rem; color: #7f8c8d;">日线/120分 < 3，60分/30分 > 8</div>
+                    </div>
+            
+                    <div style="background: white; border-left: 4px solid #95a5a6; border-radius: 8px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                            <span style="font-size: 1.5rem;">↔️</span>
+                            <strong style="color: #95a5a6; font-size: 1rem;">震荡整理</strong>
+                        </div>
+                        <div style="font-size: 0.85rem; color: #7f8c8d;">所有周期在 4-7分</div>
+                    </div>
+            
+                    <div style="background: white; border-left: 4px solid #16a085; border-radius: 8px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                            <span style="font-size: 1.5rem;">🌱</span>
+                            <strong style="color: #16a085; font-size: 1rem;">趋势启动</strong>
+                        </div>
+                        <div style="font-size: 0.85rem; color: #7f8c8d;">日线 3-6分，其他 > 6分</div>
+                    </div>
+            
+                    <div style="background: white; border-left: 4px solid #e67e22; border-radius: 8px; padding: 12px; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+                        <div style="display: flex; align-items: center; gap: 8px; margin-bottom: 5px;">
+                            <span style="font-size: 1.5rem;">⚠️</span>
+                            <strong style="color: #e67e22; font-size: 1rem;">高位震荡</strong>
+                        </div>
+                        <div style="font-size: 0.85rem; color: #7f8c8d;">日线/120分 > 8，60分/30分 < 3</div>
+                    </div>
+            
+                </div>
+            </details>
+
+            <!-- 定性分析说明（折叠） -->
+            <details class="alert info" style="cursor: pointer; margin-bottom: 20px;">
+                <summary style="font-weight: 600; cursor: pointer; list-style: none;">
+                    <strong>💡 定性分析说明</strong> <span style="font-size: 0.9rem; opacity: 0.8;">(点击展开/收起)</span>
+                </summary>
+                <div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid rgba(255,255,255,0.3);">
+                市场定性基于日线、120分钟、60分钟、30分钟四个时间周期的技术评分综合判断。
+                不同周期的组合反映了市场的短期、中期、长期状态，通过多周期共振或背离识别市场所处阶段。
+                本定性分析可作为交易决策的重要参考，但需结合基本面、市场情绪等因素综合判断。
+                </div>
+            </details>
+        </div>
+        
+        
+        
+        <div class="section">
+            <h2>📊 市场整体表现概览 (基于30分钟数据)</h2>
+
+            <div class="multi-timeframe-grid">
+        
+                <div class="timeframe-card">
+                    <h3>核心指数</h3>
+                    <div class="metric-item">
+                        <span class="metric-label">指数平均涨跌幅</span>
+                        <span class="metric-value positive">+0.86%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">平均上涨股票比例</span>
+                        <span class="metric-value">79.7%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">最大涨幅</span>
+                        <span class="metric-value positive">+1.26%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">最大跌幅</span>
+                        <span class="metric-value negative">+0.54%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">上涨指数比率</span>
+                        <span class="metric-value">100.0%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">上涨/下跌数量</span>
+                        <span class="metric-value">4/4</span>
+                    </div>
+                </div>
+                
+                <div class="timeframe-card">
+                    <h3>大市值指数</h3>
+                    <div class="metric-item">
+                        <span class="metric-label">指数平均涨跌幅</span>
+                        <span class="metric-value positive">+0.24%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">平均上涨股票比例</span>
+                        <span class="metric-value">53.5%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">最大涨幅</span>
+                        <span class="metric-value positive">+0.56%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">最大跌幅</span>
+                        <span class="metric-value negative">-0.08%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">上涨指数比率</span>
+                        <span class="metric-value">75.0%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">上涨/下跌数量</span>
+                        <span class="metric-value">3/4</span>
+                    </div>
+                </div>
+                
+                <div class="timeframe-card">
+                    <h3>中小市值指数</h3>
+                    <div class="metric-item">
+                        <span class="metric-label">指数平均涨跌幅</span>
+                        <span class="metric-value positive">+1.17%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">平均上涨股票比例</span>
+                        <span class="metric-value">77.2%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">最大涨幅</span>
+                        <span class="metric-value positive">+1.84%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">最大跌幅</span>
+                        <span class="metric-value negative">+0.19%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">上涨指数比率</span>
+                        <span class="metric-value">100.0%</span>
+                    </div>
+                    <div class="metric-item">
+                        <span class="metric-label">上涨/下跌数量</span>
+                        <span class="metric-value">11/11</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        
+        <div class="section">
+            <h2>📈 指数表现统计与技术打分</h2>
+
+            <!-- 各时间级别买入信号统计 -->
+            <div class="stats-grid">
+        
+            <div class="stats-card">
+                <h4>日线级别买入信号统计</h4>
+                <div class="stats-row">
+                    <span>核心指数买入个数</span>
+                    <span class="positive">4/4 (100%)</span>
+                </div>
+                <div class="stats-row">
+                    <span>中小指数买入个数</span>
+                    <span class="positive">12/12 (100%)</span>
+                </div>
+                <div class="percentage-bar">
+                    <div class="percentage-fill" style="width: 100%;">100%</div>
+                </div>
+                <div class="stats-row">
+                    <span>技术评分</span>
+                    <span class="text-success">8.7分</span>
+                </div>
+            </div>
+            
+            <div class="stats-card">
+                <h4>120分钟级别买入信号统计</h4>
+                <div class="stats-row">
+                    <span>核心指数买入个数</span>
+                    <span class="positive">4/4 (100%)</span>
+                </div>
+                <div class="stats-row">
+                    <span>中小指数买入个数</span>
+                    <span class="positive">12/12 (100%)</span>
+                </div>
+                <div class="percentage-bar">
+                    <div class="percentage-fill" style="width: 100%;">100%</div>
+                </div>
+                <div class="stats-row">
+                    <span>技术评分</span>
+                    <span class="text-success">9.3分</span>
+                </div>
+            </div>
+            
+            <div class="stats-card">
+                <h4>60分钟级别买入信号统计</h4>
+                <div class="stats-row">
+                    <span>核心指数买入个数</span>
+                    <span class="positive">4/4 (100%)</span>
+                </div>
+                <div class="stats-row">
+                    <span>中小指数买入个数</span>
+                    <span class="positive">12/12 (100%)</span>
+                </div>
+                <div class="percentage-bar">
+                    <div class="percentage-fill" style="width: 100%;">100%</div>
+                </div>
+                <div class="stats-row">
+                    <span>技术评分</span>
+                    <span class="text-success">9.4分</span>
+                </div>
+            </div>
+            
+            <div class="stats-card">
+                <h4>30分钟级别买入信号统计</h4>
+                <div class="stats-row">
+                    <span>核心指数买入个数</span>
+                    <span class="positive">4/4 (100%)</span>
+                </div>
+                <div class="stats-row">
+                    <span>中小指数买入个数</span>
+                    <span class="positive">12/12 (100%)</span>
+                </div>
+                <div class="percentage-bar">
+                    <div class="percentage-fill" style="width: 100%;">100%</div>
+                </div>
+                <div class="stats-row">
+                    <span>技术评分</span>
+                    <span class="text-success">8.8分</span>
+                </div>
+            </div>
+            
+            <div class="stats-card" style="border: 2px solid #FFD700; background: linear-gradient(135deg, rgba(255, 215, 0, 0.05), rgba(255, 215, 0, 0.1));">
+                <h4 style="color: #FF8C00; font-weight: bold;">🌟 跨周期综合评分</h4>
+                <div class="stats-row">
+                    <span>加权计算方式</span>
+                    <span style="font-size: 0.8rem;">日线40% + 120分钟30% + 60分钟20% + 30分钟10%</span>
+                </div>
+                <div class="stats-row">
+                    <span>综合买入比例</span>
+                    <span class="positive">99.5%</span>
+                </div>
+                <div class="stats-row">
+                    <span>强烈买入比例</span>
+                    <span class="positive">88.4%</span>
+                </div>
+                <div class="percentage-bar" style="background: linear-gradient(90deg, #FFD700, #FF8C00);">
+                    <div class="percentage-fill" style="background: linear-gradient(90deg, #FF8C00, #FF4500); width: 99%;">99%</div>
+                </div>
+                <div class="stats-row">
+                    <span><strong>综合技术评分</strong></span>
+                    <span class="text-success" style="font-size: 1.2rem; font-weight: bold;">9.0分</span>
+                </div>
+            </div>
+            
+            </div>
+
+            <!-- 指数表现详细统一表格 -->
+            <div class="unified-index-table">
+                <h3 style="color: #2c3e50; margin: 30px 0 20px 0; font-size: 1.4rem; font-weight: 600;">
+                    📊 全部指数跨周期技术信号对比
+                </h3>
+                <div class="table-responsive">
+                    <table class="signal-table">
+                        <thead>
+                            <tr>
+                                <th>指数名称</th>
+                                <th>指数类别</th>
+                                <th>日线级别</th>
+                                <th>120分钟级别</th>
+                                <th>60分钟级别</th>
+                                <th>30分钟级别</th>
+                                <th>综合评价</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+        
+                            <tr class="table-primary" style="font-weight: bold; background-color: rgba(13, 110, 253, 0.1) !important;">
+                                <td colspan="7" style="text-align: center; padding: 12px; font-size: 1.1rem;">
+                                    📈 核心指数 (4个)
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td><strong>上证指数</strong><br><small>SH000001</small></td>
+                                <td><span class="badge bg-secondary">核心指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+3</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+3</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>科创综指</strong><br><small>SH000680</small></td>
+                                <td><span class="badge bg-secondary">核心指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+3</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>深证成指</strong><br><small>SZ399001</small></td>
+                                <td><span class="badge bg-secondary">核心指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>创业板指</strong><br><small>SZ399006</small></td>
+                                <td><span class="badge bg-secondary">核心指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr class="table-info" style="font-weight: bold; background-color: rgba(13, 110, 253, 0.1) !important;">
+                                <td colspan="7" style="text-align: center; padding: 12px; font-size: 1.1rem;">
+                                    📈 大市值指数 (3个)
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td><strong>上证50</strong><br><small>SH000016</small></td>
+                                <td><span class="badge bg-secondary">大市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+2</span></td>
+                                <td class="text-center"><span class="signal-buy">+1</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>沪深300</strong><br><small>SH000300</small></td>
+                                <td><span class="badge bg-secondary">大市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>中证100</strong><br><small>SZ399903</small></td>
+                                <td><span class="badge bg-secondary">大市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+2</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr class="table-success" style="font-weight: bold; background-color: rgba(13, 110, 253, 0.1) !important;">
+                                <td colspan="7" style="text-align: center; padding: 12px; font-size: 1.1rem;">
+                                    📈 中小市值指数 (12个)
+                                </td>
+                            </tr>
+            
+                            <tr>
+                                <td><strong>科创50</strong><br><small>SH000688</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+3</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+3</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>科创100</strong><br><small>SH000698</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>科创200</strong><br><small>SH000699</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>中证1000</strong><br><small>SH000852</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>中证500</strong><br><small>SH000905</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>中证800</strong><br><small>SH000906</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>中小100</strong><br><small>SZ399005</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>创业200</strong><br><small>SZ399019</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>国证2000</strong><br><small>SZ399303</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>深证100</strong><br><small>SZ399330</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>创业50</strong><br><small>SZ399673</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                            <tr>
+                                <td><strong>深证50</strong><br><small>SZ399850</small></td>
+                                <td><span class="badge bg-secondary">中小市值指数</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+5</span></td>
+                                <td class="text-center"><span class="signal-strong-buy">+4</span></td>
+                                <td class="positive">技术面极强</td>
+                            </tr>
+                
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="section">
+            <h2>💡 跨周期交易策略汇总</h2>
+
+            <div class="table-responsive">
+                <table class="signal-table">
+                    <thead>
+                        <tr>
+                            <th>时间级别</th>
+                            <th>市场阶段</th>
+                            <th>整体情绪</th>
+                            <th>风险等级</th>
+                            <th>仓位建议</th>
+                            <th>时间趋势</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                        <tr class="table-success">
+                            <td><strong>日线</strong></td>
+                            <td>日线级别</td>
+                            <td class="text-secondary"><strong>强烈看多 (均线偏多)</strong></td>
+                            <td>低</td>
+                            <td>积极加仓</td>
+                            <td>关注长期趋势</td>
+                        </tr>
+                
+                        <tr class="table-success">
+                            <td><strong>120分钟</strong></td>
+                            <td>收盘</td>
+                            <td class="text-secondary"><strong>强烈看多 (均线偏多)</strong></td>
+                            <td>低</td>
+                            <td>积极加仓</td>
+                            <td>改善</td>
+                        </tr>
+                
+                        <tr class="table-success">
+                            <td><strong>60分钟</strong></td>
+                            <td>收盘</td>
+                            <td class="text-secondary"><strong>强烈看多 (均线偏多)</strong></td>
+                            <td>低</td>
+                            <td>积极加仓</td>
+                            <td>改善</td>
+                        </tr>
+                
+                        <tr class="table-success">
+                            <td><strong>30分钟</strong></td>
+                            <td>收盘</td>
+                            <td class="text-secondary"><strong>强烈看多 (均线偏多)</strong></td>
+                            <td>低</td>
+                            <td>积极加仓</td>
+                            <td>改善</td>
+                        </tr>
+                
+                    </tbody>
+                </table>
+            </div>
+
+            <!-- 重点关注和回避区域汇总 -->
+            <div class="row mt-4">
+        
+                <div class="col-md-6">
+                    <div class="card border-success">
+                        <div class="card-header bg-success text-white">
+                            <h6 class="mb-0"><i class="fas fa-search me-2"></i>各周期重点关注区域汇总</h6>
+                        </div>
+                        <div class="card-body">
+        <span class="badge bg-success me-2 mb-2">创业板指 (3次)</span><span class="badge bg-success me-2 mb-2">深证成指 (2次)</span><span class="badge bg-success me-2 mb-2">科创综指 (2次)</span><span class="badge bg-success me-2 mb-2">深证50 (2次)</span><span class="badge bg-success me-2 mb-2">上证指数 (1次)</span><span class="badge bg-success me-2 mb-2">国证2000 (1次)</span><span class="badge bg-success me-2 mb-2">中证500 (1次)</span><span class="badge bg-success me-2 mb-2">中小100 (1次)</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div class="col-md-6">
+                    <div class="card border-danger">
+                        <div class="card-header bg-danger text-white">
+                            <h6 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i>各周期重点回避区域汇总</h6>
+                        </div>
+                        <div class="card-body">
+        <p class="text-muted">暂无重点回避区域</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="section">
+            <h2>🎯 多周期技术信号一致性分析</h2>
+
+            <!-- 信号分布可视化图表 -->
+            <div class="signal-bar-chart">
+                <h3 style="text-align: center; margin-bottom: 20px; color: #2c3e50;">
+                    📊 信号分布可视化对比
+                </h3>
+
+                <!-- 图例 -->
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <div class="legend-color signal-strong-buy"></div>
+                        <span>强烈买入</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color signal-buy"></div>
+                        <span>买入</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color signal-neutral"></div>
+                        <span>中性</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color signal-sell"></div>
+                        <span>卖出</span>
+                    </div>
+                    <div class="legend-item">
+                        <div class="legend-color signal-strong-sell"></div>
+                        <span>强烈卖出</span>
+                    </div>
+                </div>
+        
+                <h4 style="color: #34495e; margin: 25px 0 15px 0; font-weight: 600;">组合信号</h4>
+            
+                        <div class="signal-bar">
+                            <div class="signal-label">日线</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-strong-buy" style="width: 84.2%;">
+                                    16(84%)
+                                </div>
+                                
+                                <div class="signal-segment signal-buy" style="width: 15.8%;">
+                                    3(16%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">120分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-strong-buy" style="width: 89.5%;">
+                                    17(89%)
+                                </div>
+                                
+                                <div class="signal-segment signal-buy" style="width: 10.5%;">
+                                    2(11%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">60分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-strong-buy" style="width: 94.7%;">
+                                    18(95%)
+                                </div>
+                                
+                                <div class="signal-segment signal-buy" style="width: 5.3%;">
+                                    1(5%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">30分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-strong-buy" style="width: 89.5%;">
+                                    17(89%)
+                                </div>
+                                
+                                <div class="signal-segment signal-buy" style="width: 5.3%;">
+                                    1(5%)
+                                </div>
+                                
+                                <div class="signal-segment signal-neutral" style="width: 5.3%;">
+                                    1(5%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                <h4 style="color: #34495e; margin: 25px 0 15px 0; font-weight: 600;">均线信号</h4>
+            
+                        <div class="signal-bar">
+                            <div class="signal-label">日线</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">120分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">60分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">30分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 94.7%;">
+                                    18(95%)
+                                </div>
+                                
+                                <div class="signal-segment signal-neutral" style="width: 5.3%;">
+                                    1(5%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                <h4 style="color: #34495e; margin: 25px 0 15px 0; font-weight: 600;">MACD信号</h4>
+            
+                        <div class="signal-bar">
+                            <div class="signal-label">日线</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">120分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">60分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 94.7%;">
+                                    18(95%)
+                                </div>
+                                
+                                <div class="signal-segment signal-sell" style="width: 5.3%;">
+                                    1(5%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">30分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                <h4 style="color: #34495e; margin: 25px 0 15px 0; font-weight: 600;">RSI信号</h4>
+            
+                        <div class="signal-bar">
+                            <div class="signal-label">日线</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">120分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">60分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+                        <div class="signal-bar">
+                            <div class="signal-label">30分钟</div>
+                            <div class="signal-segments">
+                        
+                                <div class="signal-segment signal-buy" style="width: 100.0%;">
+                                    19(100%)
+                                </div>
+                                
+                            </div>
+                        </div>
+                        
+            </div>
+
+        
+            <div class="alert info">
+                <strong>多周期一致性结论：</strong>技术信号随时间周期缩短而显著增强，30分钟和60分钟级别的技术信号一致性表现突出，强烈买入信号占主导地位。彩色条形图清晰展示了各时间周期信号分布的差异，为投资决策提供直观参考。
+            </div>
+        </div>
+        
+
+
+
+        
+        <div class="section">
+            <h2>📋 详细技术指标数据 (15:00:00 - 60分钟周期)</h2>
+
+            <div class="table-responsive">
+                <table class="signal-table">
+                    <thead>
+                        <tr>
+                            <th>指数名称</th>
+                            <th>代码</th>
+                            <th>最新价</th>
+                            <th>涨跌幅</th>
+                            <th>均线信号</th>
+                            <th>MACD信号</th>
+                            <th>RSI信号</th>
+                            <th>KDJ信号</th>
+                            <th>组合信号</th>
+                            <th>上涨比率</th>
+                            <th>成交量比率</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+        
+                    <tr>
+                        <td><strong>上证指数</strong></td>
+                        <td>SH000001</td>
+                        <td>3940.95</td>
+                        <td class="positive">+0.54%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>78.0%</td>
+                        <td>0.99</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>深证成指</strong></td>
+                        <td>SZ399001</td>
+                        <td>13486.42</td>
+                        <td class="positive">+0.88%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>81.0%</td>
+                        <td>1.05</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>科创综指</strong></td>
+                        <td>SH000680</td>
+                        <td>1622.73</td>
+                        <td class="positive">+1.26%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>84.9%</td>
+                        <td>1.09</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>创业板指</strong></td>
+                        <td>SZ399006</td>
+                        <td>3229.58</td>
+                        <td class="positive">+0.77%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>84.9%</td>
+                        <td>1.03</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>深证50</strong></td>
+                        <td>SZ399850</td>
+                        <td>9233.23</td>
+                        <td class="positive">+0.19%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>47.9%</td>
+                        <td>0.96</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>科创100</strong></td>
+                        <td>SH000698</td>
+                        <td>1425.01</td>
+                        <td class="positive">+1.84%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>88.0%</td>
+                        <td>1.08</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>国证2000</strong></td>
+                        <td>SZ399303</td>
+                        <td>9848.02</td>
+                        <td class="positive">+1.61%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>0.0%</td>
+                        <td>1.04</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>创业50</strong></td>
+                        <td>SZ399673</td>
+                        <td>3429.06</td>
+                        <td class="positive">+0.72%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>0.0%</td>
+                        <td>0.94</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>中证1000</strong></td>
+                        <td>SH000852</td>
+                        <td>7506.38</td>
+                        <td class="positive">+1.54%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>83.2%</td>
+                        <td>1.02</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>深证100</strong></td>
+                        <td>SZ399330</td>
+                        <td>5862.12</td>
+                        <td class="positive">+0.31%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>81.0%</td>
+                        <td>0.98</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>中证500</strong></td>
+                        <td>SH000905</td>
+                        <td>7352.04</td>
+                        <td class="positive">+1.31%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>78.4%</td>
+                        <td>1.04</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>创业200</strong></td>
+                        <td>SZ399019</td>
+                        <td>4483.45</td>
+                        <td class="positive">+1.81%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>0.0%</td>
+                        <td>1.05</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>科创200</strong></td>
+                        <td>SH000699</td>
+                        <td>1311.30</td>
+                        <td class="positive">+1.82%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>0.0%</td>
+                        <td>1.12</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>科创50</strong></td>
+                        <td>SH000688</td>
+                        <td>1352.13</td>
+                        <td class="positive">+0.90%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>84.9%</td>
+                        <td>1.06</td>
+                    </tr>
+                
+                    <tr>
+                        <td><strong>中小100</strong></td>
+                        <td>SZ399005</td>
+                        <td>8182.51</td>
+                        <td class="positive">+0.87%</td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-strong-buy">+2</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-buy">+1</span></td>
+                        <td><span class="badge signal-strong-buy">+5</span></td>
+                        <td>0.0%</td>
+                        <td>1.06</td>
+                    </tr>
+                
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+
+        <div class="section">
+            <h2>📝 分析总结与投资建议</h2>
+            <div class="analysis-box">
+                <h4>核心观点：</h4>
+                <ul>
+                    <li><strong>时间级别差异：</strong>短周期（30分钟）波动性较大，长周期（日线、120分钟）趋势性更强</li>
+                    <li><strong>信号一致性：</strong>关注多周期信号共振的机会，避免单一时间级别的误导</li>
+                    <li><strong>策略分层：</strong>短线灵活应对，中线把握趋势，长线控制风险</li>
+                    <li><strong>风险控制：</strong>在不同时间级别设置不同的止损和仓位管理策略</li>
+                </ul>
+
+                <h4>投资建议：</h4>
+                <div class="alert info">
+                    <strong>综合建议：</strong>以中长周期（60分钟、120分钟）为主要参考，短周期为辅助，在多周期信号一致时采取行动，信号冲突时保持谨慎。
+                </div>
+
+                <div class="alert">
+                    <strong>风险提示：</strong>跨周期分析适合多维度验证，但不同时间级别可能发出矛盾信号，需结合市场环境和基本面综合判断。投资有风险，入市需谨慎。
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+        

@@ -1,0 +1,1500 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>全天60分钟技术分析报告 (15:00:00)</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/echarts@5.4.3/dist/echarts.min.js"></script>
+    <style>
+        body { font-family: 'Microsoft YaHei', Arial, sans-serif; background: #f8f9fa; }
+        .header-section { background: linear-gradient(135deg, #4b6cb7 0%, #182848 100%); color: white; padding: 2rem 0; margin-bottom: 2rem; }
+        .metric-card { border: none; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); transition: transform 0.2s; margin-bottom: 1.5rem; }
+        .metric-card:hover { transform: translateY(-5px); }
+        .positive { color: #28a745; font-weight: bold; }
+        .negative { color: #dc3545; font-weight: bold; }
+        .neutral { color: #6c757d; font-weight: bold; }
+        .signal-positive { background-color: #d4edda; border-color: #c3e6cb; }
+        .signal-negative { background-color: #f8d7da; border-color: #f5c6cb; }
+        .signal-neutral { background-color: #e2e3e5; border-color: #d6d8db; }
+        .signal-strong { background: linear-gradient(45deg, #28a745, #20c997); color: white; }
+        .chart-container { height: 400px; margin: 2rem 0; }
+        .analysis-section { background-color: #f8f9fa; padding: 2rem; border-radius: 10px; margin: 2rem 0; }
+        .conclusion-box { background: linear-gradient(45deg, #667eea 0%, #764ba2 100%); color: white; padding: 2rem; border-radius: 15px; margin-top: 2rem; }
+        .data-table { font-size: 0.9rem; }
+        .badge-signal { font-size: 0.8em; padding: 0.4rem 0.8rem; }
+        .time-period-tabs { margin-bottom: 2rem; }
+        .nav-tabs .nav-link.active { background-color: #4b6cb7; color: white; border-color: #4b6cb7; }
+        .comparison-section { background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); padding: 2rem; border-radius: 15px; margin: 2rem 0; }
+        .signal-strong-buy { background-color: #d4edda; color: #155724; }
+        .signal-buy { background-color: #d1ecf1; color: #0c5460; }
+        .signal-neutral { background-color: #fff3cd; color: #856404; }
+        .signal-sell { background-color: #f8d7da; color: #721c24; }
+        .signal-strong-sell { background-color: #f5c6cb; color: #721c24; }
+        .rise-positive { color: #28a745; font-weight: bold; }
+        .rise-negative { color: #dc3545; font-weight: bold; }
+        .card-header-custom { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; }
+        .strategy-card { border-left: 4px solid #007bff; }
+        .risk-high { border-left-color: #dc3545; }
+        .risk-medium { border-left-color: #ffc107; }
+        .risk-low { border-left-color: #28a745; }
+        .trend-improve { color: #28a745; font-weight: bold; }
+        .trend-worsen { color: #dc3545; font-weight: bold; }
+        .trend-stable { color: #6c757d; font-weight: bold; }
+        .time-highlight { background-color: #e7f3ff; font-weight: bold; }
+    </style>
+</head>
+<body class="bg-light">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12">
+                <div class="card mt-3">
+                    <div class="card-header card-header-custom">
+                        <h4 class="mb-0"><i class="fas fa-chart-line me-2"></i>全天60分钟技术分析报告 (15:00:00)</h4>
+                        <p class="mb-0 mt-2"><i class="fas fa-clock me-2"></i>报告生成时间: 2025-12-24 23:02:16</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 关键发现概览 -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="fas fa-star me-2"></i>关键发现</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="alert alert-info" role="alert">
+                            <i class="fas fa-lightbulb"></i>
+                            <strong>60分钟级别显示市场分化加剧：</strong>
+                            中小市值指数技术信号明显改善，深证成指转为中性信号，但核心大盘指数仍承压。
+                        </div>
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="card text-center border-success">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-success">强势信号</h5>
+                                        <h2>15个</h2>
+                                        <p class="text-success">国证2000、中证1000等</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card text-center border-warning">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-warning">中性信号</h5>
+                                        <h2>0个</h2>
+                                        <p class="text-warning">深证成指、中证500等</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card text-center border-secondary">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-secondary">偏弱信号</h5>
+                                        <h2>0个</h2>
+                                        <p class="text-secondary">上证指数、创业板指等</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="card text-center border-danger">
+                                    <div class="card-body">
+                                        <h5 class="card-title text-danger">弱势信号</h5>
+                                        <h2>0个</h2>
+                                        <p class="text-danger">科创50、深证50等</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 指数分类展示 -->
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h6 class="mb-0"><i class="fas fa-chart-line me-2"></i>核心指数表现</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>指数</th>
+                                        <th>涨跌幅</th>
+                                        <th>组合信号</th>
+                                        <th>均线信号</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>上证指数</strong><br><small>SH000001</small></td>
+                                        <td class="rise-positive">+0.54%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>深证成指</strong><br><small>SZ399001</small></td>
+                                        <td class="rise-positive">+0.88%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>科创综指</strong><br><small>SH000680</small></td>
+                                        <td class="rise-positive">+1.26%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>创业板指</strong><br><small>SZ399006</small></td>
+                                        <td class="rise-positive">+0.77%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h6 class="mb-0"><i class="fas fa-chart-bar me-2"></i>大市值指数表现</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>指数</th>
+                                        <th>涨跌幅</th>
+                                        <th>组合信号</th>
+                                        <th>均线信号</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h6 class="mb-0"><i class="fas fa-chart-area me-2"></i>中小市值指数表现</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>指数</th>
+                                        <th>涨跌幅</th>
+                                        <th>组合信号</th>
+                                        <th>均线信号</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>深证50</strong><br><small>SZ399850</small></td>
+                                        <td class="rise-positive">+0.19%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>科创100</strong><br><small>SH000698</small></td>
+                                        <td class="rise-positive">+1.84%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>国证2000</strong><br><small>SZ399303</small></td>
+                                        <td class="rise-positive">+1.61%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>创业50</strong><br><small>SZ399673</small></td>
+                                        <td class="rise-positive">+0.72%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>中证1000</strong><br><small>SH000852</small></td>
+                                        <td class="rise-positive">+1.54%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>深证100</strong><br><small>SZ399330</small></td>
+                                        <td class="rise-positive">+0.31%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>中证500</strong><br><small>SH000905</small></td>
+                                        <td class="rise-positive">+1.31%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>创业200</strong><br><small>SZ399019</small></td>
+                                        <td class="rise-positive">+1.81%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>科创200</strong><br><small>SH000699</small></td>
+                                        <td class="rise-positive">+1.82%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>科创50</strong><br><small>SH000688</small></td>
+                                        <td class="rise-positive">+0.90%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr><tr>
+                                        <td><strong>中小100</strong><br><small>SZ399005</small></td>
+                                        <td class="rise-positive">+0.87%</td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 均线信号变化分析 -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h5 class="mb-0"><i class="fas fa-exchange-alt me-2"></i>均线信号变化分析</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <h6 class="text-success"><i class="fas fa-arrow-up me-2"></i>信号改善明显的指数</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>指数</th>
+                                                <th>均线变化</th>
+                                                <th>综合信号变化</th>
+                                                <th>涨跌幅</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td><strong>科创综指</strong><br><small>SH000680</small></td>
+                                                <td class="text-success">1 → 2</td>
+                                                <td class="text-success">4 → 5</td>
+                                                <td class="rise-positive">+1.26%</td>
+                                            </tr><tr>
+                                                <td><strong>创业板指</strong><br><small>SZ399006</small></td>
+                                                <td class="text-success">1 → 2</td>
+                                                <td class="text-success">4 → 5</td>
+                                                <td class="rise-positive">+0.77%</td>
+                                            </tr><tr>
+                                                <td><strong>深证50</strong><br><small>SZ399850</small></td>
+                                                <td class="text-success">1 → 2</td>
+                                                <td class="text-success">4 → 5</td>
+                                                <td class="rise-positive">+0.19%</td>
+                                            </tr><tr>
+                                                <td><strong>创业50</strong><br><small>SZ399673</small></td>
+                                                <td class="text-success">1 → 2</td>
+                                                <td class="text-success">4 → 5</td>
+                                                <td class="rise-positive">+0.72%</td>
+                                            </tr><tr>
+                                                <td><strong>深证100</strong><br><small>SZ399330</small></td>
+                                                <td class="text-success">1 → 2</td>
+                                                <td class="text-success">4 → 5</td>
+                                                <td class="rise-positive">+0.31%</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6 class="text-danger"><i class="fas fa-arrow-down me-2"></i>信号恶化的指数</h6>
+                                <div class="table-responsive">
+                                    <table class="table table-sm">
+                                        <thead>
+                                            <tr>
+                                                <th>指数</th>
+                                                <th>均线变化</th>
+                                                <th>综合信号变化</th>
+                                                <th>涨跌幅</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="alert alert-warning mt-3">
+                            <i class="fas fa-info-circle"></i>
+                            <strong>重要发现：</strong>60分钟级别数据显示中小市值指数技术面明显改善，而大盘蓝筹股仍承压，市场分化格局加剧。
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 全天时间序列对比 -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h5 class="mb-0"><i class="fas fa-clock-rotate-left me-2"></i>全天时间序列对比分析</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>时间点</th>
+                                        <th>平均涨跌幅</th>
+                                        <th>上涨指数比率</th>
+                                        <th>平均上涨比率</th>
+                                        <th>技术评分</th>
+                                        <th>技术评级</th>
+                                        <th>买入信号比例</th>
+                                        <th>成交量状态</th>
+                                        <th>均线信号分布</th>
+                                        <th>组合信号分布</th>
+                                        <th>状态</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="">
+                                        <td><strong>10:30:00</strong> </td>
+                                        <td class="rise-positive">+0.28%</td>
+                                        <td>60.0%</td>
+                                        <td>62.40%</td>
+                                        <td class="text-success">9.2/10</td>
+                                        <td class="text-success"><strong>极强</strong></td>
+                                        <td>100.0%</td>
+                                        <td>🟢 放量</td>
+                                        <td>买入15 中性0 卖出0</td>
+                                        <td>强买15 买入0 中性0 卖出0 强卖0</td>
+                                        <td>🟢 上涨</td>
+                                    </tr><tr class="">
+                                        <td><strong>11:30:00</strong> </td>
+                                        <td class="rise-positive">+0.55%</td>
+                                        <td>80.0%</td>
+                                        <td>74.86%</td>
+                                        <td class="text-success">9.4/10</td>
+                                        <td class="text-success"><strong>极强</strong></td>
+                                        <td>100.0%</td>
+                                        <td>🟢 放量</td>
+                                        <td>买入15 中性0 卖出0</td>
+                                        <td>强买15 买入0 中性0 卖出0 强卖0</td>
+                                        <td>🟢 上涨</td>
+                                    </tr><tr class="">
+                                        <td><strong>14:00:00</strong> </td>
+                                        <td class="rise-positive">+0.93%</td>
+                                        <td>93.3%</td>
+                                        <td>77.57%</td>
+                                        <td class="text-success">9.6/10</td>
+                                        <td class="text-success"><strong>极强</strong></td>
+                                        <td>100.0%</td>
+                                        <td>🟢 放量</td>
+                                        <td>买入15 中性0 卖出0</td>
+                                        <td>强买15 买入0 中性0 卖出0 强卖0</td>
+                                        <td>🟢 上涨</td>
+                                    </tr><tr class="time-highlight">
+                                        <td><strong>15:00:00</strong> 📍</td>
+                                        <td class="rise-positive">+1.09%</td>
+                                        <td>100.0%</td>
+                                        <td>79.66%</td>
+                                        <td class="text-success">9.5/10</td>
+                                        <td class="text-success"><strong>极强</strong></td>
+                                        <td>100.0%</td>
+                                        <td>🟢 放量</td>
+                                        <td>买入15 中性0 卖出0</td>
+                                        <td>强买15 买入0 中性0 卖出0 强卖0</td>
+                                        <td>🟢 上涨</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="alert alert-info mt-3">
+                            <h6><i class="fas fa-chart-line me-2"></i>早盘至今变化趋势 (10:30 → 15:00:00)</h6>
+                            <ul class="mb-0">
+                                <li>平均涨跌幅: +0.28% → +1.09%
+                                    (✅ 改善)</li>
+                                <li>上涨指数比率: 60.0% → 100.0%</li>
+                                <li>平均上涨比率: 62.40% → 79.66%</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 市场概览 -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-primary text-white">
+                        <h5 class="mb-0"><i class="fas fa-chart-pie me-2"></i>15:00:00 市场概览</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title">指数总数</h6>
+                                        <h3 class="text-primary">15</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title">上涨指数</h6>
+                                        <h3 class="text-success">15</h3>
+                                        <small>(100.0%)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title">下跌指数</h6>
+                                        <h3 class="text-danger">0</h3>
+                                        <small>(0.0%)</small>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title">平均涨跌幅</h6>
+                                        <h3 class="rise-positive">
+                                            +1.09%
+                                        </h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title">最大涨幅</h6>
+                                        <h3 class="text-success">+1.84%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-2">
+                                <div class="card text-center">
+                                    <div class="card-body">
+                                        <h6 class="card-title">最大跌幅</h6>
+                                        <h3 class="text-danger">+0.19%</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <h6>组合信号分布</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 100.0%">强烈买入 15</div>
+                                    <div class="progress-bar bg-info" style="width: 0.0%">买入 0</div>
+                                    <div class="progress-bar bg-warning" style="width: 0.0%">中性 0</div>
+                                    <div class="progress-bar bg-danger" style="width: 0.0%">卖出 0</div>
+                                    <div class="progress-bar bg-dark" style="width: 0.0%">强烈卖出 0</div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <h6>均线信号分布</h6>
+                                <div class="progress">
+                                    <div class="progress-bar bg-success" style="width: 100.0%">买入 15</div>
+                                    <div class="progress-bar bg-warning" style="width: 0.0%">中性 0</div>
+                                    <div class="progress-bar bg-danger" style="width: 0.0%">卖出 0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 交易策略建议 -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card strategy-card risk-low">
+                    <div class="card-header bg-dark text-white">
+                        <h5 class="mb-0"><i class="fas fa-lightbulb me-2"></i>15:00:00 交易策略建议</h5>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p><strong>市场阶段:</strong></p>
+                                <h6 class="text-info">收盘</h6>
+                            </div>
+                            <div class="col-md-2">
+                                <p><strong>整体情绪:</strong></p>
+                                <h6 class="text-success">
+                                    强烈看多 (均线偏多)
+                                </h6>
+                            </div>
+                            <div class="col-md-2">
+                                <p><strong>风险等级:</strong></p>
+                                <h6 class="text-success">
+                                    低
+                                </h6>
+                            </div>
+                            <div class="col-md-3">
+                                <p><strong>仓位建议:</strong></p>
+                                <h6 class="text-primary">积极加仓</h6>
+                            </div>
+                            <div class="col-md-3">
+                                <p><strong>时间趋势:</strong></p>
+                                <h6 class="trend-improve">
+                                    改善
+                                </h6>
+                            </div>
+                        </div>
+
+                        <div class="row mt-3">
+                            <div class="col-md-6">
+                                <div class="card border-success">
+                                    <div class="card-header bg-success text-white">
+                                        <h6 class="mb-0"><i class="fas fa-search me-2"></i>重点关注区域</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <span class="badge bg-success me-2 mb-2">上证指数</span><span class="badge bg-success me-2 mb-2">深证成指</span><span class="badge bg-success me-2 mb-2">科创综指</span><span class="badge bg-success me-2 mb-2">创业板指</span><span class="badge bg-success me-2 mb-2">深证50</span><span class="badge bg-success me-2 mb-2">科创100</span><span class="badge bg-success me-2 mb-2">国证2000</span><span class="badge bg-success me-2 mb-2">创业50</span><span class="badge bg-success me-2 mb-2">中证1000</span><span class="badge bg-success me-2 mb-2">深证100</span><span class="badge bg-success me-2 mb-2">中证500</span><span class="badge bg-success me-2 mb-2">创业200</span><span class="badge bg-success me-2 mb-2">科创200</span><span class="badge bg-success me-2 mb-2">科创50</span><span class="badge bg-success me-2 mb-2">中小100</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card border-danger">
+                                    <div class="card-header bg-danger text-white">
+                                        <h6 class="mb-0"><i class="fas fa-exclamation-triangle me-2"></i>重点回避区域</h6>
+                                    </div>
+                                    <div class="card-body">
+                                        <p class="text-muted">暂无重点回避区域</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="card mt-3">
+                            <div class="card-header bg-secondary text-white">
+                                <h6 class="mb-0"><i class="fas fa-list me-2"></i>具体操作建议</h6>
+                            </div>
+                            <div class="card-body">
+                                <ol>
+                                    <li>市场情绪较早盘改善，可适当关注机会</li><li>重点关注组合信号强烈买入的指数</li><li>收盘阶段，建议锁定利润，控制风险</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 组合信号分析 -->
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h6 class="mb-0"><i class="fas fa-signal me-2"></i>组合买入信号</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>指数名称</th>
+                                        <th>代码</th>
+                                        <th>涨跌幅</th>
+                                        <th>组合信号</th>
+                                        <th>上涨比率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="signal-strong-buy">
+                                        <td>上证指数</td>
+                                        <td>SH000001</td>
+                                        <td class="rise-positive">+0.54%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>77.98%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>深证成指</td>
+                                        <td>SZ399001</td>
+                                        <td class="rise-positive">+0.88%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>80.99%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创综指</td>
+                                        <td>SH000680</td>
+                                        <td class="rise-positive">+1.26%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>84.92%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>创业板指</td>
+                                        <td>SZ399006</td>
+                                        <td class="rise-positive">+0.77%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>84.89%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>深证50</td>
+                                        <td>SZ399850</td>
+                                        <td class="rise-positive">+0.19%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>47.92%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创100</td>
+                                        <td>SH000698</td>
+                                        <td class="rise-positive">+1.84%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>88.00%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>国证2000</td>
+                                        <td>SZ399303</td>
+                                        <td class="rise-positive">+1.61%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>0.00%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>创业50</td>
+                                        <td>SZ399673</td>
+                                        <td class="rise-positive">+0.72%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>0.00%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>中证1000</td>
+                                        <td>SH000852</td>
+                                        <td class="rise-positive">+1.54%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>83.21%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>深证100</td>
+                                        <td>SZ399330</td>
+                                        <td class="rise-positive">+0.31%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>80.99%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>中证500</td>
+                                        <td>SH000905</td>
+                                        <td class="rise-positive">+1.31%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>78.40%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>创业200</td>
+                                        <td>SZ399019</td>
+                                        <td class="rise-positive">+1.81%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>0.00%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创200</td>
+                                        <td>SH000699</td>
+                                        <td class="rise-positive">+1.82%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>0.00%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创50</td>
+                                        <td>SH000688</td>
+                                        <td class="rise-positive">+0.90%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>84.92%</td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>中小100</td>
+                                        <td>SZ399005</td>
+                                        <td class="rise-positive">+0.87%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                        <td>0.00%</td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        <h6 class="mb-0"><i class="fas fa-signal me-2"></i>组合卖出信号</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>指数名称</th>
+                                        <th>代码</th>
+                                        <th>涨跌幅</th>
+                                        <th>组合信号</th>
+                                        <th>上涨比率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 均线信号分析 -->
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h6 class="mb-0"><i class="fas fa-chart-area me-2"></i>均线买入信号</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>指数名称</th>
+                                        <th>代码</th>
+                                        <th>涨跌幅</th>
+                                        <th>均线信号</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="signal-strong-buy">
+                                        <td>上证指数</td>
+                                        <td>SH000001</td>
+                                        <td class="rise-positive">+0.54%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>深证成指</td>
+                                        <td>SZ399001</td>
+                                        <td class="rise-positive">+0.88%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创综指</td>
+                                        <td>SH000680</td>
+                                        <td class="rise-positive">+1.26%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>创业板指</td>
+                                        <td>SZ399006</td>
+                                        <td class="rise-positive">+0.77%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>深证50</td>
+                                        <td>SZ399850</td>
+                                        <td class="rise-positive">+0.19%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创100</td>
+                                        <td>SH000698</td>
+                                        <td class="rise-positive">+1.84%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>国证2000</td>
+                                        <td>SZ399303</td>
+                                        <td class="rise-positive">+1.61%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>创业50</td>
+                                        <td>SZ399673</td>
+                                        <td class="rise-positive">+0.72%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>中证1000</td>
+                                        <td>SH000852</td>
+                                        <td class="rise-positive">+1.54%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>深证100</td>
+                                        <td>SZ399330</td>
+                                        <td class="rise-positive">+0.31%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>中证500</td>
+                                        <td>SH000905</td>
+                                        <td class="rise-positive">+1.31%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>创业200</td>
+                                        <td>SZ399019</td>
+                                        <td class="rise-positive">+1.81%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创200</td>
+                                        <td>SH000699</td>
+                                        <td class="rise-positive">+1.82%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>科创50</td>
+                                        <td>SH000688</td>
+                                        <td class="rise-positive">+0.90%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr><tr class="signal-strong-buy">
+                                        <td>中小100</td>
+                                        <td>SZ399005</td>
+                                        <td class="rise-positive">+0.87%</td>
+                                        <td><span class="badge bg-success">强烈买入</span></td>
+                                    </tr>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header bg-danger text-white">
+                        <h6 class="mb-0"><i class="fas fa-chart-area me-2"></i>均线卖出信号</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>指数名称</th>
+                                        <th>代码</th>
+                                        <th>涨跌幅</th>
+                                        <th>均线信号</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 成交量和上涨比率分析 -->
+        <div class="row mt-3">
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-info text-white">
+                        <h6 class="mb-0"><i class="fas fa-dollar-sign me-2"></i>成交量排名</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>排名</th>
+                                        <th>指数</th>
+                                        <th>成交量</th>
+                                        <th>涨跌幅</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>深证成指</td>
+                                        <td>2191.66亿</td>
+                                        <td class="rise-positive">+0.88%</td>
+                                    </tr><tr>
+                                        <td>2</td>
+                                        <td>上证指数</td>
+                                        <td>1575.78亿</td>
+                                        <td class="rise-positive">+0.54%</td>
+                                    </tr><tr>
+                                        <td>3</td>
+                                        <td>国证2000</td>
+                                        <td>1202.83亿</td>
+                                        <td class="rise-positive">+1.61%</td>
+                                    </tr><tr>
+                                        <td>4</td>
+                                        <td>创业板指</td>
+                                        <td>999.54亿</td>
+                                        <td class="rise-positive">+0.77%</td>
+                                    </tr><tr>
+                                        <td>5</td>
+                                        <td>中证1000</td>
+                                        <td>755.75亿</td>
+                                        <td class="rise-positive">+1.54%</td>
+                                    </tr><tr>
+                                        <td>6</td>
+                                        <td>中证500</td>
+                                        <td>647.56亿</td>
+                                        <td class="rise-positive">+1.31%</td>
+                                    </tr><tr>
+                                        <td>7</td>
+                                        <td>深证100</td>
+                                        <td>398.50亿</td>
+                                        <td class="rise-positive">+0.31%</td>
+                                    </tr><tr>
+                                        <td>8</td>
+                                        <td>科创综指</td>
+                                        <td>383.14亿</td>
+                                        <td class="rise-positive">+1.26%</td>
+                                    </tr><tr>
+                                        <td>9</td>
+                                        <td>创业50</td>
+                                        <td>275.39亿</td>
+                                        <td class="rise-positive">+0.72%</td>
+                                    </tr><tr>
+                                        <td>10</td>
+                                        <td>深证50</td>
+                                        <td>272.02亿</td>
+                                        <td class="rise-positive">+0.19%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-success text-white">
+                        <h6 class="mb-0"><i class="fas fa-chart-line me-2"></i>上涨比率排名</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>排名</th>
+                                        <th>指数</th>
+                                        <th>上涨比率</th>
+                                        <th>涨跌幅</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>科创100</td>
+                                        <td>88.00%</td>
+                                        <td class="rise-positive">+1.84%</td>
+                                    </tr><tr>
+                                        <td>2</td>
+                                        <td>科创综指</td>
+                                        <td>84.92%</td>
+                                        <td class="rise-positive">+1.26%</td>
+                                    </tr><tr>
+                                        <td>3</td>
+                                        <td>科创50</td>
+                                        <td>84.92%</td>
+                                        <td class="rise-positive">+0.90%</td>
+                                    </tr><tr>
+                                        <td>4</td>
+                                        <td>创业板指</td>
+                                        <td>84.89%</td>
+                                        <td class="rise-positive">+0.77%</td>
+                                    </tr><tr>
+                                        <td>5</td>
+                                        <td>中证1000</td>
+                                        <td>83.21%</td>
+                                        <td class="rise-positive">+1.54%</td>
+                                    </tr><tr>
+                                        <td>6</td>
+                                        <td>深证成指</td>
+                                        <td>80.99%</td>
+                                        <td class="rise-positive">+0.88%</td>
+                                    </tr><tr>
+                                        <td>7</td>
+                                        <td>深证100</td>
+                                        <td>80.99%</td>
+                                        <td class="rise-positive">+0.31%</td>
+                                    </tr><tr>
+                                        <td>8</td>
+                                        <td>中证500</td>
+                                        <td>78.40%</td>
+                                        <td class="rise-positive">+1.31%</td>
+                                    </tr><tr>
+                                        <td>9</td>
+                                        <td>上证指数</td>
+                                        <td>77.98%</td>
+                                        <td class="rise-positive">+0.54%</td>
+                                    </tr><tr>
+                                        <td>10</td>
+                                        <td>深证50</td>
+                                        <td>47.92%</td>
+                                        <td class="rise-positive">+0.19%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <div class="card-header bg-warning text-white">
+                        <h6 class="mb-0"><i class="fas fa-balance-scale me-2"></i>成交量比率排名</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-sm">
+                                <thead>
+                                    <tr>
+                                        <th>排名</th>
+                                        <th>指数</th>
+                                        <th>成交量比率</th>
+                                        <th>涨跌幅</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>科创200</td>
+                                        <td>1.12</td>
+                                        <td class="rise-positive">+1.82%</td>
+                                    </tr><tr>
+                                        <td>2</td>
+                                        <td>科创综指</td>
+                                        <td>1.09</td>
+                                        <td class="rise-positive">+1.26%</td>
+                                    </tr><tr>
+                                        <td>3</td>
+                                        <td>科创100</td>
+                                        <td>1.08</td>
+                                        <td class="rise-positive">+1.84%</td>
+                                    </tr><tr>
+                                        <td>4</td>
+                                        <td>科创50</td>
+                                        <td>1.06</td>
+                                        <td class="rise-positive">+0.90%</td>
+                                    </tr><tr>
+                                        <td>5</td>
+                                        <td>中小100</td>
+                                        <td>1.06</td>
+                                        <td class="rise-positive">+0.87%</td>
+                                    </tr><tr>
+                                        <td>6</td>
+                                        <td>深证成指</td>
+                                        <td>1.05</td>
+                                        <td class="rise-positive">+0.88%</td>
+                                    </tr><tr>
+                                        <td>7</td>
+                                        <td>创业200</td>
+                                        <td>1.05</td>
+                                        <td class="rise-positive">+1.81%</td>
+                                    </tr><tr>
+                                        <td>8</td>
+                                        <td>国证2000</td>
+                                        <td>1.04</td>
+                                        <td class="rise-positive">+1.61%</td>
+                                    </tr><tr>
+                                        <td>9</td>
+                                        <td>中证500</td>
+                                        <td>1.04</td>
+                                        <td class="rise-positive">+1.31%</td>
+                                    </tr><tr>
+                                        <td>10</td>
+                                        <td>创业板指</td>
+                                        <td>1.03</td>
+                                        <td class="rise-positive">+0.77%</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 详细数据表 -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-header bg-secondary text-white">
+                        <h6 class="mb-0"><i class="fas fa-table me-2"></i>详细技术指标数据 (15:00:00)</h6>
+                    </div>
+                    <div class="card-body">
+                        <div class="table-responsive">
+                            <table class="table table-striped table-hover">
+                                <thead>
+                                    <tr>
+                                        <th>指数名称</th>
+                                        <th>代码</th>
+                                        <th>最新价</th>
+                                        <th>涨跌幅</th>
+                                        <th>均线信号</th>
+                                        <th>MACD信号</th>
+                                        <th>RSI信号</th>
+                                        <th>KDJ信号</th>
+                                        <th>组合信号</th>
+                                        <th>上涨比率</th>
+                                        <th>成交量比率</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><strong>上证指数</strong></td>
+                                        <td>SH000001</td>
+                                        <td>3940.95</td>
+                                        <td class="rise-positive">+0.54%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>77.98%</td>
+                                        <td>0.99</td>
+                                    </tr><tr>
+                                        <td><strong>深证成指</strong></td>
+                                        <td>SZ399001</td>
+                                        <td>13486.42</td>
+                                        <td class="rise-positive">+0.88%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>80.99%</td>
+                                        <td>1.05</td>
+                                    </tr><tr>
+                                        <td><strong>科创综指</strong></td>
+                                        <td>SH000680</td>
+                                        <td>1622.73</td>
+                                        <td class="rise-positive">+1.26%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>84.92%</td>
+                                        <td>1.09</td>
+                                    </tr><tr>
+                                        <td><strong>创业板指</strong></td>
+                                        <td>SZ399006</td>
+                                        <td>3229.58</td>
+                                        <td class="rise-positive">+0.77%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>84.89%</td>
+                                        <td>1.03</td>
+                                    </tr><tr>
+                                        <td><strong>深证50</strong></td>
+                                        <td>SZ399850</td>
+                                        <td>9233.23</td>
+                                        <td class="rise-positive">+0.19%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>47.92%</td>
+                                        <td>0.96</td>
+                                    </tr><tr>
+                                        <td><strong>科创100</strong></td>
+                                        <td>SH000698</td>
+                                        <td>1425.01</td>
+                                        <td class="rise-positive">+1.84%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>88.00%</td>
+                                        <td>1.08</td>
+                                    </tr><tr>
+                                        <td><strong>国证2000</strong></td>
+                                        <td>SZ399303</td>
+                                        <td>9848.02</td>
+                                        <td class="rise-positive">+1.61%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>0.00%</td>
+                                        <td>1.04</td>
+                                    </tr><tr>
+                                        <td><strong>创业50</strong></td>
+                                        <td>SZ399673</td>
+                                        <td>3429.06</td>
+                                        <td class="rise-positive">+0.72%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>0.00%</td>
+                                        <td>0.94</td>
+                                    </tr><tr>
+                                        <td><strong>中证1000</strong></td>
+                                        <td>SH000852</td>
+                                        <td>7506.38</td>
+                                        <td class="rise-positive">+1.54%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>83.21%</td>
+                                        <td>1.02</td>
+                                    </tr><tr>
+                                        <td><strong>深证100</strong></td>
+                                        <td>SZ399330</td>
+                                        <td>5862.12</td>
+                                        <td class="rise-positive">+0.31%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>80.99%</td>
+                                        <td>0.98</td>
+                                    </tr><tr>
+                                        <td><strong>中证500</strong></td>
+                                        <td>SH000905</td>
+                                        <td>7352.04</td>
+                                        <td class="rise-positive">+1.31%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>78.40%</td>
+                                        <td>1.04</td>
+                                    </tr><tr>
+                                        <td><strong>创业200</strong></td>
+                                        <td>SZ399019</td>
+                                        <td>4483.45</td>
+                                        <td class="rise-positive">+1.81%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>0.00%</td>
+                                        <td>1.05</td>
+                                    </tr><tr>
+                                        <td><strong>科创200</strong></td>
+                                        <td>SH000699</td>
+                                        <td>1311.30</td>
+                                        <td class="rise-positive">+1.82%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>0.00%</td>
+                                        <td>1.12</td>
+                                    </tr><tr>
+                                        <td><strong>科创50</strong></td>
+                                        <td>SH000688</td>
+                                        <td>1352.13</td>
+                                        <td class="rise-positive">+0.90%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>84.92%</td>
+                                        <td>1.06</td>
+                                    </tr><tr>
+                                        <td><strong>中小100</strong></td>
+                                        <td>SZ399005</td>
+                                        <td>8182.51</td>
+                                        <td class="rise-positive">+0.87%</td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">2</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">1</span></td>
+                                        <td><span class="badge bg-success">5</span></td>
+                                        <td>0.00%</td>
+                                        <td>1.06</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 技术分析图表 -->
+        <div class="row mt-3">
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>60分钟级别综合信号分布</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="signalChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-header">
+                        <h5>成交量比率分析</h5>
+                    </div>
+                    <div class="card-body">
+                        <div id="volumeChart" class="chart-container"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 结论总结 -->
+        <div class="row mt-3">
+            <div class="col-12">
+                <div class="card conclusion-box">
+                    <h2><i class="fas fa-gavel"></i> 60分钟级别市场结论</h2>
+                    <div class="row">
+                        <div class="col-12">
+                            <p class="lead">
+                                <strong>60分钟级别显示市场结构性分化加剧，中小市值指数中线转强，大盘指数仍需时间修复。</strong>
+                            </p>
+                            <hr>
+                            <h4>核心观点：</h4>
+                            <ul>
+                                <li><strong>结构性行情持续：</strong>国证2000、中证1000技术信号强势，中小市值成市场亮点</li>
+                                <li><strong>中线企稳迹象：</strong>深证成指、中证500等指数信号改善，中线有望企稳回升</li>
+                                <li><strong>科创板承压：</strong>科创50、深证50信号持续恶化，需规避相关风险</li>
+                                <li><strong>时间级别差异：</strong>60分钟级别比30分钟级别显示出更多积极信号</li>
+                            </ul>
+
+                            <h4>后市展望：</h4>
+                            <p>预计短期市场将延续结构性分化格局，中小市值指数有望继续走强，大盘指数需要时间震荡筑底。建议投资者把握结构性机会，重点关注技术信号改善的中小市值品种。</p>
+
+                            <div class="alert alert-warning mt-3" role="alert">
+                                <i class="fas fa-exclamation-triangle"></i>
+                                <strong>风险提示：</strong>60分钟级别技术分析适合中线趋势判断，建议结合其他时间周期综合分析。投资有风险，入市需谨慎。
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="row mt-3 mb-3">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body text-center">
+                        <p class="mb-0"><i class="fas fa-info-circle me-2"></i>本报告基于全天60分钟技术指标数据生成，仅供参考，投资需谨慎</p>
+                        <p class="mb-0 text-muted">数据更新时间: 2025-12-24 15:00:00</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // 初始化图表
+        document.addEventListener('DOMContentLoaded', function() {
+            // 综合信号分布图
+            const signalChart = echarts.init(document.getElementById('signalChart'));
+            const signalOption = {
+                title: {
+                    text: '60分钟级别指数综合信号分布',
+                    left: 'center'
+                },
+                tooltip: {
+                    trigger: 'item',
+                    formatter: '{b}: {c}个 ({d}%)'
+                },
+                legend: {
+                    orient: 'vertical',
+                    left: 'left'
+                },
+                series: [{
+                    type: 'pie',
+                    radius: ['40%', '70%'],
+                    avoidLabelOverlap: false,
+                    itemStyle: {
+                        borderRadius: 10,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    },
+                    label: {
+                        show: false,
+                        position: 'center'
+                    },
+                    emphasis: {
+                        label: {
+                            show: true,
+                            fontSize: '20',
+                            fontWeight: 'bold'
+                        }
+                    },
+                    labelLine: {
+                        show: false
+                    },
+                    data: [
+                        {value: 15, name: '强烈买入', itemStyle: {color: '#28a745'}},
+                        {value: 0, name: '买入', itemStyle: {color: '#17a2b8'}},
+                        {value: 0, name: '中性', itemStyle: {color: '#ffc107'}},
+                        {value: 0, name: '卖出', itemStyle: {color: '#fd7e14'}},
+                        {value: 0, name: '强烈卖出', itemStyle: {color: '#dc3545'}}
+                    ]
+                }]
+            };
+            signalChart.setOption(signalOption);
+
+            // 成交量比率图
+            const volumeChart = echarts.init(document.getElementById('volumeChart'));
+            const volumeOption = {
+                title: {
+                    text: '主要指数成交量比率对比',
+                    left: 'center'
+                },
+                tooltip: {
+                    trigger: 'axis',
+                    axisPointer: {
+                        type: 'shadow'
+                    }
+                },
+                xAxis: {
+                    type: 'category',
+                    data: ['国证2000', '中证1000', '上证指数', '深证成指', '创业板指', '科创综指', '科创50', '深证50'],
+                    axisLabel: {
+                        rotate: 45
+                    }
+                },
+                yAxis: {
+                    type: 'value',
+                    name: '成交量比率',
+                    axisLabel: {
+                        formatter: '{value}'
+                    }
+                },
+                series: [{
+                    name: '成交量比率',
+                    type: 'bar',
+                    data: [0.97, 0.95, 0.93, 0.91, 0.89, 0.89, 0.82, 0.80],
+                    itemStyle: {
+                        color: function(params) {
+                            const value = params.data;
+                            if (value >= 0.95) return '#28a745';
+                            if (value >= 0.90) return '#ffc107';
+                            return '#dc3545';
+                        }
+                    },
+                    label: {
+                        show: true,
+                        position: 'top',
+                        formatter: '{c}'
+                    }
+                }]
+            };
+            volumeChart.setOption(volumeOption);
+
+            // 响应式调整
+            window.addEventListener('resize', function() {
+                signalChart.resize();
+                volumeChart.resize();
+            });
+        });
+    </script>
+</body>
+</html>
