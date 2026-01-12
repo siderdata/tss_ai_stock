@@ -131,7 +131,7 @@
     }
   ],
   "query": {
-    "days": 5,
+    "days": 8,
     "end_date": null,
     "start_date": null
   },
