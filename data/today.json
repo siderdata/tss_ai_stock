@@ -2,6 +2,56 @@
   "count": 4,
   "data": [
     {
+      "average_rise": "1.8850",
+      "characteristics": [
+        "\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18",
+        "\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f"
+      ],
+      "composite_score": "9.21",
+      "created_at": "Mon, 12 Jan 2026 14:05:19 GMT",
+      "daily_score": "9.60",
+      "id": 4990,
+      "min120_score": "9.50",
+      "min30_score": "8.20",
+      "min60_score": "8.50",
+      "operation_suggestion": "\u6301\u80a1\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7",
+      "ratio": "1.3050",
+      "risk_level": "\u4e2d\u4f4e",
+      "status_desc": "\u603b\u4f53\u504f\u591a",
+      "status_name": "\u504f\u5f3a\u6574\u7406\u9636\u6bb5",
+      "status_type": "bullish_bias",
+      "total_amount": 3601450164224,
+      "total_predicted_amount": 3523551955427,
+      "trade_time": "2026-01-12 15:00:00",
+      "trade_timestamp": 1768201200,
+      "up_ratio": "76.55"
+    },
+    {
+      "average_rise": "1.6720",
+      "characteristics": [
+        "\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18",
+        "\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f"
+      ],
+      "composite_score": "8.96",
+      "created_at": "Mon, 12 Jan 2026 13:05:19 GMT",
+      "daily_score": "9.60",
+      "id": 4966,
+      "min120_score": "9.20",
+      "min30_score": "7.40",
+      "min60_score": "8.10",
+      "operation_suggestion": "\u6301\u80a1\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7",
+      "ratio": "1.3070",
+      "risk_level": "\u4e2d\u4f4e",
+      "status_desc": "\u603b\u4f53\u504f\u591a",
+      "status_name": "\u504f\u5f3a\u6574\u7406\u9636\u6bb5",
+      "status_type": "bullish_bias",
+      "total_amount": 2951043767296,
+      "total_predicted_amount": 3504711334265,
+      "trade_time": "2026-01-12 14:00:00",
+      "trade_timestamp": 1768197600,
+      "up_ratio": "71.80"
+    },
+    {
       "average_rise": "1.4220",
       "characteristics": [
         "\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18",
@@ -50,57 +100,6 @@
       "trade_time": "2026-01-12 10:30:00",
       "trade_timestamp": 1768185000,
       "up_ratio": "57.66"
-    },
-    {
-      "average_rise": "1.2300",
-      "characteristics": [
-        "\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18",
-        "\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f"
-      ],
-      "composite_score": "8.63",
-      "created_at": "Fri, 09 Jan 2026 14:05:20 GMT",
-      "daily_score": "9.50",
-      "id": 4811,
-      "min120_score": "9.30",
-      "min30_score": "6.80",
-      "min60_score": "6.80",
-      "operation_suggestion": "\u6301\u80a1\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7",
-      "ratio": "1.2050",
-      "risk_level": "\u4e2d\u4f4e",
-      "status_desc": "\u603b\u4f53\u504f\u591a",
-      "status_name": "\u504f\u5f3a\u6574\u7406\u9636\u6bb5",
-      "status_type": "bullish_bias",
-      "total_amount": 3122767210496,
-      "total_predicted_amount": 3179589700833,
-      "trade_time": "2026-01-09 15:00:00",
-      "trade_timestamp": 1767942000,
-      "up_ratio": "74.50"
-    },
-    {
-      "average_rise": "0.7950",
-      "characteristics": [
-        "\u957f\u5468\u671f\u5f3a\u52bf\u4f46\u77ed\u5468\u671f\u8f6c\u5f31\uff0c\u51fa\u73b0\u9876\u80cc\u79bb",
-        "\u53ef\u80fd\u51fa\u73b0\u9876\u90e8\u4fe1\u53f7\uff0c\u98ce\u9669\u7d2f\u79ef",
-        "\u6210\u4ea4\u91cf\u53ef\u80fd\u840e\u7f29\uff0c\u8ffd\u9ad8\u610f\u613f\u51cf\u5f31"
-      ],
-      "composite_score": "8.21",
-      "created_at": "Fri, 09 Jan 2026 13:05:20 GMT",
-      "daily_score": "9.50",
-      "id": 4789,
-      "min120_score": "9.00",
-      "min30_score": "5.50",
-      "min60_score": "5.80",
-      "operation_suggestion": "\u9010\u6b65\u51cf\u4ed3\uff0c\u9501\u5b9a\u5229\u6da6\uff0c\u8b66\u60d5\u53cd\u8f6c",
-      "ratio": "1.2080",
-      "risk_level": "\u4e2d\u9ad8",
-      "status_desc": "\u51b2\u9ad8\u56de\u843d",
-      "status_name": "\u9ad8\u4f4d\u9707\u8361\u9636\u6bb5",
-      "status_type": "top_divergence",
-      "total_amount": 2519505959936,
-      "total_predicted_amount": 3224464816697,
-      "trade_time": "2026-01-09 14:00:00",
-      "trade_timestamp": 1767938400,
-      "up_ratio": "56.78"
     }
   ],
   "query": {

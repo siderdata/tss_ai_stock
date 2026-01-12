@@ -2,6 +2,31 @@
   "count": 3,
   "data": [
     {
+      "average_rise": "1.8850",
+      "characteristics": [
+        "\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18",
+        "\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f"
+      ],
+      "composite_score": "9.21",
+      "created_at": "Mon, 12 Jan 2026 14:05:19 GMT",
+      "daily_score": "9.60",
+      "id": 4990,
+      "min120_score": "9.50",
+      "min30_score": "8.20",
+      "min60_score": "8.50",
+      "operation_suggestion": "\u6301\u80a1\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7",
+      "ratio": "1.3050",
+      "risk_level": "\u4e2d\u4f4e",
+      "status_desc": "\u603b\u4f53\u504f\u591a",
+      "status_name": "\u504f\u5f3a\u6574\u7406\u9636\u6bb5",
+      "status_type": "bullish_bias",
+      "total_amount": 3601450164224,
+      "total_predicted_amount": 3523551955427,
+      "trade_time": "2026-01-12 15:00:00",
+      "trade_timestamp": 1768201200,
+      "up_ratio": "76.55"
+    },
+    {
       "average_rise": "1.2300",
       "characteristics": [
         "\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18",
@@ -51,31 +76,6 @@
       "trade_time": "2026-01-08 15:00:00",
       "trade_timestamp": 1767855600,
       "up_ratio": "45.38"
-    },
-    {
-      "average_rise": "0.4870",
-      "characteristics": [
-        "\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18",
-        "\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f"
-      ],
-      "composite_score": "9.32",
-      "created_at": "Wed, 07 Jan 2026 14:05:21 GMT",
-      "daily_score": "9.60",
-      "id": 4291,
-      "min120_score": "9.70",
-      "min30_score": "6.90",
-      "min60_score": "9.40",
-      "operation_suggestion": "\u6301\u80a1\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7",
-      "ratio": "1.2480",
-      "risk_level": "\u4e2d\u4f4e",
-      "status_desc": "\u603b\u4f53\u504f\u591a",
-      "status_name": "\u504f\u5f3a\u6574\u7406\u9636\u6bb5",
-      "status_type": "bullish_bias",
-      "total_amount": 2854219537408,
-      "total_predicted_amount": 2829742336607,
-      "trade_time": "2026-01-07 15:00:00",
-      "trade_timestamp": 1767769200,
-      "up_ratio": "40.90"
     }
   ],
   "query": {
