@@ -1,8 +1,34 @@
 {
-  "count": 4,
+  "count": 5,
   "data": [
     {
-      "average_rise": "0.0220",
+      "average_rise": "0.2470",
+      "characteristics": [
+        "\u65e5\u7ebf\u5f3a\u52bf\u4f46\u77ed\u5468\u671f\u8870\u7aed\uff0c\u52a8\u80fd\u4e0d\u8db3",
+        "\u53ef\u80fd\u51fa\u73b0\u91cf\u4ef7\u80cc\u79bb",
+        "\u8b66\u60d5\u9876\u90e8\u5f62\u6210\uff0c\u98ce\u9669\u8f83\u9ad8"
+      ],
+      "composite_score": "6.43",
+      "created_at": "Fri, 16 Jan 2026 14:05:17 GMT",
+      "daily_score": "8.60",
+      "id": 5663,
+      "min120_score": "6.50",
+      "min30_score": "3.20",
+      "min60_score": "3.60",
+      "operation_suggestion": "\u51cf\u4ed3\u4e3a\u4e3b\uff0c\u843d\u888b\u4e3a\u5b89\uff0c\u4e0d\u8ffd\u9ad8",
+      "ratio": "0.8950",
+      "risk_level": "\u9ad8",
+      "status_desc": "\u4e0a\u6da8\u672b\u671f",
+      "status_name": "\u9876\u90e8\u8870\u7aed\u9636\u6bb5",
+      "status_type": "exhaustion",
+      "total_amount": 3026322409472,
+      "total_predicted_amount": 3024894515865,
+      "trade_time": "2026-01-16 15:00:00",
+      "trade_timestamp": 1768546800,
+      "up_ratio": "44.52"
+    },
+    {
+      "average_rise": "0.7480",
       "characteristics": [
         "\u65e5\u7ebf\u5f3a\u52bf\u4f46\u77ed\u5468\u671f\u8870\u7aed\uff0c\u52a8\u80fd\u4e0d\u8db3",
         "\u53ef\u80fd\u51fa\u73b0\u91cf\u4ef7\u80cc\u79bb",
@@ -25,7 +51,7 @@
       "total_predicted_amount": 2849684858068,
       "trade_time": "2026-01-15 15:00:00",
       "trade_timestamp": 1768460400,
-      "up_ratio": "42.80"
+      "up_ratio": "80.60"
     },
     {
       "average_rise": "0.6750",
