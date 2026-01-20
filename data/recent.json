@@ -2,7 +2,32 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-0.1320",
+      "average_rise": "-1.1050",
+      "characteristics": [
+        "\u7efc\u5408\u8bc4\u5206\u504f\u4f4e\uff0c\u7a7a\u5934\u5360\u4f18",
+        "\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f"
+      ],
+      "composite_score": "3.81",
+      "created_at": "Tue, 20 Jan 2026 14:05:20 GMT",
+      "daily_score": "5.80",
+      "id": 6462,
+      "min120_score": "3.50",
+      "min30_score": "1.40",
+      "min60_score": "1.50",
+      "operation_suggestion": "\u8f7b\u4ed3\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7",
+      "ratio": "0.8350",
+      "risk_level": "\u4e2d\u9ad8",
+      "status_desc": "\u603b\u4f53\u504f\u7a7a",
+      "status_name": "\u504f\u5f31\u6574\u7406\u9636\u6bb5",
+      "status_type": "bearish_bias",
+      "total_amount": 2777798648832,
+      "total_predicted_amount": 2765863911851,
+      "trade_time": "2026-01-20 15:00:00",
+      "trade_timestamp": 1768892400,
+      "up_ratio": "42.33"
+    },
+    {
+      "average_rise": "0.1850",
       "characteristics": [
         "\u7efc\u5408\u8bc4\u5206\u4e2d\u6027\uff0c\u591a\u7a7a\u5e73\u8861",
         "\u65e0\u660e\u663e\u65b9\u5411\u6027"
@@ -24,7 +49,7 @@
       "total_predicted_amount": 2670041568072,
       "trade_time": "2026-01-19 15:00:00",
       "trade_timestamp": 1768806000,
-      "up_ratio": "67.11"
+      "up_ratio": "50.76"
     },
     {
       "average_rise": "0.2470",
@@ -51,32 +76,6 @@
       "trade_time": "2026-01-16 15:00:00",
       "trade_timestamp": 1768546800,
       "up_ratio": "44.52"
-    },
-    {
-      "average_rise": "0.7480",
-      "characteristics": [
-        "\u65e5\u7ebf\u5f3a\u52bf\u4f46\u77ed\u5468\u671f\u8870\u7aed\uff0c\u52a8\u80fd\u4e0d\u8db3",
-        "\u53ef\u80fd\u51fa\u73b0\u91cf\u4ef7\u80cc\u79bb",
-        "\u8b66\u60d5\u9876\u90e8\u5f62\u6210\uff0c\u98ce\u9669\u8f83\u9ad8"
-      ],
-      "composite_score": "6.70",
-      "created_at": "Thu, 15 Jan 2026 14:05:18 GMT",
-      "daily_score": "9.20",
-      "id": 5496,
-      "min120_score": "7.20",
-      "min30_score": "2.60",
-      "min60_score": "3.00",
-      "operation_suggestion": "\u51cf\u4ed3\u4e3a\u4e3b\uff0c\u843d\u888b\u4e3a\u5b89\uff0c\u4e0d\u8ffd\u9ad8",
-      "ratio": "0.8500",
-      "risk_level": "\u9ad8",
-      "status_desc": "\u4e0a\u6da8\u672b\u671f",
-      "status_name": "\u9876\u90e8\u8870\u7aed\u9636\u6bb5",
-      "status_type": "exhaustion",
-      "total_amount": 2905563352064,
-      "total_predicted_amount": 2849684858068,
-      "trade_time": "2026-01-15 15:00:00",
-      "trade_timestamp": 1768460400,
-      "up_ratio": "80.60"
     }
   ],
   "query": {
