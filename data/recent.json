@@ -1,6 +1,32 @@
 {
-  "count": 5,
+  "count": 3,
   "data": [
+    {
+      "average_rise": "-2.8950",
+      "characteristics": [
+        "\u5168\u5468\u671f\u6781\u5ea6\u5f31\u52bf\uff0c\u5e02\u573a\u6050\u614c",
+        "\u6280\u672f\u6307\u6807\u5168\u9762\u8d85\u5356",
+        "\u53ef\u80fd\u51fa\u73b0\u6280\u672f\u6027\u53cd\u5f39"
+      ],
+      "composite_score": "1.00",
+      "created_at": "Mon, 02 Feb 2026 14:00:21 GMT",
+      "daily_score": "1.20",
+      "id": 7994,
+      "min120_score": "1.30",
+      "min30_score": "0.50",
+      "min60_score": "0.40",
+      "operation_suggestion": "\u7a7a\u4ed3\u89c2\u671b\uff0c\u53ef\u5c0f\u4ed3\u4f4d\u535a\u5f08\u8d85\u8dcc\u53cd\u5f39\uff08\u4e25\u683c\u6b62\u635f\uff09",
+      "ratio": "0.8600",
+      "risk_level": "\u6781\u9ad8",
+      "status_desc": "\u6050\u614c\u6027\u4e0b\u8dcc",
+      "status_name": "\u6781\u7aef\u4e0b\u8dcc\u9636\u6bb5",
+      "status_type": "extreme_bear",
+      "total_amount": 2584765100032,
+      "total_predicted_amount": 2553466028135,
+      "trade_time": "2026-02-02 15:00:00",
+      "trade_timestamp": 1770015600,
+      "up_ratio": "14.23"
+    },
     {
       "average_rise": "-0.0680",
       "characteristics": [
@@ -52,83 +78,6 @@
       "trade_time": "2026-01-29 15:00:00",
       "trade_timestamp": 1769670000,
       "up_ratio": "33.92"
-    },
-    {
-      "average_rise": "-0.1700",
-      "characteristics": [
-        "\u591a\u7a7a\u529b\u91cf\u5747\u8861\uff0c\u65b9\u5411\u4e0d\u660e\u786e",
-        "\u5404\u5468\u671f\u8bc4\u5206\u76f8\u8fd1\uff084.1-5.5\u5206\uff09",
-        "\u7b49\u5f85\u65b9\u5411\u9009\u62e9\uff0c\u5173\u6ce8\u7a81\u7834\u4fe1\u53f7"
-      ],
-      "composite_score": "4.81",
-      "created_at": "Wed, 28 Jan 2026 14:05:20 GMT",
-      "daily_score": "5.50",
-      "id": 7488,
-      "min120_score": "4.40",
-      "min30_score": "4.70",
-      "min60_score": "4.10",
-      "operation_suggestion": "\u533a\u95f4\u64cd\u4f5c\uff0c\u9ad8\u629b\u4f4e\u5438",
-      "ratio": "1.0070",
-      "risk_level": "\u4e2d\u7b49",
-      "status_desc": "\u4e2d\u6027\u6574\u7406 | \u7bb1\u4f53\u6ce2\u52a8",
-      "status_name": "\u9707\u8361\u6574\u7406\u9636\u6bb5",
-      "status_type": "consolidation",
-      "total_amount": 2965410281472,
-      "total_predicted_amount": 2996496511827,
-      "trade_time": "2026-01-28 15:00:00",
-      "trade_timestamp": 1769583600,
-      "up_ratio": "32.31"
-    },
-    {
-      "average_rise": "0.6750",
-      "characteristics": [
-        "\u591a\u7a7a\u529b\u91cf\u5747\u8861\uff0c\u65b9\u5411\u4e0d\u660e\u786e",
-        "\u5404\u5468\u671f\u8bc4\u5206\u76f8\u8fd1\uff084.0-5.5\u5206\uff09",
-        "\u7b49\u5f85\u65b9\u5411\u9009\u62e9\uff0c\u5173\u6ce8\u7a81\u7834\u4fe1\u53f7"
-      ],
-      "composite_score": "4.80",
-      "created_at": "Tue, 27 Jan 2026 14:05:19 GMT",
-      "daily_score": "5.50",
-      "id": 7319,
-      "min120_score": "4.20",
-      "min30_score": "4.00",
-      "min60_score": "4.70",
-      "operation_suggestion": "\u533a\u95f4\u64cd\u4f5c\uff0c\u9ad8\u629b\u4f4e\u5438",
-      "ratio": "1.0070",
-      "risk_level": "\u4e2d\u7b49",
-      "status_desc": "\u4e2d\u6027\u6574\u7406 | \u7bb1\u4f53\u6ce2\u52a8",
-      "status_name": "\u9707\u8361\u6574\u7406\u9636\u6bb5",
-      "status_type": "consolidation",
-      "total_amount": 2894981541888,
-      "total_predicted_amount": 2861355975121,
-      "trade_time": "2026-01-27 15:00:00",
-      "trade_timestamp": 1769497200,
-      "up_ratio": "36.46"
-    },
-    {
-      "average_rise": "-1.0200",
-      "characteristics": [
-        "\u7efc\u5408\u8bc4\u5206\u4e2d\u6027\uff0c\u591a\u7a7a\u5e73\u8861",
-        "\u65e0\u660e\u663e\u65b9\u5411\u6027"
-      ],
-      "composite_score": "4.13",
-      "created_at": "Mon, 26 Jan 2026 14:05:20 GMT",
-      "daily_score": "5.50",
-      "id": 7150,
-      "min120_score": "4.10",
-      "min30_score": "2.20",
-      "min60_score": "2.40",
-      "operation_suggestion": "\u89c2\u671b\u4e3a\u4e3b\uff0c\u7b49\u5f85\u65b9\u5411\u9009\u62e9",
-      "ratio": "1.1570",
-      "risk_level": "\u4e2d\u7b49",
-      "status_desc": "\u591a\u7a7a\u5e73\u8861",
-      "status_name": "\u4e2d\u6027\u9707\u8361\u9636\u6bb5",
-      "status_type": "neutral",
-      "total_amount": 3248202649600,
-      "total_predicted_amount": 3072722372633,
-      "trade_time": "2026-01-26 15:00:00",
-      "trade_timestamp": 1769410800,
-      "up_ratio": "30.21"
     }
   ],
   "query": {
