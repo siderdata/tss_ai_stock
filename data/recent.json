@@ -2,6 +2,32 @@
   "count": 3,
   "data": [
     {
+      "average_rise": "1.9450",
+      "characteristics": [
+        "\u5168\u5468\u671f\u6781\u5ea6\u5f31\u52bf\uff0c\u5e02\u573a\u6050\u614c",
+        "\u6280\u672f\u6307\u6807\u5168\u9762\u8d85\u5356",
+        "\u53ef\u80fd\u51fa\u73b0\u6280\u672f\u6027\u53cd\u5f39"
+      ],
+      "composite_score": "2.11",
+      "created_at": "Tue, 03 Feb 2026 14:05:20 GMT",
+      "daily_score": "1.70",
+      "id": 8164,
+      "min120_score": "1.80",
+      "min30_score": "3.30",
+      "min60_score": "2.80",
+      "operation_suggestion": "\u7a7a\u4ed3\u89c2\u671b\uff0c\u53ef\u5c0f\u4ed3\u4f4d\u535a\u5f08\u8d85\u8dcc\u53cd\u5f39\uff08\u4e25\u683c\u6b62\u635f\uff09",
+      "ratio": "0.8950",
+      "risk_level": "\u6781\u9ad8",
+      "status_desc": "\u6050\u614c\u6027\u4e0b\u8dcc",
+      "status_name": "\u6781\u7aef\u4e0b\u8dcc\u9636\u6bb5",
+      "status_type": "extreme_bear",
+      "total_amount": 2544231482368,
+      "total_predicted_amount": 2624743646296,
+      "trade_time": "2026-02-03 15:00:00",
+      "trade_timestamp": 1770102000,
+      "up_ratio": "89.93"
+    },
+    {
       "average_rise": "-2.8950",
       "characteristics": [
         "\u5168\u5468\u671f\u6781\u5ea6\u5f31\u52bf\uff0c\u5e02\u573a\u6050\u614c",
@@ -52,32 +78,6 @@
       "trade_time": "2026-01-30 15:00:00",
       "trade_timestamp": 1769756400,
       "up_ratio": "46.43"
-    },
-    {
-      "average_rise": "-0.8350",
-      "characteristics": [
-        "\u5168\u5468\u671f\u5171\u632f\u5411\u4e0b\uff0c\u8d8b\u52bf\u75b2\u5f31",
-        "\u5404\u7ea7\u522b\u6280\u672f\u6307\u6807\u5168\u9762\u8d70\u5f31",
-        "\u8d44\u91d1\u6301\u7eed\u6d41\u51fa\uff0c\u60c5\u7eea\u4f4e\u8ff7"
-      ],
-      "composite_score": "3.36",
-      "created_at": "Thu, 29 Jan 2026 14:05:20 GMT",
-      "daily_score": "3.50",
-      "id": 7656,
-      "min120_score": "3.00",
-      "min30_score": "3.80",
-      "min60_score": "3.40",
-      "operation_suggestion": "\u7a7a\u4ed3\u89c2\u671b\uff0c\u4e25\u683c\u6b62\u635f",
-      "ratio": "1.0400",
-      "risk_level": "\u6781\u9ad8",
-      "status_desc": "\u718a\u5e02\u4e3b\u8dcc\u6d6a",
-      "status_name": "\u5355\u8fb9\u4e0b\u8dcc\u9636\u6bb5",
-      "status_type": "strong_bear",
-      "total_amount": 3230008403968,
-      "total_predicted_amount": 3321026448334,
-      "trade_time": "2026-01-29 15:00:00",
-      "trade_timestamp": 1769670000,
-      "up_ratio": "33.92"
     }
   ],
   "query": {
