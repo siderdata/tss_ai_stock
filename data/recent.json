@@ -2,6 +2,25 @@
   "count": 3,
   "data": [
     {
+      "average_rise": "0.0220",
+      "composite_score": "4.94",
+      "daily_score": "3.40",
+      "id": 9030,
+      "min120_score": "3.60",
+      "min30_score": "8.20",
+      "min60_score": "8.40",
+      "operation_suggestion": "\u53cd\u5f39\u51cf\u4ed3\uff0c\u63a7\u5236\u4ed3\u4f4d\uff0c\u4e0d\u8ffd\u9ad8",
+      "ratio": "0.9250",
+      "risk_level": "\u9ad8",
+      "status_desc": "\u53cd\u5f39\u4e4f\u529b",
+      "status_name": "\u5f31\u52bf\u53cd\u5f39\u9636\u6bb5",
+      "status_type": "weak_bounce",
+      "total_amount": 2105535250432,
+      "total_predicted_amount": 2090044413457,
+      "trade_time": "2026-02-10 15:00:00",
+      "up_ratio": "42.78"
+    },
+    {
       "average_rise": "2.2580",
       "composite_score": "4.64",
       "daily_score": "3.00",
@@ -38,25 +57,6 @@
       "total_predicted_amount": 2200907380385,
       "trade_time": "2026-02-06 15:00:00",
       "up_ratio": "92.74"
-    },
-    {
-      "average_rise": "-1.2680",
-      "composite_score": "1.60",
-      "daily_score": "1.20",
-      "id": 8500,
-      "min120_score": "0.90",
-      "min30_score": "3.50",
-      "min60_score": "2.50",
-      "operation_suggestion": "\u7a7a\u4ed3\u89c2\u671b\uff0c\u53ef\u5c0f\u4ed3\u4f4d\u535a\u5f08\u8d85\u8dcc\u53cd\u5f39\uff08\u4e25\u683c\u6b62\u635f\uff09",
-      "ratio": "0.7820",
-      "risk_level": "\u6781\u9ad8",
-      "status_desc": "\u6050\u614c\u6027\u4e0b\u8dcc",
-      "status_name": "\u6781\u7aef\u4e0b\u8dcc\u9636\u6bb5",
-      "status_type": "extreme_bear",
-      "total_amount": 2176219463680,
-      "total_predicted_amount": 2159822513385,
-      "trade_time": "2026-02-05 15:00:00",
-      "up_ratio": "31.31"
     }
   ],
   "query": {
