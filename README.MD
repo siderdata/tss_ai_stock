@@ -1,4 +1,4 @@
-# TSS AI Stock - 智能股票交易系统
+# TSS AI Stock - 大模型A股量化交易系统
 
 > 专注A股中小宽基指数ETF的量化交易策略系统
 >
