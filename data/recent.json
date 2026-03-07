@@ -1,6 +1,25 @@
 {
-  "count": 4,
+  "count": 5,
   "data": [
+    {
+      "average_rise": "0.5550",
+      "composite_score": "2.33",
+      "daily_score": "0.80",
+      "id": 12001,
+      "min120_score": "1.30",
+      "min30_score": "8.20",
+      "min60_score": "4.00",
+      "operation_suggestion": "\u8f7b\u4ed3\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7",
+      "ratio": "0.8180",
+      "risk_level": "\u4e2d\u9ad8",
+      "status_desc": "\u603b\u4f53\u504f\u7a7a",
+      "status_name": "\u504f\u5f31\u6574\u7406\u9636\u6bb5",
+      "status_type": "bearish_bias",
+      "total_amount": 2200149251072,
+      "total_predicted_amount": 2261778955298,
+      "trade_time": "2026-03-06 15:00:00",
+      "up_ratio": "79.45"
+    },
     {
       "average_rise": "1.3280",
       "composite_score": "1.30",
