@@ -1,0 +1,79 @@
+{
+  "timestamp": "2026-03-20 17:22:35",
+  "trade_date": "",
+  "phase": {
+    "current_phase": "阶段3: 调整杀跌浪-中期",
+    "main_phase": "调整杀跌浪",
+    "sub_phase": "中期",
+    "confidence": 80
+  },
+  "scores": {
+    "composite_score": 2.07,
+    "daily_score": 2.0,
+    "avg_score": 3.73,
+    "recent_avg": 2.46,
+    "recent_trend": -1.57,
+    "high_ratio": 0.0,
+    "low_ratio": 53.8
+  },
+  "position": {
+    "recommended_ratio": 25.0,
+    "position_desc": "2-3成",
+    "position_min": 20.0,
+    "position_max": 30.0,
+    "reason": "🟢 抄底后回升：评分2.1，保持2-3成；抄底仓位上限6成"
+  },
+  "action": {
+    "suggestion": "保持仓位2-3成",
+    "alert_level": "🟢 绿色预警",
+    "alert_level_code": 0
+  },
+  "warnings": {
+    "is_false_breakout": false,
+    "false_breakout_reason": "无突破9分记录",
+    "is_single_peak": false,
+    "single_peak_warning": "当前阶段为调整杀跌浪，不适用单峰陷阱检测",
+    "peak_score": 0,
+    "drop_from_peak": 0,
+    "is_trap_zone": false,
+    "is_transition_danger": false,
+    "transition_warning": ""
+  },
+  "history": {
+    "days_in_phase": 1,
+    "max_drawdown": 43.13
+  },
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-中期\n**综合评分**: 2.07 | **日线评分**: 2.00\n\n## 仓位建议\n\n**建议仓位**: 2-3成 (20% ~ 30%)\n**原因**: 🟢 抄底后回升：评分2.1，保持2-3成；抄底仓位上限6成\n**操作建议**: 保持仓位2-3成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (20% ~ 30%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "recent_data": [
+    {
+      "date": "2026-03-16",
+      "composite_score": 3.64,
+      "daily_score": 3.4,
+      "average_rise": 0.5
+    },
+    {
+      "date": "2026-03-17",
+      "composite_score": 2.2,
+      "daily_score": 2.3,
+      "average_rise": -1.87
+    },
+    {
+      "date": "2026-03-18",
+      "composite_score": 2.8,
+      "daily_score": 2.6,
+      "average_rise": 1.29
+    },
+    {
+      "date": "2026-03-19",
+      "composite_score": 1.61,
+      "daily_score": 2.1,
+      "average_rise": -1.7
+    },
+    {
+      "date": "2026-03-20",
+      "composite_score": 2.07,
+      "daily_score": 2.0,
+      "average_rise": -0.34
+    }
+  ]
+}
