@@ -2,6 +2,24 @@
   "count": 5,
   "data": [
     {
+      "average_rise": "0.5050",
+      "characteristics": "[\"\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18\", \"\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f\", \"\u6700\u8fd1\u652f\u6491\u4f4d4051\uff080.8%\uff0cjump_up\uff09\"]",
+      "composite_score": "8.87",
+      "daily_score": "9.60",
+      "min120_score": "9.70",
+      "min30_score": "5.40",
+      "min60_score": "7.90",
+      "operation_suggestion": "\u6301\u80a1\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7\uff1b\u3010\u63a5\u8fd1\u652f\u6491\u4f4d4051\u3011",
+      "ratio": "1.0930",
+      "risk_level": "\u4e2d\u4f4e",
+      "status_name": "\u504f\u5f3a\u6574\u7406\u9636\u6bb5",
+      "status_type": "bullish_bias",
+      "total_amount": 2578770109440,
+      "total_predicted_amount": 2573108554419,
+      "trade_time": "2026-04-20 15:00:00",
+      "up_ratio": "63.51"
+    },
+    {
       "average_rise": "0.6770",
       "characteristics": "[\"\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18\", \"\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f\", \"\u632f\u5e45\u6536\u655b\u81f30.5%\uff081\u5929\uff09\", \"\u6700\u8fd1\u652f\u6491\u4f4d4027\uff080.6%\uff0cjump_up\uff09\", \"\u6700\u8fd1\u963b\u529b\u4f4d4063\uff08+0.3%\uff0cjump_down\uff09\"]",
       "composite_score": "8.98",
@@ -72,24 +90,6 @@
       "total_predicted_amount": 2444638314598,
       "trade_time": "2026-04-14 15:00:00",
       "up_ratio": "70.01"
-    },
-    {
-      "average_rise": "0.5550",
-      "characteristics": "[\"\u7efc\u5408\u8bc4\u5206\u4e2d\u6027\uff0c\u591a\u7a7a\u5e73\u8861\", \"\u65e0\u660e\u663e\u65b9\u5411\u6027\", \"\u632f\u5e45\u5448\u6536\u7f29\u8d8b\u52bf\uff0c\u84c4\u52bf\u4e2d\", \"\u6700\u8fd1\u652f\u6491\u4f4d3903\uff082.1%\uff0cgap_upward\uff09\", \"\u6700\u8fd1\u963b\u529b\u4f4d4063\uff08+1.9%\uff0cjump_down\uff09\"]",
-      "composite_score": "8.33",
-      "daily_score": "8.10",
-      "min120_score": "8.40",
-      "min30_score": "7.70",
-      "min60_score": "9.00",
-      "operation_suggestion": "\u89c2\u671b\u4e3a\u4e3b\uff0c\u7b49\u5f85\u65b9\u5411\u9009\u62e9\uff1b\u30101\u4e2a\u672a\u8865\u7f3a\u53e3+1\u4e2a\u8df3\u7a7a\u672a\u56de\u8865\u63d0\u4f9b\u53c2\u8003\u3011",
-      "ratio": "1.0620",
-      "risk_level": "\u4e2d\u7b49",
-      "status_name": "\u4e2d\u6027\u9707\u8361\u9636\u6bb5",
-      "status_type": "neutral",
-      "total_amount": 2150368375808,
-      "total_predicted_amount": 2136225647798,
-      "trade_time": "2026-04-13 15:00:00",
-      "up_ratio": "46.02"
     }
   ],
   "query": {
