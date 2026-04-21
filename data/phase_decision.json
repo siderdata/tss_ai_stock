@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-04-20 15:06:51",
-  "trade_date": "2026-04-20",
+  "timestamp": "2026-04-21 15:05:39",
+  "trade_date": "2026-04-21",
   "phase": {
     "current_phase": "阶段1: 主升上涨浪-初期",
     "main_phase": "主升上涨浪",
@@ -8,13 +8,13 @@
     "confidence": 90
   },
   "scores": {
-    "composite_score": 8.87,
+    "composite_score": 8.39,
     "daily_score": 9.6,
-    "avg_score": 4.23,
-    "recent_avg": 8.89,
-    "recent_trend": 0.02,
-    "high_ratio": 17.9,
-    "low_ratio": 53.8
+    "avg_score": 4.33,
+    "recent_avg": 8.8,
+    "recent_trend": 0.09,
+    "high_ratio": 20.0,
+    "low_ratio": 52.5
   },
   "position": {
     "recommended_ratio": 100.0,
@@ -41,17 +41,11 @@
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 3,
-    "max_drawdown": 6.04
+    "days_in_phase": 4,
+    "max_drawdown": 11.12
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-初期\n**综合评分**: 8.87 | **日线评分**: 9.60\n\n## 仓位建议\n\n**建议仓位**: 10成 (100% ~ 100%)\n**原因**: 主升浪-初期，满仓持有\n**操作建议**: 持有10成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (100% ~ 100%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-初期\n**综合评分**: 8.39 | **日线评分**: 9.60\n\n## 仓位建议\n\n**建议仓位**: 10成 (100% ~ 100%)\n**原因**: 主升浪-初期，满仓持有\n**操作建议**: 持有10成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (100% ~ 100%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-04-14",
-      "composite_score": 8.85,
-      "daily_score": 8.4,
-      "average_rise": 1.76
-    },
     {
       "date": "2026-04-15",
       "composite_score": 8.3,
@@ -72,9 +66,15 @@
     },
     {
       "date": "2026-04-20",
-      "composite_score": 8.87,
+      "composite_score": 8.9,
       "daily_score": 9.6,
       "average_rise": 0.5
+    },
+    {
+      "date": "2026-04-21",
+      "composite_score": 8.39,
+      "daily_score": 9.6,
+      "average_rise": -0.08
     }
   ]
 }
