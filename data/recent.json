@@ -2,6 +2,24 @@
   "count": 5,
   "data": [
     {
+      "average_rise": "1.3250",
+      "characteristics": "[\"\u7efc\u5408\u8bc4\u5206\u504f\u9ad8\uff0c\u591a\u5934\u5360\u4f18\", \"\u4f46\u672a\u5f62\u6210\u660e\u786e\u5171\u632f\", \"\u6700\u8fd1\u652f\u6491\u4f4d4051\uff081.3%\uff0cjump_up\uff09\"]",
+      "composite_score": "9.29",
+      "daily_score": "9.60",
+      "min120_score": "9.70",
+      "min30_score": "7.60",
+      "min60_score": "8.90",
+      "operation_suggestion": "\u6301\u80a1\u89c2\u671b\uff0c\u7b49\u5f85\u660e\u786e\u4fe1\u53f7\uff1b\u3010\u63a5\u8fd1\u652f\u6491\u4f4d4051\u3011",
+      "ratio": "1.0520",
+      "risk_level": "\u4e2d\u4f4e",
+      "status_name": "\u504f\u5f3a\u6574\u7406\u9636\u6bb5",
+      "status_type": "bullish_bias",
+      "total_amount": 2559785085952,
+      "total_predicted_amount": 2668983581154,
+      "trade_time": "2026-04-22 15:00:00",
+      "up_ratio": "52.59"
+    },
+    {
       "average_rise": "-0.0830",
       "characteristics": "[\"\u7efc\u5408\u8bc4\u5206\u4e2d\u6027\uff0c\u591a\u7a7a\u5e73\u8861\", \"\u65e0\u660e\u663e\u65b9\u5411\u6027\", \"\u632f\u5e45\u5448\u6536\u7f29\u8d8b\u52bf\uff0c\u84c4\u52bf\u4e2d\", \"\u6700\u8fd1\u652f\u6491\u4f4d4051\uff080.8%\uff0cjump_up\uff09\"]",
       "composite_score": "8.39",
@@ -72,24 +90,6 @@
       "total_predicted_amount": 2417033662961,
       "trade_time": "2026-04-16 15:00:00",
       "up_ratio": "80.07"
-    },
-    {
-      "average_rise": "-0.4620",
-      "characteristics": "[\"\u7efc\u5408\u8bc4\u5206\u4e2d\u6027\uff0c\u591a\u7a7a\u5e73\u8861\", \"\u65e0\u660e\u663e\u65b9\u5411\u6027\", \"\u632f\u5e45\u5448\u6536\u7f29\u8d8b\u52bf\uff0c\u84c4\u52bf\u4e2d\", \"\u6700\u8fd1\u652f\u6491\u4f4d3991\uff080.9%\uff0cgap_upward\uff09\", \"\u6700\u8fd1\u963b\u529b\u4f4d4063\uff08+0.9%\uff0cjump_down\uff09\"]",
-      "composite_score": "8.30",
-      "daily_score": "8.80",
-      "min120_score": "9.50",
-      "min30_score": "3.70",
-      "min60_score": "7.80",
-      "operation_suggestion": "\u89c2\u671b\u4e3a\u4e3b\uff0c\u7b49\u5f85\u65b9\u5411\u9009\u62e9\uff1b\u30102\u4e2a\u672a\u8865\u7f3a\u53e3+1\u4e2a\u8df3\u7a7a\u672a\u56de\u8865\u63d0\u4f9b\u53c2\u8003\u3011",
-      "ratio": "1.0730",
-      "risk_level": "\u4e2d\u7b49",
-      "status_name": "\u4e2d\u6027\u9707\u8361\u9636\u6bb5",
-      "status_type": "neutral",
-      "total_amount": 2415244841984,
-      "total_predicted_amount": 2416462724410,
-      "trade_time": "2026-04-15 15:00:00",
-      "up_ratio": "33.42"
     }
   ],
   "query": {
