@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-04-22 15:05:50",
-  "trade_date": "2026-04-22",
+  "timestamp": "2026-04-23 15:44:30",
+  "trade_date": "2026-04-23",
   "phase": {
     "current_phase": "阶段1: 主升上涨浪-初期",
     "main_phase": "主升上涨浪",
@@ -8,26 +8,26 @@
     "confidence": 90
   },
   "scores": {
-    "composite_score": 9.29,
-    "daily_score": 9.6,
-    "avg_score": 4.45,
-    "recent_avg": 9.0,
-    "recent_trend": -0.15,
-    "high_ratio": 22.0,
-    "low_ratio": 51.2
+    "composite_score": 7.64,
+    "daily_score": 9.4,
+    "avg_score": 4.53,
+    "recent_avg": 8.64,
+    "recent_trend": -1.34,
+    "high_ratio": 23.8,
+    "low_ratio": 50.0
   },
   "position": {
     "recommended_ratio": 100.0,
     "position_desc": "10成",
     "position_min": 100.0,
     "position_max": 100.0,
-    "reason": "主升浪-初期，满仓持有",
+    "reason": "🟠 离场信号：评分急跌1.6分且跌破8.5分；触发1个离场信号，降仓至7-8.5成；主升浪-初期，满仓持有",
     "actual_ratio": 100.0
   },
   "action": {
     "suggestion": "持有10成",
-    "alert_level": "🔴 红色预警",
-    "alert_level_code": 3
+    "alert_level": "🟠 橙色预警",
+    "alert_level_code": 2
   },
   "warnings": {
     "is_false_breakout": false,
@@ -36,22 +36,16 @@
     "single_peak_warning": "当前阶段为主升上涨浪，不适用单峰陷阱检测",
     "peak_score": 0,
     "drop_from_peak": 0,
-    "is_trap_zone": false,
+    "is_trap_zone": true,
     "is_transition_danger": false,
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 5,
-    "max_drawdown": 1.59
+    "days_in_phase": 6,
+    "max_drawdown": 17.76
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-初期\n**综合评分**: 9.29 | **日线评分**: 9.60\n\n## 仓位建议\n\n**建议仓位**: 10成 (100% ~ 100%)\n**原因**: 主升浪-初期，满仓持有\n**操作建议**: 持有10成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (100% ~ 100%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-初期\n**综合评分**: 7.64 | **日线评分**: 9.40\n\n## 仓位建议\n\n**建议仓位**: 10成 (100% ~ 100%)\n**原因**: 🟠 离场信号：评分急跌1.6分且跌破8.5分；触发1个离场信号，降仓至7-8.5成；主升浪-初期，满仓持有\n**操作建议**: 持有10成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (100% ~ 100%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-04-16",
-      "composite_score": 9.44,
-      "daily_score": 9.4,
-      "average_rise": 1.9
-    },
     {
       "date": "2026-04-17",
       "composite_score": 8.98,
@@ -75,6 +69,12 @@
       "composite_score": 9.29,
       "daily_score": 9.6,
       "average_rise": 1.32
+    },
+    {
+      "date": "2026-04-23",
+      "composite_score": 7.64,
+      "daily_score": 9.4,
+      "average_rise": -0.97
     }
   ]
 }
