@@ -1,230 +1,230 @@
 {
   "success": true,
-  "timestamp": "2026-04-23 15:43:43",
+  "timestamp": "2026-04-24 15:06:02",
   "industry_signals": [
     {
       "name": "深红利",
       "symbol": "SZ399324",
-      "close": 9219.144,
-      "rise": 0.06,
-      "rise_change_3d": "0.100",
+      "close": 9220.527,
+      "rise": 0.02,
+      "rise_change_3d": "0.120",
       "composite_score": 54.25
     },
     {
       "name": "上红利",
       "symbol": "SH000015",
-      "close": 3284.4,
-      "rise": 0.7,
-      "rise_change_3d": "2.030",
-      "composite_score": 61.75
+      "close": 3274.322,
+      "rise": -0.31,
+      "rise_change_3d": "0.400",
+      "composite_score": 58.25
     },
     {
       "name": "中证传媒",
       "symbol": "SZ399971",
-      "close": 1517.47,
-      "rise": -0.84,
-      "rise_change_3d": "-2.160",
-      "composite_score": 50.75
+      "close": 1479.383,
+      "rise": -2.51,
+      "rise_change_3d": "-3.510",
+      "composite_score": 38.0
     },
     {
       "name": "中证信息",
       "symbol": "SH000935",
-      "close": 7132.47,
-      "rise": -0.9,
-      "rise_change_3d": "1.680",
-      "composite_score": 67.75
+      "close": 7144.091,
+      "rise": 0.16,
+      "rise_change_3d": "2.330",
+      "composite_score": 70.75
     },
     {
       "name": "中证军工",
       "symbol": "SZ399967",
-      "close": 14558.516,
-      "rise": 0.15,
-      "rise_change_3d": "-0.010",
-      "composite_score": 62.75
+      "close": 14274.949,
+      "rise": -1.95,
+      "rise_change_3d": "-1.530",
+      "composite_score": 50.75
     },
     {
       "name": "中证医疗",
       "symbol": "SZ399989",
-      "close": 6685.28,
-      "rise": -0.18,
-      "rise_change_3d": "0.410",
-      "composite_score": 51.25
+      "close": 6674.666,
+      "rise": -0.16,
+      "rise_change_3d": "0.750",
+      "composite_score": 48.75
     },
     {
       "name": "中证医药",
       "symbol": "SH000933",
-      "close": 7974.428,
-      "rise": -0.14,
-      "rise_change_3d": "-0.260",
-      "composite_score": 34.75
+      "close": 7962.766,
+      "rise": -0.15,
+      "rise_change_3d": "0.120",
+      "composite_score": 39.75
     },
     {
       "name": "中证新能",
       "symbol": "SZ399808",
-      "close": 3145.75,
-      "rise": -1.4,
-      "rise_change_3d": "-0.340",
-      "composite_score": 50.75
+      "close": 3182.075,
+      "rise": 1.15,
+      "rise_change_3d": "-0.420",
+      "composite_score": 64.75
     },
     {
       "name": "中证消费",
       "symbol": "SH000932",
-      "close": 14193.612,
-      "rise": 0.04,
-      "rise_change_3d": "-0.570",
+      "close": 14198.516,
+      "rise": 0.03,
+      "rise_change_3d": "-0.610",
       "composite_score": 37.75
     },
     {
       "name": "中证煤炭",
       "symbol": "SZ399998",
-      "close": 2396.17,
-      "rise": 2.93,
-      "rise_change_3d": "5.930",
-      "composite_score": 77.25
+      "close": 2396.3,
+      "rise": 0.01,
+      "rise_change_3d": "3.320",
+      "composite_score": 71.0
     },
     {
       "name": "中证能源",
       "symbol": "SH000928",
-      "close": 3536.93,
-      "rise": 2.87,
-      "rise_change_3d": "4.350",
-      "composite_score": 66.75
+      "close": 3539.833,
+      "rise": 0.08,
+      "rise_change_3d": "3.120",
+      "composite_score": 67.25
     },
     {
       "name": "中证酒",
       "symbol": "SZ399987",
-      "close": 4565.86,
-      "rise": 1.8,
-      "rise_change_3d": "1.140",
-      "composite_score": 55.75
+      "close": 4578.969,
+      "rise": 0.29,
+      "rise_change_3d": "1.890",
+      "composite_score": 64.25
     },
     {
       "name": "中证金融",
       "symbol": "SH000934",
-      "close": 5764.16,
-      "rise": -0.17,
-      "rise_change_3d": "-0.500",
+      "close": 5735.455,
+      "rise": -0.5,
+      "rise_change_3d": "-0.800",
       "composite_score": 46.25
     },
     {
       "name": "中证银行",
       "symbol": "SZ399986",
-      "close": 7366.59,
-      "rise": 0.36,
-      "rise_change_3d": "0.050",
-      "composite_score": 57.75
+      "close": 7345.173,
+      "rise": -0.29,
+      "rise_change_3d": "-0.610",
+      "composite_score": 44.75
     },
     {
       "name": "国证农牧",
       "symbol": "SZ399435",
-      "close": 3867.53,
-      "rise": -1.35,
-      "rise_change_3d": "-2.490",
-      "composite_score": 28.75
+      "close": 3831.63,
+      "rise": -0.93,
+      "rise_change_3d": "-3.420",
+      "composite_score": 31.75
     },
     {
       "name": "国证地产",
       "symbol": "SZ399393",
-      "close": 2936.02,
-      "rise": 0.16,
-      "rise_change_3d": "0.870",
-      "composite_score": 67.75
+      "close": 2903.257,
+      "rise": -1.12,
+      "rise_change_3d": "-0.380",
+      "composite_score": 50.75
     },
     {
       "name": "国证基建",
       "symbol": "SZ399359",
-      "close": 2624.42,
-      "rise": 0.54,
-      "rise_change_3d": "1.090",
-      "composite_score": 61.25
+      "close": 2608.751,
+      "rise": -0.6,
+      "rise_change_3d": "-0.660",
+      "composite_score": 46.25
     },
     {
       "name": "国证钢铁",
       "symbol": "SZ399440",
-      "close": 1506.2,
-      "rise": -1.73,
-      "rise_change_3d": "-1.860",
-      "composite_score": 43.25
+      "close": 1510.445,
+      "rise": 0.28,
+      "rise_change_3d": "-1.200",
+      "composite_score": 49.25
     },
     {
       "name": "国证红利",
       "symbol": "SZ399321",
-      "close": 7533.07,
-      "rise": 0.17,
-      "rise_change_3d": "0.180",
-      "composite_score": 57.75
+      "close": 7538.016,
+      "rise": 0.07,
+      "rise_change_3d": "-0.100",
+      "composite_score": 52.75
     },
     {
       "name": "国证食品",
       "symbol": "SZ399396",
-      "close": 16434.299,
-      "rise": 0.95,
-      "rise_change_3d": "0.600",
-      "composite_score": 46.75
+      "close": 16476.294,
+      "rise": 0.26,
+      "rise_change_3d": "0.770",
+      "composite_score": 58.75
     },
     {
       "name": "机器人50",
       "symbol": "SZ399283",
-      "close": 4637.6,
-      "rise": -0.62,
-      "rise_change_3d": "0.530",
-      "composite_score": 64.75
+      "close": 4598.662,
+      "rise": -0.84,
+      "rise_change_3d": "-0.210",
+      "composite_score": 59.75
     },
     {
       "name": "生物医药",
       "symbol": "SZ399441",
-      "close": 2135.8,
-      "rise": -1.84,
-      "rise_change_3d": "-2.530",
-      "composite_score": 28.75
+      "close": 2126.054,
+      "rise": -0.46,
+      "rise_change_3d": "-1.810",
+      "composite_score": 31.0
     },
     {
       "name": "证券公司",
       "symbol": "SZ399975",
-      "close": 749.32,
-      "rise": -0.86,
-      "rise_change_3d": "-0.850",
-      "composite_score": 53.75
+      "close": 742.448,
+      "rise": -0.92,
+      "rise_change_3d": "-0.990",
+      "composite_score": 50.0
     },
     {
       "name": "有色金属",
       "symbol": "SH000819",
-      "close": 10192.522,
-      "rise": -3.86,
-      "rise_change_3d": "-3.620",
-      "composite_score": 45.75
+      "close": 10291.62,
+      "rise": 0.97,
+      "rise_change_3d": "-2.840",
+      "composite_score": 50.0
     },
     {
       "name": "中证环保",
       "symbol": "SH000827",
-      "close": 2052.78,
-      "rise": -0.73,
-      "rise_change_3d": "0.260",
-      "composite_score": 64.75
+      "close": 2056.38,
+      "rise": 0.18,
+      "rise_change_3d": "-0.810",
+      "composite_score": 62.75
     },
     {
       "name": "CSSW传媒",
       "symbol": "SZ399810",
-      "close": 3074.48,
-      "rise": -0.53,
-      "rise_change_3d": "-1.670",
-      "composite_score": 53.75
+      "close": 3008.271,
+      "rise": -2.15,
+      "rise_change_3d": "-3.130",
+      "composite_score": 45.75
     },
     {
       "name": "CSSW电子",
       "symbol": "SZ399811",
-      "close": 6502.96,
-      "rise": -0.72,
-      "rise_change_3d": "1.880",
-      "composite_score": 67.75
+      "close": 6522.564,
+      "rise": 0.3,
+      "rise_change_3d": "2.980",
+      "composite_score": 70.75
     },
     {
       "name": "CS新能车",
       "symbol": "SZ399976",
-      "close": 4784.73,
-      "rise": -2.05,
-      "rise_change_3d": "-0.510",
-      "composite_score": 48.75
+      "close": 4910.96,
+      "rise": 2.64,
+      "rise_change_3d": "0.530",
+      "composite_score": 72.75
     }
   ]
 }
