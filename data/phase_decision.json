@@ -1,31 +1,31 @@
 {
-  "timestamp": "2026-04-24 15:06:10",
-  "trade_date": "2026-04-24",
+  "timestamp": "2026-04-27 15:10:42",
+  "trade_date": "2026-04-27",
   "phase": {
-    "current_phase": "阶段1: 主升上涨浪-中继期",
+    "current_phase": "阶段1: 主升上涨浪-尾期",
     "main_phase": "主升上涨浪",
-    "sub_phase": "中继期",
-    "confidence": 80
+    "sub_phase": "尾期",
+    "confidence": 75
   },
   "scores": {
-    "composite_score": 6.7,
-    "daily_score": 9.1,
-    "avg_score": 4.58,
-    "recent_avg": 8.18,
-    "recent_trend": -2.2,
-    "high_ratio": 23.3,
-    "low_ratio": 48.8
+    "composite_score": 7.32,
+    "daily_score": 9.0,
+    "avg_score": 4.6,
+    "recent_avg": 7.87,
+    "recent_trend": -1.07,
+    "high_ratio": 23.8,
+    "low_ratio": 50.0
   },
   "position": {
-    "recommended_ratio": 90.0,
-    "position_desc": "9成",
-    "position_min": 90.0,
+    "recommended_ratio": 85.0,
+    "position_desc": "8-9成",
+    "position_min": 80.0,
     "position_max": 90.0,
-    "reason": "主升浪-中继期，满仓持有；评分6.7<7.5，适度降仓",
-    "actual_ratio": 90.0
+    "reason": "🟠 离场信号：连续2天跌破7.5分；触发1个离场信号，降仓至7-8.5成；主升尾期，保持9成以上；评分7.3<7.5，适度降仓",
+    "actual_ratio": 85.0
   },
   "action": {
-    "suggestion": "持有9成",
+    "suggestion": "持有8-9成",
     "alert_level": "🟡 黄色预警",
     "alert_level_code": 1
   },
@@ -42,16 +42,10 @@
   },
   "history": {
     "days_in_phase": 0,
-    "max_drawdown": 27.88
+    "max_drawdown": 21.21
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-中继期\n**综合评分**: 6.70 | **日线评分**: 9.10\n\n## 仓位建议\n\n**建议仓位**: 9成 (90% ~ 90%)\n**原因**: 主升浪-中继期，满仓持有；评分6.7<7.5，适度降仓\n**操作建议**: 持有9成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (90% ~ 90%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-尾期\n**综合评分**: 7.32 | **日线评分**: 9.00\n\n## 仓位建议\n\n**建议仓位**: 8-9成 (80% ~ 90%)\n**原因**: 🟠 离场信号：连续2天跌破7.5分；触发1个离场信号，降仓至7-8.5成；主升尾期，保持9成以上；评分7.3<7.5，适度降仓\n**操作建议**: 持有8-9成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (80% ~ 90%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-04-20",
-      "composite_score": 8.9,
-      "daily_score": 9.6,
-      "average_rise": 0.5
-    },
     {
       "date": "2026-04-21",
       "composite_score": 8.39,
@@ -75,6 +69,12 @@
       "composite_score": 6.7,
       "daily_score": 9.1,
       "average_rise": -0.41
+    },
+    {
+      "date": "2026-04-27",
+      "composite_score": 7.32,
+      "daily_score": 9.0,
+      "average_rise": 0.63
     }
   ]
 }
