@@ -2,6 +2,24 @@
   "count": 3,
   "data": [
     {
+      "average_rise": "2.9020",
+      "characteristics": "[\"多周期共振向上，趋势强劲\", \"各级别技术指标全面走强\", \"资金持续流入，情绪积极\", \"最近支撑位4119（0.9%，gap_upward）\"]",
+      "composite_score": "9.45",
+      "daily_score": "9.60",
+      "min120_score": "9.40",
+      "min30_score": "9.30",
+      "min60_score": "9.30",
+      "operation_suggestion": "坚定持股为主，主升浪，可加仓，也可等回调加仓；【今日情绪偏冷，可能是低吸机会】；【接近支撑位4119】",
+      "ratio": "1.3120",
+      "risk_level": "极低",
+      "status_name": "强势上涨阶段",
+      "status_type": "strong_bull",
+      "total_amount": 1552251466752,
+      "total_predicted_amount": 3139494983841,
+      "trade_time": "2026-05-06 10:30:00",
+      "up_ratio": "72.47"
+    },
+    {
       "average_rise": "0.7920",
       "characteristics": "[\"综合评分偏高，多头占优\", \"但未形成明确共振\", \"振幅收敛至0.43%（1天）\", \"最近支撑位4051（1.5%，jump_up）\"]",
       "composite_score": "8.83",
@@ -36,24 +54,6 @@
       "total_predicted_amount": 2703407180032,
       "trade_time": "2026-04-30 14:00:00",
       "up_ratio": "50.63"
-    },
-    {
-      "average_rise": "0.7400",
-      "characteristics": "[\"综合评分偏高，多头占优\", \"但未形成明确共振\", \"振幅收敛至0.39%（1天）\", \"最近支撑位4051（1.4%，jump_up）\"]",
-      "composite_score": "8.72",
-      "daily_score": "9.30",
-      "min120_score": "8.60",
-      "min30_score": "6.80",
-      "min60_score": "8.70",
-      "operation_suggestion": "持股观望，等待明确信号；【接近支撑位4051】",
-      "ratio": "1.0520",
-      "risk_level": "中低",
-      "status_name": "偏强整理阶段",
-      "status_type": "bullish_bias",
-      "total_amount": 1805724823552,
-      "total_predicted_amount": 2724748820524,
-      "trade_time": "2026-04-30 11:30:00",
-      "up_ratio": "53.40"
     }
   ],
   "query": {
