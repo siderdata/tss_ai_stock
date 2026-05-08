@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-05-07 15:05:55",
-  "trade_date": "2026-05-07",
+  "timestamp": "2026-05-08 15:07:37",
+  "trade_date": "2026-05-08",
   "phase": {
     "current_phase": "阶段1: 主升上涨浪-后期",
     "main_phase": "主升上涨浪",
@@ -8,13 +8,13 @@
     "confidence": 85
   },
   "scores": {
-    "composite_score": 9.54,
+    "composite_score": 8.57,
     "daily_score": 9.6,
-    "avg_score": 5.22,
-    "recent_avg": 8.36,
-    "recent_trend": 3.81,
-    "high_ratio": 35.0,
-    "low_ratio": 42.5
+    "avg_score": 5.31,
+    "recent_avg": 8.92,
+    "recent_trend": 0.43,
+    "high_ratio": 36.6,
+    "low_ratio": 41.5
   },
   "position": {
     "recommended_ratio": 100.0,
@@ -26,8 +26,8 @@
   },
   "action": {
     "suggestion": "持有10成",
-    "alert_level": "🔴 红色预警",
-    "alert_level_code": 3
+    "alert_level": "🟠 橙色预警",
+    "alert_level_code": 2
   },
   "warnings": {
     "is_false_breakout": false,
@@ -36,22 +36,16 @@
     "single_peak_warning": "当前阶段为主升上涨浪，不适用单峰陷阱检测",
     "peak_score": 0,
     "drop_from_peak": 0,
-    "is_trap_zone": false,
+    "is_trap_zone": true,
     "is_transition_danger": false,
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 3,
-    "max_drawdown": 0.0
+    "days_in_phase": 4,
+    "max_drawdown": 10.17
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-后期\n**综合评分**: 9.54 | **日线评分**: 9.60\n\n## 仓位建议\n\n**建议仓位**: 10成 (100% ~ 100%)\n**原因**: 主升浪-后期，满仓持有\n**操作建议**: 持有10成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (100% ~ 100%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-后期\n**综合评分**: 8.57 | **日线评分**: 9.60\n\n## 仓位建议\n\n**建议仓位**: 10成 (100% ~ 100%)\n**原因**: 主升浪-后期，满仓持有\n**操作建议**: 持有10成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (100% ~ 100%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-04-28",
-      "composite_score": 5.73,
-      "daily_score": 8.1,
-      "average_rise": -1.02
-    },
     {
       "date": "2026-04-29",
       "composite_score": 8.14,
@@ -74,7 +68,13 @@
       "date": "2026-05-07",
       "composite_score": 9.54,
       "daily_score": 9.6,
-      "average_rise": 1.28
+      "average_rise": 1.27
+    },
+    {
+      "date": "2026-05-08",
+      "composite_score": 8.57,
+      "daily_score": 9.6,
+      "average_rise": -0.68
     }
   ]
 }
