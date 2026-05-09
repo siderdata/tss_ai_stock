@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-05-08 15:07:37",
+  "timestamp": "2026-05-09 10:01:19",
   "trade_date": "2026-05-08",
   "phase": {
     "current_phase": "阶段1: 主升上涨浪-后期",
@@ -10,11 +10,11 @@
   "scores": {
     "composite_score": 8.57,
     "daily_score": 9.6,
-    "avg_score": 5.31,
+    "avg_score": 5.41,
     "recent_avg": 8.92,
     "recent_trend": 0.43,
-    "high_ratio": 36.6,
-    "low_ratio": 41.5
+    "high_ratio": 37.5,
+    "low_ratio": 40.0
   },
   "position": {
     "recommended_ratio": 100.0,
