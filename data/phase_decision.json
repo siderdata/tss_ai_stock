@@ -1,37 +1,37 @@
 {
-  "timestamp": "2026-05-15 15:19:00",
-  "trade_date": "2026-05-15",
+  "timestamp": "2026-05-18 16:01:43",
+  "trade_date": "2026-05-18",
   "phase": {
-    "current_phase": "阶段2: 高位震荡浪-初期",
+    "current_phase": "阶段2: 高位震荡浪-初期杀跌期",
     "main_phase": "高位震荡浪",
-    "sub_phase": "初期",
-    "confidence": 60
+    "sub_phase": "初期杀跌期",
+    "confidence": 75
   },
   "scores": {
-    "composite_score": 5.13,
-    "daily_score": 7.7,
-    "avg_score": 5.79,
-    "recent_avg": 7.76,
-    "recent_trend": -4.41,
-    "high_ratio": 43.9,
-    "low_ratio": 36.6
+    "composite_score": 3.75,
+    "daily_score": 5.8,
+    "avg_score": 6.1,
+    "recent_avg": 6.1,
+    "recent_trend": -5.64,
+    "high_ratio": 25.0,
+    "low_ratio": 25.0
   },
   "position": {
-    "recommended_ratio": 85.0,
-    "position_desc": "8-9成",
-    "position_min": 40.0,
-    "position_max": 70.0,
-    "reason": "假突破风险，从主升浪转换，适度降至4-7成 | 主升→高位震荡,继承仓位",
-    "actual_ratio": 85.0
+    "recommended_ratio": 25.0,
+    "position_desc": "2-3成",
+    "position_min": 50.0,
+    "position_max": 50.0,
+    "reason": "震荡杀跌期，持仓不动 | 跌幅0.1%,保持",
+    "actual_ratio": 25.0
   },
   "action": {
-    "suggestion": "高抛低吸4-7成 【支撑4051(向上跳空) 支撑4027(向上跳空) 缺口:04-08向上缺口3903|04-14向上缺口3991】",
+    "suggestion": "高抛低吸5成 【支撑4051(向上跳空) 支撑4027(向上跳空) 缺口:04-08向上缺口3903|04-14向上缺口3991】",
     "alert_level": "🟢 绿色预警",
     "alert_level_code": 0
   },
   "warnings": {
-    "is_false_breakout": true,
-    "false_breakout_reason": "假突破确认：4天前峰值9.54分，现已回落4.41分至5.13分",
+    "is_false_breakout": false,
+    "false_breakout_reason": "数据不足",
     "is_single_peak": false,
     "single_peak_warning": "当前阶段为高位震荡浪，不适用单峰陷阱检测",
     "peak_score": 0,
@@ -42,39 +42,7 @@
   },
   "history": {
     "days_in_phase": 0,
-    "max_drawdown": 46.23
+    "max_drawdown": 0
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段2: 高位震荡浪-初期\n**综合评分**: 5.13 | **日线评分**: 7.70\n\n## 仓位建议\n\n**建议仓位**: 8-9成 (40% ~ 70%)\n**原因**: 假突破风险，从主升浪转换，适度降至4-7成 | 主升→高位震荡,继承仓位\n**操作建议**: 高抛低吸4-7成 【支撑4051(向上跳空) 支撑4027(向上跳空) 缺口:04-08向上缺口3903|04-14向上缺口3991】\n\n## 风险提示\n🔴 假突破: 假突破确认：4天前峰值9.54分，现已回落4.41分至5.13分\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (40% ~ 70%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
-  "recent_data": [
-    {
-      "date": "2026-05-11",
-      "composite_score": 9.54,
-      "daily_score": 9.6,
-      "average_rise": 2.53
-    },
-    {
-      "date": "2026-05-12",
-      "composite_score": 8.62,
-      "daily_score": 9.6,
-      "average_rise": -0.12
-    },
-    {
-      "date": "2026-05-13",
-      "composite_score": 9.39,
-      "daily_score": 9.6,
-      "average_rise": 1.74
-    },
-    {
-      "date": "2026-05-14",
-      "composite_score": 6.12,
-      "daily_score": 9.0,
-      "average_rise": -2.04
-    },
-    {
-      "date": "2026-05-15",
-      "composite_score": 5.13,
-      "daily_score": 7.7,
-      "average_rise": -0.98
-    }
-  ]
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段2: 高位震荡浪-初期杀跌期\n**综合评分**: 3.75 | **日线评分**: 5.80\n\n## 仓位建议\n\n**建议仓位**: 2-3成 (50% ~ 50%)\n**原因**: 震荡杀跌期，持仓不动 | 跌幅0.1%,保持\n**操作建议**: 高抛低吸5成 【支撑4051(向上跳空) 支撑4027(向上跳空) 缺口:04-08向上缺口3903|04-14向上缺口3991】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (50% ~ 50%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n"
 }
