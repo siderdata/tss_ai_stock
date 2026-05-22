@@ -1,31 +1,31 @@
 {
-  "timestamp": "2026-05-21 15:07:55",
-  "trade_date": "2026-05-21",
+  "timestamp": "2026-05-22 15:17:26",
+  "trade_date": "2026-05-22",
   "phase": {
     "current_phase": "阶段2: 高位震荡浪-杀跌期",
     "main_phase": "高位震荡浪",
     "sub_phase": "杀跌期",
-    "confidence": 70
+    "confidence": 75
   },
   "scores": {
-    "composite_score": 2.31,
-    "daily_score": 3.0,
-    "avg_score": 6.01,
-    "recent_avg": 4.05,
-    "recent_trend": -2.82,
-    "high_ratio": 45.0,
-    "low_ratio": 30.0
+    "composite_score": 3.52,
+    "daily_score": 4.0,
+    "avg_score": 5.94,
+    "recent_avg": 3.73,
+    "recent_trend": -0.23,
+    "high_ratio": 43.9,
+    "low_ratio": 31.7
   },
   "position": {
-    "recommended_ratio": 75.0,
-    "position_desc": "7-8成",
-    "position_min": 30.0,
-    "position_max": 50.0,
-    "reason": "观察期第5天，适度降仓观望 | 跌幅-2.7%≤-2.5%,加3.5成",
-    "actual_ratio": 75.0
+    "recommended_ratio": 30.0,
+    "position_desc": "3成",
+    "position_min": 70.0,
+    "position_max": 70.0,
+    "reason": "震荡杀跌期，7日均跌幅-4.4%<-1%，加仓至7成 | 跌幅2.1%,保持",
+    "actual_ratio": 30.0
   },
   "action": {
-    "suggestion": "高抛低吸3-5成（观察期第5天） 【支撑4051(向上跳空) 支撑4027(向上跳空) 阻力4259(周期高点) 缺口:04-08向上缺口3903|04-14向上缺口3991】",
+    "suggestion": "高抛低吸7成 【支撑4051(向上跳空) 支撑4027(向上跳空) 阻力4259(周期高点) 缺口:04-08向上缺口3903|04-14向上缺口3991】",
     "alert_level": "🟢 绿色预警",
     "alert_level_code": 0
   },
@@ -33,7 +33,7 @@
     "is_false_breakout": false,
     "false_breakout_reason": "无突破9分记录",
     "is_single_peak": false,
-    "single_peak_warning": "当前阶段为调整杀跌浪，不适用单峰陷阱检测",
+    "single_peak_warning": "当前阶段为高位震荡浪，不适用单峰陷阱检测",
     "peak_score": 0,
     "drop_from_peak": 0,
     "is_trap_zone": false,
@@ -41,17 +41,11 @@
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 0,
-    "max_drawdown": 54.97
+    "days_in_phase": 1,
+    "max_drawdown": 27.72
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段2: 高位震荡浪-杀跌期\n**综合评分**: 2.31 | **日线评分**: 3.00\n\n## 仓位建议\n\n**建议仓位**: 7-8成 (30% ~ 50%)\n**原因**: 观察期第5天，适度降仓观望 | 跌幅-2.7%≤-2.5%,加3.5成\n**操作建议**: 高抛低吸3-5成（观察期第5天） 【支撑4051(向上跳空) 支撑4027(向上跳空) 阻力4259(周期高点) 缺口:04-08向上缺口3903|04-14向上缺口3991】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (30% ~ 50%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段2: 高位震荡浪-杀跌期\n**综合评分**: 3.52 | **日线评分**: 4.00\n\n## 仓位建议\n\n**建议仓位**: 3成 (70% ~ 70%)\n**原因**: 震荡杀跌期，7日均跌幅-4.4%<-1%，加仓至7成 | 跌幅2.1%,保持\n**操作建议**: 高抛低吸7成 【支撑4051(向上跳空) 支撑4027(向上跳空) 阻力4259(周期高点) 缺口:04-08向上缺口3903|04-14向上缺口3991】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (70% ~ 70%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-05-15",
-      "composite_score": 5.13,
-      "daily_score": 7.7,
-      "average_rise": -0.98
-    },
     {
       "date": "2026-05-18",
       "composite_score": 3.75,
@@ -75,6 +69,12 @@
       "composite_score": 2.31,
       "daily_score": 3.0,
       "average_rise": -2.72
+    },
+    {
+      "date": "2026-05-22",
+      "composite_score": 3.52,
+      "daily_score": 4.0,
+      "average_rise": 2.06
     }
   ]
 }
