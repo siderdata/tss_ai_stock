@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-02 15:07:13",
-  "trade_date": "2026-06-02",
+  "timestamp": "2026-06-03 15:09:01",
+  "trade_date": "2026-06-03",
   "phase": {
     "current_phase": "阶段3: 调整杀跌浪-反弹期",
     "main_phase": "调整杀跌浪",
@@ -8,20 +8,20 @@
     "confidence": 80
   },
   "scores": {
-    "composite_score": 2.47,
-    "daily_score": 2.4,
-    "avg_score": 6.42,
-    "recent_avg": 2.89,
-    "recent_trend": -0.75,
+    "composite_score": 4.25,
+    "daily_score": 2.9,
+    "avg_score": 6.5,
+    "recent_avg": 3.1,
+    "recent_trend": -0.39,
     "high_ratio": 46.2,
-    "low_ratio": 23.1
+    "low_ratio": 20.5
   },
   "position": {
     "recommended_ratio": 10.0,
     "position_desc": "1成",
     "position_min": 10.0,
     "position_max": 10.0,
-    "reason": "🟢 抄底后回升：评分2.5，保持0成",
+    "reason": "🟢 抄底后回升：评分4.2，保持0成",
     "actual_ratio": 10.0
   },
   "action": {
@@ -41,17 +41,11 @@
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 0,
-    "max_drawdown": 46.77
+    "days_in_phase": 1,
+    "max_drawdown": 8.41
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-反弹期\n**综合评分**: 2.47 | **日线评分**: 2.40\n\n## 仓位建议\n\n**建议仓位**: 1成 (10% ~ 10%)\n**原因**: 🟢 抄底后回升：评分2.5，保持0成\n**操作建议**: 保持仓位1成 【支撑4027(向上跳空) 支撑3991(向上缺口底) 阻力4259(周期高点) 缺口:04-08向上缺口3903|04-14向上缺口3991 跳空:04-16向上跳空4027】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (10% ~ 10%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-反弹期\n**综合评分**: 4.25 | **日线评分**: 2.90\n\n## 仓位建议\n\n**建议仓位**: 1成 (10% ~ 10%)\n**原因**: 🟢 抄底后回升：评分4.2，保持0成\n**操作建议**: 保持仓位1成 【支撑4027(向上跳空) 支撑3991(向上缺口底) 阻力4259(周期高点) 缺口:04-08向上缺口3903|04-14向上缺口3991 跳空:04-16向上跳空4027】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (10% ~ 10%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-05-27",
-      "composite_score": 3.22,
-      "daily_score": 3.2,
-      "average_rise": -1.15
-    },
     {
       "date": "2026-05-28",
       "composite_score": 4.64,
@@ -75,6 +69,12 @@
       "composite_score": 2.47,
       "daily_score": 2.4,
       "average_rise": 1.51
+    },
+    {
+      "date": "2026-06-03",
+      "composite_score": 4.25,
+      "daily_score": 2.9,
+      "average_rise": 1.18
     }
   ]
 }
