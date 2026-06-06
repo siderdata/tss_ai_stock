@@ -1,0 +1,21 @@
+{
+  "name": "tss-ai-stock-site",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-content.mjs && node scripts/build-journal-index.mjs",
+    "predev": "npm run sync",
+    "prebuild": "npm run sync",
+    "dev": "vitepress dev docs",
+    "build": "vitepress build docs",
+    "preview": "vitepress preview docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.5.0",
+    "vue": "^3.5.13"
+  },
+  "dependencies": {
+    "echarts": "^5.5.1"
+  }
+}

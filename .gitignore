@@ -1,3 +1,14 @@
 .claude/settings.local.json
 CLAUDE.md
 data/v32_resonance_logs/*.log
+
+# VitePress 网站构建产物
+node_modules/
+docs/.vitepress/dist/
+docs/.vitepress/cache/
+docs/journal/
+docs/wiki-四阶段交易法.md
+docs/public/data/
+docs/public/trading/
+docs/public/journal-index.json
+.DS_Store

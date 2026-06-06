@@ -1,0 +1,282 @@
+/* ============================================
+   TSS AI Stock — 技术终端风主题
+   暗色背景 + 霓虹描边 + 网格 + 流光动画
+   ============================================ */
+
+:root {
+  --vp-c-brand-1: #00d9ff;
+  --vp-c-brand-2: #00b8e6;
+  --vp-c-brand-3: #0099cc;
+  --vp-c-brand-soft: rgba(0, 217, 255, 0.16);
+
+  --tss-bg: #0a1628;
+  --tss-bg-elev: #0f1f3a;
+  --tss-bg-card: rgba(15, 31, 58, 0.72);
+  --tss-border: rgba(0, 217, 255, 0.22);
+  --tss-border-glow: rgba(0, 217, 255, 0.55);
+  --tss-text-primary: #e3f2fd;
+  --tss-text-secondary: #8fa8c4;
+  --tss-text-dim: #5a7a9a;
+  --tss-success: #00ff9d;
+  --tss-danger: #ff4d6d;
+  --tss-warning: #ffb347;
+  --tss-purple: #b794f6;
+
+  --tss-grid: rgba(0, 217, 255, 0.05);
+  --tss-glow: 0 0 24px rgba(0, 217, 255, 0.4);
+}
+
+.dark, html {
+  --vp-c-bg: var(--tss-bg);
+  --vp-c-bg-alt: var(--tss-bg-elev);
+  --vp-c-bg-soft: var(--tss-bg-elev);
+  --vp-c-bg-elv: var(--tss-bg-card);
+  --vp-c-text-1: var(--tss-text-primary);
+  --vp-c-text-2: var(--tss-text-secondary);
+  --vp-c-text-3: var(--tss-text-dim);
+  --vp-c-divider: var(--tss-border);
+  --vp-c-gutter: var(--tss-border);
+  --vp-c-border: var(--tss-border);
+}
+
+html {
+  background: var(--tss-bg);
+  color-scheme: dark;
+}
+
+body {
+  background:
+    linear-gradient(135deg, #0a1628 0%, #0d1f3a 50%, #0a1628 100%),
+    radial-gradient(circle at 20% 0%, rgba(0, 217, 255, 0.08), transparent 50%),
+    radial-gradient(circle at 80% 100%, rgba(183, 148, 246, 0.06), transparent 50%);
+  background-attachment: fixed;
+  color: var(--tss-text-primary);
+  font-feature-settings: "tnum" 1, "ss01" 1;
+}
+
+/* 网格背景 */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  background-image:
+    linear-gradient(var(--tss-grid) 1px, transparent 1px),
+    linear-gradient(90deg, var(--tss-grid) 1px, transparent 1px);
+  background-size: 48px 48px;
+  pointer-events: none;
+  z-index: 0;
+  mask-image: radial-gradient(ellipse at center, black 30%, transparent 80%);
+}
+
+#app, .Layout { position: relative; z-index: 1; }
+
+/* 顶部 nav */
+.VPNav {
+  background: rgba(10, 22, 40, 0.85) !important;
+  backdrop-filter: blur(20px) saturate(180%);
+  border-bottom: 1px solid var(--tss-border);
+}
+
+.VPNavBarTitle .title {
+  background: linear-gradient(90deg, #00d9ff, #b794f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  line-height: 1.5;
+  padding: 0.1em 0;
+}
+
+/* 字体：等宽数字 */
+.tss-mono, .tss-num {
+  font-family: 'SF Mono', 'JetBrains Mono', 'Fira Code', Menlo, Consolas, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+}
+
+/* ===== 通用卡片 ===== */
+.tss-card {
+  position: relative;
+  background: var(--tss-bg-card);
+  backdrop-filter: blur(12px);
+  border: 1px solid var(--tss-border);
+  border-radius: 12px;
+  padding: 20px;
+  transition: all 0.3s ease;
+  overflow: hidden;
+}
+.tss-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, transparent 40%, rgba(0, 217, 255, 0.06) 100%);
+  pointer-events: none;
+}
+.tss-card:hover {
+  border-color: var(--tss-border-glow);
+  transform: translateY(-2px);
+  box-shadow: var(--tss-glow), 0 12px 32px rgba(0, 0, 0, 0.4);
+}
+
+/* ===== 流光描边动画 ===== */
+.tss-glow-border {
+  position: relative;
+  border-radius: 14px;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(0, 217, 255, 0.5), rgba(183, 148, 246, 0.5), rgba(0, 217, 255, 0.5));
+  background-size: 200% 200%;
+  animation: tss-glow-flow 6s linear infinite;
+}
+.tss-glow-border > .tss-glow-inner {
+  background: var(--tss-bg-card);
+  border-radius: 13px;
+  padding: 24px;
+}
+@keyframes tss-glow-flow {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+/* ===== 大数字 hero ===== */
+.tss-mega-number {
+  font-family: 'SF Mono', 'JetBrains Mono', monospace;
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+  font-size: clamp(48px, 8vw, 96px);
+  line-height: 1;
+  background: linear-gradient(135deg, #00d9ff 0%, #b794f6 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  filter: drop-shadow(0 0 24px rgba(0, 217, 255, 0.45));
+}
+
+/* ===== 脉动效果 ===== */
+.tss-pulse {
+  animation: tss-pulse 2.5s ease-in-out infinite;
+}
+@keyframes tss-pulse {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.85; transform: scale(1.02); }
+}
+
+.tss-dot-live {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--tss-success);
+  box-shadow: 0 0 12px var(--tss-success);
+  animation: tss-blink 1.5s ease-in-out infinite;
+  margin-right: 8px;
+}
+@keyframes tss-blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.3; }
+}
+
+/* ===== 风险等级 chip ===== */
+.tss-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  border: 1px solid currentColor;
+  background: rgba(255, 255, 255, 0.04);
+}
+.tss-chip-success { color: var(--tss-success); }
+.tss-chip-danger { color: var(--tss-danger); }
+.tss-chip-warning { color: var(--tss-warning); }
+.tss-chip-info { color: var(--vp-c-brand-1); }
+.tss-chip-purple { color: var(--tss-purple); }
+
+/* ===== 颜色助手 ===== */
+.tss-up { color: var(--tss-danger); /* A股红涨绿跌 */ }
+.tss-down { color: var(--tss-success); }
+.tss-neutral { color: var(--tss-text-secondary); }
+
+/* ===== 评分配色 ===== */
+.tss-score-extreme-high { color: #ff006e; text-shadow: 0 0 16px rgba(255, 0, 110, 0.6); }
+.tss-score-high { color: #00d9ff; text-shadow: 0 0 12px rgba(0, 217, 255, 0.5); }
+.tss-score-mid { color: var(--tss-warning); }
+.tss-score-low { color: var(--tss-success); }
+.tss-score-extreme-low { color: var(--tss-success); text-shadow: 0 0 16px rgba(0, 255, 157, 0.5); }
+
+/* ===== 网格布局 ===== */
+.tss-grid-2 { display: grid; gap: 16px; grid-template-columns: repeat(2, 1fr); }
+.tss-grid-3 { display: grid; gap: 16px; grid-template-columns: repeat(3, 1fr); }
+.tss-grid-4 { display: grid; gap: 16px; grid-template-columns: repeat(4, 1fr); }
+@media (max-width: 768px) {
+  .tss-grid-2, .tss-grid-3, .tss-grid-4 { grid-template-columns: 1fr; }
+}
+
+/* ===== 主升浪节点动画 ===== */
+.tss-wave-node {
+  position: relative;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--vp-c-brand-1);
+  box-shadow: 0 0 0 4px rgba(0, 217, 255, 0.2);
+  animation: tss-wave-pulse 2.4s ease-out infinite;
+}
+@keyframes tss-wave-pulse {
+  0% { box-shadow: 0 0 0 0 rgba(0, 217, 255, 0.6); }
+  70% { box-shadow: 0 0 0 18px rgba(0, 217, 255, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(0, 217, 255, 0); }
+}
+
+/* ===== 隐藏首页默认 hero（自定义 layout） ===== */
+.VPHome .VPHero { display: none; }
+.VPHome .VPFeatures { display: none; }
+
+/* 内容区域字体优化 */
+.VPDoc h1 {
+  background: linear-gradient(90deg, #00d9ff, #b794f6);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-weight: 700;
+  line-height: 1.4;
+  padding: 0.15em 0;
+}
+
+.VPDoc h2 {
+  border-bottom: 1px solid var(--tss-border);
+  padding-bottom: 12px;
+}
+
+/* 表格样式 */
+.vp-doc table {
+  background: var(--tss-bg-card);
+  border: 1px solid var(--tss-border);
+}
+.vp-doc table th {
+  background: rgba(0, 217, 255, 0.08);
+  color: var(--vp-c-brand-1);
+}
+
+/* 链接样式 */
+.vp-doc a {
+  color: var(--vp-c-brand-1);
+  text-decoration: none;
+  border-bottom: 1px dashed transparent;
+  transition: all 0.2s;
+}
+.vp-doc a:hover {
+  border-bottom-color: var(--vp-c-brand-1);
+  text-shadow: 0 0 8px rgba(0, 217, 255, 0.4);
+}
+
+/* 引用块 */
+.vp-doc blockquote {
+  background: rgba(0, 217, 255, 0.04);
+  border-left: 3px solid var(--vp-c-brand-1);
+  padding: 12px 16px;
+  border-radius: 0 8px 8px 0;
+}
