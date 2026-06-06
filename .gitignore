@@ -6,7 +6,8 @@ data/v32_resonance_logs/*.log
 node_modules/
 docs/.vitepress/dist/
 docs/.vitepress/cache/
-docs/journal/
+docs/journal/*
+!docs/journal/index.md
 docs/wiki-四阶段交易法.md
 docs/public/data/
 docs/public/trading/
