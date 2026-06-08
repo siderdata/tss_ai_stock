@@ -1,0 +1,32 @@
+{
+  "trade_date": "2026-06-08",
+  "timestamp": "2026-06-08 14:45",
+  "phase": {
+    "current_phase": "V32共振-主升上涨浪",
+    "main_phase": "主升上涨浪",
+    "sub_phase": "V32信号驱动",
+    "confidence": 95
+  },
+  "position": {
+    "recommended_ratio": 40.0,
+    "position_desc": "4成",
+    "position_min": 0.0,
+    "position_max": 40.0,
+    "reason": "V32共振: 🟢止跌 9个指数 [V32限权: phase=20% → 范围 0-40%, 原始建议 50% 已下调]",
+    "actual_ratio": 40.0,
+    "raw_v32_ratio": 50.0,
+    "phase_recommended_ratio": 20.0
+  },
+  "v32_detail": {
+    "latest_signal": "🟢止跌",
+    "latest_time": "14:45",
+    "latest_type": "BUY",
+    "indices_count": 9,
+    "total_events_today": 17,
+    "buy_signals": 4,
+    "sell_signals": 12
+  },
+  "_source": "v32_resonance_adapter",
+  "_stale": true,
+  "_stale_minutes": 110.6
+}
