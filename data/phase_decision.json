@@ -1,31 +1,31 @@
 {
-  "timestamp": "2026-06-08 15:55:24",
-  "trade_date": "2026-06-08",
+  "timestamp": "2026-06-09 17:36:00",
+  "trade_date": "2026-06-09",
   "phase": {
-    "current_phase": "阶段3: 调整杀跌浪-杀跌期",
+    "current_phase": "阶段3: 调整杀跌浪-反弹期",
     "main_phase": "调整杀跌浪",
-    "sub_phase": "杀跌期",
+    "sub_phase": "反弹期",
     "confidence": 80
   },
   "scores": {
-    "composite_score": 0.6,
-    "daily_score": 0.7,
-    "avg_score": 6.23,
-    "recent_avg": 2.31,
-    "recent_trend": -1.87,
+    "composite_score": 2.13,
+    "daily_score": 1.2,
+    "avg_score": 6.1,
+    "recent_avg": 2.24,
+    "recent_trend": -2.12,
     "high_ratio": 45.0,
-    "low_ratio": 25.0
+    "low_ratio": 27.5
   },
   "position": {
-    "recommended_ratio": 20.0,
-    "position_desc": "2成",
-    "position_min": 20.0,
-    "position_max": 20.0,
-    "reason": "🔴 继续触发+加仓2成→累计2成",
-    "actual_ratio": 20.0
+    "recommended_ratio": 10.0,
+    "position_desc": "1成",
+    "position_min": 10.0,
+    "position_max": 10.0,
+    "reason": "🟢 抄底后回升：评分2.1，保持0成",
+    "actual_ratio": 10.0
   },
   "action": {
-    "suggestion": "抄底建仓2成 【支撑3903(向上缺口底) 阻力4015(向下缺口顶) 阻力4084(向下跳空) 缺口:04-08向上缺口3903|06-08向下缺口4015】",
+    "suggestion": "保持仓位1成 【支撑3903(向上缺口底) 阻力4015(向下缺口顶) 阻力4084(向下跳空) 缺口:04-08向上缺口3903|06-08向下缺口4015】",
     "alert_level": "🟢 绿色预警",
     "alert_level_code": 0
   },
@@ -41,17 +41,11 @@
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 1,
-    "max_drawdown": 85.88
+    "days_in_phase": 0,
+    "max_drawdown": 49.88
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-杀跌期\n**综合评分**: 0.60 | **日线评分**: 0.70\n\n## 仓位建议\n\n**建议仓位**: 2成 (20% ~ 20%)\n**原因**: 🔴 继续触发+加仓2成→累计2成\n**操作建议**: 抄底建仓2成 【支撑3903(向上缺口底) 阻力4015(向下缺口顶) 阻力4084(向下跳空) 缺口:04-08向上缺口3903|06-08向下缺口4015】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (20% ~ 20%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-反弹期\n**综合评分**: 2.13 | **日线评分**: 1.20\n\n## 仓位建议\n\n**建议仓位**: 1成 (10% ~ 10%)\n**原因**: 🟢 抄底后回升：评分2.1，保持0成\n**操作建议**: 保持仓位1成 【支撑3903(向上缺口底) 阻力4015(向下缺口顶) 阻力4084(向下跳空) 缺口:04-08向上缺口3903|06-08向下缺口4015】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (10% ~ 10%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-06-02",
-      "composite_score": 2.47,
-      "daily_score": 2.4,
-      "average_rise": 1.51
-    },
     {
       "date": "2026-06-03",
       "composite_score": 4.25,
@@ -75,6 +69,12 @@
       "composite_score": 0.6,
       "daily_score": 0.7,
       "average_rise": -3.02
+    },
+    {
+      "date": "2026-06-09",
+      "composite_score": 2.13,
+      "daily_score": 1.2,
+      "average_rise": 3.01
     }
   ]
 }
