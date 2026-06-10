@@ -1,0 +1,14 @@
+{
+  "_comment": "此文件由维护者手工更新。每月底或重大事件后修改 monthlyReturns。EarningsCurve 组件从这读取。",
+  "year": 2026,
+  "yearReturn": "+12.98%",
+  "yearReturnNote": "至 2026-06-10",
+  "monthlyReturns": [
+    { "month": "2026-01", "amount": 21384, "rate": 6.62, "label": "把握主升浪 · 17 连阳" },
+    { "month": "2026-02", "amount": 501, "rate": 0.15, "label": "震荡整固" },
+    { "month": "2026-03", "amount": -29900, "rate": -9.26, "label": "逆系统大幅回撤" },
+    { "month": "2026-04", "amount": 31405, "rate": 10.05, "label": "9.44 第二波主升浪" },
+    { "month": "2026-05", "amount": 15187, "rate": 4.41, "label": "认知觉醒月" },
+    { "month": "2026-06", "amount": 5433, "rate": 1.51, "label": "杀跌防守（MTD）" }
+  ]
+}

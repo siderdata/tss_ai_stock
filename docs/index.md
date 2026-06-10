@@ -4,7 +4,21 @@ title: TSS AI Stock · 实时业绩仪表盘
 ---
 
 <script setup>
+import { ref, onMounted } from 'vue'
 import { withBase } from 'vitepress'
+
+const yearReturn = ref('—')
+const yearReturnNote = ref('')
+onMounted(async () => {
+  try {
+    const r = await fetch(`${import.meta.env.BASE_URL}data/earnings-summary.json`)
+    if (r.ok) {
+      const d = await r.json()
+      yearReturn.value = d.yearReturn
+      yearReturnNote.value = d.yearReturnNote || ''
+    }
+  } catch {}
+})
 </script>
 
 <div class="dashboard-page">
@@ -14,7 +28,7 @@ import { withBase } from 'vitepress'
   <div class="banner-content">
     <div class="brand tss-mono">TSS AI STOCK ＿ QUANT TRADING TERMINAL</div>
     <h1 class="title">用系统对抗人性 · 用纪律对抗情绪</h1>
-    <div class="subtitle">2025.12 — 至今 · 年累计 <span class="hl">+11.7%</span> · 最大回撤 <span class="hl">< 7%</span> · AI 评分 5 次 ≥ 90</div>
+    <div class="subtitle">2025.12 — 至今 · 年累计 <span class="hl">{{ yearReturn }}</span> · {{ yearReturnNote }} · 最大回撤 <span class="hl">< 7%</span> · AI 评分 5 次 ≥ 90</div>
   </div>
 </div>
 
