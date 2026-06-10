@@ -7,6 +7,22 @@
 
 [![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://python.org)
 [![License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Live Site](https://img.shields.io/badge/🌐_Live_Site-tss--ai--stock-orange)](https://siderdata.github.io/tss_ai_stock/)
+[![Main Wave Caught](https://img.shields.io/badge/主升浪预判-2次成功-brightgreen)](wiki/量化系统主升浪预判验证报告_2025年12月-2026年1月.md)
+[![Year Return](https://img.shields.io/badge/2026_年累计-+11.7%25-ff4d6d)](https://siderdata.github.io/tss_ai_stock/)
+
+## 🌐 项目网站
+
+**👉 完整可视化版本：[https://siderdata.github.io/tss_ai_stock/](https://siderdata.github.io/tss_ai_stock/)**
+
+网站包含 5 大模块：
+- 📊 **业绩仪表盘** — 月度收益曲线 + 实时量化评分 + 当前阶段
+- 🚀 **主升浪时间线** — 7 个关键节点的预判 vs 实际验证
+- 🎯 **量化评分仪表盘** — 5 周期实时评分 + 行业热力图
+- 🎯 **四阶段交易法** — 自创理论 + 6 子阶段状态机
+- 📅 **交易记录** — 84 篇日自评 + AI 评 + 6 个月份 tab 切换
+
+> 💡 **建议先访问网站再看 README**：网站是实盘数据的可视化层，README 是精神与纪律层，两者互补。
 
 ## 📋 项目概述
 
@@ -261,6 +277,8 @@ cd tss_ai_stock
 
 - 项目维护者: siderdata
 - 项目链接: https://github.com/siderdata/tss_ai_stock
+- QQ&微信：298045036--很少用
+- 飞书：![img_1.png](img_1.png)
 
 ---
 
