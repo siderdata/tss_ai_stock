@@ -1,32 +1,32 @@
 {
-  "trade_date": "2026-06-12",
-  "timestamp": "2026-06-12 13:35",
+  "trade_date": "2026-06-15",
+  "timestamp": "2026-06-15 11:00",
   "phase": {
-    "current_phase": "V32共振-调整杀跌浪",
-    "main_phase": "调整杀跌浪",
+    "current_phase": "V32共振-低位震荡期",
+    "main_phase": "低位震荡期",
     "sub_phase": "V32信号驱动",
-    "confidence": 86
+    "confidence": 90
   },
   "position": {
-    "recommended_ratio": 10.0,
-    "position_desc": "10成",
-    "position_min": 0.0,
-    "position_max": 20.0,
-    "reason": "V32共振: 🔴反弹结束 4个指数 → 减仓至1成",
-    "actual_ratio": 10.0,
-    "raw_v32_ratio": 10.0,
+    "recommended_ratio": 30.0,
+    "position_desc": "3成",
+    "position_min": 20.0,
+    "position_max": 40.0,
+    "reason": "V32共振: 🟢止跌上涨 5个指数",
+    "actual_ratio": 30.0,
+    "raw_v32_ratio": 30.0,
     "phase_recommended_ratio": null
   },
   "v32_detail": {
-    "latest_signal": "🔴反弹结束",
-    "latest_time": "13:35",
-    "latest_type": "SELL",
-    "indices_count": 4,
-    "total_events_today": 5,
-    "buy_signals": 3,
-    "sell_signals": 2
+    "latest_signal": "🟢止跌上涨",
+    "latest_time": "11:00",
+    "latest_type": "BUY",
+    "indices_count": 5,
+    "total_events_today": 6,
+    "buy_signals": 6,
+    "sell_signals": 0
   },
   "_source": "v32_resonance_adapter",
   "_stale": true,
-  "_stale_minutes": 81.3
+  "_stale_minutes": 235.2
 }

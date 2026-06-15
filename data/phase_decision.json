@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-06-12 15:55:24",
-  "trade_date": "2026-06-12",
+  "timestamp": "2026-06-15 15:55:24",
+  "trade_date": "2026-06-15",
   "phase": {
     "current_phase": "阶段3: 调整杀跌浪-反弹期",
     "main_phase": "调整杀跌浪",
@@ -8,24 +8,24 @@
     "confidence": 80
   },
   "scores": {
-    "composite_score": 2.57,
-    "daily_score": 1.0,
-    "avg_score": 5.74,
-    "recent_avg": 1.65,
-    "recent_trend": 1.97,
-    "high_ratio": 40.5,
-    "low_ratio": 33.3
+    "composite_score": 5.15,
+    "daily_score": 3.3,
+    "avg_score": 5.52,
+    "recent_avg": 2.56,
+    "recent_trend": 3.02,
+    "high_ratio": 35.0,
+    "low_ratio": 35.0
   },
   "position": {
     "recommended_ratio": 70.0,
     "position_desc": "7成",
     "position_min": 70.0,
     "position_max": 70.0,
-    "reason": "🟢 抄底后回升：评分2.6，保持7成",
+    "reason": "🟢 抄底后回升：评分5.2，保持7成",
     "actual_ratio": 70.0
   },
   "action": {
-    "suggestion": "保持仓位7成 【支撑3997(向上缺口底) 支撑3903(向上缺口底) 阻力4084(向下跳空) 缺口:04-08向上缺口3903|06-12向上缺口3997】",
+    "suggestion": "保持仓位7成 【支撑4032(向上跳空) 支撑3997(向上缺口底) 缺口:04-08向上缺口3903|06-12向上缺口3997】",
     "alert_level": "🟢 绿色预警",
     "alert_level_code": 0
   },
@@ -41,17 +41,11 @@
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 0,
+    "days_in_phase": 1,
     "max_drawdown": 0.0
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-反弹期\n**综合评分**: 2.57 | **日线评分**: 1.00\n\n## 仓位建议\n\n**建议仓位**: 7成 (70% ~ 70%)\n**原因**: 🟢 抄底后回升：评分2.6，保持7成\n**操作建议**: 保持仓位7成 【支撑3997(向上缺口底) 支撑3903(向上缺口底) 阻力4084(向下跳空) 缺口:04-08向上缺口3903|06-12向上缺口3997】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (70% ~ 70%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-反弹期\n**综合评分**: 5.15 | **日线评分**: 3.30\n\n## 仓位建议\n\n**建议仓位**: 7成 (70% ~ 70%)\n**原因**: 🟢 抄底后回升：评分5.2，保持7成\n**操作建议**: 保持仓位7成 【支撑4032(向上跳空) 支撑3997(向上缺口底) 缺口:04-08向上缺口3903|06-12向上缺口3997】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (70% ~ 70%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-06-08",
-      "composite_score": 0.6,
-      "daily_score": 0.7,
-      "average_rise": -3.02
-    },
     {
       "date": "2026-06-09",
       "composite_score": 2.13,
@@ -75,6 +69,12 @@
       "composite_score": 2.57,
       "daily_score": 1.0,
       "average_rise": 0.53
+    },
+    {
+      "date": "2026-06-15",
+      "composite_score": 5.15,
+      "daily_score": 3.3,
+      "average_rise": 3.9
     }
   ]
 }
