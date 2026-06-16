@@ -2,9 +2,9 @@
   "_comment": "此文件由维护者手工更新。每月底或重大事件后修改 monthlyReturns。EarningsCurve + index.md 组件从这读取。",
   "year": 2026,
   "yearStartCapital": 323220,
-  "yearReturn": "+13.85%",
-  "yearReturnNote": "至 2026-06-15",
-  "yearReturnAmount": 44771,
+  "yearReturn": "+13.95%",
+  "yearReturnNote": "至 2026-06-16",
+  "yearReturnAmount": 45102,
   "systemHistoryStartCapital": 306320,
   "systemHistoryReturn": "+19.21%",
   "systemHistoryReturnNote": "系统上线 2025.12 — 至今",
@@ -48,8 +48,8 @@
     },
     {
       "month": "2026-06",
-      "amount": 8244,
-      "rate": 2.29,
+      "amount": 8575,
+      "rate": 2.33,
       "label": "杀跌防守（MTD）"
     }
   ]

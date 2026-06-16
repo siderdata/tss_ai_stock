@@ -1,0 +1,66 @@
+{
+  "strategy_id": "r2_s5_r2_c7",
+  "strategy_name": "R2稳定 S5-R2-C7",
+  "timestamp": "2026-06-16 10:20:10",
+  "trade_date": "2026-06-16",
+  "phase": {
+    "current_phase": "V72 R2 稳定信号",
+    "main_phase": "R2 稳定 (S5-R2-C7)",
+    "sub_phase": "稳态选品",
+    "confidence": 90
+  },
+  "parameters": {
+    "S": 5,
+    "R": 2,
+    "C": 7,
+    "lock": "S=5/R=2/C=7 用户定案, 不可运行时修改"
+  },
+  "position": {
+    "recommended_ratio": 100.0,
+    "position_desc": "10成",
+    "position_min": 100.0,
+    "position_max": 100.0,
+    "reason": "V7.2 仓位建议 10成",
+    "actual_ratio": 100.0,
+    "source": "V7.2 自动读取"
+  },
+  "r2_picks": [
+    {
+      "symbol": "SH000698",
+      "etf": "SH588030",
+      "name": "科创100",
+      "weight_pct": 50.0
+    },
+    {
+      "symbol": "SZ399019",
+      "etf": "SZ159573",
+      "name": "创业板指",
+      "weight_pct": 50.0
+    }
+  ],
+  "etf_pool": {
+    "SH588030": {
+      "name": "科创100",
+      "weight": 0.5
+    },
+    "SZ159573": {
+      "name": "创业板指",
+      "weight": 0.5
+    }
+  },
+  "action": {
+    "suggestion": "R2 选品 2 只, V7.2 仓位 10成",
+    "alert_level": "🟢 绿色正常",
+    "alert_level_code": 0
+  },
+  "warnings": {
+    "is_false_breakout": false,
+    "is_single_peak": false,
+    "is_trap_zone": false,
+    "is_transition_danger": false
+  },
+  "history": {
+    "days_in_strategy": "C7 持仓周期",
+    "position_strategy": "V7.2 仓位 (1-10成)"
+  }
+}
