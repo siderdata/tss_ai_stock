@@ -1,19 +1,19 @@
 {
-  "timestamp": "2026-06-16 15:55:25",
-  "trade_date": "2026-06-16",
+  "timestamp": "2026-06-17 16:08:04",
+  "trade_date": "2026-06-17",
   "phase": {
-    "current_phase": "阶段4: 低位震荡期-后期（待确认）",
+    "current_phase": "阶段4: 低位震荡期-后期（蓄势）",
     "main_phase": "低位震荡期",
     "sub_phase": "后期",
-    "confidence": 70
+    "confidence": 75
   },
   "scores": {
-    "composite_score": 6.17,
-    "daily_score": 4.6,
-    "avg_score": 5.44,
-    "recent_avg": 3.37,
-    "recent_trend": 4.76,
-    "high_ratio": 32.5,
+    "composite_score": 7.4,
+    "daily_score": 6.1,
+    "avg_score": 5.4,
+    "recent_avg": 4.57,
+    "recent_trend": 5.84,
+    "high_ratio": 30.0,
     "low_ratio": 35.0
   },
   "position": {
@@ -33,25 +33,19 @@
     "is_false_breakout": false,
     "false_breakout_reason": "无突破9分记录",
     "is_single_peak": false,
-    "single_peak_warning": "",
-    "peak_score": 2.13,
-    "drop_from_peak": -4.04,
+    "single_peak_warning": "未检测到单峰形态",
+    "peak_score": 7.4,
+    "drop_from_peak": 0,
     "is_trap_zone": false,
     "is_transition_danger": false,
     "transition_warning": ""
   },
   "history": {
-    "days_in_phase": 0,
+    "days_in_phase": 1,
     "max_drawdown": 0.0
   },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段4: 低位震荡期-后期（待确认）\n**综合评分**: 6.17 | **日线评分**: 4.60\n\n## 仓位建议\n\n**建议仓位**: 7成 (70% ~ 70%)\n**原因**: 震荡持有7成，等待变盘\n**操作建议**: 震荡持有7成 【支撑4032(向上跳空) 支撑3997(向上缺口底) 缺口:04-08向上缺口3903|06-12向上缺口3997】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (70% ~ 70%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段4: 低位震荡期-后期（蓄势）\n**综合评分**: 7.40 | **日线评分**: 6.10\n\n## 仓位建议\n\n**建议仓位**: 7成 (70% ~ 70%)\n**原因**: 震荡持有7成，等待变盘\n**操作建议**: 震荡持有7成 【支撑4032(向上跳空) 支撑3997(向上缺口底) 缺口:04-08向上缺口3903|06-12向上缺口3997】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (70% ~ 70%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
   "recent_data": [
-    {
-      "date": "2026-06-10",
-      "composite_score": 1.41,
-      "daily_score": 0.6,
-      "average_rise": -1.49
-    },
     {
       "date": "2026-06-11",
       "composite_score": 1.56,
@@ -75,6 +69,12 @@
       "composite_score": 6.17,
       "daily_score": 4.6,
       "average_rise": 0.95
+    },
+    {
+      "date": "2026-06-17",
+      "composite_score": 7.4,
+      "daily_score": 6.1,
+      "average_rise": 1.62
     }
   ]
 }
