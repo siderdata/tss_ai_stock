@@ -1,7 +1,5 @@
 {
-  "today_buys": {
-    "588000": "2026-06-17"
-  },
+  "today_buys": {},
   "circuit_breaker": {
     "active": false
   }

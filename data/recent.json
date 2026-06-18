@@ -2,6 +2,24 @@
   "count": 5,
   "data": [
     {
+      "average_rise": "1.5850",
+      "characteristics": "[\"\u7efc\u5408\u8bc4\u5206\u4e2d\u6027\uff0c\u591a\u7a7a\u5e73\u8861\", \"\u65e0\u660e\u663e\u65b9\u5411\u6027\", \"\u632f\u5e45\u5448\u6536\u7f29\u8d8b\u52bf\uff0c\u84c4\u52bf\u4e2d\", \"\u6700\u8fd1\u652f\u6491\u4f4d4032\uff081.6%\uff0cjump_up\uff09\"]",
+      "composite_score": "8.13",
+      "daily_score": "7.40",
+      "min120_score": "8.30",
+      "min30_score": "8.20",
+      "min60_score": "9.30",
+      "operation_suggestion": "\u89c2\u671b\u4e3a\u4e3b\uff0c\u7b49\u5f85\u65b9\u5411\u9009\u62e9\uff1b\u3010\u63a5\u8fd1\u652f\u6491\u4f4d4032\u3011",
+      "ratio": "1.1100",
+      "risk_level": "\u4e2d\u7b49",
+      "status_name": "\u4e2d\u6027\u9707\u8361\u9636\u6bb5",
+      "status_type": "neutral",
+      "total_amount": 3267505964032,
+      "total_predicted_amount": 3291968638070,
+      "trade_time": "2026-06-18 15:00:00",
+      "up_ratio": "39.34"
+    },
+    {
       "average_rise": "1.6200",
       "characteristics": "[\"\u65e5\u7ebf\u504f\u5f31\uff086.1\u5206\uff09\u4f46\u4e2d\u77ed\u5468\u671f\u8d70\u5f3a\", \"\u53ef\u80fd\u662f\u65b0\u8d8b\u52bf\u7684\u542f\u52a8\u4fe1\u53f7\", \"\u9700\u8981\u6210\u4ea4\u91cf\u786e\u8ba4\u548c\u6301\u7eed\u6027\u9a8c\u8bc1\", \"\u632f\u5e45\u5448\u6536\u7f29\u8d8b\u52bf\uff0c\u84c4\u52bf\u4e2d\", \"\u6700\u8fd1\u652f\u6491\u4f4d4032\uff081.9%\uff0cjump_up\uff09\"]",
       "composite_score": "7.40",
@@ -72,24 +90,6 @@
       "total_predicted_amount": 3233026769701,
       "trade_time": "2026-06-12 15:00:00",
       "up_ratio": "72.58"
-    },
-    {
-      "average_rise": "-0.2420",
-      "characteristics": "[\"\u5168\u5468\u671f\u6781\u5ea6\u5f31\u52bf\uff0c\u5e02\u573a\u6050\u614c\", \"\u6280\u672f\u6307\u6807\u5168\u9762\u8d85\u5356\", \"\u53ef\u80fd\u51fa\u73b0\u6280\u672f\u6027\u53cd\u5f39\", \"\u632f\u5e45\u5448\u6536\u7f29\u8d8b\u52bf\uff0c\u84c4\u52bf\u4e2d\", \"\u6700\u8fd1\u652f\u6491\u4f4d3903\uff082.1%\uff0cgap_upward\uff09\", \"\u6700\u8fd1\u963b\u529b\u4f4d4010\uff08+0.6%\uff0cjump_down\uff09\"]",
-      "composite_score": "1.56",
-      "daily_score": "0.80",
-      "min120_score": "1.00",
-      "min30_score": "3.80",
-      "min60_score": "2.80",
-      "operation_suggestion": "\u7a7a\u4ed3\u89c2\u671b\uff0c\u53ef\u5c0f\u4ed3\u4f4d\u535a\u5f08\u8d85\u8dcc\u53cd\u5f39\uff08\u4e25\u683c\u6b62\u635f\uff09\uff1b\u3010\u63a5\u8fd1\u963b\u529b\u4f4d4010\uff08+0.6%\uff09\u3011",
-      "ratio": "0.9320",
-      "risk_level": "\u6781\u9ad8",
-      "status_name": "\u6781\u7aef\u4e0b\u8dcc\u9636\u6bb5",
-      "status_type": "extreme_bear",
-      "total_amount": 2552021494784,
-      "total_predicted_amount": 2580819773428,
-      "trade_time": "2026-06-11 15:00:00",
-      "up_ratio": "26.38"
     }
   ],
   "query": {

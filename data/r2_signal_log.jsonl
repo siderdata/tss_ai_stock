@@ -2,3 +2,5 @@
 {"ts": "2026-06-15T23:52:14.591683", "strategy": "r2_s5_r2_c7", "trade_date": "2026-06-12", "action": "R2 选品 2 只, V7.2 仓位 7成", "position": "7成", "picks": ["SH000015", "SH000016"], "status": "SUCCESS", "msg": "信号生成成功"}
 {"ts": "2026-06-15T23:52:41.012075", "strategy": "r2_s5_r2_c7", "trade_date": "2026-06-15", "action": "R2 选品 2 只, V7.2 仓位 10成", "position": "10成", "picks": ["SH000698", "SZ399019"], "status": "SUCCESS", "msg": "信号生成成功"}
 {"ts": "2026-06-16T10:20:10.846924", "strategy": "r2_s5_r2_c7", "trade_date": "2026-06-16", "action": "R2 选品 2 只, V7.2 仓位 10成", "position": "10成", "picks": ["SH000698", "SZ399019"], "status": "SUCCESS", "msg": "信号生成成功"}
+{"ts": "2026-06-17T22:34:39.253578", "strategy": "r2_stable", "trade_date": "--help", "action": "逐浪选品无结果(数据缺失)", "position": "10成", "picks": [], "status": "SUCCESS", "msg": "信号生成成功"}
+{"ts": "2026-06-17T22:34:52.874824", "strategy": "r2_stable", "trade_date": "2026-06-15", "action": "逐浪选品 2 只, V7.2 仓位 10成", "position": "10成", "picks": ["SH000698", "SZ399019"], "status": "SUCCESS", "msg": "信号生成成功"}

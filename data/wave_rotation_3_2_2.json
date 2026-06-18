@@ -1,0 +1,39 @@
+{
+  "protocol": "strategy_action_v1",
+  "strategy": "test_w1",
+  "trade_date": "2026-06-18",
+  "timestamp": "2026-06-18T15:55:26",
+  "phase": {
+    "main_phase": "逐浪 (S3-R2-C2)",
+    "sub_phase": "动量轮动选品"
+  },
+  "actions": [
+    {
+      "target": "SH588030",
+      "name": "科创100",
+      "action": "BUY",
+      "target_pct": 50.0,
+      "weight_pct": 50.0,
+      "reason": "逐浪 (S3/R2/C2) 选品: 科创100"
+    },
+    {
+      "target": "SH588220",
+      "name": "科创200",
+      "action": "BUY",
+      "target_pct": 50.0,
+      "weight_pct": 50.0,
+      "reason": "逐浪 (S3/R2/C2) 选品: 科创200"
+    }
+  ],
+  "reason": "逐浪选品 2 只, V7.2 仓位 10成",
+  "position_intent": {
+    "recommended_ratio": 100.0,
+    "reason": "逐浪选品 2 只, V7.2 仓位 10成"
+  },
+  "parameters": {
+    "S": 3,
+    "R": 2,
+    "C": 2
+  },
+  "_source": "wave_rotation"
+}
