@@ -4,11 +4,12 @@
   "yearStartCapital": 323220,
   "yearReturn": "+17.72%",
   "yearReturnNote": "至 2026-06-18",
-  "yearReturnAmount": 57200,
+  "yearReturnAmount": 57265,
   "systemHistoryStartCapital": 306320,
-  "systemHistoryReturn": "+19.21%",
-  "systemHistoryReturnNote": "系统上线 2025.12 — 至今",
-  "systemHistoryAmount": 58861,
+  "systemHistoryCurrentCapital": 380485,
+  "systemHistoryReturn": "+24.24%",
+  "systemHistoryReturnNote": "系统上线 2025.12 — 至 2026.06.18",
+  "systemHistoryAmount": 74165,
   "monthlyReturns": [
     {
       "month": "2025-12",
@@ -48,9 +49,9 @@
     },
     {
       "month": "2026-06",
-      "amount": 20000,
+      "amount": 20737,
       "rate": 5.76,
-      "label": "杀跌防守（MTD）"
+      "label": "牛灾月 · T0精准收割"
     }
   ]
 }
