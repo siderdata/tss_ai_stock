@@ -1,6 +1,8 @@
 {
   "today_buys": {},
   "circuit_breaker": {
-    "active": false
+    "active": true,
+    "reason": "单批次 4 笔失败,失败金额 ¥116711",
+    "activated_at": "2026-06-22T14:50:00.539480"
   }
 }
