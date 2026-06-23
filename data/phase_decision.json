@@ -2,22 +2,22 @@
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
   "trade_date": "2026-06-23",
-  "timestamp": "2026-06-23T14:10:28",
+  "timestamp": "2026-06-23T15:55:24",
   "phase": {
     "main_phase": "主升上涨浪",
     "sub_phase": "中继期",
     "confidence": 80.0
   },
   "position_intent": {
-    "recommended_ratio": 60.0,
-    "reason": "🟠 离场信号：评分急跌2.1分且跌破8.5分；触发1个离场信号，降仓至7-8.5成；主升浪-中继期，满仓持有；评分6.8<7.5，适度降仓；🔴 衰竭保护触发：日线8.8+120m=8.4+60m=2.8+30m=2.3，前日确认期减3成"
+    "recommended_ratio": 90.0,
+    "reason": "🟠 离场信号：评分急跌2.0分且跌破8.5分；触发1个离场信号，降仓至7-8.5成；主升浪-中继期，满仓持有；评分6.9<7.5，适度降仓"
   },
   "scores": {
-    "composite_score": 6.83,
+    "composite_score": 6.92,
     "daily_score": 8.8,
     "avg_score": 5.27,
-    "recent_avg": 7.47,
-    "recent_trend": 0.66,
+    "recent_avg": 7.49,
+    "recent_trend": 0.75,
     "high_ratio": 25.6,
     "low_ratio": 35.9
   },

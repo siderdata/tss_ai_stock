@@ -2,6 +2,24 @@
   "count": 3,
   "data": [
     {
+      "average_rise": "-2.4220",
+      "characteristics": "[\"长周期强势但短周期转弱，出现顶背离\", \"可能出现顶部信号，风险累积\", \"成交量可能萎缩，追高意愿减弱\", \"最近支撑位4032（1.8%，jump_up）\"]",
+      "composite_score": "6.92",
+      "daily_score": "8.80",
+      "min120_score": "8.70",
+      "min30_score": "1.90",
+      "min60_score": "3.00",
+      "operation_suggestion": "持股为主，单日回调加仓，连续回调减仓；【接近支撑位4032】",
+      "ratio": "1.0380",
+      "risk_level": "中高",
+      "status_name": "高位震荡阶段",
+      "status_type": "top_divergence",
+      "total_amount": 3440763978752,
+      "total_predicted_amount": 3373881237489,
+      "trade_time": "2026-06-23 15:00:00",
+      "up_ratio": "50.00"
+    },
+    {
       "average_rise": "-1.9400",
       "characteristics": "[\"长周期强势但短周期转弱，出现顶背离\", \"可能出现顶部信号，风险累积\", \"成交量可能萎缩，追高意愿减弱\", \"最近支撑位4032（2.2%，jump_up）\"]",
       "composite_score": "7.35",
@@ -36,24 +54,6 @@
       "total_predicted_amount": 3461576915019,
       "trade_time": "2026-06-23 11:30:00",
       "up_ratio": "61.36"
-    },
-    {
-      "average_rise": "-0.0470",
-      "characteristics": "[\"综合评分偏高，多头占优\", \"但未形成明确共振\", \"最近支撑位4032（3.4%，jump_up）\"]",
-      "composite_score": "8.87",
-      "daily_score": "8.90",
-      "min120_score": "8.70",
-      "min30_score": "8.20",
-      "min60_score": "9.40",
-      "operation_suggestion": "持股观望，等待明确信号",
-      "ratio": "1.0830",
-      "risk_level": "中低",
-      "status_name": "偏强整理阶段",
-      "status_type": "bullish_bias",
-      "total_amount": 1723409647616,
-      "total_predicted_amount": 3555387943718,
-      "trade_time": "2026-06-23 10:30:00",
-      "up_ratio": "69.40"
     }
   ],
   "query": {
