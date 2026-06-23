@@ -1,8 +1,8 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_momentum",
-  "trade_date": "2026-06-22",
-  "timestamp": "2026-06-22T15:55:24",
+  "trade_date": "2026-06-23",
+  "timestamp": "2026-06-23T14:10:28",
   "phase": {
     "main_phase": "动量轮动",
     "sub_phase": "Top1"
@@ -12,15 +12,15 @@
       "target": "588000.SH",
       "name": "科创50",
       "action": "BUY",
-      "target_pct": 100.0,
+      "target_pct": 60.0,
       "weight_pct": 100.0,
       "reason": "动量轮动 Top1: 科创50 (市场:多头 ×100%)"
     }
   ],
-  "reason": "V7.2 推荐 100% × 风控 100% = 100%",
+  "reason": "V7.2 推荐 60% × 风控 100% = 60%",
   "position_intent": {
-    "recommended_ratio": 100.0,
-    "reason": "V7.2 推荐 100% × 风控 100% = 100%"
+    "recommended_ratio": 60.0,
+    "reason": "V7.2 推荐 60% × 风控 100% = 60%"
   },
   "top1_index": "SH000688",
   "market_state": "多头",

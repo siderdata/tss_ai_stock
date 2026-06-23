@@ -1,16 +1,16 @@
 {
   "strategy_id": "r2_stable",
   "strategy_name": "逐浪 WaveChaser",
-  "timestamp": "2026-06-22 16:57:56",
+  "timestamp": "2026-06-22 16:58:12",
   "trade_date": "7",
   "phase": {
     "current_phase": "逐浪 WaveChaser",
-    "main_phase": "逐浪 (S2-R6-C7)",
+    "main_phase": "逐浪 (S4-R6-C7)",
     "sub_phase": "动量轮动选品",
     "confidence": 90
   },
   "parameters": {
-    "S": 2,
+    "S": 4,
     "R": 6,
     "C": 7
   },
@@ -28,27 +28,47 @@
       "symbol": "SH000688",
       "etf": "SH588000",
       "name": "科创50",
-      "weight_pct": 50.0
+      "weight_pct": 25.0
     },
     {
       "symbol": "SZ399296",
       "etf": "SZ159967",
       "name": "创成长",
-      "weight_pct": 50.0
+      "weight_pct": 25.0
+    },
+    {
+      "symbol": "SH000905",
+      "etf": "SH510500",
+      "name": "中证500",
+      "weight_pct": 25.0
+    },
+    {
+      "symbol": "SZ399673",
+      "etf": "SZ159949",
+      "name": "创业板50",
+      "weight_pct": 25.0
     }
   ],
   "etf_pool": {
     "SH588000": {
       "name": "科创50",
-      "weight": 0.5
+      "weight": 0.25
     },
     "SZ159967": {
       "name": "创成长",
-      "weight": 0.5
+      "weight": 0.25
+    },
+    "SH510500": {
+      "name": "中证500",
+      "weight": 0.25
+    },
+    "SZ159949": {
+      "name": "创业板50",
+      "weight": 0.25
     }
   },
   "action": {
-    "suggestion": "逐浪选品 2 只, V7.2 仓位 10成",
+    "suggestion": "逐浪选品 4 只, V7.2 仓位 10成",
     "alert_level": "🟢 绿色正常",
     "alert_level_code": 0
   },
