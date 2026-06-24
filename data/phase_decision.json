@@ -1,24 +1,24 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-06-23",
-  "timestamp": "2026-06-23T15:55:24",
+  "trade_date": "2026-06-24",
+  "timestamp": "2026-06-24T15:55:24",
   "phase": {
     "main_phase": "主升上涨浪",
-    "sub_phase": "中继期",
-    "confidence": 80.0
+    "sub_phase": "后期",
+    "confidence": 85.0
   },
   "position_intent": {
-    "recommended_ratio": 90.0,
-    "reason": "🟠 离场信号：评分急跌2.0分且跌破8.5分；触发1个离场信号，降仓至7-8.5成；主升浪-中继期，满仓持有；评分6.9<7.5，适度降仓"
+    "recommended_ratio": 100.0,
+    "reason": "中继修复：前日6.9<7.5，今日7.8回升，加至满仓；主升浪-后期，满仓持有"
   },
   "scores": {
-    "composite_score": 6.92,
-    "daily_score": 8.8,
-    "avg_score": 5.27,
-    "recent_avg": 7.49,
-    "recent_trend": 0.75,
-    "high_ratio": 25.6,
+    "composite_score": 7.83,
+    "daily_score": 9.0,
+    "avg_score": 5.3,
+    "recent_avg": 7.82,
+    "recent_trend": 0.43,
+    "high_ratio": 28.2,
     "low_ratio": 35.9
   },
   "warnings": {
@@ -28,7 +28,7 @@
     "single_peak_warning": "当前阶段为主升上涨浪，不适用单峰陷阱检测",
     "peak_score": 0,
     "drop_from_peak": 0,
-    "is_trap_zone": false,
+    "is_trap_zone": true,
     "is_transition_danger": false,
     "transition_warning": ""
   },
