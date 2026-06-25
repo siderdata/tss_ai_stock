@@ -1,8 +1,8 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "S7-R3-C1",
-  "trade_date": "2026-06-24",
-  "timestamp": "2026-06-24T15:55:25",
+  "trade_date": "2026-06-25",
+  "timestamp": "2026-06-25T15:30:26",
   "phase": {
     "main_phase": "逐浪 (S7-R3-C1)",
     "sub_phase": "动量轮动选品"
@@ -25,12 +25,12 @@
       "reason": "逐浪 (S7/R3/C1) 选品: 科创100"
     },
     {
-      "target": "510500.SH",
-      "name": "中证500",
+      "target": "159967.SZ",
+      "name": "创成长",
       "action": "BUY",
       "target_pct": 33.3,
       "weight_pct": 33.3,
-      "reason": "逐浪 (S7/R3/C1) 选品: 中证500"
+      "reason": "逐浪 (S7/R3/C1) 选品: 创成长"
     }
   ],
   "reason": "逐浪选品 3 只, V7.2 仓位 10成",

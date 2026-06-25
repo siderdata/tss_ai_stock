@@ -1,8 +1,8 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-06-24",
-  "timestamp": "2026-06-24T15:55:24",
+  "trade_date": "2026-06-25",
+  "timestamp": "2026-06-25T15:30:25",
   "phase": {
     "main_phase": "主升上涨浪",
     "sub_phase": "后期",
@@ -10,16 +10,16 @@
   },
   "position_intent": {
     "recommended_ratio": 100.0,
-    "reason": "中继修复：前日6.9<7.5，今日7.8回升，加至满仓；主升浪-后期，满仓持有"
+    "reason": "主升浪-后期，满仓持有"
   },
   "scores": {
-    "composite_score": 7.83,
-    "daily_score": 9.0,
-    "avg_score": 5.3,
-    "recent_avg": 7.82,
-    "recent_trend": 0.43,
-    "high_ratio": 28.2,
-    "low_ratio": 35.9
+    "composite_score": 8.95,
+    "daily_score": 9.5,
+    "avg_score": 5.39,
+    "recent_avg": 8.13,
+    "recent_trend": 0.9,
+    "high_ratio": 30.0,
+    "low_ratio": 35.0
   },
   "warnings": {
     "is_false_breakout": false,

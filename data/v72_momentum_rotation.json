@@ -1,8 +1,8 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_momentum",
-  "trade_date": "2026-06-24",
-  "timestamp": "2026-06-24T15:55:24",
+  "trade_date": "2026-06-25",
+  "timestamp": "2026-06-25T15:30:25",
   "phase": {
     "main_phase": "动量轮动",
     "sub_phase": "Top1"
