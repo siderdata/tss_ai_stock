@@ -4,9 +4,6 @@
     "588220.SH": "2026-06-26"
   },
   "circuit_breaker": {
-    "active": true,
-    "reason": "单批次 2 笔失败,失败金额 ¥63998",
-    "activated_at": "2026-06-26T11:00:01.921613",
-    "until": "2026-06-26T23:59:59"
+    "active": false
   }
 }
