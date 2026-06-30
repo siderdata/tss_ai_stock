@@ -1,16 +1,11 @@
 {
-  "protocol": "strategy_action_v1",
-  "strategy": "v72_balance",
+  "timestamp": "2026-06-30 16:03:59",
   "trade_date": "2026-06-30",
-  "timestamp": "2026-06-30T15:55:28",
   "phase": {
+    "current_phase": "阶段1: 主升上涨浪-确认期",
     "main_phase": "主升上涨浪",
     "sub_phase": "确认期",
-    "confidence": 95.0
-  },
-  "position_intent": {
-    "recommended_ratio": 100.0,
-    "reason": "中继修复：前日6.1<7.5，今日9.1回升，加至满仓；主升浪-确认期，满仓持有"
+    "confidence": 95
   },
   "scores": {
     "composite_score": 9.12,
@@ -20,6 +15,19 @@
     "recent_trend": 1.29,
     "high_ratio": 28.2,
     "low_ratio": 35.9
+  },
+  "position": {
+    "recommended_ratio": 100.0,
+    "position_desc": "10成",
+    "position_min": 100.0,
+    "position_max": 100.0,
+    "reason": "中继修复：前日6.1<7.5，今日9.1回升，加至满仓；主升浪-确认期，满仓持有",
+    "actual_ratio": 100.0
+  },
+  "action": {
+    "suggestion": "持有10成",
+    "alert_level": "🔴 红色预警",
+    "alert_level_code": 3
   },
   "warnings": {
     "is_false_breakout": false,
@@ -32,6 +40,41 @@
     "is_transition_danger": false,
     "transition_warning": ""
   },
-  "_source": "phase_decision_adapter",
-  "_source_path": "data/phase_decision.json"
+  "history": {
+    "days_in_phase": 0,
+    "max_drawdown": 0.0
+  },
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段1: 主升上涨浪-确认期\n**综合评分**: 9.12 | **日线评分**: 9.30\n\n## 仓位建议\n\n**建议仓位**: 10成 (100% ~ 100%)\n**原因**: 中继修复：前日6.1<7.5，今日9.1回升，加至满仓；主升浪-确认期，满仓持有\n**操作建议**: 持有10成\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (100% ~ 100%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "recent_data": [
+    {
+      "date": "2026-06-24",
+      "composite_score": 7.83,
+      "daily_score": 9.0,
+      "average_rise": 1.39
+    },
+    {
+      "date": "2026-06-25",
+      "composite_score": 8.95,
+      "daily_score": 9.5,
+      "average_rise": 1.75
+    },
+    {
+      "date": "2026-06-26",
+      "composite_score": 5.75,
+      "daily_score": 7.4,
+      "average_rise": -2.95
+    },
+    {
+      "date": "2026-06-29",
+      "composite_score": 6.1,
+      "daily_score": 7.6,
+      "average_rise": 1.25
+    },
+    {
+      "date": "2026-06-30",
+      "composite_score": 9.12,
+      "daily_score": 9.3,
+      "average_rise": 2.56
+    }
+  ]
 }
