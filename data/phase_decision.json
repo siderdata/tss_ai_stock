@@ -1,31 +1,31 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-06-29",
-  "timestamp": "2026-06-29T15:55:26",
+  "trade_date": "2026-06-30",
+  "timestamp": "2026-06-30T15:55:28",
   "phase": {
-    "main_phase": "高位震荡浪",
-    "sub_phase": "反弹期",
-    "confidence": 75.0
+    "main_phase": "主升上涨浪",
+    "sub_phase": "确认期",
+    "confidence": 95.0
   },
   "position_intent": {
-    "recommended_ratio": 30.0,
-    "reason": "日涨幅1.3%≥1%，减1成 | 高位震荡内部,跟随目标"
+    "recommended_ratio": 100.0,
+    "reason": "中继修复：前日6.1<7.5，今日9.1回升，加至满仓；主升浪-确认期，满仓持有"
   },
   "scores": {
-    "composite_score": 6.1,
-    "daily_score": 7.6,
-    "avg_score": 5.29,
-    "recent_avg": 7.11,
-    "recent_trend": -0.82,
+    "composite_score": 9.12,
+    "daily_score": 9.3,
+    "avg_score": 5.3,
+    "recent_avg": 7.55,
+    "recent_trend": 1.29,
     "high_ratio": 28.2,
     "low_ratio": 35.9
   },
   "warnings": {
     "is_false_breakout": false,
-    "false_breakout_reason": "无突破9分记录",
+    "false_breakout_reason": "当前阶段为主升上涨浪，不适用假突破检测",
     "is_single_peak": false,
-    "single_peak_warning": "当前阶段为高位震荡浪，不适用单峰陷阱检测",
+    "single_peak_warning": "当前阶段为主升上涨浪，不适用单峰陷阱检测",
     "peak_score": 0,
     "drop_from_peak": 0,
     "is_trap_zone": false,
