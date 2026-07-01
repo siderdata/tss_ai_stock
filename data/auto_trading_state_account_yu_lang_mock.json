@@ -1,11 +1,8 @@
 {
   "today_buys": {
-    "588000.SH": "2026-06-30"
+    "588000.SH": {"date": "2026-07-01", "qty": 170200}
   },
   "circuit_breaker": {
-    "active": true,
-    "reason": "单批次 1 笔失败,失败金额 ¥403376",
-    "activated_at": "2026-06-30T14:40:00.915360",
-    "until": "2026-06-30T23:59:59"
+    "active": false
   }
 }

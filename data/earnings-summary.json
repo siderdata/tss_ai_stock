@@ -2,9 +2,9 @@
   "_comment": "此文件由维护者手工更新。每月底或重大事件后修改 monthlyReturns。EarningsCurve + index.md 组件从这读取。",
   "year": 2026,
   "yearStartCapital": 323220,
-  "yearReturn": "+15.83%",
-  "yearReturnNote": "至 2026-06-30",
-  "yearReturnAmount": 51181,
+  "yearReturn": "+15.88%",
+  "yearReturnNote": "至 2026-07-01",
+  "yearReturnAmount": 51333,
   "systemHistoryStartCapital": 306320,
   "systemHistoryCurrentCapital": 380485,
   "systemHistoryReturn": "+24.24%",
@@ -52,6 +52,12 @@
       "amount": 14653,
       "rate": 4.07,
       "label": "主升突破 · 半年完美收官"
+    },
+    {
+      "month": "2026-07",
+      "amount": 152,
+      "rate": 0.04,
+      "label": "科技切换 · 风格轮动"
     }
   ]
 }

@@ -1,20 +1,20 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "smart_rotation_s2r1c1",
-  "trade_date": "2026-06-30",
-  "timestamp": "2026-06-30T15:55:29",
+  "trade_date": "2026-07-01",
+  "timestamp": "2026-07-01T15:55:27",
   "phase": {
     "main_phase": "逐浪 (S2-R1-C1)",
     "sub_phase": "日内调仓"
   },
   "actions": [
     {
-      "target": "588000.SH",
-      "name": "科创50",
+      "target": "588030.SH",
+      "name": "科创100",
       "action": "BUY",
       "target_pct": 100.0,
       "weight_pct": 100.0,
-      "reason": "驭浪选品: 科创50"
+      "reason": "驭浪选品: 科创100"
     }
   ],
   "reason": "逐浪选品 1 只, V7.2 仓位 10成; 仓位 100.0% (无 LLM 决策)",
