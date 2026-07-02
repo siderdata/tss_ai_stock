@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S5-R2-C7",
   "trade_date": "2026-07-02",
-  "timestamp": "2026-07-02T15:10:28",
+  "timestamp": "2026-07-02T15:55:27",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C7)",
     "sub_phase": "动量轮动选品"
