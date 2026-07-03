@@ -1,17 +1,17 @@
 {
   "strategy_id": "r2_stable",
   "strategy_name": "逐浪 WaveChaser",
-  "timestamp": "2026-07-03 10:10:59",
+  "timestamp": "2026-07-03 10:10:08",
   "trade_date": "2026-07-03",
   "phase": {
     "current_phase": "逐浪 WaveChaser",
-    "main_phase": "逐浪 (S2-R1-C1)",
+    "main_phase": "逐浪 (S3-R2-C1)",
     "sub_phase": "动量轮动选品",
     "confidence": 90
   },
   "parameters": {
-    "S": 2,
-    "R": 1,
+    "S": 3,
+    "R": 2,
     "C": 1
   },
   "position": {
@@ -28,17 +28,27 @@
       "symbol": "SH000699",
       "etf": "SH588220",
       "name": "科创200",
-      "weight_pct": 100.0
+      "weight_pct": 50.0
+    },
+    {
+      "symbol": "SH000688",
+      "etf": "SH588000",
+      "name": "科创50",
+      "weight_pct": 50.0
     }
   ],
   "etf_pool": {
     "SH588220": {
       "name": "科创200",
-      "weight": 1.0
+      "weight": 0.5
+    },
+    "SH588000": {
+      "name": "科创50",
+      "weight": 0.5
     }
   },
   "action": {
-    "suggestion": "逐浪选品 1 只, V7.2 仓位 2成",
+    "suggestion": "逐浪选品 2 只, V7.2 仓位 2成",
     "alert_level": "🟢 绿色正常",
     "alert_level_code": 0
   },

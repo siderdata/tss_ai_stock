@@ -67,3 +67,8 @@
 {"ts": "2026-07-02T11:37:31.472817", "strategy": "r2_stable", "trade_date": "2026-07-02", "action": "逐浪选品 1 只, V7.2 仓位 10成", "position": "10成", "picks": ["SH000699"], "status": "SUCCESS", "msg": "信号生成成功"}
 {"ts": "2026-07-02T11:58:54.380555", "strategy": "r2_stable", "trade_date": "2026-07-02", "action": "逐浪选品 1 只, V7.2 仓位 6成", "position": "6成", "picks": ["SH000699"], "status": "SUCCESS", "msg": "信号生成成功"}
 {"ts": "2026-07-02T12:50:10.528036", "strategy": "r2_stable", "trade_date": "2026-07-02", "action": "逐浪选品 1 只, V7.2 仓位 6成", "position": "6成", "picks": ["SH000699"], "status": "SUCCESS", "msg": "信号生成成功"}
+{"ts": "2026-07-03T10:09:57.436234", "strategy": "r2_stable", "trade_date": "2026-07-03", "action": "逐浪选品 1 只, V7.2 仓位 2成", "position": "2成", "picks": ["SH000699"], "status": "SUCCESS", "msg": "信号生成成功"}
+{"ts": "2026-07-03T10:10:08.746143", "strategy": "r2_stable", "trade_date": "2026-07-03", "action": "逐浪选品 2 只, V7.2 仓位 2成", "position": "2成", "picks": ["SH000699", "SH000688"], "status": "SUCCESS", "msg": "信号生成成功"}
+{"ts": "2026-07-03T10:10:15.353727", "strategy": "r2_stable", "trade_date": "2026-07-03", "action": "逐浪选品 2 只, V7.2 仓位 2成", "position": "2成", "picks": ["SH000699", "SH000688"], "status": "SUCCESS", "msg": "信号生成成功"}
+{"ts": "2026-07-03T10:10:22.521174", "strategy": "r2_stable", "trade_date": "2026-07-03", "action": "逐浪选品 2 只, V7.2 仓位 2成", "position": "2成", "picks": ["SH000699", "SH000688"], "status": "SUCCESS", "msg": "信号生成成功"}
+{"ts": "2026-07-03T10:10:59.304997", "strategy": "r2_stable", "trade_date": "2026-07-03", "action": "逐浪选品 1 只, V7.2 仓位 2成", "position": "2成", "picks": ["SH000699"], "status": "SUCCESS", "msg": "信号生成成功"}
