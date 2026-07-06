@@ -1,28 +1,28 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "S4-R2-C4",
-  "trade_date": "2026-07-03",
-  "timestamp": "2026-07-03T15:55:27",
+  "trade_date": "2026-07-06",
+  "timestamp": "2026-07-06T15:55:26",
   "phase": {
     "main_phase": "逐浪 (S4-R2-C4)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "588220.SH",
-      "name": "科创200",
+      "target": "510050.SH",
+      "name": "上证50",
       "action": "BUY",
       "target_pct": 12.5,
       "weight_pct": 50.0,
-      "reason": "逐浪 (S4/R2/C4) 选品: 科创200"
+      "reason": "逐浪 (S4/R2/C4) 选品: 上证50"
     },
     {
-      "target": "588030.SH",
-      "name": "科创100",
+      "target": "510880.SH",
+      "name": "上证红利",
       "action": "BUY",
       "target_pct": 12.5,
       "weight_pct": 50.0,
-      "reason": "逐浪 (S4/R2/C4) 选品: 科创100"
+      "reason": "逐浪 (S4/R2/C4) 选品: 上证红利"
     }
   ],
   "reason": "逐浪选品 2 只, V7.2 仓位 2成",

@@ -1,8 +1,8 @@
 {
   "strategy_id": "r2_stable",
   "strategy_name": "逐浪 WaveChaser",
-  "timestamp": "2026-06-29 16:43:01",
-  "trade_date": "2026-06-29",
+  "timestamp": "2026-07-03 22:32:59",
+  "trade_date": "2026-07-03",
   "phase": {
     "current_phase": "逐浪 WaveChaser",
     "main_phase": "逐浪 (S7-R3-C1)",
@@ -15,19 +15,19 @@
     "C": 1
   },
   "position": {
-    "recommended_ratio": 30.0,
-    "position_desc": "3成",
-    "position_min": 30.0,
-    "position_max": 30.0,
-    "reason": "V7.2 仓位建议 3成",
-    "actual_ratio": 30.0,
+    "recommended_ratio": 25.0,
+    "position_desc": "2成",
+    "position_min": 25.0,
+    "position_max": 25.0,
+    "reason": "V7.2 仓位建议 2成",
+    "actual_ratio": 25.0,
     "source": "V7.2 自动读取"
   },
   "r2_picks": [
     {
-      "symbol": "SH000688",
-      "etf": "SH588000",
-      "name": "科创50",
+      "symbol": "SH000699",
+      "etf": "SH588220",
+      "name": "科创200",
       "weight_pct": 33.3
     },
     {
@@ -37,28 +37,28 @@
       "weight_pct": 33.3
     },
     {
-      "symbol": "SH000699",
-      "etf": "SH588220",
-      "name": "科创200",
+      "symbol": "SH000688",
+      "etf": "SH588000",
+      "name": "科创50",
       "weight_pct": 33.3
     }
   ],
   "etf_pool": {
-    "SH588000": {
-      "name": "科创50",
+    "SH588220": {
+      "name": "科创200",
       "weight": 0.333
     },
     "SH588030": {
       "name": "科创100",
       "weight": 0.333
     },
-    "SH588220": {
-      "name": "科创200",
+    "SH588000": {
+      "name": "科创50",
       "weight": 0.333
     }
   },
   "action": {
-    "suggestion": "逐浪选品 3 只, V7.2 仓位 3成",
+    "suggestion": "逐浪选品 3 只, V7.2 仓位 2成",
     "alert_level": "🟢 绿色正常",
     "alert_level_code": 0
   },
