@@ -1,0 +1,22 @@
+{
+  "date": "2026-07-21",
+  "actual_position": 5.0,
+  "anchor": 3.0,
+  "base": 3.0,
+  "deltas": {
+    "margin": 0,
+    "kline": 2,
+    "macd": 0
+  },
+  "band": [
+    0,
+    5.0
+  ],
+  "constraint_note": "阶段3 ≤ 7",
+  "prev_margin_adjust": 2,
+  "prev_kline_adjust": 2,
+  "baseline_margin_adjust": 2,
+  "baseline_kline_adjust": 0,
+  "prev_macd_tier": 0,
+  "baseline_macd_tier": 0
+}

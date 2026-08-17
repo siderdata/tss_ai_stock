@@ -1,0 +1,20 @@
+{
+  "timestamp": "2026-08-14 14:51:46",
+  "market_sentiment": "neutral",
+  "resonance_type": "divergence",
+  "confidence": 0.4,
+  "description": "评分6.7小幅回落(从6.93)；韩国+2.41%外资大举回流但A股科创未跟；V32翻空减弱至10/14；持仓当日微涨观察",
+  "adjustments": {
+    "588030.SH": {
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "持仓当日微涨+0.11%，外围强势传导观察"
+    },
+    "588220.SH": {
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "持仓持平，外围强势传导观察"
+    }
+  },
+  "expires_at": "2026-08-14 14:59:46"
+}

@@ -1,34 +1,34 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "r2_stable",
-  "trade_date": "2026-07-06",
-  "timestamp": "2026-07-06T15:55:25",
+  "trade_date": "2026-08-14",
+  "timestamp": "2026-08-14T15:55:28",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "510050.SH",
-      "name": "上证50",
-      "action": "BUY",
-      "target_pct": 12.5,
-      "weight_pct": 50.0,
-      "reason": "逐浪 (S5/R2/C1) 选品: 上证50"
-    },
-    {
       "target": "588220.SH",
       "name": "科创200",
       "action": "BUY",
-      "target_pct": 12.5,
+      "target_pct": 35.0,
       "weight_pct": 50.0,
       "reason": "逐浪 (S5/R2/C1) 选品: 科创200"
+    },
+    {
+      "target": "588030.SH",
+      "name": "科创100",
+      "action": "BUY",
+      "target_pct": 35.0,
+      "weight_pct": 50.0,
+      "reason": "逐浪 (S5/R2/C1) 选品: 科创100"
     }
   ],
-  "reason": "逐浪选品 2 只, V7.2 仓位 2成",
+  "reason": "逐浪选品 2 只, V7.2 仓位 7成",
   "position_intent": {
-    "recommended_ratio": 25.0,
-    "reason": "逐浪选品 2 只, V7.2 仓位 2成"
+    "recommended_ratio": 70.0,
+    "reason": "逐浪选品 2 只, V7.2 仓位 7成"
   },
   "parameters": {
     "S": 5,

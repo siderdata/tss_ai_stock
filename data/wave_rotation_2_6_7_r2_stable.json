@@ -1,8 +1,8 @@
 {
   "strategy_id": "r2_stable",
   "strategy_name": "逐浪 WaveChaser",
-  "timestamp": "2026-06-22 16:57:56",
-  "trade_date": "7",
+  "timestamp": "2026-07-10 22:52:07",
+  "trade_date": "5",
   "phase": {
     "current_phase": "逐浪 WaveChaser",
     "main_phase": "逐浪 (S2-R6-C7)",
@@ -15,40 +15,40 @@
     "C": 7
   },
   "position": {
-    "recommended_ratio": 100.0,
-    "position_desc": "10成",
-    "position_min": 100.0,
-    "position_max": 100.0,
-    "reason": "V7.2 仓位建议 10成",
-    "actual_ratio": 100.0,
+    "recommended_ratio": 10.0,
+    "position_desc": "1成",
+    "position_min": 10.0,
+    "position_max": 10.0,
+    "reason": "V7.2 仓位建议 1成",
+    "actual_ratio": 10.0,
     "source": "V7.2 自动读取"
   },
   "r2_picks": [
     {
-      "symbol": "SH000688",
-      "etf": "SH588000",
-      "name": "科创50",
+      "symbol": "SH000015",
+      "etf": "SH510880",
+      "name": "上证红利",
       "weight_pct": 50.0
     },
     {
-      "symbol": "SZ399296",
-      "etf": "SZ159967",
-      "name": "创成长",
+      "symbol": "SH000016",
+      "etf": "SH510050",
+      "name": "上证50",
       "weight_pct": 50.0
     }
   ],
   "etf_pool": {
-    "SH588000": {
-      "name": "科创50",
+    "SH510880": {
+      "name": "上证红利",
       "weight": 0.5
     },
-    "SZ159967": {
-      "name": "创成长",
+    "SH510050": {
+      "name": "上证50",
       "weight": 0.5
     }
   },
   "action": {
-    "suggestion": "逐浪选品 2 只, V7.2 仓位 10成",
+    "suggestion": "逐浪选品 2 只, V7.2 仓位 1成",
     "alert_level": "🟢 绿色正常",
     "alert_level_code": 0
   },

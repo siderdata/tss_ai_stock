@@ -1,37 +1,80 @@
 {
-  "protocol": "strategy_action_v1",
-  "strategy": "v72_balance",
-  "trade_date": "2026-07-06",
-  "timestamp": "2026-07-06T15:55:25",
+  "timestamp": "2026-08-17 15:09:30",
+  "trade_date": "2026-08-17",
   "phase": {
-    "main_phase": "调整杀跌浪",
-    "sub_phase": "二次杀跌期",
-    "confidence": 60.0
-  },
-  "position_intent": {
-    "recommended_ratio": 25.0,
-    "reason": "假突破风险，建议降至2-3成"
+    "current_phase": "阶段4: 低位震荡期-后期（待确认）",
+    "main_phase": "低位震荡期",
+    "sub_phase": "后期",
+    "confidence": 72
   },
   "scores": {
-    "composite_score": 2.16,
-    "daily_score": 2.7,
-    "avg_score": 5.11,
-    "recent_avg": 5.35,
-    "recent_trend": -6.96,
-    "high_ratio": 26.2,
-    "low_ratio": 40.5
+    "composite_score": 8.73,
+    "daily_score": 8.4,
+    "avg_score": 4.29,
+    "recent_avg": 7.1,
+    "recent_trend": 2.3,
+    "high_ratio": 21.4,
+    "low_ratio": 54.8
+  },
+  "position": {
+    "recommended_ratio": 70.0,
+    "position_desc": "7成",
+    "position_min": 70.0,
+    "position_max": 70.0,
+    "reason": "震荡持有7成，等待变盘",
+    "actual_ratio": 70.0
+  },
+  "action": {
+    "suggestion": "震荡持有7成 【支撑3768(周期低点) 阻力3996(向下缺口顶) 阻力4112(向下跳空) 缺口:07-13向下缺口3996 跳空:07-02向下跳空4112】",
+    "alert_level": "🟠 橙色预警",
+    "alert_level_code": 2
   },
   "warnings": {
-    "is_false_breakout": true,
-    "false_breakout_reason": "假突破确认：4天前峰值9.12分，现已回落6.96分至2.16分",
+    "is_false_breakout": false,
+    "false_breakout_reason": "无突破9分记录",
     "is_single_peak": false,
-    "single_peak_warning": "当前阶段为调整杀跌浪，不适用单峰陷阱检测",
-    "peak_score": 0,
-    "drop_from_peak": 0,
-    "is_trap_zone": false,
+    "single_peak_warning": "",
+    "peak_score": 7.55,
+    "drop_from_peak": -1.18,
+    "is_trap_zone": true,
     "is_transition_danger": false,
     "transition_warning": ""
   },
-  "_source": "phase_decision_adapter",
-  "_source_path": "data/phase_decision.json"
+  "history": {
+    "days_in_phase": 0,
+    "max_drawdown": 0.0
+  },
+  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段4: 低位震荡期-后期（待确认）\n**综合评分**: 8.73 | **日线评分**: 8.40\n\n## 仓位建议\n\n**建议仓位**: 7成 (70% ~ 70%)\n**原因**: 震荡持有7成，等待变盘\n**操作建议**: 震荡持有7成 【支撑3768(周期低点) 阻力3996(向下缺口顶) 阻力4112(向下跳空) 缺口:07-13向下缺口3996 跳空:07-02向下跳空4112】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (70% ~ 70%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
+  "recent_data": [
+    {
+      "date": "2026-08-11",
+      "composite_score": 6.43,
+      "daily_score": 6.7,
+      "average_rise": -0.56
+    },
+    {
+      "date": "2026-08-12",
+      "composite_score": 7.55,
+      "daily_score": 7.3,
+      "average_rise": 1.11
+    },
+    {
+      "date": "2026-08-13",
+      "composite_score": 6.37,
+      "daily_score": 7.5,
+      "average_rise": -0.74
+    },
+    {
+      "date": "2026-08-14",
+      "composite_score": 6.44,
+      "daily_score": 7.4,
+      "average_rise": 0.59
+    },
+    {
+      "date": "2026-08-17",
+      "composite_score": 8.73,
+      "daily_score": 8.4,
+      "average_rise": 2.72
+    }
+  ]
 }

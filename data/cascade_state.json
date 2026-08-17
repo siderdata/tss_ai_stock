@@ -1,0 +1,22 @@
+{
+  "date": "2026-08-17",
+  "actual_position": 8.0,
+  "anchor": 9.0,
+  "base": 7.0,
+  "deltas": {
+    "margin": 0,
+    "kline": 0,
+    "macd": -1
+  },
+  "band": [
+    3.0,
+    9.0
+  ],
+  "constraint_note": "主升(阶段1) 带宽兜底",
+  "prev_margin_adjust": 0,
+  "prev_kline_adjust": 0,
+  "baseline_margin_adjust": 0,
+  "baseline_kline_adjust": 0,
+  "prev_macd_tier": 3,
+  "baseline_macd_tier": 4
+}
