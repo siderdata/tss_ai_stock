@@ -1,18 +1,18 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "S4-R3-C9",
-  "trade_date": "2026-08-14",
-  "timestamp": "2026-08-14T15:55:29",
+  "trade_date": "2026-08-20",
+  "timestamp": "2026-08-20T15:55:31",
   "phase": {
     "main_phase": "逐浪 (S4-R3-C9)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "588220.SH",
+      "target": "588230.SH",
       "name": "科创200",
       "action": "BUY",
-      "target_pct": 23.31,
+      "target_pct": 3.33,
       "weight_pct": 33.3,
       "reason": "逐浪 (S4/R3/C9) 选品: 科创200"
     },
@@ -20,28 +20,32 @@
       "target": "588030.SH",
       "name": "科创100",
       "action": "BUY",
-      "target_pct": 23.31,
+      "target_pct": 3.33,
       "weight_pct": 33.3,
       "reason": "逐浪 (S4/R3/C9) 选品: 科创100"
     },
     {
-      "target": "159967.SZ",
-      "name": "创成长",
+      "target": "159573.SZ",
+      "name": "创业板指",
       "action": "BUY",
-      "target_pct": 23.31,
+      "target_pct": 3.33,
       "weight_pct": 33.3,
-      "reason": "逐浪 (S4/R3/C9) 选品: 创成长"
+      "reason": "逐浪 (S4/R3/C9) 选品: 创业板指"
     }
   ],
-  "reason": "逐浪选品 3 只, V7.2 仓位 7成",
+  "reason": "逐浪选品 3 只, V7.2 仓位 1成",
   "position_intent": {
-    "recommended_ratio": 70.0,
-    "reason": "逐浪选品 3 只, V7.2 仓位 7成"
+    "recommended_ratio": 10.0,
+    "reason": "逐浪选品 3 只, V7.2 仓位 1成"
   },
+  "pool": "POOL_12",
+  "macd_threshold": 0,
   "parameters": {
     "S": 4,
     "R": 3,
-    "C": 9
+    "C": 9,
+    "pool": "POOL_12",
+    "macd_threshold": 0
   },
   "_source": "wave_rotation"
 }
