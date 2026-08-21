@@ -1462,3 +1462,16 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 正在复制 data...
 ✓ data 复制成功
 正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+fatal: Unable to create '/home/user/projects/tss_ai_stock/.git/index.lock': File exists.
+
+Another git process seems to be running in this repository, e.g.
+an editor opened by 'git commit'. Please make sure all processes
+are terminated then try again. If it still fails, a git process
+may have crashed in this repository earlier:
+remove the file manually to continue.
+添加文件到Git失败
