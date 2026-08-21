@@ -1,33 +1,25 @@
 {
-  "timestamp": "2026-08-21 14:00:39",
+  "protocol": "strategy_action_v1",
+  "strategy": "v72_balance",
   "trade_date": "2026-08-21",
+  "timestamp": "2026-08-21T15:01:13",
   "phase": {
-    "current_phase": "阶段3: 调整杀跌浪-诱多期",
     "main_phase": "调整杀跌浪",
     "sub_phase": "诱多期",
-    "confidence": 80
+    "confidence": 80.0
+  },
+  "position_intent": {
+    "recommended_ratio": 10.0,
+    "reason": "杀跌阶段-诱多期，等待信号"
   },
   "scores": {
-    "composite_score": 3.32,
-    "daily_score": 4.8,
-    "avg_score": 4.26,
-    "recent_avg": 5.63,
-    "recent_trend": -5.41,
+    "composite_score": 3.71,
+    "daily_score": 5.1,
+    "avg_score": 4.27,
+    "recent_avg": 5.7,
+    "recent_trend": -5.02,
     "high_ratio": 20.0,
     "low_ratio": 57.8
-  },
-  "position": {
-    "recommended_ratio": 10.0,
-    "position_desc": "1成",
-    "position_min": 10.0,
-    "position_max": 10.0,
-    "reason": "杀跌阶段-诱多期，等待信号",
-    "actual_ratio": 10.0
-  },
-  "action": {
-    "suggestion": "等待止跌信号 【阻力3990(向下跳空) 阻力3996(向下缺口顶) 缺口:07-13向下缺口3996 跳空:07-02向下跳空4112】",
-    "alert_level": "🟢 绿色预警",
-    "alert_level_code": 0
   },
   "warnings": {
     "is_false_breakout": false,
@@ -40,41 +32,6 @@
     "is_transition_danger": false,
     "transition_warning": ""
   },
-  "history": {
-    "days_in_phase": 1,
-    "max_drawdown": 62.49
-  },
-  "llm_prompt": "## 当前市场状态\n\n**阶段**: 阶段3: 调整杀跌浪-诱多期\n**综合评分**: 3.32 | **日线评分**: 4.80\n\n## 仓位建议\n\n**建议仓位**: 1成 (10% ~ 10%)\n**原因**: 杀跌阶段-诱多期，等待信号\n**操作建议**: 等待止跌信号 【阻力3990(向下跳空) 阻力3996(向下缺口顶) 缺口:07-13向下缺口3996 跳空:07-02向下跳空4112】\n\n## 风险提示\n暂无特殊风险提示\n\n## 决策要点\n\n请根据以上信息，在建议仓位区间内 (10% ~ 10%) 做出最终仓位决策。\n考虑因素：\n1. 当前阶段的风险收益比\n2. 评分趋势和预警信号\n3. 个人风险偏好\n",
-  "recent_data": [
-    {
-      "date": "2026-08-17",
-      "composite_score": 8.73,
-      "daily_score": 8.4,
-      "average_rise": 2.72
-    },
-    {
-      "date": "2026-08-18",
-      "composite_score": 8.85,
-      "daily_score": 8.9,
-      "average_rise": -0.26
-    },
-    {
-      "date": "2026-08-19",
-      "composite_score": 3.68,
-      "daily_score": 5.0,
-      "average_rise": -5.21
-    },
-    {
-      "date": "2026-08-20",
-      "composite_score": 3.55,
-      "daily_score": 4.8,
-      "average_rise": 0.42
-    },
-    {
-      "date": "2026-08-21",
-      "composite_score": 3.32,
-      "daily_score": 4.8,
-      "average_rise": 0.23
-    }
-  ]
+  "_source": "phase_decision_adapter",
+  "_source_path": "data/phase_decision.json"
 }
