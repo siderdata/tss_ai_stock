@@ -1,0 +1,4 @@
+22 * * * * /home/user/.openclaw/workspace/scripts/send_daily_summary.sh >> /var/log/daily_finance_summary.log 2>&1
+0 9 * * * /bin/bash /home/user/login_test.sh >> /home/user/login_test_$(date +\%Y\%m\%d).log 2>&1
+*/5 9-11,13-14 * * 1-5 cd /home/user/projects/quant_ai_web && /usr/bin/python3 /home/user/.claude/skills/v32-signal/scripts/v32_resonance_cron.py >> /home/user/metabot-workspace/logs/v32_resonance_cron.log 2>&1
+*/15 9-16 * * 1-5 /home/user/projects/quant_ai_web/scripts/daily_pipeline.sh >> /home/user/projects/quant_ai_web/data/cron/cron.log 2>&1
