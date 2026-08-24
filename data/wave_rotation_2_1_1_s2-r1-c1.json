@@ -1,20 +1,20 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "s2-r1-c1",
-  "trade_date": "2026-08-21",
-  "timestamp": "2026-08-21T15:55:29",
+  "trade_date": "2026-08-24",
+  "timestamp": "2026-08-24T10:03:13",
   "phase": {
     "main_phase": "逐浪 (S2-R1-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "159967.SZ",
-      "name": "创成长",
+      "target": "588230.SH",
+      "name": "科创200",
       "action": "BUY",
       "target_pct": 10.0,
       "weight_pct": 100.0,
-      "reason": "逐浪 (S2/R1/C1) 选品: 创成长"
+      "reason": "逐浪 (S2/R1/C1) 选品: 科创200"
     }
   ],
   "reason": "逐浪选品 1 只, V7.2 仓位 1成",

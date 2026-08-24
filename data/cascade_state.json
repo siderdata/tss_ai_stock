@@ -1,7 +1,7 @@
 {
-  "date": "2026-08-21",
+  "date": "2026-08-24",
   "actual_position": 3.0,
-  "anchor": 3.0,
+  "anchor": 4.5,
   "base": 1.0,
   "deltas": {
     "margin": 0,
