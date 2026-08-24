@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
   "trade_date": "2026-08-24",
-  "timestamp": "2026-08-24T12:00:58",
+  "timestamp": "2026-08-24T13:01:00",
   "phase": {
     "main_phase": "调整杀跌浪",
     "sub_phase": "底部期",
