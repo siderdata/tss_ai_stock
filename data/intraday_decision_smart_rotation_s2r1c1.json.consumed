@@ -1,20 +1,20 @@
 {
   "market_sentiment": "bearish",
-  "resonance_type": "tech_resonance",
-  "confidence": 0.85,
-  "description": "11:22双持仓Rule 9持续TRIGGERED: 588030主口径回撤-10.96%+反弹1.06%<2%+falling_today, 588230主口径回撤-9.87%+反弹1.83%<2%+falling_today; V7.2阶段调整杀跌浪(评分1.68), 当前持仓8.04%在buffer[0,30]%内; Rule 9强制SELL 60% (优先级高于V7.2), TTL延长至20min覆盖11:25/11:30/11:35/11:40四次auto_trading扫描",
+  "resonance_type": "systemic_decline",
+  "confidence": 0.75,
+  "description": "13:51杀跌动能增强, V7.2综合2.07(从2.42降), recent_trend -1.61(从-1.26加速下行), A股阶段3杀跌浪-杀跌期持续; 持仓6.08%在buffer[0,30]%内但低于base 10%; Rule 9双豁免(588030反弹2.71%, 588230反弹3.48%, 均>2%); 影响层数据持续缺失; 588030今日-1.14%/累计-3.15%跌幅扩大, 588230累计-0.31%转亏; 杀跌期不主动加仓, HOLD等待止跌",
   "adjustments": {
     "588030.SH": {
-      "action": "SELL",
-      "pct": 1.69,
-      "reason": "Rule 9 TRIGGERED: 主口径回撤-10.96%≥8%, falling_today=true, 反弹1.06%<2%豁免失效; 持仓2.81%(16800股), 累计-4.54%浮亏; 浮亏执行SELL 60% (持仓2.81%×60%=1.69pp)"
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "Rule 9 反弹豁免: 主回撤-9.51%但反弹2.71%>2%豁免; 持仓2.06%(11800股)在buffer内, 今日-1.14%累计-3.15%跌幅扩大; 杀跌动能增强(recent_trend -1.61), HOLD等待"
     },
     "588230.SH": {
-      "action": "SELL",
-      "pct": 3.14,
-      "reason": "Rule 9 TRIGGERED: 主口径回撤-9.87%≥8%, falling_today=true, 反弹1.83%<2%豁免失效; 持仓5.23%(31100股), 累计-2.07%浮亏; 浮亏执行SELL 60% (持仓5.23%×60%=3.14pp)"
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "Rule 9 反弹豁免: 主回撤-8.41%但反弹3.48%>2%豁免; 持仓4.02%(21700股)在buffer内, 今日-0.48%累计-0.31%转亏; 杀跌期HOLD"
     }
   },
-  "timestamp": "2026-08-25 11:24:08",
-  "expires_at": "2026-08-25 11:44:08"
+  "timestamp": "2026-08-25 13:52:08",
+  "expires_at": "2026-08-25 14:12:08"
 }
