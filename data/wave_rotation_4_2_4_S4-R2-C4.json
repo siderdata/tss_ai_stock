@@ -1,8 +1,8 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "S4-R2-C4",
-  "trade_date": "2026-08-24",
-  "timestamp": "2026-08-24T15:55:48",
+  "trade_date": "2026-08-25",
+  "timestamp": "2026-08-25T10:03:19",
   "phase": {
     "main_phase": "逐浪 (S4-R2-C4)",
     "sub_phase": "动量轮动选品"
@@ -17,12 +17,12 @@
       "reason": "逐浪 (S4/R2/C4) 选品: 科创200"
     },
     {
-      "target": "588030.SH",
-      "name": "科创100",
+      "target": "510880.SH",
+      "name": "上证红利",
       "action": "BUY",
       "target_pct": 5.0,
       "weight_pct": 50.0,
-      "reason": "逐浪 (S4/R2/C4) 选品: 科创100"
+      "reason": "逐浪 (S4/R2/C4) 选品: 上证红利"
     }
   ],
   "reason": "逐浪选品 2 只, V7.2 仓位 1成",
