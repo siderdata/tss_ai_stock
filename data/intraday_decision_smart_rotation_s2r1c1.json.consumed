@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-26 13:51:48",
+  "timestamp": "2026-08-26 14:36:46",
   "market_sentiment": "bullish",
   "resonance_type": "tech_resonance",
   "confidence": 0.72,
-  "description": "V7.2 sub_phase 从诱多期切回反弹期 (13:50), 综合分 2.89 仍在不稳定区间. 市场广度中性 (上涨 51.66%, 主力+134.81亿), Rule 10 一致性 OK. 588230 浮亏从 -0.50% 收窄至 -0.22%, 市场情绪修复中.",
+  "description": "V7.2 诱多期稳定, 综合 3.13 不稳定区间. 市场广度主力 +117.86亿 看多, 涨停 55 / 跌停 0. Rule 10 标准建议减仓 10%, 但当前仓位 3% 无操作空间 + 588230 浮亏从 -0.62% 改善至 -0.39%, 维持现状.",
   "v72_breadth_check": {
-    "v72_phase": "反弹期",
-    "v72_score": 2.89,
+    "v72_phase": "诱多期",
+    "v72_score": 3.13,
     "breadth_score": "中性",
     "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "抵消减仓 (V7.2 不稳定区间噪声 + 仓位 3% 无空间 + 588230 浮亏改善中)"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利ETF, 浮盈 +0.73% 健康稳定. V7.2 反弹期 + 主力 +97亿 看多, 不减仓."
+      "reason": "红利ETF, 浮盈 +0.76% 健康. 主力 +92亿 看多, 不减仓."
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "科创综指ETF, 浮亏从 -0.50% 收窄至 -0.22%. V7.2 反弹期 + 主力 +37亿 偏多, 不减仓."
+      "reason": "科创综指ETF, 浮亏从 -0.62% 改善至 -0.39%. 主力 +25亿 (深证) 偏多, 不减仓."
     }
   },
-  "expires_at": "2026-08-26 13:59:48"
+  "expires_at": "2026-08-26 14:44:46"
 }
