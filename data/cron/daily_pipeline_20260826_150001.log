@@ -1479,3 +1479,31 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-08-26 15:03:31] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main d083779] Add data, report, and trading directories
+ 73 files changed, 15080 insertions(+), 2645 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260826_141501.log
+ create mode 100644 data/cron/daily_pipeline_20260826_143001.log
+ create mode 100644 data/cron/daily_pipeline_20260826_144501.log
+ create mode 100644 data/cron/daily_pipeline_20260826_150001.log
+ rewrite data/industry-realtime-detail.json (99%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json (86%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (63%)
+ create mode 100644 data/market_breadth_20260826_140622.json
+ create mode 100644 data/market_breadth_20260826_142007.json
+ create mode 100644 data/market_breadth_20260826_142121.json
+ create mode 100644 data/market_breadth_20260826_143616.json
+ create mode 100644 data/market_breadth_20260826_145124.json
+ rewrite data/recent.json (98%)
+ rewrite data/smart_rotation_2_1_1_smart_rotation_s2r1c1.json (72%)
+ rewrite data/smart_rotation_5_2_1_smart_rotation_s5r2c1.json (72%)
+ rewrite data/today.json (63%)
+fatal: Authentication failed for 'https://github.com/siderdata/tss_ai_stock.git/'
+✗ Git提交失败

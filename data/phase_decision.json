@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
   "trade_date": "2026-08-26",
-  "timestamp": "2026-08-26T15:03:10",
+  "timestamp": "2026-08-26T15:55:40",
   "phase": {
     "main_phase": "调整杀跌浪",
     "sub_phase": "诱多期",
@@ -13,11 +13,11 @@
     "reason": "杀跌阶段-诱多期，等待信号"
   },
   "scores": {
-    "composite_score": 3.26,
-    "daily_score": 2.9,
+    "composite_score": 3.14,
+    "daily_score": 2.6,
     "avg_score": 3.76,
-    "recent_avg": 3.04,
-    "recent_trend": -0.29,
+    "recent_avg": 3.02,
+    "recent_trend": -0.41,
     "high_ratio": 14.0,
     "low_ratio": 67.4
   },
