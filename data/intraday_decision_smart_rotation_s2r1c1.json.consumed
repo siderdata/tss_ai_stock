@@ -1,20 +1,28 @@
 {
-  "market_sentiment": "neutral",
-  "resonance_type": "none",
-  "confidence": 0.6,
-  "description": "11:06 V7.2诱多期持续但边际转弱: 综合3.05(从3.12 -0.07微降), recent_trend -0.50(从-0.43 -0.07微降), 反弹动能减弱; 持仓3%<<base 10%但诱多期不主动加仓; 588230累计-0.22%(从+0.12%略转亏), 510880累计+0.82%稳定; Rule 9双豁免; 距午休24分钟, HOLD等待午休后V7.2重新判定",
+  "timestamp": "2026-08-26 13:51:48",
+  "market_sentiment": "bullish",
+  "resonance_type": "tech_resonance",
+  "confidence": 0.72,
+  "description": "V7.2 sub_phase 从诱多期切回反弹期 (13:50), 综合分 2.89 仍在不稳定区间. 市场广度中性 (上涨 51.66%, 主力+134.81亿), Rule 10 一致性 OK. 588230 浮亏从 -0.50% 收窄至 -0.22%, 市场情绪修复中.",
+  "v72_breadth_check": {
+    "v72_phase": "反弹期",
+    "v72_score": 2.89,
+    "breadth_score": "中性",
+    "consistency": "consistent",
+    "rule10_applied": true,
+    "rule10_outcome": "维持"
+  },
   "adjustments": {
-    "588230.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "Rule 9 反弹豁免: 主回撤-8.36%但反弹3.54%>2%豁免; 持仓3.55%(11400股), 累计-0.22%略转亏; V7.2诱多期边际转弱, HOLD等待"
-    },
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "Rule 9 未达触发: 主回撤-0.03%<5%阈值; 持仓1.00%(3200股), 累计+0.82%稳定; 红利防御, HOLD"
+      "reason": "红利ETF, 浮盈 +0.73% 健康稳定. V7.2 反弹期 + 主力 +97亿 看多, 不减仓."
+    },
+    "588230.SH": {
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "科创综指ETF, 浮亏从 -0.50% 收窄至 -0.22%. V7.2 反弹期 + 主力 +37亿 偏多, 不减仓."
     }
   },
-  "timestamp": "2026-08-26 11:06:34",
-  "expires_at": "2026-08-26 11:26:34"
+  "expires_at": "2026-08-26 13:59:48"
 }
