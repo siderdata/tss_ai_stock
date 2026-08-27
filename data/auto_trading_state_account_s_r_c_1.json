@@ -1,5 +1,10 @@
 {
-  "today_buys": {},
+  "today_buys": {
+    "588230.SH": {
+      "date": "2026-08-27",
+      "qty": 24000
+    }
+  },
   "circuit_breaker": {
     "active": false
   }
