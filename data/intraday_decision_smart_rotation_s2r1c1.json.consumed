@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-27 10:52:21",
+  "timestamp": "2026-08-27 11:22:46",
   "market_sentiment": "bullish",
   "resonance_type": "tech_resonance",
-  "confidence": 0.68,
-  "description": "主力资金爆发: +67→118→137→217亿 四连升, 超大单 +235亿 机构大举建仓. 广度四连升 (上涨 51%), V7.2 score 四连升至 3.58 + recent_trend -0.13 趋势转多确认中. 科创 +2.55% vs 红利 -0.56% 科技主导行情强化. V7.2 仍在不稳定区间, 维持持仓吃趋势.",
+  "confidence": 0.75,
+  "description": "V7.2 score 4.27 六连升突破4进入稳定区间, recent_trend +0.56 加速转正, 主力 +294亿 (超大单+300亿), 全指标六连升. 加仓条件 2/3 达成 (score>4, 主力>200亿), 但上涨 56.27% 未及 60% 且 588230 盘中已涨 2.83% 有追高风险. 午前维持, 午后 13:06 若信号延续则 BUY.",
   "v72_breadth_check": {
     "v72_phase": "反弹期",
-    "v72_score": 3.58,
+    "v72_score": 4.27,
     "breadth_score": "中性",
     "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "维持 (V7.2 进入稳定区间 + 广度一致; 加仓延后至午后 13:06 复核, 因上涨占比未达 60% 且持仓盘中涨幅已大防追高)"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利ETF, 浮亏 -0.56%. 跷跷板走弱正常, 幅度未达止损线, 不切换."
+      "reason": "红利ETF, 浮亏收窄至 -0.09% 将回平. 无操作必要."
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "科创综指ETF, 浮盈 +2.55% 大涨吃趋势. 主力 +119亿 (深证) 强流入, 继续持有."
+      "reason": "科创综指ETF, 浮盈 +2.83% 吃趋势中. 追高防御 (Rule 7 精神), 加仓等午后复核."
     }
   },
-  "expires_at": "2026-08-27 11:00:21"
+  "expires_at": "2026-08-27 11:30:46"
 }

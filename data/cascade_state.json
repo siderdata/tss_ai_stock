@@ -6,7 +6,7 @@
   "deltas": {
     "margin": -1,
     "kline": 0,
-    "macd": 1
+    "macd": 2
   },
   "band": [
     0,
@@ -17,6 +17,6 @@
   "prev_kline_adjust": 0,
   "baseline_margin_adjust": 1,
   "baseline_kline_adjust": 0,
-  "prev_macd_tier": 2,
+  "prev_macd_tier": 3,
   "baseline_macd_tier": 1
 }
