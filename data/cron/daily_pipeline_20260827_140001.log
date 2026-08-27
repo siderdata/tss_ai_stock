@@ -1481,3 +1481,33 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-08-27 14:03:22] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main 836db4a] Add data, report, and trading directories
+ 68 files changed, 15186 insertions(+), 2689 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260827_131501.log
+ create mode 100644 data/cron/daily_pipeline_20260827_133002.log
+ create mode 100644 data/cron/daily_pipeline_20260827_134501.log
+ create mode 100644 data/cron/daily_pipeline_20260827_140001.log
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (68%)
+ create mode 100644 data/market_breadth_20260827_130625.json
+ create mode 100644 data/market_breadth_20260827_132114.json
+ create mode 100644 data/market_breadth_20260827_133616.json
+ create mode 100644 data/market_breadth_20260827_135118.json
+To https://github.com/siderdata/tss_ai_stock.git
+   588a17e..836db4a  main -> main
+✓ Git提交成功
+操作完成！
+目录已复制到: /home/user/projects/tss_ai_stock/
+文件已提交到Git仓库
+[2026-08-27 14:03:40] ✅ 步骤 5 完成: 数据已同步
+[2026-08-27 14:03:40] 
+[2026-08-27 14:03:40] ===============================================================
+[2026-08-27 14:03:41] 🎉 每日量化数据流水线全部完成
+[2026-08-27 14:03:41] ===============================================================
