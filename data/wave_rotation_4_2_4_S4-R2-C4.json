@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S4-R2-C4",
   "trade_date": "2026-08-28",
-  "timestamp": "2026-08-28T10:02:58",
+  "timestamp": "2026-08-28T11:02:50",
   "phase": {
     "main_phase": "逐浪 (S4-R2-C4)",
     "sub_phase": "动量轮动选品"
@@ -17,12 +17,12 @@
       "reason": "逐浪 (S4/R2/C4) 选品: 科创200"
     },
     {
-      "target": "588000.SH",
-      "name": "科创50",
+      "target": "512100.SH",
+      "name": "中证1000",
       "action": "BUY",
       "target_pct": 5.0,
       "weight_pct": 50.0,
-      "reason": "逐浪 (S4/R2/C4) 选品: 科创50"
+      "reason": "逐浪 (S4/R2/C4) 选品: 中证1000"
     }
   ],
   "reason": "逐浪选品 2 只, V7.2 仓位 1成",

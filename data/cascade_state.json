@@ -6,17 +6,17 @@
   "deltas": {
     "margin": 0,
     "kline": 0,
-    "macd": 1
+    "macd": 0
   },
   "band": [
     0,
     3.0
   ],
-  "constraint_note": "阶段4 ≤ 8",
+  "constraint_note": "阶段3 ≤ 7",
   "prev_margin_adjust": 0,
   "prev_kline_adjust": 0,
   "baseline_margin_adjust": 0,
   "baseline_kline_adjust": 0,
-  "prev_macd_tier": 4,
+  "prev_macd_tier": 3,
   "baseline_macd_tier": 3
 }
