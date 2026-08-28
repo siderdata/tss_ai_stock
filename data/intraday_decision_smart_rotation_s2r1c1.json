@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-27 14:54:19",
-  "market_sentiment": "bullish",
-  "resonance_type": "tech_resonance",
-  "confidence": 0.85,
-  "description": "尾盘三连突破再确认: V7.2 反弹期 score 5.25 突破 5 持续确认, 上涨 60.51% (3152/5209) 维持 >60%, 主力 +512.48亿 持续 >500亿, 涨停 77 (真实69). Rule 10 一致性强. auto_trading 已将仓位调至 10.01% (达 base_ratio). V7.2 仍在 (4,6) 偏多偏置区, 未达 [6,7) 弱加仓区门槛. 尾盘 HOLD 维持让持仓完整暴露今日涨幅.",
+  "timestamp": "2026-08-28 14:51:39",
+  "market_sentiment": "trap_top_confirmed_close",
+  "resonance_type": "bull_trap_top_with_close_dump",
+  "confidence": 0.3,
+  "description": "2026-08-28 14:51 尾盘 (今日最后触发). V7.2 sub_phase 诱多期持续, score 5.61→5.44 微降仍 (4,6), recent_trend +3.31→+3.14 动能持续衰减. 广度极端分化 + 尾盘暴增出货: 上涨 54.6% 从 60.0% 临界回落, 涨停 81 (真实 69) 持续高位 (散户极度疯狂高位接盘), 跌停 3 持平 (真实 2), 主力 -317.23亿 尾盘暴增 (-253→-317, 单次暴增 -64 亿, 机构尾盘集中出货). 涨停真实 69 + 主力 -317亿尾盘暴增 = 极端散户高位接盘 + 机构尾盘集中出货. 上涨从 60% 临界回落 = 抛压加重. V7.2 诱多期 + score 5.44 持续下降 = 杀跌反弹顶部. 维持现仓位 10.01% 过夜, 不加仓 (V7.2 < 6), 不减仓 (V7.2 仍在 (4,6), 未跌入 [2,4) 杀跌区间). 今日全天: V7.2 从 5.4→6.67 高点→5.44 持续下降, 涨停持续翻倍 (24→69 真实) vs 主力持续扩大流出 (-50→-317亿) 极端背离全天.",
   "v72_breadth_check": {
-    "v72_phase": "反弹期",
-    "v72_score": 5.25,
-    "breadth_score": "看多",
-    "consistency": "consistent",
+    "v72_phase": "调整杀跌浪-诱多期",
+    "v72_score": 5.44,
+    "breadth_score": "极端分化 + 尾盘出货",
+    "consistency": "extreme_divergence_with_close_dump",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "诱多陷阱顶部确认, HOLD 防御过夜"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利ETF, 维持 10500股. auto_trading 已自动减仓, 跷跷板弱势正常. 维持."
+      "reason": "红利ETF, 防御配置. 主力 -317亿尾盘暴增 + 跌停 3 环境下相对抗跌. 维持 10500股过夜."
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "科创综指ETF, 维持 36600股 浮盈 +1.62%. auto_trading 已大幅加仓. 三连突破信号确认强势, 维持完整暴露."
+      "reason": "科创综指ETF, 涨停真实 69 + 主力 -317亿尾盘暴增 = 极端散户高位接盘 + 机构尾盘集中出货. V7.2 诱多期 + score 5.44 持续下降 = 杀跌反弹顶部. 不追高不恐慌. 维持 36600股过夜."
     }
   },
-  "expires_at": "2026-08-27 15:00:06"
+  "expires_at": "2026-08-28 15:00:00"
 }
