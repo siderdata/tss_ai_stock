@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-28 10:52:01",
-  "market_sentiment": "trap_warning",
-  "resonance_type": "bull_trap_top",
-  "confidence": 0.4,
-  "description": "2026-08-28 10:51. 重大恶化: V7.2 sub_phase 后期→诱多期, score 6.51→5.96 跌出 [6,7) 弱加仓区, recent_trend +4.21→+3.66 动能衰减. 广度极端背离: 涨停 56 真实44 持续翻倍 (散户追涨) vs 主力 -141.36亿 翻倍式流出 (-63→-141) + 跌停 1→2 + 上涨 52.6% 回落. 典型诱多陷阱顶部特征. 涨停翻倍 = 散户最后疯狂, 主力翻倍流出 = 机构趁机出货. SKILL.md 规定 (4,6) 偏多偏置区观望为主, 不追高. 维持现仓位 10.01%, 不加仓不减仓, 等 11:06 触发确认诱多是否成立 (V7.2 是否继续下降 + 涨停是否回落 + 主力是否收窄).",
+  "timestamp": "2026-08-28 11:21:42",
+  "market_sentiment": "trap_intensifying",
+  "resonance_type": "bull_trap_top_extreme",
+  "confidence": 0.35,
+  "description": "2026-08-28 11:21. V7.2 持续恶化: sub_phase 反弹期→诱多期, score 5.97→5.63 跌出 [6,7) 弱加仓区, daily_score 5.9→5.7, recent_trend +3.67→+3.33 动能衰减. 广度极端背离加剧: 涨停 62 真实 51 突破 50 (散户极度疯狂) vs 主力 -185.28亿 持续扩大 (-170→-185, 机构出货极度疯狂). 上涨 56.6% 略升 <60%. V7.2 自己也振荡说明顶部信号明显. 涨停真实 51 突破 50 是诱多陷阱典型顶部特征. 维持现仓位 10.01%, 不加仓 (V7.2 score < 6 不在弱加仓区), 不减仓 (V7.2 5.63 仍在 (4,6) 偏多偏置区, 未跌入 [2,4) 杀跌区间). 等 11:36 触发确认诱多是否成立 (V7.2 score 是否跌破 5 + 涨停是否回落 + 主力是否继续扩大).",
   "v72_breadth_check": {
     "v72_phase": "调整杀跌浪-诱多期",
-    "v72_score": 5.96,
-    "breadth_score": "中性偏空",
-    "consistency": "non_consistent_bearish_warning",
+    "v72_score": 5.63,
+    "breadth_score": "极端背离",
+    "consistency": "extreme_divergence_bearish",
     "rule10_applied": true,
-    "rule10_outcome": "诱多陷阱警告, 防御"
+    "rule10_outcome": "诱多陷阱加剧, HOLD 防御"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利ETF, 主力 -141亿极端流出环境下防御相对抗跌. 维持 10500股."
+      "reason": "红利ETF, 防御配置. 主力 -185亿极端流出环境下相对抗跌. 维持 10500股."
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "科创综指ETF, 涨停翻倍 = 散户追涨, 主力翻倍流出 = 机构出货. V7.2 诱多期跌出弱加仓区 = 杀跌反弹顶部. 不追高, 维持 36600股, 等 11:06 确认."
+      "reason": "科创综指ETF, 涨停真实 51 突破 50 + 主力 -185亿 = 极端散户高位接盘/机构出货背离. V7.2 诱多期 + score 持续下降 = 杀跌反弹顶部. 不追高不恐慌. 维持 36600股."
     }
   },
-  "expires_at": "2026-08-28 11:06:06"
+  "expires_at": "2026-08-28 11:36:06"
 }
