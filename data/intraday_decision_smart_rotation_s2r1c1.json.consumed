@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-08-27 14:37:13",
-  "market_sentiment": "bullish",
-  "resonance_type": "tech_resonance",
-  "confidence": 0.78,
-  "description": "V7.2 score 4.88 (近 5) + recent_trend +1.17, 主力 +442亿 十一连升, 涨停 74 新高, 上涨 58.09% 距看多线 60% 仅 1.91pp. 但 SKILL.md 区间纪律: (4,6) 中性偏多 = 观望为主, [6,7) = 弱加仓. 当前未达弱加仓区, 维持 HOLD 让现有 8.59% 仓位暴露.",
+  "timestamp": "2026-08-28 09:51:48",
+  "market_sentiment": "cautious_bullish",
+  "resonance_type": "tech_resonance_with_trap_warning",
+  "confidence": 0.55,
+  "description": "2026-08-28 09:51 早盘. V7.2 sub_phase 反弹期→诱多期切换, score 突破 6.1 进入 [6,7) 弱加仓区, recent_trend +3.8 跃升. 但广度分化: 上涨 64.2% (突破 60%) vs 主力 -73.88亿 (扩大流出 -50→-74). 典型诱多陷阱特征: 数字突破 + 主力出货 + sub_phase 警告. SKILL.md 规定诱多期不追高, 维持现仓位观察 10:06 是否确认诱多或破位反转.",
   "v72_breadth_check": {
-    "v72_phase": "反弹期",
-    "v72_score": 4.88,
+    "v72_phase": "诱多期",
+    "v72_score": 6.1,
     "breadth_score": "中性",
-    "consistency": "consistent",
+    "consistency": "non_consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "诱多警惕, 维持"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利ETF, 浮盈 +0.55% 健康. 维持."
+      "reason": "红利ETF, 防御性配置. 主力扩大流出, 红利相对抗跌. 维持 10500股."
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "科创综指ETF, 22800股 浮盈 +2.29% 持续扩大. 13:06 BUY 已捕获初始突破, 区间纪律要求观望."
+      "reason": "科创综指ETF, 上涨 64% 但主力 -74亿 + 诱多期警告 = 追高风险大. 维持 36600股, 等 10:06 确认 sub_phase 是否回反弹期或真突破."
     }
   },
-  "expires_at": "2026-08-27 14:45:13"
+  "expires_at": "2026-08-28 10:06:06"
 }

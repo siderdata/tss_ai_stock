@@ -1,33 +1,33 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-08-27",
-  "timestamp": "2026-08-27T15:55:41",
+  "trade_date": "2026-08-28",
+  "timestamp": "2026-08-28T10:02:45",
   "phase": {
-    "main_phase": "调整杀跌浪",
-    "sub_phase": "反弹期",
-    "confidence": 80.0
+    "main_phase": "低位震荡期",
+    "sub_phase": "后期",
+    "confidence": 70.0
   },
   "position_intent": {
     "recommended_ratio": 10.0,
-    "reason": "杀跌阶段-反弹期，等待信号"
+    "reason": "震荡持有1成，等待变盘"
   },
   "scores": {
-    "composite_score": 5.4,
-    "daily_score": 4.7,
-    "avg_score": 3.8,
-    "recent_avg": 3.39,
-    "recent_trend": 1.69,
-    "high_ratio": 13.6,
-    "low_ratio": 65.9
+    "composite_score": 6.67,
+    "daily_score": 7.1,
+    "avg_score": 3.86,
+    "recent_avg": 3.98,
+    "recent_trend": 4.37,
+    "high_ratio": 13.3,
+    "low_ratio": 64.4
   },
   "warnings": {
     "is_false_breakout": false,
     "false_breakout_reason": "无突破9分记录",
     "is_single_peak": false,
-    "single_peak_warning": "当前阶段为调整杀跌浪，不适用单峰陷阱检测",
-    "peak_score": 0,
-    "drop_from_peak": 0,
+    "single_peak_warning": "",
+    "peak_score": 3.71,
+    "drop_from_peak": -2.96,
     "is_trap_zone": false,
     "is_transition_danger": false,
     "transition_warning": ""

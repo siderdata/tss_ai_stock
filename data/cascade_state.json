@@ -1,22 +1,22 @@
 {
-  "date": "2026-08-27",
+  "date": "2026-08-28",
   "actual_position": 3.0,
   "anchor": 3.0,
   "base": 1.0,
   "deltas": {
-    "margin": -1,
+    "margin": 0,
     "kline": 0,
-    "macd": 2
+    "macd": 1
   },
   "band": [
     0,
     3.0
   ],
-  "constraint_note": "阶段3 ≤ 7",
+  "constraint_note": "阶段4 ≤ 8",
   "prev_margin_adjust": 0,
   "prev_kline_adjust": 0,
-  "baseline_margin_adjust": 1,
+  "baseline_margin_adjust": 0,
   "baseline_kline_adjust": 0,
-  "prev_macd_tier": 3,
-  "baseline_macd_tier": 1
+  "prev_macd_tier": 4,
+  "baseline_macd_tier": 3
 }
