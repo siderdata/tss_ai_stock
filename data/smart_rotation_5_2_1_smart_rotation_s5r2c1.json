@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "smart_rotation_s5r2c1",
   "trade_date": "2026-08-31",
-  "timestamp": "2026-08-31T15:02:54",
+  "timestamp": "2026-08-31T15:55:36",
   "phase": {
     "main_phase": "驭浪 (S5-R2-C1)",
     "sub_phase": "尾盘后不交易",
