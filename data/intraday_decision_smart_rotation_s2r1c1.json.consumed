@@ -1,13 +1,13 @@
 {
-  "timestamp": "2026-08-31 09:53:11",
-  "market_sentiment": "bearish",
-  "resonance_type": "systemic_decline",
-  "confidence": 0.75,
-  "description": "V7.2从杀跌期转入诱多期(score 4.12)，但韩国KOSPI暴跌-2.39%触发阈值+市场广度极度恶化(上涨31%/主力-173亿)+V32反弹结束13/14极强共振，三层信号全面偏空。当前总持仓仅3.6%已极轻，588230.SH有反弹豁免不应追跌，按Rule10 ⚠️部分矛盾规则观望维持。",
+  "timestamp": "2026-08-31 10:22:00",
+  "market_sentiment": "neutral",
+  "resonance_type": "divergence",
+  "confidence": 0.65,
+  "description": "市场广度改善(上涨40.4%跨过看空边界/主力-208亿略缓解)，V7.2 score从3.41升至4.10，recent_trend+1.72。红利510880.SH持续走强(总+1.15%)，持仓品种开始转正。但韩国KOSPI仍-1.97%超阈值，A50-1.07%超阈值，外围风险未解除。持仓3.6%已极轻，Rule10 ⚠️部分矛盾观望。",
   "v72_breadth_check": {
     "v72_phase": "诱多期",
-    "v72_score": 4.12,
-    "breadth_score": "看空",
+    "v72_score": 4.1,
+    "breadth_score": "中性",
     "consistency": "partial",
     "rule10_applied": true,
     "rule10_outcome": "观望"
@@ -16,18 +16,18 @@
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "累计回撤-7.47%depth_hit但反弹豁免(+2.55%)，当前仓位已极轻，不追跌杀跌"
+      "reason": "科创综指累计-0.27%企稳，当日-0.17%弱，外围风险未解除不加仓"
     },
     "159531.SZ": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "国证2000累计回撤仅-2.39%未触发，与韩国相关性弱，维持"
+      "reason": "国证2000总盈亏转正+0.07%，稳定持有"
     },
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利ETF防御属性当日-0.01%抗跌，跷跷板受益保留"
+      "reason": "红利ETF强势+0.21%，总+1.15%创新高，但V7.2观望不加仓"
     }
   },
-  "expires_at": "2026-08-31 10:01:11"
+  "expires_at": "2026-08-31 10:30:00"
 }
