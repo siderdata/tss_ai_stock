@@ -1,28 +1,33 @@
 {
-  "timestamp": "2026-08-28 14:36:39",
-  "market_sentiment": "trap_persisting_with_breadth_improving",
-  "resonance_type": "bull_trap_peak_with_panic_easing",
-  "confidence": 0.35,
-  "description": "2026-08-28 14:36. V7.2 微降: sub_phase 诱多期持续, score 5.73→5.61 微降仍 (4,6), daily_score 5.7→5.6, recent_trend +3.43→+3.31 动能略降. 广度混合信号: 上涨 60.0% 从 57.8% 上升临界 60%, 涨停 81 (真实 70) 突破 70 持续翻倍 (散户高位接盘极度疯狂), 跌停 5→3 下降 (真实 2, 恐慌缓解积极信号), 主力 -253.22亿 午后继续扩大创新高 (-249→-253, 机构出货极度疯狂). 涨停真实 70 + 主力 -253亿 = 极端散户高位接盘/机构出货背离持续. 上涨 60% 临界 + 跌停缓解 = 积极信号, 但不足改变背离格局. V7.2 诱多期 + score 5.61 微降 = 杀跌反弹顶部. 维持现仓位 10.01%, 不加仓 (V7.2 < 6), 不减仓 (V7.2 仍在 (4,6), 未跌入 [2,4) 杀跌区间). 等 14:51 触发确认: V7.2 是否跌破 5.5 + 涨停是否回落 + 主力是否收窄.",
+  "timestamp": "2026-08-31 09:53:11",
+  "market_sentiment": "bearish",
+  "resonance_type": "systemic_decline",
+  "confidence": 0.75,
+  "description": "V7.2从杀跌期转入诱多期(score 4.12)，但韩国KOSPI暴跌-2.39%触发阈值+市场广度极度恶化(上涨31%/主力-173亿)+V32反弹结束13/14极强共振，三层信号全面偏空。当前总持仓仅3.6%已极轻，588230.SH有反弹豁免不应追跌，按Rule10 ⚠️部分矛盾规则观望维持。",
   "v72_breadth_check": {
-    "v72_phase": "调整杀跌浪-诱多期",
-    "v72_score": 5.61,
-    "breadth_score": "极端背离持续, 跌停缓解",
-    "consistency": "extreme_divergence_with_panic_easing",
+    "v72_phase": "诱多期",
+    "v72_score": 4.12,
+    "breadth_score": "看空",
+    "consistency": "partial",
     "rule10_applied": true,
-    "rule10_outcome": "极端背离持续, HOLD 防御"
+    "rule10_outcome": "观望"
   },
   "adjustments": {
-    "510880.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "红利ETF, 防御配置. 主力 -253亿午后新高 + 跌停 3 下降环境下相对抗跌. 维持 10500股."
-    },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "科创综指ETF, 涨停真实 70 + 主力 -253亿午后新高 = 极端散户高位接盘/机构出货背离持续. 上涨 60% 临界 + 跌停 5→3 下降 = 积极信号但不足改变背离. V7.2 诱多期 + score 5.61 微降 = 杀跌反弹顶部. 不追高不恐慌. 维持 36600股."
+      "reason": "累计回撤-7.47%depth_hit但反弹豁免(+2.55%)，当前仓位已极轻，不追跌杀跌"
+    },
+    "159531.SZ": {
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "国证2000累计回撤仅-2.39%未触发，与韩国相关性弱，维持"
+    },
+    "510880.SH": {
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "红利ETF防御属性当日-0.01%抗跌，跷跷板受益保留"
     }
   },
-  "expires_at": "2026-08-28 14:51:06"
+  "expires_at": "2026-08-31 10:01:11"
 }
