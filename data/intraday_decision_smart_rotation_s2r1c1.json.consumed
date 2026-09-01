@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-01 09:54:36",
-  "market_sentiment": "neutral",
-  "resonance_type": "divergence",
-  "confidence": 0.6,
-  "description": "A股低开科创领跌(-1.97%), 但市场广度上涨家数63.9%与指数背离, 权重股拖累; V7.2中性区间5.24分, 588230持仓被Rule 9反弹豁免拦截, 510880红利逆势走强, 维持当前仓位",
+  "timestamp": "2026-09-01 10:52:25",
+  "market_sentiment": "bearish",
+  "resonance_type": "systemic_decline",
+  "confidence": 0.85,
+  "description": "Rule 9持续触发: 588230.SH主回撤-7.57%+反弹1.67%<2%+当日下跌, triggered=true. 主力资金-253.65亿再创新高. Rule 10✅一致(杀跌期+主力<0)支持减仓但[2,4]区间减半. 综合按Rule 9严格执行SELL 40%持仓(18,800→11,280股, 总资产减仓~1.3%)",
   "v72_breadth_check": {
     "v72_phase": "诱多期",
-    "v72_score": 5.24,
-    "breadth_score": "中性",
-    "consistency": "partial",
+    "v72_score": 4.09,
+    "breadth_score": "看空",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "减半减仓"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利防御属性今日生效, 逆势+1.00%, V7.2中性区间, 当前仓位低于基础仓位, 无需调整"
+      "reason": "红利防御属性持续生效, 今日+0.92%逆势走强, 浮盈+1.80%, 不触发Rule 8/9, 维持"
     },
     "588230.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "今日-2.07%与科创综指板块同步, Rule 9回撤-7.05%但被反弹+2.24%豁免拦截, triggered=false, 板块性下跌非品种特异性, 维持"
+      "action": "SELL",
+      "pct": 2,
+      "reason": "Rule 9硬规则触发: 主回撤-7.57%≥6%阈值+当日下跌+反弹豁免失效(rebound 1.67%<2%), triggered=true, 按规则9浮亏档SELL 40%持仓(18,800股→11,280股), 总资产减仓约1.3%, 减仓后持仓仅占3%总资产"
     }
   },
-  "expires_at": "2026-09-01 10:02:36"
+  "expires_at": "2026-09-01 11:00:25"
 }
