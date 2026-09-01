@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-01 10:52:25",
-  "market_sentiment": "bearish",
-  "resonance_type": "systemic_decline",
-  "confidence": 0.85,
-  "description": "Rule 9持续触发: 588230.SH主回撤-7.57%+反弹1.67%<2%+当日下跌, triggered=true. 主力资金-253.65亿再创新高. Rule 10✅一致(杀跌期+主力<0)支持减仓但[2,4]区间减半. 综合按Rule 9严格执行SELL 40%持仓(18,800→11,280股, 总资产减仓~1.3%)",
+  "timestamp": "2026-09-01 11:52:20",
+  "market_sentiment": "neutral",
+  "resonance_type": "none",
+  "confidence": 0.7,
+  "description": "数据无显著变化: V7.2 5.31中性偏多, 主力-251亿, 上涨63.5%. Rule 9 (588230)反弹豁免仍生效triggered=false. 持仓不变, 维持观望企稳, 不调整",
   "v72_breadth_check": {
     "v72_phase": "诱多期",
-    "v72_score": 4.09,
-    "breadth_score": "看空",
-    "consistency": "consistent",
+    "v72_score": 5.31,
+    "breadth_score": "中性",
+    "consistency": "partial",
     "rule10_applied": true,
-    "rule10_outcome": "减半减仓"
+    "rule10_outcome": "维持"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利防御属性持续生效, 今日+0.92%逆势走强, 浮盈+1.80%, 不触发Rule 8/9, 维持"
+      "reason": "红利防御属性持续生效, 浮盈+1.60%, 不触发Rule 8/9, 维持"
     },
     "588230.SH": {
-      "action": "SELL",
-      "pct": 2,
-      "reason": "Rule 9硬规则触发: 主回撤-7.57%≥6%阈值+当日下跌+反弹豁免失效(rebound 1.67%<2%), triggered=true, 按规则9浮亏档SELL 40%持仓(18,800股→11,280股), 总资产减仓约1.3%, 减仓后持仓仅占3%总资产"
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "Rule 9反弹豁免生效: rebound 2.24%≥2%阈值, triggered=false, 减仓警报持续解除, 观望企稳"
     }
   },
-  "expires_at": "2026-09-01 11:00:25"
+  "expires_at": "2026-09-01 12:00:20"
 }
