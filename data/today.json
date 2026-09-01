@@ -2,6 +2,24 @@
   "count": 3,
   "data": [
     {
+      "average_rise": "-0.8600",
+      "characteristics": "[\"多空力量均衡，方向不明确\", \"各周期评分相近（4.5-5.8分）\", \"等待方向选择，关注突破信号\", \"振幅收敛至0.33%（1天）\", \"最近支撑位3851（3.4%，cycle_low）\", \"最近阻力位3990（+0.1%，jump_down）\"]",
+      "composite_score": "5.31",
+      "daily_score": "5.80",
+      "min120_score": "4.50",
+      "min30_score": "5.40",
+      "min60_score": "5.50",
+      "operation_suggestion": "区间操作，高抛低吸；【振幅收敛1天（蓄势中），等待方向确认 | 接近阻力位3990（+0.1%）】",
+      "ratio": "0.9980",
+      "risk_level": "中等",
+      "status_name": "震荡整理阶段",
+      "status_type": "consolidation",
+      "total_amount": 1381051892736,
+      "total_predicted_amount": 2008486885419,
+      "trade_time": "2026-09-01 14:00:00",
+      "up_ratio": "64.20"
+    },
+    {
       "average_rise": "-0.8100",
       "characteristics": "[\"多空力量均衡，方向不明确\", \"各周期评分相近（4.5-5.8分）\", \"等待方向选择，关注突破信号\", \"振幅收敛至0.33%（1天）\", \"最近支撑位3851（3.4%，cycle_low）\", \"最近阻力位3990（+0.1%，jump_down）\"]",
       "composite_score": "5.31",
@@ -36,24 +54,6 @@
       "total_predicted_amount": 2074334044156,
       "trade_time": "2026-09-01 10:30:00",
       "up_ratio": "53.38"
-    },
-    {
-      "average_rise": "0.7690",
-      "characteristics": "[\"综合评分中性，多空平衡\", \"无明显方向性\", \"最近阻力位3990（+0.1%，jump_down）\"]",
-      "composite_score": "5.95",
-      "daily_score": "6.00",
-      "min120_score": "4.90",
-      "min30_score": "6.80",
-      "min60_score": "7.00",
-      "operation_suggestion": "观望为主，等待方向选择；【接近阻力位3990】",
-      "ratio": "1.0800",
-      "risk_level": "中等",
-      "status_name": "中性震荡阶段",
-      "status_type": "neutral",
-      "total_amount": 2131030179840,
-      "total_predicted_amount": 2154491452371,
-      "trade_time": "2026-08-31 15:00:00",
-      "up_ratio": "58.81"
     }
   ],
   "query": {
