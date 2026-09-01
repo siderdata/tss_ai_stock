@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "smart_rotation_s2r1c1",
   "trade_date": "2026-09-01",
-  "timestamp": "2026-09-01T12:00:50",
+  "timestamp": "2026-09-01T13:03:05",
   "phase": {
     "main_phase": "逐浪 (S2-R1-C1)",
     "sub_phase": "日内战术"
@@ -11,21 +11,21 @@
     {
       "target": "510880.SH",
       "action": "HOLD",
-      "target_pct": 1.7815827836130116,
+      "target_pct": 1.7826353006921944,
       "action_pct": 0.0,
       "reason": "战术持有: 1.8% (无 LLM, 维持)"
     },
     {
       "target": "588230.SH",
       "action": "HOLD",
-      "target_pct": 1.4553226497258387,
+      "target_pct": 1.452085051644959,
       "action_pct": 0.0,
       "reason": "战术持有: 1.5% (无 LLM, 维持)"
     }
   ],
   "reason": "SRC 10.0%, buffer [0%, 30%]; 当前 3.2%, 无 LLM → 维持",
   "position_intent": {
-    "recommended_ratio": 3.24,
+    "recommended_ratio": 3.23,
     "reason": "SRC 10.0%, buffer [0%, 30%]; 当前 3.2%, 无 LLM → 维持"
   },
   "_source": "smart_rotation",
@@ -39,11 +39,11 @@
     "macd_threshold": 10
   },
   "base_ratio": 10.0,
-  "adjusted_ratio": 3.24,
+  "adjusted_ratio": 3.23,
   "llm_decision_loaded": false,
   "phase_mode": "tactical",
   "current_position": {
-    "510880.SH": 1.7815827836130116,
-    "588230.SH": 1.4553226497258387
+    "510880.SH": 1.7826353006921944,
+    "588230.SH": 1.452085051644959
   }
 }
