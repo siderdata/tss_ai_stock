@@ -1487,3 +1487,41 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-08-31 16:02:46] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main a21c8da] Add data, report, and trading directories
+ 59 files changed, 14184 insertions(+), 2048 deletions(-)
+ rewrite data/CORE_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (65%)
+ rewrite data/CORE_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (81%)
+ rewrite data/CORE_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (75%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (83%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (83%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (84%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (74%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (75%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (74%)
+ create mode 100644 data/cron/daily_pipeline_20260831_151501.log
+ create mode 100644 data/cron/daily_pipeline_20260831_153001.log
+ create mode 100644 data/cron/daily_pipeline_20260831_154501.log
+ create mode 100644 data/cron/daily_pipeline_20260831_160001.log
+ rewrite data/industry-realtime-detail.json (93%)
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File data/cron/cron.log is 53.32 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/siderdata/tss_ai_stock.git
+   28595aa..a21c8da  main -> main
+✓ Git提交成功
+操作完成！
+目录已复制到: /home/user/projects/tss_ai_stock/
+文件已提交到Git仓库
+[2026-08-31 16:03:02] ✅ 步骤 5 完成: 数据已同步
+[2026-08-31 16:03:02] 
+[2026-08-31 16:03:02] ===============================================================
+[2026-08-31 16:03:02] 🎉 每日量化数据流水线全部完成
+[2026-08-31 16:03:02] ===============================================================
