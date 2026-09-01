@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-01 13:52:01",
+  "timestamp": "2026-09-01 14:38:50",
   "market_sentiment": "neutral",
   "resonance_type": "none",
-  "confidence": 0.7,
-  "description": "13:36 SELL已部分执行 (588230: 8400→5900股, 减仓~30%). Rule 9反弹豁免重新生效triggered=false (反弹2.18%≥2%). V7.2 4.95中性偏多(诱多期), 上涨62.4%看多vs主力-206.5亿看空, 广度部分矛盾. 持仓收缩后观望企稳",
+  "confidence": 0.8,
+  "description": "🚨 Rule 9持续触发: 588230主回撤-7.42%, 反弹1.84%<2%(豁免失效), 当日在跌. V7.2 4.15稳定在[2,4]不稳定区间, 上涨57.6%vs主力-294亿, Rule 10判定跟随V7.2(减半). 但Rule 9独立硬规则执行SELL 40%. 14:21 SELL已部分执行(510880→3700, 588230→3000), 进一步收缩仓位",
   "v72_breadth_check": {
     "v72_phase": "诱多期",
-    "v72_score": 4.95,
+    "v72_score": 4.15,
     "breadth_score": "中性",
-    "consistency": "partial",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "减半减仓"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利防御+浮盈+0.90%, 今日+0.45%稳定. 持仓5200股, 维持对冲"
+      "reason": "红利防御+浮盈+0.41%, 今日+0.20%稳定. 持仓已收缩至3700股, 维持对冲"
     },
     "588230.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "已减仓至5900股(浮亏-2.07%, 当日-2.18%). Rule 9反弹豁免生效triggered=false (反弹2.18%≥2%, 从1.90%回升). 持仓收缩完毕, 静观企稳"
+      "action": "SELL",
+      "pct": 6,
+      "reason": "🚨 Rule 9持续触发: 主回撤-7.42%≥6%, 反弹1.84%<2%(豁免失效), 当日在跌. 持仓浮亏-2.29%→SELL 40%. 3000×40%=1,200股, 占总资产约0.21%. 顶部反转确认, 强制减仓"
     }
   },
-  "expires_at": "2026-09-01 14:00:01"
+  "expires_at": "2026-09-01 14:46:50"
 }

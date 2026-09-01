@@ -1490,3 +1490,25 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-01 14:03:24] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main d27452a] Add data, report, and trading directories
+ 68 files changed, 15375 insertions(+), 2839 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260901_131501.log
+ create mode 100644 data/cron/daily_pipeline_20260901_133001.log
+ create mode 100644 data/cron/daily_pipeline_20260901_134501.log
+ create mode 100644 data/cron/daily_pipeline_20260901_140001.log
+ rewrite data/industry-realtime-detail.json (96%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (61%)
+ create mode 100644 data/market_breadth_20260901_130649.json
+ create mode 100644 data/market_breadth_20260901_132122.json
+ create mode 100644 data/market_breadth_20260901_133627.json
+ create mode 100644 data/market_breadth_20260901_135147.json
+fatal: unable to access 'https://github.com/siderdata/tss_ai_stock.git/': Failed to connect to github.com port 443 after 130012 ms: Connection timed out
+✗ Git提交失败
