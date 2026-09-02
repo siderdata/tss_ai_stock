@@ -2,22 +2,22 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-1.5380",
-      "characteristics": "[\"全周期共振向下，趋势疲弱\", \"各级别技术指标全面走弱\", \"资金持续流出，情绪低迷\", \"最近支撑位3851（2.4%，cycle_low）\", \"最近阻力位3976（+0.8%，gap_downward）\"]",
-      "composite_score": "1.89",
+      "average_rise": "-1.6530",
+      "characteristics": "[\"全周期共振向下，趋势疲弱\", \"各级别技术指标全面走弱\", \"资金持续流出，情绪低迷\", \"最近支撑位3851（2.3%，cycle_low）\", \"最近阻力位3976（+0.9%，gap_downward）\"]",
+      "composite_score": "1.85",
       "daily_score": "2.50",
-      "min120_score": "2.30",
-      "min30_score": "0.40",
+      "min120_score": "2.20",
+      "min30_score": "0.30",
       "min60_score": "0.80",
-      "operation_suggestion": "空仓观望，严格止损；【接近阻力位3976（+0.8%）】",
-      "ratio": "0.8380",
+      "operation_suggestion": "空仓观望，严格止损；【接近阻力位3976（+0.9%）】",
+      "ratio": "0.8430",
       "risk_level": "极高",
       "status_name": "单边下跌阶段",
       "status_type": "strong_bear",
-      "total_amount": 1644713019392,
-      "total_predicted_amount": 1711198041850,
+      "total_amount": 1791178466304,
+      "total_predicted_amount": 1730580904751,
       "trade_time": "2026-09-02 15:00:00",
-      "up_ratio": "25.92"
+      "up_ratio": "24.59"
     },
     {
       "average_rise": "-1.0180",

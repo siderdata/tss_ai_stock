@@ -1493,3 +1493,43 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-02 15:03:09] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main 71f7d4f] Add data, report, and trading directories
+ 75 files changed, 15384 insertions(+), 2892 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260902_141501.log
+ create mode 100644 data/cron/daily_pipeline_20260902_143001.log
+ create mode 100644 data/cron/daily_pipeline_20260902_144501.log
+ create mode 100644 data/cron/daily_pipeline_20260902_150002.log
+ rewrite data/industry-realtime-detail.json (97%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json (82%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (66%)
+ create mode 100644 data/market_breadth_20260902_140621.json
+ create mode 100644 data/market_breadth_20260902_141004.json
+ create mode 100644 data/market_breadth_20260902_142126.json
+ create mode 100644 data/market_breadth_20260902_143620.json
+ create mode 100644 data/market_breadth_20260902_145120.json
+ rewrite data/recent.json (98%)
+ rewrite data/smart_rotation_2_1_1_smart_rotation_s2r1c1.json (76%)
+ rewrite data/smart_rotation_5_2_1_smart_rotation_s5r2c1.json (76%)
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File data/cron/cron.log is 67.35 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File data/cron/cron.log is 68.36 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/siderdata/tss_ai_stock.git
+   46dc4aa..71f7d4f  main -> main
+✓ Git提交成功
+操作完成！
+目录已复制到: /home/user/projects/tss_ai_stock/
+文件已提交到Git仓库
+[2026-09-02 15:03:45] ✅ 步骤 5 完成: 数据已同步
+[2026-09-02 15:03:45] 
+[2026-09-02 15:03:45] ===============================================================
+[2026-09-02 15:03:45] 🎉 每日量化数据流水线全部完成
+[2026-09-02 15:03:45] ===============================================================
