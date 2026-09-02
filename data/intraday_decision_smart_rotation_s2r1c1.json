@@ -1,33 +1,28 @@
 {
-  "timestamp": "2026-09-01 14:53:53",
-  "market_sentiment": "neutral",
-  "resonance_type": "none",
+  "timestamp": "2026-09-02 14:51:45",
+  "market_sentiment": "bearish",
+  "resonance_type": "systemic_decline",
   "confidence": 0.7,
-  "description": "🚨 持仓重大变化: 588230.SH已清仓, 新增159531.SZ(科创AI?)+515080.SH(红利ETF), 510880加仓至10200股. 总仓位升至9.94%(≈V7.2推荐10%). V7.2 4.6稳定在[2,4]区间, 上涨57.5%vs主力-294亿, 部分矛盾. Rule 9对所有当前持仓均未触发, 维持观望",
+  "description": "🚨 持仓重大重组: 510880.SH/515080.SH已清仓, 159531.SZ加仓至24300股(+43.8%), 新增512890.SH(红利低波100ETF)55300股. 总仓位升至9.96%(≈V7.2推荐10%). V7.2 1.89[0,2)+二次杀跌期, 上涨24.7%+主力-529亿(恶化), 跌停7. Rule 9全部未触发. 维持HOLD",
   "v72_breadth_check": {
-    "v72_phase": "诱多期",
-    "v72_score": 4.6,
-    "breadth_score": "中性",
-    "consistency": "partial",
+    "v72_phase": "二次杀跌期",
+    "v72_score": 1.89,
+    "breadth_score": "看空",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "严格减仓"
   },
   "adjustments": {
-    "510880.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "红利防御+浮盈+0.16%, 今日+0.22%. 新增至10200股(3700可卖T+1), 维持"
-    },
     "159531.SZ": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "新仓24200股, 浮盈+0.07%, 今日+0.07%. T+1锁定, 今日不可卖. 观察后续走势"
+      "reason": "加仓至24300股(浮亏-0.40%, 今日-0.45%). Rule 9: DD -2.13% 未触发. 反弹1.38%, 距2%阈值0.62%, 维持"
     },
-    "515080.SH": {
+    "512890.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "新仓18900股(红利ETF), 浮盈-0.06%, 今日-0.06%. T+1锁定. Rule 9: drawdown 0%, 未触发"
+      "reason": "新仓红利低波100ETF 55300股(浮亏-0.17%, 今日-0.17%). Rule 9: DD -0.41% 未触发, 反弹2.12%≥2%豁免激活. 防御属性强, 维持"
     }
   },
-  "expires_at": "2026-09-01 15:01:53"
+  "expires_at": "2026-09-02 14:59:45"
 }
