@@ -1,33 +1,33 @@
 {
-  "timestamp": "2026-09-02 10:51:46",
+  "timestamp": "2026-09-02 11:21:52",
   "market_sentiment": "bearish",
   "resonance_type": "systemic_decline",
-  "confidence": 0.65,
-  "description": "V7.2 1.84→2.10小幅回升, 仍在[2,3]不稳定区间+二次杀跌期. 上涨19.6%(略改善vs 15.9%)+主力-441亿持平. Rule 10一致(跟随V7.2减半). V7.2自身仍等待信号, Rule 9全部未触发. 持仓6.90%<<V7.2推荐10%, 维持HOLD",
+  "confidence": 0.7,
+  "description": "V7.2 1.88→1.99回升至接近2.0边界, 仍在[0,2)+二次杀跌期. 上涨20.9%(改善vs 17.7%)+主力-465亿(持平), Rule 10严格执行V7.2. V7.2自身仍等待信号, Rule 9全部未触发. 持仓6.91%<<V7.2推荐10%, 上午最后触发点, 维持HOLD",
   "v72_breadth_check": {
     "v72_phase": "二次杀跌期",
-    "v72_score": 2.1,
+    "v72_score": 1.99,
     "breadth_score": "看空",
     "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "减半减仓"
+    "rule10_outcome": "严格减仓"
   },
   "adjustments": {
     "510880.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "浮亏-1.19%, 今日-1.17%. Rule 9: DD -1.46% 未触发. 红利防御, 维持"
+      "reason": "浮亏-0.99%, 今日-1.02%. Rule 9: DD -1.32% 未触发. 红利防御, 维持"
     },
     "159531.SZ": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "浮亏-1.01%, 今日-0.75%(略反弹). Rule 9: DD -2.46% 未触发. 反弹1.03%>1%, 距2%阈值0.97%, 观望"
+      "reason": "浮亏-0.88%, 今日-0.66%(改善). Rule 9: DD -2.39% 未触发. 反弹1.10%(回升), 维持"
     },
     "515080.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利ETF+浮亏-1.42%, 今日-1.17%. Rule 9: DD -1.42% 未触发. 反弹0.25%(回升), 维持"
+      "reason": "红利ETF+浮亏-1.29%, 今日-1.08%. Rule 9: DD -1.36% 未触发. 反弹0.31%极低, 维持"
     }
   },
-  "expires_at": "2026-09-02 10:59:46"
+  "expires_at": "2026-09-02 11:29:52"
 }
