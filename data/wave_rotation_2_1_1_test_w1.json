@@ -1,20 +1,20 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "test_w1",
-  "trade_date": "2026-09-01",
-  "timestamp": "2026-09-01T15:55:41",
+  "trade_date": "2026-09-02",
+  "timestamp": "2026-09-02T10:00:56",
   "phase": {
     "main_phase": "逐浪 (S2-R1-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "510880.SH",
-      "name": "上证红利",
+      "target": "159531.SZ",
+      "name": "国证2000",
       "action": "BUY",
       "target_pct": 10.0,
       "weight_pct": 100.0,
-      "reason": "逐浪 (S2/R1/C1) 选品: 上证红利"
+      "reason": "逐浪 (S2/R1/C1) 选品: 国证2000"
     }
   ],
   "reason": "逐浪选品 1 只, V7.2 仓位 1成",
