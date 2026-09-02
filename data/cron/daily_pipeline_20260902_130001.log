@@ -1493,3 +1493,35 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-02 13:03:13] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main 46dc4aa] Add data, report, and trading directories
+ 49 files changed, 12915 insertions(+), 705 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260902_121501.log
+ create mode 100644 data/cron/daily_pipeline_20260902_123001.log
+ create mode 100644 data/cron/daily_pipeline_20260902_124501.log
+ create mode 100644 data/cron/daily_pipeline_20260902_130001.log
+ rewrite data/industry-realtime-detail.json (98%)
+ rewrite data/market-realtime.json (64%)
+ rewrite data/today.json (62%)
+remote: warning: See https://gh.io/lfs for more information.        
+remote: warning: File data/cron/cron.log is 66.35 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: File data/cron/cron.log is 65.34 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: warning: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/siderdata/tss_ai_stock.git
+   a623336..46dc4aa  main -> main
+✓ Git提交成功
+操作完成！
+目录已复制到: /home/user/projects/tss_ai_stock/
+文件已提交到Git仓库
+[2026-09-02 13:03:59] ✅ 步骤 5 完成: 数据已同步
+[2026-09-02 13:03:59] 
+[2026-09-02 13:03:59] ===============================================================
+[2026-09-02 13:03:59] 🎉 每日量化数据流水线全部完成
+[2026-09-02 13:03:59] ===============================================================
