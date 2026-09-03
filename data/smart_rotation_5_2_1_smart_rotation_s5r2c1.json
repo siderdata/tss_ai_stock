@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "smart_rotation_s5r2c1",
   "trade_date": "2026-09-03",
-  "timestamp": "2026-09-03T10:00:48",
+  "timestamp": "2026-09-03T11:00:50",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C1)",
     "sub_phase": "日内战术"
@@ -11,14 +11,14 @@
     {
       "target": "159531.SZ",
       "action": "HOLD",
-      "target_pct": 3.4754889043499797,
+      "target_pct": 3.466160404017666,
       "action_pct": 0.0,
       "reason": "战术持有: 3.5% (无 LLM, 维持)"
     },
     {
       "target": "512890.SH",
       "action": "HOLD",
-      "target_pct": 6.535359904744337,
+      "target_pct": 6.541014689879546,
       "action_pct": 0.0,
       "reason": "战术持有: 6.5% (无 LLM, 维持)"
     }
@@ -43,7 +43,7 @@
   "llm_decision_loaded": false,
   "phase_mode": "tactical",
   "current_position": {
-    "159531.SZ": 3.4754889043499797,
-    "512890.SH": 6.535359904744337
+    "159531.SZ": 3.466160404017666,
+    "512890.SH": 6.541014689879546
   }
 }
