@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-03 10:51:56",
-  "market_sentiment": "bearish",
-  "resonance_type": "systemic_decline",
+  "timestamp": "2026-09-03 11:22:02",
+  "market_sentiment": "neutral",
+  "resonance_type": "none",
   "confidence": 0.7,
-  "description": "V7.2 1.87→1.99回升至[0,2)/[2,3]边界, 杀跌期. 上涨38.0%(跌破40%)+主力-64亿(恶化), 跌停8. Rule 10严格执行V7.2. V7.2自身仍等待信号, Rule 9全部未触发. 持仓10.01%≈V7.2推荐, 维持HOLD",
+  "description": "V7.2 1.86→2.09回升至[2,3], 杀跌期. 上涨39.6%(略改善vs 33.7%)+主力-72亿(改善-27亿). Rule 10一致(跟随V7.2减半). V7.2自身仍等待信号, Rule 9全部未触发. 持仓10.01%≈V7.2推荐, 上午最后触发点, 维持HOLD",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 1.99,
-    "breadth_score": "看空",
+    "v72_score": 2.09,
+    "breadth_score": "中性",
     "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "严格减仓"
+    "rule10_outcome": "减半减仓"
   },
   "adjustments": {
     "159531.SZ": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "浮亏-1.08%(恶化), 今日-0.48%(转跌). Rule 9: DD -2.66% 未触发, 反弹0.83%<2%(豁免失效). 距-5%阈值2.34%, 重点监控"
+      "reason": "浮亏-0.47%, 今日+0.14%(转涨). Rule 9: DD -2.13% 未触发, 反弹1.38%. 上午触底回升, 维持"
     },
     "512890.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "浮盈+1.00%, 今日+1.17%. Rule 9: DD 0.00% 未触发, 反弹2.62%豁免激活. 红利低波防御, 维持"
+      "reason": "浮盈+0.58%, 今日+0.75%. Rule 9: DD 0.00% 未触发, 反弹2.28%豁免激活. 红利低波防御, 维持"
     }
   },
-  "expires_at": "2026-09-03 10:59:56"
+  "expires_at": "2026-09-03 11:30:02"
 }

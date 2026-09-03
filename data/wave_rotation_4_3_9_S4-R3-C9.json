@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S4-R3-C9",
   "trade_date": "2026-09-03",
-  "timestamp": "2026-09-03T11:00:48",
+  "timestamp": "2026-09-03T12:00:46",
   "phase": {
     "main_phase": "逐浪 (S4-R3-C9)",
     "sub_phase": "动量轮动选品"
@@ -17,20 +17,20 @@
       "reason": "逐浪 (S4/R3/C9) 选品: 上证50"
     },
     {
-      "target": "510880.SH",
-      "name": "上证红利",
-      "action": "BUY",
-      "target_pct": 3.33,
-      "weight_pct": 33.3,
-      "reason": "逐浪 (S4/R3/C9) 选品: 上证红利"
-    },
-    {
       "target": "159531.SZ",
       "name": "国证2000",
       "action": "BUY",
       "target_pct": 3.33,
       "weight_pct": 33.3,
       "reason": "逐浪 (S4/R3/C9) 选品: 国证2000"
+    },
+    {
+      "target": "510880.SH",
+      "name": "上证红利",
+      "action": "BUY",
+      "target_pct": 3.33,
+      "weight_pct": 33.3,
+      "reason": "逐浪 (S4/R3/C9) 选品: 上证红利"
     }
   ],
   "reason": "逐浪选品 3 只, V7.2 仓位 1成",
