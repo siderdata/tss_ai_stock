@@ -2,20 +2,12 @@
   "protocol": "strategy_action_v1",
   "strategy": "r2_stable",
   "trade_date": "2026-09-03",
-  "timestamp": "2026-09-03T13:03:02",
+  "timestamp": "2026-09-03T14:03:08",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
-    {
-      "target": "510050.SH",
-      "name": "上证50",
-      "action": "BUY",
-      "target_pct": 5.0,
-      "weight_pct": 50.0,
-      "reason": "逐浪 (S5/R2/C1) 选品: 上证50"
-    },
     {
       "target": "159531.SZ",
       "name": "国证2000",
@@ -23,6 +15,14 @@
       "target_pct": 5.0,
       "weight_pct": 50.0,
       "reason": "逐浪 (S5/R2/C1) 选品: 国证2000"
+    },
+    {
+      "target": "510050.SH",
+      "name": "上证50",
+      "action": "BUY",
+      "target_pct": 5.0,
+      "weight_pct": 50.0,
+      "reason": "逐浪 (S5/R2/C1) 选品: 上证50"
     }
   ],
   "reason": "逐浪选品 2 只, V7.2 仓位 1成",
