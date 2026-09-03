@@ -1,5 +1,5 @@
 {
-  "date": "2026-09-02",
+  "date": "2026-09-03",
   "actual_position": 3.0,
   "anchor": 3.0,
   "base": 1.0,
@@ -14,9 +14,9 @@
   ],
   "constraint_note": "阶段3 ≤ 7",
   "prev_margin_adjust": 0,
-  "prev_kline_adjust": -2,
+  "prev_kline_adjust": 0,
   "baseline_margin_adjust": 0,
   "baseline_kline_adjust": 0,
-  "prev_macd_tier": 2,
-  "baseline_macd_tier": 3
+  "prev_macd_tier": 1,
+  "baseline_macd_tier": 2
 }

@@ -1493,3 +1493,20 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-02 16:02:50] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main dc14c1c] Add data, report, and trading directories
+ 59 files changed, 13948 insertions(+), 1758 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260902_151501.log
+ create mode 100644 data/cron/daily_pipeline_20260902_153001.log
+ create mode 100644 data/cron/daily_pipeline_20260902_154501.log
+ create mode 100644 data/cron/daily_pipeline_20260902_160001.log
+ rewrite data/industry-realtime-detail.json (96%)
+fatal: unable to access 'https://github.com/siderdata/tss_ai_stock.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+✗ Git提交失败

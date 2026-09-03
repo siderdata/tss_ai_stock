@@ -1,25 +1,25 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-09-02",
-  "timestamp": "2026-09-02T15:55:38",
+  "trade_date": "2026-09-03",
+  "timestamp": "2026-09-03T10:00:46",
   "phase": {
     "main_phase": "调整杀跌浪",
-    "sub_phase": "二次杀跌期",
+    "sub_phase": "杀跌期",
     "confidence": 80.0
   },
   "position_intent": {
     "recommended_ratio": 10.0,
-    "reason": "杀跌阶段-二次杀跌期，等待信号"
+    "reason": "杀跌阶段-杀跌期，等待信号"
   },
   "scores": {
-    "composite_score": 1.91,
-    "daily_score": 2.5,
-    "avg_score": 3.57,
-    "recent_avg": 4.54,
-    "recent_trend": -3.49,
-    "high_ratio": 9.3,
-    "low_ratio": 65.1
+    "composite_score": 2.0,
+    "daily_score": 2.4,
+    "avg_score": 3.54,
+    "recent_avg": 3.86,
+    "recent_trend": -3.29,
+    "high_ratio": 9.1,
+    "low_ratio": 65.9
   },
   "warnings": {
     "is_false_breakout": false,
