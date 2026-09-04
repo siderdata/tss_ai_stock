@@ -1,10 +1,5 @@
 {
-  "today_buys": {
-    "512890.SH": {
-      "date": "2026-09-03",
-      "qty": 30100
-    }
-  },
+  "today_buys": {},
   "circuit_breaker": {
     "active": false
   }
