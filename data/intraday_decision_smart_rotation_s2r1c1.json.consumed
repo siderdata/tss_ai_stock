@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-09-07 09:53:27",
-  "market_sentiment": "neutral",
-  "resonance_type": "none",
-  "confidence": 0.55,
-  "description": "V7.2 sub_phase切换杀跌期→反弹期(1.42分仍在[2,3]低分区间), 市场广度看多(上涨54.3%/主力+93.27亿), Rule 10判定部分矛盾。当前持仓7%(已被动减仓), 按§10核心纪律[2,3]区间不应单独剧烈调仓, 维持HOLD等待反弹期稳定。",
+  "timestamp": "2026-09-07 10:53:09",
+  "market_sentiment": "bullish",
+  "resonance_type": "tech_resonance",
+  "confidence": 0.65,
+  "description": "V7.2反弹期综合分1.96连续5个时点稳定, 市场广度✅一致(上涨62.1%/主力+204.65亿), 沪深成交破万亿; 但持仓512890红利低波ETF跌势暂止但仍处低位(-0.65%), §10纪律强调[2,3]区间不应剧烈调仓, HOLD维持7%等待反弹确认。",
   "v72_breadth_check": {
     "v72_phase": "反弹期",
-    "v72_score": 1.42,
+    "v72_score": 1.96,
     "breadth_score": "看多",
-    "consistency": "partial",
+    "consistency": "consistent",
     "rule10_applied": true,
     "rule10_outcome": "维持"
   },
@@ -16,8 +16,8 @@
     "512890.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "V7.2 sub_phase从杀跌切反弹但1.42分仍在[2,3]不稳定区间, §10规定此区间不应单独剧烈调仓; 持仓红利低波ETF防御性强, 回撤-0.33%未触发, 当前7%为被动减仓结果, 不主动加仓待反弹稳定"
+      "reason": "V7.2反弹期1.96分+广度✅一致(上涨62.1%/主力+204亿)+沪深成交破万亿, 理论可加仓回10%基础仓位; 但持仓红利低波ETF跌势暂止但仍处低位(-0.65%), §10强调[2,3]区间不应剧烈调仓, 等待持仓反弹至1.20+或V7.2>3分再加, 控制下行风险优先"
     }
   },
-  "expires_at": "2026-09-07 10:01:27"
+  "expires_at": "2026-09-07 11:01:09"
 }

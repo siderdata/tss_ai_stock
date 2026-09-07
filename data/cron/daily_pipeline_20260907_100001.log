@@ -1502,3 +1502,43 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-07 10:03:12] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main a2740b3] Add data, report, and trading directories
+ 79 files changed, 33171 insertions(+), 3292 deletions(-)
+ rewrite data/CORE_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (93%)
+ rewrite data/CORE_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (98%)
+ rewrite data/CORE_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (96%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (93%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (98%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (96%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (97%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (99%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (98%)
+ create mode 100644 data/cron/daily_pipeline_20260904_161501.log
+ create mode 100644 data/cron/daily_pipeline_20260904_163001.log
+ create mode 100644 data/cron/daily_pipeline_20260904_164501.log
+ create mode 100644 data/cron/daily_pipeline_20260907_090001.log
+ create mode 100644 data/cron/daily_pipeline_20260907_091501.log
+ create mode 100644 data/cron/daily_pipeline_20260907_093002.log
+ create mode 100644 data/cron/daily_pipeline_20260907_094501.log
+ create mode 100644 data/cron/daily_pipeline_20260907_100001.log
+ rewrite data/industry-realtime-detail.json (99%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (90%)
+ rewrite data/market-realtime.json (62%)
+ create mode 100644 data/market_breadth_20260907_093755.json
+ create mode 100644 data/market_breadth_20260907_094508.json
+ create mode 100644 data/market_breadth_20260907_095216.json
+ create mode 100644 report/history/enhanced_cross_cycle_analysis_20260907.html
+ create mode 100644 report/history/latest_universal_d_analysis_20260907.html
+ create mode 100644 report/history/universal_120min_analysis_20260907.html
+ create mode 100644 report/history/universal_30min_analysis_20260907.html
+ create mode 100644 report/history/universal_60min_analysis_20260907.html
+fatal: unable to access 'https://github.com/siderdata/tss_ai_stock.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+✗ Git提交失败
