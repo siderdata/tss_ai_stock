@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S4-R2-C4",
   "trade_date": "2026-09-07",
-  "timestamp": "2026-09-07T14:01:02",
+  "timestamp": "2026-09-07T15:00:54",
   "phase": {
     "main_phase": "逐浪 (S4-R2-C4)",
     "sub_phase": "动量轮动选品"
@@ -17,12 +17,12 @@
       "reason": "逐浪 (S4/R2/C4) 选品: 国证2000"
     },
     {
-      "target": "159967.SZ",
-      "name": "创成长",
+      "target": "159573.SZ",
+      "name": "创业200",
       "action": "BUY",
       "target_pct": 5.0,
       "weight_pct": 50.0,
-      "reason": "逐浪 (S4/R2/C4) 选品: 创成长"
+      "reason": "逐浪 (S4/R2/C4) 选品: 创业200"
     }
   ],
   "reason": "逐浪选品 2 只, V7.2 仓位 1成",
