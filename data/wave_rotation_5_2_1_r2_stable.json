@@ -1,13 +1,21 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "r2_stable",
-  "trade_date": "2026-09-07",
-  "timestamp": "2026-09-07T15:55:41",
+  "trade_date": "2026-09-08",
+  "timestamp": "2026-09-08T10:00:46",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
+    {
+      "target": "159967.SZ",
+      "name": "创成长",
+      "action": "BUY",
+      "target_pct": 5.0,
+      "weight_pct": 50.0,
+      "reason": "逐浪 (S5/R2/C1) 选品: 创成长"
+    },
     {
       "target": "159531.SZ",
       "name": "国证2000",
@@ -15,14 +23,6 @@
       "target_pct": 5.0,
       "weight_pct": 50.0,
       "reason": "逐浪 (S5/R2/C1) 选品: 国证2000"
-    },
-    {
-      "target": "159573.SZ",
-      "name": "创业200",
-      "action": "BUY",
-      "target_pct": 5.0,
-      "weight_pct": 50.0,
-      "reason": "逐浪 (S5/R2/C1) 选品: 创业200"
     }
   ],
   "reason": "逐浪选品 2 只, V7.2 仓位 1成",
