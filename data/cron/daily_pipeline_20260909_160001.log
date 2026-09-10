@@ -1508,3 +1508,34 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-09 16:02:57] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main 5df71ca] Add data, report, and trading directories
+ 54 files changed, 13811 insertions(+), 1491 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260909_151502.log
+ create mode 100644 data/cron/daily_pipeline_20260909_153001.log
+ create mode 100644 data/cron/daily_pipeline_20260909_154501.log
+ create mode 100644 data/cron/daily_pipeline_20260909_160001.log
+remote: warning: File data/cron/cron.log is 99.63 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: error: Trace: 3a689994a6185de55a07e1981d04357342f3bbe6cbf3efc7ca72f575745fc757        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File data/cron/cron.log is 108.77 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 107.75 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 104.70 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 100.65 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 109.79 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 106.73 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 105.72 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 103.68 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 101.66 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/siderdata/tss_ai_stock.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/siderdata/tss_ai_stock.git'
+✗ Git提交失败
