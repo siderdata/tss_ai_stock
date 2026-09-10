@@ -1511,3 +1511,48 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-10 10:03:11] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main 696d375] Add data, report, and trading directories
+ 74 files changed, 32963 insertions(+), 2373 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260909_161502.log
+ create mode 100644 data/cron/daily_pipeline_20260909_163001.log
+ create mode 100644 data/cron/daily_pipeline_20260909_164501.log
+ create mode 100644 data/cron/daily_pipeline_20260910_090001.log
+ create mode 100644 data/cron/daily_pipeline_20260910_091501.log
+ create mode 100644 data/cron/daily_pipeline_20260910_093002.log
+ create mode 100644 data/cron/daily_pipeline_20260910_094501.log
+ create mode 100644 data/cron/daily_pipeline_20260910_100001.log
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (92%)
+ create mode 100644 data/market_breadth_20260910_093630.json
+ create mode 100644 data/market_breadth_20260910_094508.json
+ create mode 100644 data/market_breadth_20260910_100009.json
+ create mode 100644 report/history/enhanced_cross_cycle_analysis_20260910.html
+ create mode 100644 report/history/latest_universal_d_analysis_20260910.html
+ create mode 100644 report/history/universal_120min_analysis_20260910.html
+ create mode 100644 report/history/universal_30min_analysis_20260910.html
+ create mode 100644 report/history/universal_60min_analysis_20260910.html
+remote: warning: File data/cron/cron.log is 99.63 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: error: Trace: f3daf85df5422c12ea3df03260c65bb6d8c901c2bdd8a3d8126acb4c98a3ed28        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File data/cron/cron.log is 111.81 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 105.72 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 104.70 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 103.68 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 101.66 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 100.65 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 109.79 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 108.77 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 107.75 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 106.73 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/siderdata/tss_ai_stock.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/siderdata/tss_ai_stock.git'
+✗ Git提交失败
