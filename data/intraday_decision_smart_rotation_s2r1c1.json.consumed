@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-11 13:52:02",
-  "market_sentiment": "strong_recovery_from_panic",
-  "resonance_type": "v7_2_stopped_buying_market_recovering",
-  "confidence": 0.78,
-  "description": "2026-09-11 13:51午后反转加强: V7.2杀跌期0.22,recent_trend -3.22,V7.2 ratio降级20%→10%且reason从建仓信号变为等待信号(V7.2停止建仓);市场持续反弹(当日+1.59%→+4.87%涨幅3.28%, 浮盈+0.348%→+1.133%近3倍);持仓560200不变(42.03%)系统已停止加仓;广度大幅改善(上涨8.9%→13.0%近翻倍, 主力-664→-587亿恢复77亿, 活跃度8.83%→13.01%近翻倍, 涨停35);外部改善(韩国KOSPI -2.22%→-2.02%勉强突破/A50 -0.50%→-0.46%不突破);持仓虽42.03%超V7.2 base 10% 32个百分点且超buffer 12个百分点,但持仓大幅浮盈+1.133%+市场强反弹+V32 HOLD+V7.2停止建仓+系统停止加仓,选择HOLD等待下次触发观察system self-correction",
+  "timestamp": "2026-09-11 14:39:20",
+  "market_sentiment": "bearish",
+  "resonance_type": "afternoon_reversal",
+  "confidence": 0.88,
+  "description": "午后市场大幅反转，上证/深证/科创50 全面翻绿(-1.27%/-1.15%/-1.41%)，持仓当日盈亏从+5.97%跳水至+3.78%(日内跳水-2.19%)，触发6%巨震规则。V7.2综合分0.37极低+广度极度看空(上涨11.1%/主力-530.59亿)+日经-2.09%突破-2%阈值+KOSPI-1.76%接近-2%，外部环境恶化。V32 14:00反弹结束10/14强信号+14:30反弹结束3/14确认下行。持仓42.09%超V7.2 buffer上限30% 12.09%，应严格执行减仓。",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 0.22,
-    "breadth_score": "看空(改善中)",
-    "consistency": "inconsistent",
+    "v72_score": 0.37,
+    "breadth_score": "看空",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "观察 (持仓大幅浮盈+1.133%+市场强反弹+V7.2 ratio降级10%+等待信号+V32 HOLD支持不卖+系统已停止加仓+4/5信号但市场反弹中,选择HOLD等待system self-correction)"
+    "rule10_outcome": "严格减仓"
   },
   "adjustments": {
     "159967.SZ": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "持仓大幅浮盈+1.133%(从+0.348%近3倍)+市场强反弹+4.87%(从+1.59%)+V7.2 ratio降级20%→10%且停止建仓(等待信号)+V32 HOLD(30min看多不卖)+广度大幅改善(上涨13.0%/活跃度13.01%/主力-587亿)+系统已停止加仓(持仓560200不变)+A50不再突破(-0.46%);持仓虽42.03%超V7.2 base 10% 32个百分点+超buffer 30% 12个百分点,但market strong recovery+position healthy profit+V7.2/V32都支持不卖;选择HOLD等待V7.2系统自我修正,不再强制减仓以免错过recovery"
+      "action": "SELL",
+      "pct": -20,
+      "reason": "6%巨震规则触发(日内跳水-2.19%+持仓浮盈+3.78%→SELL 20%)+Rule 10严格减仓信号(V7.2 0.37<2+广度一致看空)+持仓42.09%超V7.2 buffer上限30% 12.09%+午后市场大幅反转(上证-1.27%/科创50-1.41%)+日经期货-2.09%突破-2%阈值+KOSPI-1.76%接近阈值+V32 14:00反弹结束10/14强+14:30反弹结束3/14确认下行+可卖132300股足够覆盖20%减仓量(需约93000股)"
     }
   },
-  "expires_at": "2026-09-11 14:00:02"
+  "expires_at": "2026-09-11 14:47:20"
 }
