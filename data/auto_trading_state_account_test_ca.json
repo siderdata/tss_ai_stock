@@ -1,5 +1,14 @@
 {
-  "today_buys": {},
+  "today_buys": {
+    "159949.SZ": {
+      "date": "2026-09-11",
+      "qty": 30800
+    },
+    "159967.SZ": {
+      "date": "2026-09-11",
+      "qty": 147500
+    }
+  },
   "circuit_breaker": {
     "active": false
   }

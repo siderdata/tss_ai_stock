@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S4-R2-C4",
   "trade_date": "2026-09-11",
-  "timestamp": "2026-09-11T10:00:44",
+  "timestamp": "2026-09-11T11:00:44",
   "phase": {
     "main_phase": "逐浪 (S4-R2-C4)",
     "sub_phase": "动量轮动选品"
@@ -12,7 +12,7 @@
       "target": "159967.SZ",
       "name": "创成长",
       "action": "BUY",
-      "target_pct": 5.0,
+      "target_pct": 12.5,
       "weight_pct": 50.0,
       "reason": "逐浪 (S4/R2/C4) 选品: 创成长"
     },
@@ -20,15 +20,15 @@
       "target": "159949.SZ",
       "name": "创业板50",
       "action": "BUY",
-      "target_pct": 5.0,
+      "target_pct": 12.5,
       "weight_pct": 50.0,
       "reason": "逐浪 (S4/R2/C4) 选品: 创业板50"
     }
   ],
-  "reason": "逐浪选品 2 只, V7.2 仓位 1成",
+  "reason": "逐浪选品 2 只, V7.2 仓位 2成",
   "position_intent": {
-    "recommended_ratio": 10.0,
-    "reason": "逐浪选品 2 只, V7.2 仓位 1成"
+    "recommended_ratio": 25.0,
+    "reason": "逐浪选品 2 只, V7.2 仓位 2成"
   },
   "pool": "POOL_12",
   "macd_threshold": 0,

@@ -2,22 +2,22 @@
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
   "trade_date": "2026-09-11",
-  "timestamp": "2026-09-11T10:00:43",
+  "timestamp": "2026-09-11T11:00:42",
   "phase": {
     "main_phase": "调整杀跌浪",
     "sub_phase": "杀跌期",
     "confidence": 80.0
   },
   "position_intent": {
-    "recommended_ratio": 10.0,
-    "reason": "杀跌阶段-杀跌期，等待信号"
+    "recommended_ratio": 25.0,
+    "reason": "🔴 首次建仓2.5成（跌幅-2.4%≤-2%）"
   },
   "scores": {
-    "composite_score": 0.38,
+    "composite_score": 0.29,
     "daily_score": 0.3,
     "avg_score": 3.48,
-    "recent_avg": 2.04,
-    "recent_trend": -3.06,
+    "recent_avg": 2.02,
+    "recent_trend": -3.15,
     "high_ratio": 8.9,
     "low_ratio": 66.7
   },
