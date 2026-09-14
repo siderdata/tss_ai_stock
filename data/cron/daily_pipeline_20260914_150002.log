@@ -1517,3 +1517,30 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-14 15:03:47] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main 9655ff3] Add data, report, and trading directories
+ 72 files changed, 15129 insertions(+), 2367 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260914_141501.log
+ create mode 100644 data/cron/daily_pipeline_20260914_143001.log
+ create mode 100644 data/cron/daily_pipeline_20260914_144501.log
+ create mode 100644 data/cron/daily_pipeline_20260914_150002.log
+ rewrite data/industry-realtime-detail.json (97%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json (82%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (75%)
+ create mode 100644 data/market_breadth_20260914_140629.json
+ create mode 100644 data/market_breadth_20260914_142124.json
+ create mode 100644 data/market_breadth_20260914_143622.json
+ create mode 100644 data/market_breadth_20260914_145126.json
+ create mode 100644 data/quant_ai.db
+ rewrite data/recent.json (87%)
+ rewrite data/smart_rotation_2_1_1_smart_rotation_s2r1c1.json (66%)
+ rewrite data/smart_rotation_5_2_1_smart_rotation_s5r2c1.json (66%)
+fatal: unable to access 'https://github.com/siderdata/tss_ai_stock.git/': GnuTLS recv error (-54): Error in the pull function.
+✗ Git提交失败
