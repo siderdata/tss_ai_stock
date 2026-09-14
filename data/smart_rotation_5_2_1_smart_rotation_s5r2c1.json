@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "smart_rotation_s5r2c1",
   "trade_date": "2026-09-14",
-  "timestamp": "2026-09-14T10:00:59",
+  "timestamp": "2026-09-14T11:03:15",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C1)",
     "sub_phase": "日内战术"
@@ -11,15 +11,15 @@
     {
       "target": "159967.SZ",
       "action": "HOLD",
-      "target_pct": 35.72958629913471,
+      "target_pct": 32.002506379374566,
       "action_pct": 0.0,
-      "reason": "战术持有: 35.7% (无 LLM, 维持)"
+      "reason": "战术持有: 32.0% (无 LLM, 维持)"
     }
   ],
-  "reason": "SRC 10.0%, buffer [0%, 30%]; 当前 35.7%, 无 LLM → 维持",
+  "reason": "SRC 10.0%, buffer [0%, 30%]; 当前 32.0%, 无 LLM → 维持",
   "position_intent": {
-    "recommended_ratio": 35.73,
-    "reason": "SRC 10.0%, buffer [0%, 30%]; 当前 35.7%, 无 LLM → 维持"
+    "recommended_ratio": 32.0,
+    "reason": "SRC 10.0%, buffer [0%, 30%]; 当前 32.0%, 无 LLM → 维持"
   },
   "_source": "smart_rotation",
   "pool": "POOL_9",
@@ -32,10 +32,10 @@
     "macd_threshold": 10
   },
   "base_ratio": 10.0,
-  "adjusted_ratio": 35.73,
+  "adjusted_ratio": 32.0,
   "llm_decision_loaded": false,
   "phase_mode": "tactical",
   "current_position": {
-    "159967.SZ": 35.72958629913471
+    "159967.SZ": 32.002506379374566
   }
 }
