@@ -1520,3 +1520,37 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-15 10:03:41] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+[main f47541d] Add data, report, and trading directories
+ 79 files changed, 32831 insertions(+), 1853 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260914_161504.log
+ create mode 100644 data/cron/daily_pipeline_20260914_163001.log
+ create mode 100644 data/cron/daily_pipeline_20260914_164501.log
+ create mode 100644 data/cron/daily_pipeline_20260915_090001.log
+ create mode 100644 data/cron/daily_pipeline_20260915_091501.log
+ create mode 100644 data/cron/daily_pipeline_20260915_093002.log
+ create mode 100644 data/cron/daily_pipeline_20260915_094501.log
+ create mode 100644 data/cron/daily_pipeline_20260915_100001.log
+ rewrite data/industry-realtime-detail.json (97%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (71%)
+ create mode 100644 data/market_breadth_20260915_093625.json
+ create mode 100644 data/market_breadth_20260915_094510.json
+ create mode 100644 data/market_breadth_20260915_095007.json
+ create mode 100644 data/market_breadth_20260915_095115.json
+ create mode 100644 report/history/enhanced_cross_cycle_analysis_20260915.html
+ create mode 100644 report/history/latest_universal_d_analysis_20260915.html
+ create mode 100644 report/history/universal_120min_analysis_20260915.html
+ create mode 100644 report/history/universal_30min_analysis_20260915.html
+ create mode 100644 report/history/universal_60min_analysis_20260915.html
+error: RPC failed; curl 56 GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+✗ Git提交失败
