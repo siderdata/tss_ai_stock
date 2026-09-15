@@ -2,22 +2,22 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-0.5300",
-      "characteristics": "[\"全周期极度弱势，市场恐慌\", \"技术指标全面超卖\", \"可能出现技术性反弹\", \"最近阻力位3927（+1.8%，gap_downward）\"]",
-      "composite_score": "0.69",
+      "average_rise": "-0.4080",
+      "characteristics": "[\"全周期极度弱势，市场恐慌\", \"技术指标全面超卖\", \"可能出现技术性反弹\", \"最近阻力位3927（+1.6%，gap_downward）\"]",
+      "composite_score": "0.79",
       "daily_score": "0.10",
-      "min120_score": "0.20",
-      "min30_score": "1.90",
-      "min60_score": "2.00",
+      "min120_score": "0.30",
+      "min30_score": "2.20",
+      "min60_score": "2.20",
       "operation_suggestion": "空仓观望，可小仓位博弈超跌反弹（严格止损）；【接近阻力位3927】",
-      "ratio": "0.9100",
+      "ratio": "0.9150",
       "risk_level": "极高",
       "status_name": "极端下跌阶段",
       "status_type": "extreme_bear",
-      "total_amount": 1441797293568,
-      "total_predicted_amount": 1598084947778,
+      "total_amount": 1571844337152,
+      "total_predicted_amount": 1612772248279,
       "trade_time": "2026-09-15 15:00:00",
-      "up_ratio": "19.11"
+      "up_ratio": "20.16"
     },
     {
       "average_rise": "0.0900",
