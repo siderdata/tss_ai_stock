@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-15 11:22:18",
-  "market_sentiment": "neutral",
-  "resonance_type": "divergence",
+  "timestamp": "2026-09-15 13:52:59",
+  "market_sentiment": "bearish",
+  "resonance_type": "tech_resonance",
   "confidence": 0.55,
-  "description": "V7.2反弹期但综合分0.89大幅下降-0.24(累计从1.33 -0.44); 内部矛盾加剧(反弹期 vs score<2杀跌区间); 主力+43.09亿持续下降-7.71亿; 上涨30.1%下降; 持仓10.01%匹配目标; 距午休9分钟, HOLD观望等13:06",
+  "description": "V7.2杀跌期(0.80)持续第2天+市场广度深度看空(上涨24.8%/主力-66.69亿,持续恶化)✅一致,但仓位9.99%已对齐V7.2目标10%;科创板块(科创50+2.02%/科创芯片+2.49%)独强与权重(银行/地产/医药)杀跌分化,创业板ETF直接敞口-0.53%偏弱,维持HOLD避免超卖",
   "v72_breadth_check": {
-    "v72_phase": "反弹期",
-    "v72_score": 0.89,
-    "breadth_score": "中性",
-    "consistency": "partial",
+    "v72_phase": "杀跌期",
+    "v72_score": 0.8,
+    "breadth_score": "看空",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "观望"
+    "rule10_outcome": "维持"
   },
   "adjustments": {
     "159967.SZ": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "V7.2反弹期但综合分0.89大幅下降-0.24(累计从1.33起-0.44), 内部矛盾加剧(反弹期 vs score<2杀跌确立区间反弹期可能被证伪); 主力+43.09亿持续下降-7.71亿; 上涨% 30.1%下降-1.4%; 持仓+0.26%略改善, 浮亏-0.31%; 仓位10.01%匹配V7.2目标; Rule 10部分矛盾→观望; 距午休9分钟, HOLD等待13:06评估sub_phase是否切换回杀跌期"
+      "reason": "仓位9.99%已对齐V7.2目标10%,广度看空✅一致但进一步减仓超卖;移动止损未触发(close-4.29%,<5%阈值);无6%巨震/跳水;累计减仓75.97%已极度保守;科技板块独强vs创业板偏弱,结构分化不构成加仓理由"
     }
   },
-  "expires_at": "2026-09-15 11:30:18"
+  "expires_at": "2026-09-15 14:00:59"
 }
