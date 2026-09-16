@@ -1,23 +1,23 @@
 {
-  "timestamp": "2026-09-16 12:21:21",
+  "timestamp": "2026-09-16 13:51:26",
   "market_sentiment": "bullish",
   "resonance_type": "systemic_rise",
-  "confidence": 0.7,
-  "description": "V7.2杀跌期(0.83)与市场广度全面看多(强)❌矛盾(数据为上午收盘快照,午休时段);持仓品种维持+3.32%(0.779持平)浮亏+1.92%;移动止损close-1.64%持续改善rebound 3.87%;仓位10.21%略超V7.2目标10%;累计减仓75.97%极度保守,HOLD等待下午开盘数据更新",
+  "confidence": 0.82,
+  "description": "V7.2综合分2.66升至不稳定区间上沿, 广度持续走强(主力+268亿/涨停85), 持仓浮盈健康, 维持等待V7.2突破4分",
   "v72_breadth_check": {
-    "v72_phase": "杀跌期",
-    "v72_score": 0.83,
+    "v72_phase": "反弹期",
+    "v72_score": 2.66,
     "breadth_score": "看多",
-    "consistency": "contradictory",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "观望"
+    "rule10_outcome": "维持"
   },
   "adjustments": {
     "159967.SZ": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "仓位10.21%略超V7.2目标10%,广度全面看多(强)❌矛盾但V7.2仍杀跌期不加仓;持仓维持+3.32%浮亏+1.92%;移动止损close-1.64%改善rebound 3.87%;累计减仓75.97%极度保守"
+      "reason": "V7.2反弹期(综合2.66从2.12升至2.66, recent_trend+2.08) + 广度看多(上涨77.8%/主力+268亿/涨停85/超大单+305亿) ✅一致; V7.2分值向不稳定区间上沿迈进但仍未突破4分进入中性偏多区间, 仓位10.16%匹配推荐10%, 持仓浮盈+1.26%健康, 等待V7.2综合分突破4分进入稳定区间再加仓"
     }
   },
-  "expires_at": "2026-09-16 12:29:21"
+  "expires_at": "2026-09-16 13:59:26"
 }
