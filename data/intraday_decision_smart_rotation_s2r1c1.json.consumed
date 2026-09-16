@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-09-16 10:51:45",
-  "market_sentiment": "neutral",
-  "resonance_type": "tech_resonance",
-  "confidence": 0.6,
-  "description": "V7.2杀跌期(0.83)+市场广度接近看多(上涨59.6%差0.4%达60%/主力+48.48亿持续流入/超大单+114.43亿大幅流入)⚠️部分矛盾;持仓品种持续反弹+1.86%(0.766→0.768)浮亏+0.48%扩大盈利;🟢反弹豁免触发rebound_pct 2.00%达阈值,Rule 9移动止损风险解除;移动止损close-3.41%改善;仓位10.08%已对齐V7.2目标10%;累计减仓75.97%极度保守,观望等待下午开盘确认",
+  "timestamp": "2026-09-16 11:51:41",
+  "market_sentiment": "bullish",
+  "resonance_type": "systemic_rise",
+  "confidence": 0.7,
+  "description": "V7.2杀跌期(0.83)与市场广度全面看多(强)❌矛盾(数据为上午收盘快照);持仓品种维持+3.32%(0.779持平)浮亏+1.92%;移动止损close-1.64%持续改善rebound 3.87%;仓位10.21%略超V7.2目标10%;累计减仓75.97%极度保守,HOLD等待下午开盘数据更新",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
     "v72_score": 0.83,
-    "breadth_score": "中性偏多",
-    "consistency": "partial",
+    "breadth_score": "看多",
+    "consistency": "contradictory",
     "rule10_applied": true,
     "rule10_outcome": "观望"
   },
@@ -16,8 +16,8 @@
     "159967.SZ": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "仓位10.08%已对齐V7.2目标10%,广度接近看多⚠️部分矛盾但V7.2仍杀跌期不加仓;持仓持续反弹+1.86%浮亏+0.48%扩大盈利;市场广度接近看多上涨59.6%主力+48.48亿;🟢反弹豁免触发rebound 2.00%Rule 9风险解除;移动止损close-3.41%改善;累计减仓75.97%极度保守"
+      "reason": "仓位10.21%略超V7.2目标10%,广度全面看多(强)❌矛盾但V7.2仍杀跌期不加仓;持仓维持+3.32%浮亏+1.92%;移动止损close-1.64%改善rebound 3.87%;累计减仓75.97%极度保守"
     }
   },
-  "expires_at": "2026-09-16 10:59:45"
+  "expires_at": "2026-09-16 11:59:41"
 }
