@@ -1,21 +1,13 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "S7-R3-C1",
-  "trade_date": "2026-09-17",
-  "timestamp": "2026-09-17T15:55:42",
+  "trade_date": "2026-09-18",
+  "timestamp": "2026-09-18T10:00:46",
   "phase": {
     "main_phase": "逐浪 (S7-R3-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
-    {
-      "target": "159967.SZ",
-      "name": "创成长",
-      "action": "BUY",
-      "target_pct": 3.33,
-      "weight_pct": 33.3,
-      "reason": "逐浪 (S7/R3/C1) 选品: 创成长"
-    },
     {
       "target": "588000.SH",
       "name": "科创50",
@@ -23,6 +15,14 @@
       "target_pct": 3.33,
       "weight_pct": 33.3,
       "reason": "逐浪 (S7/R3/C1) 选品: 科创50"
+    },
+    {
+      "target": "159967.SZ",
+      "name": "创成长",
+      "action": "BUY",
+      "target_pct": 3.33,
+      "weight_pct": 33.3,
+      "reason": "逐浪 (S7/R3/C1) 选品: 创成长"
     },
     {
       "target": "588230.SH",
