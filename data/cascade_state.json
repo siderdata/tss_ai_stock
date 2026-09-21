@@ -1,12 +1,12 @@
 {
-  "date": "2026-09-18",
+  "date": "2026-09-21",
   "actual_position": 3.0,
   "anchor": 3.0,
   "base": 1.0,
   "deltas": {
     "margin": 0,
     "kline": 0,
-    "macd": 2
+    "macd": 0
   },
   "band": [
     0,
@@ -18,5 +18,5 @@
   "baseline_margin_adjust": 0,
   "baseline_kline_adjust": 0,
   "prev_macd_tier": 3,
-  "baseline_macd_tier": 1
+  "baseline_macd_tier": 3
 }
