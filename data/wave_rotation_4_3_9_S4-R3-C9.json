@@ -2,19 +2,19 @@
   "protocol": "strategy_action_v1",
   "strategy": "S4-R3-C9",
   "trade_date": "2026-09-21",
-  "timestamp": "2026-09-21T13:02:59",
+  "timestamp": "2026-09-21T14:00:39",
   "phase": {
     "main_phase": "逐浪 (S4-R3-C9)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "588000.SH",
-      "name": "科创50",
+      "target": "588230.SH",
+      "name": "科创200",
       "action": "BUY",
       "target_pct": 3.33,
       "weight_pct": 33.3,
-      "reason": "逐浪 (S4/R3/C9) 选品: 科创50"
+      "reason": "逐浪 (S4/R3/C9) 选品: 科创200"
     },
     {
       "target": "159967.SZ",
@@ -25,12 +25,12 @@
       "reason": "逐浪 (S4/R3/C9) 选品: 创成长"
     },
     {
-      "target": "588230.SH",
-      "name": "科创200",
+      "target": "588030.SH",
+      "name": "科创100",
       "action": "BUY",
       "target_pct": 3.33,
       "weight_pct": 33.3,
-      "reason": "逐浪 (S4/R3/C9) 选品: 科创200"
+      "reason": "逐浪 (S4/R3/C9) 选品: 科创100"
     }
   ],
   "reason": "逐浪选品 3 只, V7.2 仓位 1成",
