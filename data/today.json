@@ -2,22 +2,40 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "0.6980",
+      "average_rise": "1.3830",
+      "characteristics": "[\"全周期同步转强，共振明显\", \"底部结构确认，上升趋势形成\", \"资金开始回流，情绪修复\", \"振幅收敛至0.27%（1天）\", \"最近支撑位3951（0.3%，gap_upward）\", \"最近阻力位3952（+-0.3%，jump_down）\"]",
+      "composite_score": "7.58",
+      "daily_score": "6.40",
+      "min120_score": "7.70",
+      "min30_score": "9.10",
+      "min60_score": "9.00",
+      "operation_suggestion": "逐步建仓，顺势而为，回调加仓；【接近阻力位3952（+-0.3%）】",
+      "ratio": "1.2150",
+      "risk_level": "低中",
+      "status_name": "趋势反转确认阶段",
+      "status_type": "bottom_reversal",
+      "total_amount": 733206192128,
+      "total_predicted_amount": 2070858797405,
+      "trade_time": "2026-09-22 10:30:00",
+      "up_ratio": "54.59"
+    },
+    {
+      "average_rise": "0.7180",
       "characteristics": "[\"日线偏弱（5.2分）但中短周期走强\", \"可能是新趋势的启动信号\", \"需要成交量确认和持续性验证\", \"振幅呈收缩趋势，蓄势中\", \"最近支撑位3912（1.0%，jump_up）\", \"最近阻力位3952（+0.0%，jump_down）\"]",
-      "composite_score": "6.82",
+      "composite_score": "6.83",
       "daily_score": "5.20",
       "min120_score": "6.70",
-      "min30_score": "9.10",
+      "min30_score": "9.20",
       "min60_score": "9.10",
       "operation_suggestion": "逐步建仓，回调加仓；【情绪配合，可积极些】；【接近阻力位3952（+0.0%）】",
-      "ratio": "1.1300",
+      "ratio": "1.1500",
       "risk_level": "中等",
       "status_name": "趋势启动阶段",
       "status_type": "trend_starting",
-      "total_amount": 1999189750784,
-      "total_predicted_amount": 1955605315071,
+      "total_amount": 2031513459712,
+      "total_predicted_amount": 1980017013126,
       "trade_time": "2026-09-21 15:00:00",
-      "up_ratio": "81.33"
+      "up_ratio": "82.11"
     },
     {
       "average_rise": "0.4320",
@@ -36,24 +54,6 @@
       "total_predicted_amount": 1886125046852,
       "trade_time": "2026-09-21 14:00:00",
       "up_ratio": "78.45"
-    },
-    {
-      "average_rise": "0.6130",
-      "characteristics": "[\"综合评分中性，多空平衡\", \"无明显方向性\", \"振幅收敛至0.45%（1天）\", \"最近支撑位3912（0.6%，jump_up）\", \"最近阻力位3952（+0.5%，jump_down）\"]",
-      "composite_score": "6.31",
-      "daily_score": "5.10",
-      "min120_score": "5.50",
-      "min30_score": "9.00",
-      "min60_score": "8.60",
-      "operation_suggestion": "观望为主，等待方向选择；【振幅收敛1天（蓄势中），等待方向确认 | 接近阻力位3952（+0.5%）】",
-      "ratio": "1.1550",
-      "risk_level": "中等",
-      "status_name": "中性震荡阶段",
-      "status_type": "neutral",
-      "total_amount": 1327843460096,
-      "total_predicted_amount": 1912528263237,
-      "trade_time": "2026-09-21 11:30:00",
-      "up_ratio": "78.88"
     }
   ],
   "query": {
