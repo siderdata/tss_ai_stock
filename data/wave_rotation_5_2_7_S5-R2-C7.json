@@ -2,20 +2,12 @@
   "protocol": "strategy_action_v1",
   "strategy": "S5-R2-C7",
   "trade_date": "2026-09-23",
-  "timestamp": "2026-09-23T10:02:56",
+  "timestamp": "2026-09-23T11:02:45",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C7)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
-    {
-      "target": "588000.SH",
-      "name": "科创50",
-      "action": "BUY",
-      "target_pct": 5.0,
-      "weight_pct": 50.0,
-      "reason": "逐浪 (S5/R2/C7) 选品: 科创50"
-    },
     {
       "target": "588230.SH",
       "name": "科创200",
@@ -23,6 +15,14 @@
       "target_pct": 5.0,
       "weight_pct": 50.0,
       "reason": "逐浪 (S5/R2/C7) 选品: 科创200"
+    },
+    {
+      "target": "588000.SH",
+      "name": "科创50",
+      "action": "BUY",
+      "target_pct": 5.0,
+      "weight_pct": 50.0,
+      "reason": "逐浪 (S5/R2/C7) 选品: 科创50"
     }
   ],
   "reason": "逐浪选品 2 只, V7.2 仓位 1成",
