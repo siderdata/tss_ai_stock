@@ -1,14 +1,14 @@
 {
-  "timestamp": "2026-09-23 14:51:48",
-  "market_sentiment": "neutral_weak",
-  "resonance_type": "position_rebalance",
-  "confidence": 0.6,
-  "description": "14:51 尾盘触发 - **账户持仓发生重大变化** (持仓自动再分配/补仓):588000.SH 18700股→20600股(+1900股frozen)+588230.SH 9500股→35000股(+25500股frozen);持仓总市值50982→103011(+102%)/持仓占比4.95%→9.99%恢复至接近基础10%;T+1可卖部分188000.SH 18700股+588230.SH 9500股(冻结部分=新增仓位);V7.2综合6.04(持平)低位震荡期-后期trap_zone=false基础10%;鸣响广度看空(上涨33.6%/主力-400.78亿扩大流出)/V32全天无強信号(count≤4);A股全上证-0.27%/深证-0.54%/创业板-0.55%/科创50-0.07%;尾盘仅4分钟无操作窗口;持仓已恢复至基础仓位+广度恶化+无強信号=维持HOLD观察",
+  "timestamp": "2026-09-24 11:26:49",
+  "market_sentiment": "bearish",
+  "resonance_type": "step2d_failure_protection",
+  "confidence": 0.45,
+  "description": "11:06 触发(实际11:21延迟) - **Step 2d 账户API连续超时3次失败** (10s/60s/120s),按 skill 硬规则 'Step 2d失败 → 全部HOLD保护性输出'; 鸣响广度看空急剧恶化:上涨从10:51 27.4%→11:20 23.0%(下跌达73.9%)/主力资金从-289.74亿→-371.34亿(扩大流出)/超大单-198.86亿(从-143.73亿扩大);V7.2综合6.04低位震荡期-后期trap_zone=false基础10%;V32止跌上涨信号衰减无强信号(最新10:50 count=2弱);持仓状态沿用10:51(188000.SH 14500股+588230.SH 24600股,持仓占比6.96%);午休前无操作窗口+API异常→保护性HOLD,午盘13:06重试",
   "v72_breadth_check": {
     "v72_phase": "低位震荡期-后期",
     "v72_score": 6.04,
-    "breadth_score": "看空",
-    "consistency": "partial_contradictory",
+    "breadth_score": "看空(急剧恶化)",
+    "consistency": "contradictory",
     "rule10_applied": false,
     "rule10_outcome": "维持",
     "trap_zone_warning": false
@@ -17,32 +17,13 @@
     "588000.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "持仓20600股(从18700+1900股frozen新增)@1.752浮盈+0.51%;T+1 available=18700可卖;持仓占比恢复至基础10%水平;尾盘仅4分钟无操作窗口;维持HOLD"
+      "reason": "Step 2d账户API连续超时3次 → 全部HOLD保护性输出;广度看空急剧恶化(上涨23%/下跌73.9%)/主力-371亿/超大单-198亿;持仓沿用10:51 14500股,等待API恢复验证"
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "持仓35000股(从9500+25500股frozen大幅新增)@1.912浮盈+0.77%;T+1 available=9500可卖;持仓占比恢复;尾盘无操作窗口;维持HOLD"
+      "reason": "Step 2d账户API连续超时3次 → 全部HOLD保护性输出;广度急剧恶化;持仓沿用10:51 24600股,等待API恢复验证"
     }
   },
-  "_position_status": {
-    "_note": "尾盘持仓自动再分配:588000.SH从18700股增到20600股(+1900股frozen),588230.SH从9500股大幅增到35000股(+25500股frozen);持仓占比从4.95%恢复到9.99%(接近基础10%);frozen部分可能为系统自动补仓委托",
-    "188000.SH": {
-      "quantity": 20600,
-      "available": 18700,
-      "frozen": 1900,
-      "cost_price": 1.743,
-      "current_price": 1.752,
-      "profit_loss_pct": 0.51
-    },
-    "588230.SH": {
-      "quantity": 35000,
-      "available": 9500,
-      "frozen": 25500,
-      "cost_price": 1.8974,
-      "current_price": 1.912,
-      "profit_loss_pct": 0.77
-    }
-  },
-  "expires_at": "2026-09-23 15:00:00"
+  "expires_at": "2026-09-24 13:06:00"
 }
