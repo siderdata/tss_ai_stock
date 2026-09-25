@@ -1,6 +1,6 @@
 {
   "success": true,
-  "timestamp": "2026-09-24 15:05:46",
+  "timestamp": "2026-09-25 08:50:36",
   "industry_signals": [
     {
       "name": "深红利",
@@ -13,7 +13,7 @@
     {
       "name": "上红利",
       "symbol": "SH000015",
-      "close": 3263.301,
+      "close": 3263.3,
       "rise": 0.04,
       "rise_change_3d": "-0.910",
       "composite_score": 34.0
@@ -21,7 +21,7 @@
     {
       "name": "中证传媒",
       "symbol": "SZ399971",
-      "close": 1179.197,
+      "close": 1179.2,
       "rise": -1.42,
       "rise_change_3d": "-2.520",
       "composite_score": 28.75
@@ -29,7 +29,7 @@
     {
       "name": "中证信息",
       "symbol": "SH000935",
-      "close": 7756.485,
+      "close": 7756.49,
       "rise": -2.73,
       "rise_change_3d": "-2.740",
       "composite_score": 45.75
@@ -37,7 +37,7 @@
     {
       "name": "中证军工",
       "symbol": "SZ399967",
-      "close": 11436.358,
+      "close": 11436.36,
       "rise": -1.86,
       "rise_change_3d": "-3.860",
       "composite_score": 28.75
@@ -45,7 +45,7 @@
     {
       "name": "中证医疗",
       "symbol": "SZ399989",
-      "close": 6731.183,
+      "close": 6731.18,
       "rise": -2.28,
       "rise_change_3d": "-2.010",
       "composite_score": 38.25
@@ -53,7 +53,7 @@
     {
       "name": "中证医药",
       "symbol": "SH000933",
-      "close": 7750.446,
+      "close": 7750.44,
       "rise": -2.49,
       "rise_change_3d": "-2.570",
       "composite_score": 34.25
@@ -61,7 +61,7 @@
     {
       "name": "中证新能",
       "symbol": "SZ399808",
-      "close": 2196.749,
+      "close": 2196.75,
       "rise": -2.32,
       "rise_change_3d": "-3.120",
       "composite_score": 31.75
@@ -77,7 +77,7 @@
     {
       "name": "中证煤炭",
       "symbol": "SZ399998",
-      "close": 2395.852,
+      "close": 2395.85,
       "rise": 0.32,
       "rise_change_3d": "-1.130",
       "composite_score": 34.0
@@ -85,7 +85,7 @@
     {
       "name": "中证能源",
       "symbol": "SH000928",
-      "close": 3368.156,
+      "close": 3368.16,
       "rise": 0.79,
       "rise_change_3d": "-0.660",
       "composite_score": 38.0
@@ -93,7 +93,7 @@
     {
       "name": "中证酒",
       "symbol": "SZ399987",
-      "close": 3677.394,
+      "close": 3677.4,
       "rise": -1.74,
       "rise_change_3d": "-1.840",
       "composite_score": 31.75
@@ -101,7 +101,7 @@
     {
       "name": "中证金融",
       "symbol": "SH000934",
-      "close": 5664.918,
+      "close": 5664.92,
       "rise": -0.66,
       "rise_change_3d": "-1.050",
       "composite_score": 34.75
@@ -109,7 +109,7 @@
     {
       "name": "中证银行",
       "symbol": "SZ399986",
-      "close": 7483.458,
+      "close": 7483.46,
       "rise": 0.31,
       "rise_change_3d": "-0.230",
       "composite_score": 37.75
@@ -117,7 +117,7 @@
     {
       "name": "国证农牧",
       "symbol": "SZ399435",
-      "close": 3376.756,
+      "close": 3376.76,
       "rise": -1.84,
       "rise_change_3d": "-3.900",
       "composite_score": 25.0
@@ -125,7 +125,7 @@
     {
       "name": "国证地产",
       "symbol": "SZ399393",
-      "close": 2622.265,
+      "close": 2622.27,
       "rise": -2.22,
       "rise_change_3d": "-2.340",
       "composite_score": 49.0
@@ -133,7 +133,7 @@
     {
       "name": "国证基建",
       "symbol": "SZ399359",
-      "close": 2480.695,
+      "close": 2480.69,
       "rise": 0.16,
       "rise_change_3d": "-0.480",
       "composite_score": 37.75
@@ -141,7 +141,7 @@
     {
       "name": "国证钢铁",
       "symbol": "SZ399440",
-      "close": 1142.854,
+      "close": 1142.85,
       "rise": -0.87,
       "rise_change_3d": "-2.390",
       "composite_score": 31.75
@@ -149,7 +149,7 @@
     {
       "name": "国证红利",
       "symbol": "SZ399321",
-      "close": 7169.579,
+      "close": 7169.58,
       "rise": -0.51,
       "rise_change_3d": "-0.780",
       "composite_score": 34.75
@@ -157,7 +157,7 @@
     {
       "name": "国证食品",
       "symbol": "SZ399396",
-      "close": 14083.035,
+      "close": 14083.036,
       "rise": -1.52,
       "rise_change_3d": "-1.200",
       "composite_score": 31.75
@@ -165,7 +165,7 @@
     {
       "name": "机器人50",
       "symbol": "SZ399283",
-      "close": 4067.624,
+      "close": 4067.63,
       "rise": -1.18,
       "rise_change_3d": "-1.750",
       "composite_score": 39.25
@@ -173,7 +173,7 @@
     {
       "name": "生物医药",
       "symbol": "SZ399441",
-      "close": 2177.803,
+      "close": 2177.8,
       "rise": -2.82,
       "rise_change_3d": "-2.730",
       "composite_score": 42.0
@@ -181,7 +181,7 @@
     {
       "name": "证券公司",
       "symbol": "SZ399975",
-      "close": 726.623,
+      "close": 726.62,
       "rise": -1.88,
       "rise_change_3d": "-2.110",
       "composite_score": 28.75
@@ -189,7 +189,7 @@
     {
       "name": "有色金属",
       "symbol": "SH000819",
-      "close": 8314.246,
+      "close": 8314.244,
       "rise": -3.57,
       "rise_change_3d": "-4.160",
       "composite_score": 23.0
@@ -197,7 +197,7 @@
     {
       "name": "中证环保",
       "symbol": "SH000827",
-      "close": 1565.462,
+      "close": 1565.46,
       "rise": -1.64,
       "rise_change_3d": "-2.050",
       "composite_score": 33.75
@@ -205,7 +205,7 @@
     {
       "name": "CSSW传媒",
       "symbol": "SZ399810",
-      "close": 2508.465,
+      "close": 2508.47,
       "rise": -1.25,
       "rise_change_3d": "-2.120",
       "composite_score": 28.75
@@ -213,7 +213,7 @@
     {
       "name": "CSSW电子",
       "symbol": "SZ399811",
-      "close": 7439.906,
+      "close": 7439.9,
       "rise": -3.05,
       "rise_change_3d": "-3.230",
       "composite_score": 45.75
@@ -253,7 +253,7 @@
     {
       "name": "科创芯片",
       "symbol": "SH000685",
-      "close": 3897.237,
+      "close": 3897.24,
       "rise": -2.4,
       "rise_change_3d": "-2.240",
       "composite_score": 45.75
@@ -261,7 +261,7 @@
     {
       "name": "科创信息",
       "symbol": "SH000682",
-      "close": 2629.815,
+      "close": 2629.82,
       "rise": -2.33,
       "rise_change_3d": "-2.190",
       "composite_score": 45.75
