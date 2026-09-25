@@ -1545,3 +1545,126 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-25 12:02:50] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+error: pack-objects died of signal 9
+fatal: failed to run repack
+
+[main e03cf22] Add data, report, and trading directories
+ 47 files changed, 12801 insertions(+), 52 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260925_111520.log
+ create mode 100644 data/cron/daily_pipeline_20260925_113009.log
+ create mode 100644 data/cron/daily_pipeline_20260925_114503.log
+ create mode 100644 data/cron/daily_pipeline_20260925_120001.log
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json (84%)
+ create mode 100644 data/market_breadth_20260925_111831.json
+remote: warning: File data/cron/cron.log is 99.63 MB; this is larger than GitHub's recommended maximum file size of 50.00 MB        
+remote: error: Trace: 66fb6067ef46d851b261c9a4b055b72386e23891a2479110784f8ee2ef660faa        
+remote: error: See https://gh.io/lfs for more information.        
+remote: error: File data/cron/cron.log is 145.57 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 131.21 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 128.14 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 122.01 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 108.77 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 204.74 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 203.69 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 178.65 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 177.60 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 142.49 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 116.91 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 112.84 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 111.81 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 161.02 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 201.61 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 199.52 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 190.10 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 183.85 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 175.52 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 166.20 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 165.17 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 148.65 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 144.54 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 182.82 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 171.38 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 156.90 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 149.68 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 134.29 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 132.24 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 186.98 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 164.13 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 162.06 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 109.79 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 106.73 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 103.68 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 101.66 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 155.87 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 153.80 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 138.38 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 126.10 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 113.86 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 172.42 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 152.76 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 133.26 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 107.75 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 197.43 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 194.28 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 189.06 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 115.89 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 104.70 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 202.65 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 198.48 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 167.24 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 141.46 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 139.41 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 124.06 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 150.71 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 147.62 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 125.08 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 117.93 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 158.96 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 179.69 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 114.88 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 105.72 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 174.49 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 120.99 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 196.38 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 195.33 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 188.02 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 163.09 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 157.93 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 136.33 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 146.59 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 173.45 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 170.34 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 140.43 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 130.19 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 123.03 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 119.97 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 100.65 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 180.73 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 154.83 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 137.36 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 200.57 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 192.19 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 191.14 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 129.17 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 185.94 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 181.78 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: File data/cron/cron.log is 169.30 MB; this exceeds GitHub's file size limit of 100.00 MB        
+remote: error: GH001: Large files detected. You may want to try Git Large File Storage - https://git-lfs.github.com.        
+To https://github.com/siderdata/tss_ai_stock.git
+ ! [remote rejected] main -> main (pre-receive hook declined)
+error: failed to push some refs to 'https://github.com/siderdata/tss_ai_stock.git'
+✗ Git提交失败
