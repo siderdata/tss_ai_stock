@@ -1,59 +1,18 @@
 {
-  "timestamp": "2026-09-25 14:51:55",
-  "market_sentiment": "bearish",
-  "resonance_type": "eod_hold_overnight",
-  "confidence": 0.4,
-  "description": "**14:51 触发(今日最后,收盘前9分钟)EOD决策** - V7.2维持:阶段4中期/综合分3.43(危险区第3天,9/22=7.01→9/23=6.03→9/24=3.43)/单峰陷阱(回落3.58分)/transition_danger/建议仓位3-4成(30-40%);持仓验证(API成功):588000.SH 51400@1.713(累计-0.19%,当日-2.39%)+ 588230.SH 88300@1.852(累计-0.26%,当日-3.24%);持仓占比24.46%**继续低于V7.2建议下沿30%**;Cash 777,197.22/总值1,028,777.02(+2.88%);市场广度(昨日收盘继承):上涨1084(20.8%)/下跌4001(76.8%)/涨停52/跌停14/活跃度20.76%/沪深主力-652.14亿/极度看空;A股(昨日收盘):上证-1.22%/深证-2.34%/创业板-2.68%/科创50-2.35%;亚太今日盘中:日经+1.30%/韩国KOSPI+0.90%(科技强势);期货:A50+0.33%/标普+0.12%/恒指期货-1.13%(港股偏弱);中国金龙+2.10%(中概反弹);V32:14:20大面积⚠️止跌上涨(11个指数,弱信号),14:35红利❌反弹结束,**无共振事件**;**Rule 10一致性矩阵**:V7.2=3.43杀跌期[2-4]+上涨20.8%<40%+主力-652<0→✅consistent_bearish;**持仓技术面**:两品种累计跌幅均<1%(远未达-6%阈值),移动止损规则9未触发,6%巨震规则8未触发;T+1 available=quantity(可卖但尾盘流动性差);**EOD决策逻辑**:(1)持仓已过度减仓(< V7.2建议下沿30%)→不应继续减仓;(2)累计浮亏<1%未触发任何风控;(3)尾盘最后9分钟T+1风险+流动性差,避免调仓;(4)V32信号不一致无强共振;(5)Rule 10一致但持仓已超调;(6)**维持当前持仓过夜**,留给下周一09:36开盘后首次触发处理,届时V7.2新一日评分将决定是否进一步行动;**EOD HOLD维持**",
+  "timestamp": "2026-09-28 14:52:43",
+  "market_sentiment": "neutral",
+  "resonance_type": "none",
+  "confidence": 0.0,
+  "description": "HOLD_ALL: 账户API持续超时,无法获取持仓基准,按硬约束跳过决策(尾盘最后触发)",
   "v72_breadth_check": {
-    "v72_phase": "低位震荡期-中期(可能重回阶段3)",
-    "v72_score": 3.43,
-    "breadth_score": "看空(极度,昨日收盘继承)",
-    "consistency": "consistent_bearish",
-    "rule10_applied": true,
-    "rule10_outcome": "维持(持仓已过度减仓,一致看空但不宜再加码减仓)",
-    "trap_zone_warning": true,
-    "single_peak_warning": true,
-    "oversold_position": true
+    "v72_phase": "unknown",
+    "v72_score": 0.0,
+    "breadth_score": "unknown",
+    "consistency": "unknown",
+    "rule10_applied": false,
+    "rule10_outcome": "无法验证"
   },
-  "adjustments": {
-    "588000.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "EOD:持仓51400@1.713累计浮亏-0.19%(远未达-6%阈值);持仓占比~8.6%已大幅低于建议下沿30%;持仓累计仅-0.19%距高点极近→移动止损规则9未触发;6%巨震规则8未触发;尾盘最后9分钟T+1风险大,**维持过夜**"
-    },
-    "588230.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "EOD:持仓88300@1.852累计浮亏-0.26%(远未达-6%);持仓占比~15.9%;持仓累计仅-0.26%距高点极近→移动止损规则9未触发;6%巨震规则8未触发;尾盘最后9分钟T+1风险大,**维持过夜**"
-    }
-  },
-  "_meta": {
-    "trigger_time": "14:51:09",
-    "decision_time": "14:54:00",
-    "decision_type": "EOD (End of Day)",
-    "next_trigger": "2026-09-28 09:36 (下周一开盘后,周一上午触发)",
-    "data_sources": {
-      "global_market": "success",
-      "phase_decision_v72": "success (composite=3.43, 阶段4中期)",
-      "v32_signal": "success (无共振+14:20弱止跌/14:35反弹结束)",
-      "account_api": "SUCCESS (持仓未变)",
-      "breadth_monitor": "success (数据为昨日15:00收盘)",
-      "tonghuashun_news": "success"
-    },
-    "position_status": {
-      "total_ratio": "24.46%",
-      "below_v72_lower_bound": true,
-      "v72_suggests": "30-40%",
-      "conclusion": "持仓已过度减仓,不宜再加码,EOD维持过夜",
-      "closing_window_minutes": 9
-    },
-    "eod_summary": {
-      "daily_pnl": -288.7,
-      "daily_pnl_pct": -0.028,
-      "cumulative_pnl": 28777.02,
-      "cumulative_pnl_pct": 2.88,
-      "total_value": 1028777.02
-    }
-  },
-  "expires_at": "2026-09-28 09:36:00"
+  "adjustments": {},
+  "_error": "step2d_account_api_timeout",
+  "expires_at": "2026-09-28 15:00:43"
 }
