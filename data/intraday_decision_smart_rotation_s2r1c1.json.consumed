@@ -1,50 +1,28 @@
 {
-  "timestamp": "2026-09-25 14:36:54",
+  "timestamp": "2026-09-28 09:53:08",
   "market_sentiment": "bearish",
-  "resonance_type": "v72_danger_zone_hold_final_window",
-  "confidence": 0.42,
-  "description": "14:36 触发(尾盘前24分钟,倒数第二次) - V7.2持续维持:阶段4中期/综合分3.43(危险区第3天)/单峰陷阱(回落3.58分)/transition_danger/建议仓位3-4成(30-40%);持仓验证(API成功):588000.SH 51400@1.713(累计-0.19%,当日-2.39%)+ 588230.SH 88300@1.852(累计-0.26%,当日-3.24%);持仓占比24.46%**继续低于V7.2建议下沿30%**;Cash 777,197.22/总值1,028,777.02(+2.88%);市场广度(昨日收盘继承):上涨1084(20.8%)/下跌4001(76.8%)/涨停52/跌停14/活跃度20.76%/沪深主力-652.14亿/极度看空;A股(昨日收盘):上证-1.22%/深证-2.34%/创业板-2.68%/科创50-2.35%;亚太今日盘中:日经+1.30%/韩国KOSPI+0.90%(科技强势);期货:A50+0.34%/标普+0.13%/恒指期货-1.15%(港股偏弱);中国金龙+2.10%(中概反弹);V32:14:20大面积⚠️止跌上涨(11个指数,弱信号),14:35红利❌反弹结束,**无共振事件**;**Rule 10一致性矩阵**:V7.2=3.43杀跌期[2-4]+上涨20.8%<40%+主力-652<0→✅consistent_bearish;**持仓技术面**:两品种累计跌幅均<1%(远未达-6%阈值),移动止损规则9未触发,6%巨震规则8未触发;**决策逻辑**:(1)持仓已过度减仓(< V7.2建议下沿30%)→不应继续减仓;(2)累计浮亏<1%未触发任何风控;(3)距收盘24分钟尾盘频繁调仓风险大;(4)V32信号不一致(14:20弱止跌vs14:35反弹结束)无强共振;(5)Rule 10一致但持仓已超调→维持HOLD等收盘/14:51最终触发;**维持HOLD观望**",
+  "resonance_type": "systemic_decline",
+  "confidence": 0.75,
+  "description": "V7.2单峰陷阱+广度急剧恶化(上涨17.6%/主力-260亿)+韩国KOSPI -2.14%科技传导+A50期货-1.19%,持仓588230接近-3%",
   "v72_breadth_check": {
-    "v72_phase": "低位震荡期-中期(可能重回阶段3)",
+    "v72_phase": "低位震荡期-中期",
     "v72_score": 3.43,
-    "breadth_score": "看空(极度,昨日收盘继承)",
-    "consistency": "consistent_bearish",
+    "breadth_score": "看空",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持(持仓已过度减仓,一致看空但不宜再加码减仓)",
-    "trap_zone_warning": true,
-    "single_peak_warning": true,
-    "oversold_position": true
+    "rule10_outcome": "减半减仓"
   },
   "adjustments": {
     "588000.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "持仓51400@1.713累计浮亏-0.19%(远未达-6%阈值);持仓占比~8.6%已大幅低于建议下沿30%;持仓累计仅-0.19%距高点极近→移动止损规则9未触发;6%巨震规则8未触发;维持HOLD"
+      "action": "SELL",
+      "pct": 2,
+      "reason": "科创50ETF,V7.2单峰陷阱+韩国KOSPI-2.14%科技传导,持仓-1.94%,Rule10减半"
     },
     "588230.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "持仓88300@1.852累计浮亏-0.26%(远未达-6%);持仓占比~15.9%;持仓累计仅-0.26%距高点极近→移动止损规则9未触发;6%巨震规则8未触发;维持HOLD"
+      "action": "SELL",
+      "pct": 5,
+      "reason": "科创相关ETF,V7.2单峰陷阱+韩国科技传导,持仓当日扩大至-2.67%接近跳水警报,Rule10减半"
     }
   },
-  "_meta": {
-    "trigger_time": "14:36:09",
-    "decision_time": "14:39:00",
-    "data_sources": {
-      "global_market": "success",
-      "phase_decision_v72": "success (composite=3.43, 阶段4中期)",
-      "v32_signal": "success (无共振+14:20弱止跌/14:35反弹结束)",
-      "account_api": "SUCCESS (持仓未变)",
-      "breadth_monitor": "success (数据为昨日15:00收盘)",
-      "tonghuashun_news": "success"
-    },
-    "position_status": {
-      "total_ratio": "24.46%",
-      "below_v72_lower_bound": true,
-      "v72_suggests": "30-40%",
-      "conclusion": "持仓已过度减仓,不宜再加码",
-      "closing_window_minutes": 24
-    }
-  },
-  "expires_at": "2026-09-25 14:51:00"
+  "expires_at": "2026-09-28 10:01:08"
 }
