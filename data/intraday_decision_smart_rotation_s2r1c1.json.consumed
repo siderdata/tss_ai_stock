@@ -1,28 +1,18 @@
 {
-  "timestamp": "2026-09-28 09:53:08",
-  "market_sentiment": "bearish",
-  "resonance_type": "systemic_decline",
-  "confidence": 0.75,
-  "description": "V7.2单峰陷阱+广度急剧恶化(上涨17.6%/主力-260亿)+韩国KOSPI -2.14%科技传导+A50期货-1.19%,持仓588230接近-3%",
+  "timestamp": "2026-09-28 10:51:43",
+  "market_sentiment": "neutral",
+  "resonance_type": "none",
+  "confidence": 0.0,
+  "description": "HOLD_ALL: 账户API持续超时,无法获取持仓基准,按硬约束跳过决策",
   "v72_breadth_check": {
-    "v72_phase": "低位震荡期-中期",
-    "v72_score": 3.43,
-    "breadth_score": "看空",
-    "consistency": "consistent",
-    "rule10_applied": true,
-    "rule10_outcome": "减半减仓"
+    "v72_phase": "unknown",
+    "v72_score": 0.0,
+    "breadth_score": "unknown",
+    "consistency": "unknown",
+    "rule10_applied": false,
+    "rule10_outcome": "无法验证"
   },
-  "adjustments": {
-    "588000.SH": {
-      "action": "SELL",
-      "pct": 2,
-      "reason": "科创50ETF,V7.2单峰陷阱+韩国KOSPI-2.14%科技传导,持仓-1.94%,Rule10减半"
-    },
-    "588230.SH": {
-      "action": "SELL",
-      "pct": 5,
-      "reason": "科创相关ETF,V7.2单峰陷阱+韩国科技传导,持仓当日扩大至-2.67%接近跳水警报,Rule10减半"
-    }
-  },
-  "expires_at": "2026-09-28 10:01:08"
+  "adjustments": {},
+  "_error": "step2d_account_api_timeout",
+  "expires_at": "2026-09-28 10:59:43"
 }
