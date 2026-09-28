@@ -1548,3 +1548,39 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-28 11:03:03] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+error: pack-objects died of signal 9
+fatal: failed to run repack
+
+[main b490036] Add data, report, and trading directories
+ 60 files changed, 11823 insertions(+), 2090 deletions(-)
+ rewrite data/CORE_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (70%)
+ rewrite data/CORE_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (71%)
+ rewrite data/CORE_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (71%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (71%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (71%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (71%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (86%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (87%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (87%)
+ create mode 100644 data/cron/daily_pipeline_20260928_103014.log
+ create mode 100644 data/cron/daily_pipeline_20260928_104503.log
+ create mode 100644 data/cron/daily_pipeline_20260928_110001.log
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json.consumed (96%)
+ create mode 100644 data/market_breadth_20260928_100632.json
+ create mode 100644 data/market_breadth_20260928_102942.json
+fatal: unable to access 'https://github.com/siderdata/tss_ai_stock.git/': Failed to connect to github.com port 443 after 129893 ms: Connection timed out
+✗ Git提交失败
