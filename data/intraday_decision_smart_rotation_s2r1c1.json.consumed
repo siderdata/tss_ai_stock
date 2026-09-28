@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-28 11:22:59",
+  "timestamp": "2026-09-28 13:52:34",
   "market_sentiment": "bearish",
   "resonance_type": "systemic_decline",
-  "confidence": 0.92,
-  "description": "极度恶化:创业板-4.57%/A50-2.08%/广度11.3%/主力-716亿/跌停46只;持仓588230 profit_loss -5.35%",
+  "confidence": 0.85,
+  "description": "A股略反弹(创业板-4.74%从-4.84%)但广度极度弱势(主力-840亿+跌停60只);韩国反弹失败-2.47%;持仓已小14.9%,Rule 8仍触发",
   "v72_breadth_check": {
     "v72_phase": "低位震荡期-中期",
     "v72_score": 3.39,
@@ -15,14 +15,14 @@
   "adjustments": {
     "588000.SH": {
       "action": "SELL",
-      "pct": 4,
-      "reason": "Rule 8跳水阈值:持仓intraday-3.41%且浮亏-4.27%;~60%减仓"
+      "pct": 2,
+      "reason": "Rule 8跳水阈值:持仓intraday-3.41%且浮亏-4.27%;~37%减仓(持仓已小,稍微保守)"
     },
     "588230.SH": {
       "action": "SELL",
-      "pct": 7,
-      "reason": "Rule 8跳水阈值:持仓intraday-4.22%且浮亏-5.35%;~57%减仓"
+      "pct": 4,
+      "reason": "Rule 8跳水阈值:持仓intraday-4.06%且浮亏-4.98%;~42%减仓"
     }
   },
-  "expires_at": "2026-09-28 11:30:59"
+  "expires_at": "2026-09-28 14:00:34"
 }
