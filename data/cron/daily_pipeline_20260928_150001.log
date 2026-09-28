@@ -1548,3 +1548,38 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-09-28 15:03:13] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+error: pack-objects died of signal 9
+fatal: failed to run repack
+
+[main 653fe3e] Add data, report, and trading directories
+ 68 files changed, 15051 insertions(+), 2181 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20260928_141527.log
+ create mode 100644 data/cron/daily_pipeline_20260928_143023.log
+ create mode 100644 data/cron/daily_pipeline_20260928_144510.log
+ create mode 100644 data/cron/daily_pipeline_20260928_150001.log
+ rewrite data/industry-realtime-detail.json (97%)
+ rewrite data/intraday_decision_smart_rotation_s2r1c1.json (99%)
+ create mode 100644 data/market_breadth_20260928_140619.json
+ create mode 100644 data/market_breadth_20260928_145504.json
+ rewrite data/recent.json (100%)
+ rewrite data/smart_rotation_2_1_1_smart_rotation_s2r1c1.json (72%)
+ rewrite data/smart_rotation_5_2_1_smart_rotation_s5r2c1.json (72%)
+error: RPC failed; curl 56 GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+Everything up-to-date
+✗ Git提交失败
