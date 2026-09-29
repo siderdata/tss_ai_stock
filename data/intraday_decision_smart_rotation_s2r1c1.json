@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-09-28 14:52:43",
+  "timestamp": "2026-09-29 14:38:53",
   "market_sentiment": "neutral",
   "resonance_type": "none",
   "confidence": 0.0,
-  "description": "HOLD_ALL: 账户API持续超时,无法获取持仓基准,按硬约束跳过决策(尾盘最后触发)",
+  "description": "HOLD_ALL: 账户API超时(curl exit 28),无法获取持仓基准,按硬约束跳过决策",
   "v72_breadth_check": {
     "v72_phase": "unknown",
     "v72_score": 0.0,
@@ -14,5 +14,5 @@
   },
   "adjustments": {},
   "_error": "step2d_account_api_timeout",
-  "expires_at": "2026-09-28 15:00:43"
+  "expires_at": "2026-09-29 14:46:53"
 }
