@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-28 13:52:34",
-  "market_sentiment": "bearish",
-  "resonance_type": "systemic_decline",
-  "confidence": 0.85,
-  "description": "A股略反弹(创业板-4.74%从-4.84%)但广度极度弱势(主力-840亿+跌停60只);韩国反弹失败-2.47%;持仓已小14.9%,Rule 8仍触发",
+  "timestamp": "2026-09-29 09:51:44",
+  "market_sentiment": "neutral",
+  "resonance_type": "none",
+  "confidence": 0.6,
+  "description": "新交易日市场急剧反转:广度64.1%(从12-14%)/主力+0.11亿(从-851亿)/韩国-0.14%(从-2.47%)/跌停10只(从60).持仓日内微涨+0.20-0.22%.持仓已小9.2%,Rule 10矛盾→维持",
   "v72_breadth_check": {
     "v72_phase": "低位震荡期-中期",
     "v72_score": 3.39,
-    "breadth_score": "看空",
-    "consistency": "consistent",
+    "breadth_score": "看多",
+    "consistency": "contradictory",
     "rule10_applied": true,
-    "rule10_outcome": "减半减仓"
+    "rule10_outcome": "维持"
   },
   "adjustments": {
     "588000.SH": {
-      "action": "SELL",
-      "pct": 2,
-      "reason": "Rule 8跳水阈值:持仓intraday-3.41%且浮亏-4.27%;~37%减仓(持仓已小,稍微保守)"
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "Rule 10 V7.2不稳定区间+广度看多矛盾→V7.2误判,维持;持仓已小9.2%,市场急剧反转"
     },
     "588230.SH": {
-      "action": "SELL",
-      "pct": 4,
-      "reason": "Rule 8跳水阈值:持仓intraday-4.06%且浮亏-4.98%;~42%减仓"
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "Rule 10 V7.2不稳定区间+广度看多矛盾→V7.2误判,维持;持仓已小9.2%,市场急剧反转"
     }
   },
-  "expires_at": "2026-09-28 14:00:34"
+  "expires_at": "2026-09-29 09:59:44"
 }
