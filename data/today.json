@@ -2,22 +2,22 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-0.3320",
-      "characteristics": "[\"全周期极度弱势，市场恐慌\", \"技术指标全面超卖\", \"可能出现技术性反弹\", \"振幅收敛至0.47%（1天）\", \"最近支撑位3843（0.1%，cycle_low）\", \"最近阻力位3888（+1.0%，gap_downward）\"]",
-      "composite_score": "0.96",
+      "average_rise": "-0.4480",
+      "characteristics": "[\"全周期极度弱势，市场恐慌\", \"技术指标全面超卖\", \"可能出现技术性反弹\", \"振幅收敛至0.47%（1天）\", \"最近支撑位3830（0.3%，jump_up）\", \"最近阻力位3888（+1.2%，gap_downward）\"]",
+      "composite_score": "0.93",
       "daily_score": "0.60",
-      "min120_score": "0.50",
-      "min30_score": "2.10",
-      "min60_score": "1.80",
-      "operation_suggestion": "空仓观望，可小仓位博弈超跌反弹（严格止损）；【振幅收敛1天（蓄势中），关注杀跌回升信号 | 接近支撑位3843（0.1%）】",
-      "ratio": "0.8000",
+      "min120_score": "0.60",
+      "min30_score": "1.70",
+      "min60_score": "1.70",
+      "operation_suggestion": "空仓观望，可小仓位博弈超跌反弹（严格止损）；【振幅收敛1天（蓄势中），关注杀跌回升信号 | 接近支撑位3830（0.3%）】",
+      "ratio": "0.8170",
       "risk_level": "极高",
       "status_name": "极端下跌阶段",
       "status_type": "extreme_bear",
-      "total_amount": 1266514640640,
-      "total_predicted_amount": 1423379463181,
+      "total_amount": 1417664939008,
+      "total_predicted_amount": 1451871018245,
       "trade_time": "2026-09-30 15:00:00",
-      "up_ratio": "50.58"
+      "up_ratio": "47.28"
     },
     {
       "average_rise": "-0.3580",
