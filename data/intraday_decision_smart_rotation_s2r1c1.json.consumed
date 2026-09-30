@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-30 11:21:54",
+  "timestamp": "2026-09-30 13:51:39",
   "market_sentiment": "bearish",
   "resonance_type": "systemic_decline",
-  "confidence": 0.72,
-  "description": "V7.2杀跌期评分0.68+广度看空+主力-64亿, 588000跳水-1.93%接近-2%但严格未触发Rule 8. 当前仓位8.24%已极低, 符合V7.2空仓建议, Rule 10一致→维持.",
+  "confidence": 0.85,
+  "description": "Rule 8第二次触发! 588000跳水-2.10%+浮亏-5.55%, 强制减仓40%. 13:08已触发一次, 13:36回升至-1.79%解除, 现再次跳水. 半导体持续走弱.",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
     "v72_score": 0.68,
-    "breadth_score": "看空",
+    "breadth_score": "中性偏空",
     "consistency": "consistent",
     "rule10_applied": true,
     "rule10_outcome": "维持"
   },
   "adjustments": {
     "588000.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "跳水-1.93%严格< -2%阈值; 当前仓位2.4%已超低; 588230当日表现稳定, 无需过度减仓"
+      "action": "SELL",
+      "pct": 1,
+      "reason": "Rule 8第二次触发: 跳水-2.10%≥-2% + 浮亏-5.55% → 强制SELL 40%持仓 ≈ 1%总资产. 半导体板块续跌, 科创芯片-2.96%."
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "当日-0.62%表现稳定, 无跳水信号; 当前仓位5.8%已超低, 维持空仓观望"
+      "reason": "跳水-0.90%< -2%阈值, Rule 8未触发. 维持空仓观望."
     }
   },
-  "expires_at": "2026-09-30 11:29:54"
+  "expires_at": "2026-09-30 13:59:39"
 }
