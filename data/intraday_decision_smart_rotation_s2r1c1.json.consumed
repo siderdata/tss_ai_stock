@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-29 13:52:28",
+  "timestamp": "2026-09-30 09:51:38",
   "market_sentiment": "neutral",
   "resonance_type": "none",
-  "confidence": 0.65,
-  "description": "市场反弹企稳:广度63.6%/主力-2.20亿/韩国-1.04%;持仓已小9.2%,持仓日内微涨;Rule 10矛盾→维持",
+  "confidence": 0.55,
+  "description": "市场中性分化:广度49.8%(接近50%)/主力+0.29亿/韩国+0.45%;持仓分化(588000-0.42%/588230+0.68%);持仓已小9.3%,Rule 10部分矛盾→观望",
   "v72_breadth_check": {
     "v72_phase": "低位震荡期-中期",
     "v72_score": 3.39,
-    "breadth_score": "看多",
-    "consistency": "contradictory",
+    "breadth_score": "中性",
+    "consistency": "partial",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "观望"
   },
   "adjustments": {
     "588000.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "Rule 10 V7.2不稳定区间+广度看多矛盾→维持;持仓已小9.2%"
+      "reason": "Rule 10 V7.2不稳定区间+广度中性部分矛盾→观望;持仓已小9.3%"
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "Rule 10 V7.2不稳定区间+广度看多矛盾→维持;持仓已小9.2%"
+      "reason": "Rule 10 V7.2不稳定区间+广度中性部分矛盾→观望;持仓已小9.3%"
     }
   },
-  "expires_at": "2026-09-29 14:00:28"
+  "expires_at": "2026-09-30 09:59:38"
 }
