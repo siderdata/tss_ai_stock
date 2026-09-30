@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-30 13:51:39",
+  "timestamp": "2026-09-30 14:36:49",
   "market_sentiment": "bearish",
-  "resonance_type": "systemic_decline",
+  "resonance_type": "tech_decline_persistent",
   "confidence": 0.85,
-  "description": "Rule 8第二次触发! 588000跳水-2.10%+浮亏-5.55%, 强制减仓40%. 13:08已触发一次, 13:36回升至-1.79%解除, 现再次跳水. 半导体持续走弱.",
+  "description": "V7.2杀跌期延续 + 科创50 -2.44% (仍处低位) + V32 11:00反弹结束5指数共振持续 + 主力资金恶化至-106亿 + Rule 9持仓期回撤588000 -30.54%/588230 -8.25% 持续触发. 临近收盘+长假前夕, 持续防守.",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 0.68,
+    "v72_score": 0.86,
     "breadth_score": "中性偏空",
     "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "严格减仓"
   },
   "adjustments": {
     "588000.SH": {
       "action": "SELL",
       "pct": 1,
-      "reason": "Rule 8第二次触发: 跳水-2.10%≥-2% + 浮亏-5.55% → 强制SELL 40%持仓 ≈ 1%总资产. 半导体板块续跌, 科创芯片-2.96%."
+      "reason": "Rule 8跳水-2.20%≥-2% + Rule 9持仓期回撤-30.54%双重触发 (浮亏-5.67%, falling_today=true, 无反弹豁免). 60%×持仓1.56%≈0.94%→SELL 1%. 长假前最后20分钟, 减仓确定性最高."
     },
     "588230.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "跳水-0.90%< -2%阈值, Rule 8未触发. 维持空仓观望."
+      "action": "SELL",
+      "pct": 2,
+      "reason": "Rule 9持仓期回撤-8.25%触发 (浮亏-5.30%, falling_today=true, 无反弹豁免). 60%×持仓4.00%≈2.40%→SELL 2%. 长假7天不确定性, 进一步减仓科创敞口."
     }
   },
-  "expires_at": "2026-09-30 13:59:39"
+  "expires_at": "2026-09-30 14:44:49"
 }
