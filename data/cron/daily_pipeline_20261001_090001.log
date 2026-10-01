@@ -1557,3 +1557,35 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-10-01 09:02:52] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+error: pack-objects died of signal 9
+fatal: failed to run repack
+
+[main 3403521] Add data, report, and trading directories
+ 60 files changed, 20742 insertions(+), 1789 deletions(-)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (61%)
+ create mode 100644 data/cron/daily_pipeline_20260930_161501.log
+ create mode 100644 data/cron/daily_pipeline_20260930_163002.log
+ create mode 100644 data/cron/daily_pipeline_20260930_164501.log
+ create mode 100644 data/cron/daily_pipeline_20261001_090001.log
+ rewrite data/industry-realtime-detail.json (98%)
+ create mode 100644 report/history/enhanced_cross_cycle_analysis_20261001.html
+ create mode 100644 report/history/latest_universal_d_analysis_20261001.html
+ create mode 100644 report/history/universal_120min_analysis_20261001.html
+ create mode 100644 report/history/universal_30min_analysis_20261001.html
+ create mode 100644 report/history/universal_60min_analysis_20261001.html
+fatal: unable to access 'https://github.com/siderdata/tss_ai_stock.git/': GnuTLS recv error (-110): The TLS connection was non-properly terminated.
+✗ Git提交失败

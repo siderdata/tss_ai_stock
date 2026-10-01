@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-09-30 14:51:48",
-  "market_sentiment": "bearish",
-  "resonance_type": "position_liquidated",
-  "confidence": 0.85,
-  "description": "持仓已全部清空 (cash=1,014,165, position_value=0). 14:36决策被执行时全仓兑现. 收盘前4分钟, 国庆长假将至, V7.2杀跌期延续+科创50 -2.59%+沪深主力-131.52亿持续恶化, 维持空仓观望.",
+  "timestamp": "2026-10-01 09:51:18",
+  "market_sentiment": "holiday_closed",
+  "resonance_type": "national_day_holiday",
+  "confidence": 1.0,
+  "description": "国庆节假期休市第1天 (10.1 周四), A股市场 10.1-10.7 全周休市, 10.8 (周四) 复市. 持仓空仓, 不进行任何交易决策.",
   "v72_breadth_check": {
-    "v72_phase": "杀跌期",
-    "v72_score": 0.86,
-    "breadth_score": "中性偏空",
-    "consistency": "consistent",
-    "rule10_applied": true,
-    "rule10_outcome": "严格减仓"
+    "v72_phase": "休市",
+    "v72_score": null,
+    "breadth_score": "N/A",
+    "consistency": "N/A",
+    "rule10_applied": false,
+    "rule10_outcome": "休市跳过"
   },
   "adjustments": {
     "588000.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "持仓已清空 (quantity=0). 维持空仓过节, 长假7天不确定性高 (10.1-10.7)."
+      "reason": "国庆假期 (10.1-10.7) 休市, A股停牌. 持仓空仓 (quantity=0), 等待10.8复市."
     },
     "588230.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "持仓已清空 (quantity=0). 维持空仓过节, 等待节后趋势明朗."
+      "reason": "国庆假期 (10.1-10.7) 休市, A股停牌. 持仓空仓 (quantity=0), 等待10.8复市."
     }
   },
-  "expires_at": "2026-09-30 14:59:48"
+  "expires_at": "2026-10-01 09:59:18"
 }
