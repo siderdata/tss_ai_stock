@@ -1,9 +1,9 @@
 {
-  "timestamp": "2026-10-01 14:51:16",
+  "timestamp": "2026-10-02 09:51:28",
   "market_sentiment": "holiday_closed",
   "resonance_type": "national_day_holiday",
   "confidence": 1.0,
-  "description": "国庆节假期休市第1天 (10.1 周四), A股市场 10.1-10.7 全周休市, 10.8 (周四) 复市. 持仓空仓, 不进行任何交易决策.",
+  "description": "国庆节假期休市第2天 (10.2 周五), A股市场 10.1-10.7 全周休市, 10.8 (周四) 复市. 持仓空仓, 不进行任何交易决策.",
   "v72_breadth_check": {
     "v72_phase": "休市",
     "v72_score": null,
@@ -24,5 +24,5 @@
       "reason": "国庆假期 (10.1-10.7) 休市, A股停牌. 持仓空仓 (quantity=0), 等待10.8复市."
     }
   },
-  "expires_at": "2026-10-01 14:59:16"
+  "expires_at": "2026-10-02 09:59:28"
 }
