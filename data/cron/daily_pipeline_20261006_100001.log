@@ -1557,3 +1557,25 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-10-06 10:02:52] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+[main 7ea7047] Add data, report, and trading directories
+ 19 files changed, 9465 insertions(+), 11 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20261006_093002.log
+ create mode 100644 data/cron/daily_pipeline_20261006_094501.log
+ create mode 100644 data/cron/daily_pipeline_20261006_100001.log
+error: pack-objects died of signal 9
+error: pack-objects died of signal 9
+fatal: the remote end hung up unexpectedly
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+error: failed to push some refs to 'https://github.com/siderdata/tss_ai_stock.git'
+✗ Git提交失败
