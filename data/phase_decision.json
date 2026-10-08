@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-08 14:02:51",
+  "timestamp": "2026-10-08 15:00:38",
   "trade_date": "2026-10-08",
   "phase": {
     "current_phase": "阶段3: 调整杀跌浪-杀跌期",
@@ -74,7 +74,7 @@
       "date": "2026-10-08",
       "composite_score": 0.33,
       "daily_score": 0.1,
-      "average_rise": -2.8
+      "average_rise": -2.79
     }
   ]
 }
