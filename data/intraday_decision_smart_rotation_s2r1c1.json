@@ -1,28 +1,17 @@
 {
-  "timestamp": "2026-10-02 14:51:23",
-  "market_sentiment": "holiday_closed",
-  "resonance_type": "national_day_holiday",
-  "confidence": 1.0,
-  "description": "国庆节假期休市第2天 (10.2 周五), A股市场 10.1-10.7 全周休市, 10.8 (周四) 复市. 持仓空仓, 不进行任何交易决策.",
+  "timestamp": "2026-10-08 09:53:15",
+  "market_sentiment": "neutral",
+  "resonance_type": "tech_resonance",
+  "confidence": 0.5,
+  "description": "节后首日,V7.2 sub_phase由杀跌期切换为反弹期,但score 1.15仍在[2,4]不稳定区间。市场广度强势确认(上涨71.1%,沪深主力+61.24亿较09:36+9.29亿放大6倍)。账户空仓无持仓可操作,维持HOLD观望,等待score>4或sub_phase稳定。",
   "v72_breadth_check": {
-    "v72_phase": "休市",
-    "v72_score": null,
-    "breadth_score": "N/A",
-    "consistency": "N/A",
-    "rule10_applied": false,
-    "rule10_outcome": "休市跳过"
+    "v72_phase": "反弹期",
+    "v72_score": 1.15,
+    "breadth_score": "看多",
+    "consistency": "partial",
+    "rule10_applied": true,
+    "rule10_outcome": "维持"
   },
-  "adjustments": {
-    "588000.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "国庆假期 (10.1-10.7) 休市, A股停牌. 持仓空仓 (quantity=0), 等待10.8复市."
-    },
-    "588230.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "国庆假期 (10.1-10.7) 休市, A股停牌. 持仓空仓 (quantity=0), 等待10.8复市."
-    }
-  },
-  "expires_at": "2026-10-02 14:59:23"
+  "adjustments": {},
+  "expires_at": "2026-10-08 10:01:15"
 }

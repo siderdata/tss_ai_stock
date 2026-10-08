@@ -1,7 +1,7 @@
 {
-  "date": "2026-09-30",
-  "actual_position": 4.0,
-  "anchor": 3.0,
+  "date": "2026-10-08",
+  "actual_position": 5.0,
+  "anchor": 4.0,
   "base": 3.0,
   "deltas": {
     "margin": 1,
@@ -13,9 +13,9 @@
     5.0
   ],
   "constraint_note": "阶段3 ≤ 7",
-  "prev_margin_adjust": 1,
+  "prev_margin_adjust": 2,
   "prev_kline_adjust": 0,
-  "baseline_margin_adjust": 0,
+  "baseline_margin_adjust": 1,
   "baseline_kline_adjust": 0,
   "prev_macd_tier": 0,
   "baseline_macd_tier": 0
