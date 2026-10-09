@@ -1562,3 +1562,49 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-10-09 10:02:55] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+error: pack-objects died of signal 9
+fatal: failed to run repack
+
+[main 1f0ddf3] Add data, report, and trading directories
+ 82 files changed, 33167 insertions(+), 1720 deletions(-)
+ create mode 100644 data/cron/daily_pipeline_20261008_161502.log
+ create mode 100644 data/cron/daily_pipeline_20261008_163001.log
+ create mode 100644 data/cron/daily_pipeline_20261008_164501.log
+ create mode 100644 data/cron/daily_pipeline_20261009_090001.log
+ create mode 100644 data/cron/daily_pipeline_20261009_091501.log
+ create mode 100644 data/cron/daily_pipeline_20261009_093001.log
+ create mode 100644 data/cron/daily_pipeline_20261009_094501.log
+ create mode 100644 data/cron/daily_pipeline_20261009_100001.log
+ rewrite data/industry-realtime-detail.json (97%)
+ create mode 100644 data/market_breadth_20261009_093623.json
+ create mode 100644 data/market_breadth_20261009_094505.json
+ create mode 100644 data/market_breadth_20261009_095121.json
+ create mode 100644 data/market_breadth_20261009_095504.json
+ create mode 100644 data/market_breadth_20261009_100006.json
+ rewrite data/phase_decision.json (81%)
+ create mode 100644 report/history/enhanced_cross_cycle_analysis_20261009.html
+ create mode 100644 report/history/latest_universal_d_analysis_20261009.html
+ create mode 100644 report/history/universal_120min_analysis_20261009.html
+ create mode 100644 report/history/universal_30min_analysis_20261009.html
+ create mode 100644 report/history/universal_60min_analysis_20261009.html
+error: pack-objects died of signal 9
+error: pack-objects died of signal 9
+fatal: the remote end hung up unexpectedly
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+error: failed to push some refs to 'https://github.com/siderdata/tss_ai_stock.git'
+✗ Git提交失败
