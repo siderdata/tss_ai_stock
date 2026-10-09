@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-09 10:51:39",
+  "timestamp": "2026-10-09 11:22:42",
   "market_sentiment": "bearish",
   "resonance_type": "systemic_decline",
-  "confidence": 0.9,
-  "description": "市场广度小幅技术性反弹:上涨22.5%(从10:36 15.7%反弹+6.8pp)、下跌75.3%。沪深主力净流出-429.48亿仍处极端水平(较-425.45亿略扩大)。涨停29只(从24只增加)暗示部分超跌反弹。V7.2 score 0.26略反弹但仍极低。✅一致,严格执行V7.2减仓信号;账户空仓无减仓对象,维持HOLD。",
+  "confidence": 0.95,
+  "description": "市场广度继续恶化:上涨18.4%(从11:05 19.1%再降-0.7pp)、下跌79.7%。沪深主力净流出-495.90亿(较-438.81亿扩大-57亿)处极端水平。涨停27只(24只真实),跌停20只(17只真实跌停),恐慌抛压加剧。活跃度仅18.34%。V7.2 score 0.31(<2极端低分)与广度完全同向。✅强一致,严格执行V7.2减仓信号;账户空仓无减仓对象,维持HOLD。",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 0.26,
+    "v72_score": 0.31,
     "breadth_score": "看空",
     "consistency": "consistent",
     "rule10_applied": true,
     "rule10_outcome": "严格减仓"
   },
   "adjustments": {},
-  "expires_at": "2026-10-09 10:59:39"
+  "expires_at": "2026-10-09 11:30:42"
 }
