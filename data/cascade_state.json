@@ -1,11 +1,11 @@
 {
-  "date": "2026-10-09",
+  "date": "2026-10-12",
   "actual_position": 7.0,
-  "anchor": 5.0,
+  "anchor": 7.0,
   "base": 5.0,
   "deltas": {
     "margin": 0,
-    "kline": 2,
+    "kline": 0,
     "macd": 0
   },
   "band": [
@@ -14,7 +14,7 @@
   ],
   "constraint_note": "阶段3 ≤ 7",
   "prev_margin_adjust": 2,
-  "prev_kline_adjust": 2,
+  "prev_kline_adjust": 0,
   "baseline_margin_adjust": 2,
   "baseline_kline_adjust": 0,
   "prev_macd_tier": 0,

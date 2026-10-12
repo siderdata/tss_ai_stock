@@ -1,17 +1,17 @@
 {
-  "timestamp": "2026-10-09 14:51:23",
-  "market_sentiment": "neutral_to_bullish",
-  "resonance_type": "tech_resonance",
+  "timestamp": "2026-10-12 09:52:16",
+  "market_sentiment": "bearish",
+  "resonance_type": "systemic_decline",
   "confidence": 0.85,
-  "description": "尾盘市场高位企稳:上涨57.9%(从14:35 57.8%略升+0.1pp,仍在57-60%区间)、下跌39.8%。沪深主力净流出-194.87亿(较-227.59亿缩窄+33亿)显著改善,跌破200亿关口。涨停71只(68只真实)再创新高,跌停仅8只(7只真实),情绪持续修复。活跃度57.71%。V7.2 score 0.85(<2极端低分,从0.80升+0.05)持续反弹,基础仓位50%,抄底后回升。广度评分'中性'(上涨<60%且主力<0)。✅V7.2<2仍一致减仓信号;账户空仓无减仓对象,维持HOLD观望。",
+  "description": "外围韩国KOSPI急跌-2.44%超阈值叠加A股杀跌期(综合0.83/日线0.10)，市场广度下跌70.2%/上涨27.3%空方主导；早盘低开后短暂翻红再回落，活跃度27.28%偏低；主力净流出-22.04亿(超大单+1亿/大单-23亿大单出货)。防御板块(银行/红利/消费)领涨、芯片地产领跌，跷跷板切防御确认。yu_lang_mock账户当前无持仓(positions空数组)，无法执行任何BUY/SELL，全部HOLD。",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 0.85,
-    "breadth_score": "中性",
+    "v72_score": 0.83,
+    "breadth_score": "看空",
     "consistency": "consistent",
-    "rule10_applied": true,
-    "rule10_outcome": "严格减仓"
+    "rule10_applied": false,
+    "rule10_outcome": "维持"
   },
   "adjustments": {},
-  "expires_at": "2026-10-09 14:59:23"
+  "expires_at": "2026-10-12 10:00:16"
 }
