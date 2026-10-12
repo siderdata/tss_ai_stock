@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "s2-r1-c1",
   "trade_date": "2026-10-12",
-  "timestamp": "2026-10-12T13:02:52",
+  "timestamp": "2026-10-12T14:00:35",
   "phase": {
     "main_phase": "逐浪 (S2-R1-C1)",
     "sub_phase": "动量轮动选品"
@@ -12,15 +12,15 @@
       "target": "510880.SH",
       "name": "上证红利",
       "action": "BUY",
-      "target_pct": 50.0,
+      "target_pct": 70.0,
       "weight_pct": 100.0,
       "reason": "逐浪 (S2/R1/C1) 选品: 上证红利"
     }
   ],
-  "reason": "逐浪选品 1 只, V7.2 仓位 5成",
+  "reason": "逐浪选品 1 只, V7.2 仓位 7成",
   "position_intent": {
-    "recommended_ratio": 50.0,
-    "reason": "逐浪选品 1 只, V7.2 仓位 5成"
+    "recommended_ratio": 70.0,
+    "reason": "逐浪选品 1 只, V7.2 仓位 7成"
   },
   "pool": "POOL_12",
   "macd_threshold": 0,

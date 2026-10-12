@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "v72_momentum",
   "trade_date": "2026-10-12",
-  "timestamp": "2026-10-12T13:02:51",
+  "timestamp": "2026-10-12T14:00:35",
   "phase": {
     "main_phase": "动量轮动",
     "sub_phase": "Top1"
@@ -12,15 +12,15 @@
       "target": "510880.SH",
       "name": "红利低波",
       "action": "BUY",
-      "target_pct": 35.0,
+      "target_pct": 49.0,
       "weight_pct": 100.0,
       "reason": "动量轮动 Top1: 红利低波 (市场:空头 ×70%)"
     }
   ],
-  "reason": "V7.2 推荐 50% × 风控 70% = 35%",
+  "reason": "V7.2 推荐 70% × 风控 70% = 49%",
   "position_intent": {
-    "recommended_ratio": 35.0,
-    "reason": "V7.2 推荐 50% × 风控 70% = 35%"
+    "recommended_ratio": 49.0,
+    "reason": "V7.2 推荐 70% × 风控 70% = 49%"
   },
   "top1_index": "SH000015",
   "market_state": "空头",
