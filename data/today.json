@@ -2,22 +2,22 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-0.2300",
-      "characteristics": "[\"综合评分偏低，空头占优\", \"但未形成明确共振\", \"最近阻力位3888（+2.4%，gap_downward）\"]",
-      "composite_score": "1.19",
+      "average_rise": "-0.1020",
+      "characteristics": "[\"综合评分偏低，空头占优\", \"但未形成明确共振\", \"最近阻力位3888（+2.3%，gap_downward）\"]",
+      "composite_score": "1.31",
       "daily_score": "0.10",
-      "min120_score": "0.40",
-      "min30_score": "5.70",
-      "min60_score": "2.30",
+      "min120_score": "0.50",
+      "min30_score": "5.80",
+      "min60_score": "2.70",
       "operation_suggestion": "轻仓观望，等待明确信号",
-      "ratio": "1.0580",
+      "ratio": "1.0520",
       "risk_level": "中高",
       "status_name": "偏弱整理阶段",
       "status_type": "bearish_bias",
-      "total_amount": 1560247188480,
-      "total_predicted_amount": 1713006666786,
+      "total_amount": 1675917798400,
+      "total_predicted_amount": 1709543725582,
       "trade_time": "2026-10-13 15:00:00",
-      "up_ratio": "51.05"
+      "up_ratio": "55.12"
     },
     {
       "average_rise": "0.5650",
