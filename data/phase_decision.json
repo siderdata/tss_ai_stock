@@ -1,8 +1,8 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-10-12",
-  "timestamp": "2026-10-12T15:55:32",
+  "trade_date": "2026-10-13",
+  "timestamp": "2026-10-13T10:02:56",
   "phase": {
     "main_phase": "调整杀跌浪",
     "sub_phase": "杀跌期",
@@ -13,13 +13,13 @@
     "reason": "🔴 继续触发+加仓2成→累计7成"
   },
   "scores": {
-    "composite_score": 0.81,
+    "composite_score": 0.26,
     "daily_score": 0.1,
-    "avg_score": 3.44,
-    "recent_avg": 0.8,
-    "recent_trend": -0.26,
+    "avg_score": 3.27,
+    "recent_avg": 0.64,
+    "recent_trend": -0.68,
     "high_ratio": 5.4,
-    "low_ratio": 67.6
+    "low_ratio": 70.3
   },
   "warnings": {
     "is_false_breakout": false,
