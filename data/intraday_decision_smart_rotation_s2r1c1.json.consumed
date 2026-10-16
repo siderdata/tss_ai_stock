@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-10-16 09:51:37",
+  "timestamp": "2026-10-16 10:51:40",
   "market_sentiment": "bullish_rebound",
-  "resonance_type": "none",
-  "confidence": 0.65,
-  "description": "V7.2杀跌期(1.0)+广度极强看多(87.1%上涨/+55.42亿主力流入,跌停28→1)❌矛盾;10/15 14:51 SELL 20%已执行(512890-2,000股至8,100,仓位3.2%→2.9%);持仓浮亏消失(+0.84%/+0.23%浮盈),持仓已极低,现金97.1%,HOLD等待V7.2切换反弹期",
+  "resonance_type": "tech_resonance",
+  "confidence": 0.72,
+  "description": "V7.2反弹期延续(composite 0.66→0.69)+广度看多(上涨79.4%/主力+85.19亿)+韩国KOSPI+3.17%科技驱动,但创业板+0.10%显著落后,主力资金较上轮+16.59亿,持仓70.1%与V7.2推荐70%完美匹配,HOLD维持",
   "v72_breadth_check": {
-    "v72_phase": "杀跌期",
-    "v72_score": 1.0,
+    "v72_phase": "反弹期",
+    "v72_score": 0.69,
     "breadth_score": "看多",
-    "consistency": "contradictory",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "观望"
+    "rule10_outcome": "维持"
   },
   "adjustments": {
+    "510880.SH": {
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "红利ETF+1.35%日内强势,累计浮亏-0.16%持续改善(从-0.39%),V7.2反弹期+广度看多✅一致,无6%巨震/顶部反转,维持70%目标仓位"
+    },
     "512890.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "V7.2杀跌期+广度看多❌矛盾(V7.2滞后于市场反弹);持仓+0.84%浮盈;持仓8,100股已极低,进一步减仓意义有限;现金97.1%充足,但V7.2未切换反弹期不应加仓;等待V7.2调整"
-    },
-    "515080.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "V7.2杀跌期+广度看多❌矛盾;持仓+0.23%浮盈(从昨-0.20%反弹至+0.23%);T+1部分解禁available=2,100;持仓8,700股已极低,现金97.1%充足;HOLD等待V7.2切换"
+      "reason": "红利低波+0.99%日内强势,累计浮盈+0.57%(从+0.40%扩大),V7.2反弹期+广度看多✅一致,持仓形态健康,无减仓信号"
     }
   },
-  "expires_at": "2026-10-16 09:59:37"
+  "expires_at": "2026-10-16 10:59:40"
 }
