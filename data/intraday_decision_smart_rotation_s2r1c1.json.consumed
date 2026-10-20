@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-10-20 09:52:13",
-  "market_sentiment": "neutral",
+  "timestamp": "2026-10-20 10:52:10",
+  "market_sentiment": "bullish",
   "resonance_type": "tech_resonance",
-  "confidence": 0.7,
-  "description": "开盘恐慌后快速反弹(上涨42.9%→65.6%, 科创50转正+0.44%), 韩国-2.71%仍存, 但市场广度突破60%看多, V7.2[2,3]区间与广度矛盾, Rule 10否决减仓, 维持70%与V7.2基础一致",
+  "confidence": 0.72,
+  "description": "V7.2反弹期确认(score 1.38→1.64, recent_trend 0.97→1.23), A股全面转正(科创50+1.77%), 市场广度71.2%/沪深主力+32.55亿/超大单+38.87亿, Rule 10完全一致可加仓, 但V7.2反弹仅30分钟不稳定+score仍在[0,2)+红利阵营反弹滞后+韩国-2.55%未解, 维持58%在buffer内观望",
   "v72_breadth_check": {
-    "v72_phase": "杀跌期",
-    "v72_score": 1.35,
+    "v72_phase": "反弹期",
+    "v72_score": 1.64,
     "breadth_score": "看多",
-    "consistency": "contradictory",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "否决减仓"
+    "rule10_outcome": "维持"
   },
   "adjustments": {
     "512890.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利低波100, 日内-0.81%跟跌(科技反弹跷跷板), 累计+0.73%仍正, V7.2 [2,3]区间+广度看多矛盾, Rule 10否决减仓"
+      "reason": "V7.2反弹期+广度✅一致本可操作, 但反弹仅30分钟不稳定, 累计+0.16%已从+0.57%回落(红利反弹滞后), 加仓可能亏钱, 当前58%在buffer内不强制调仓, 维持观望"
     },
     "515080.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "中证红利, 日内-1.01%跟跌, 累计-1.13%微亏, 同为红利阵营被科技反弹虹吸, 但持仓结构无系统性风险, 维持"
+      "reason": "V7.2反弹期+广度✅一致本可加仓, 但累计-1.39%继续扩大(红利反弹滞后), 当前58%在buffer内, 维持观望等红利转强"
     }
   },
-  "expires_at": "2026-10-20 10:00:13"
+  "expires_at": "2026-10-20 11:00:10"
 }
