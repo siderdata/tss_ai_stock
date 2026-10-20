@@ -1,23 +1,23 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-10-19",
-  "timestamp": "2026-10-19T15:55:34",
+  "trade_date": "2026-10-20",
+  "timestamp": "2026-10-20T10:03:39",
   "phase": {
     "main_phase": "调整杀跌浪",
     "sub_phase": "杀跌期",
     "confidence": 80.0
   },
   "position_intent": {
-    "recommended_ratio": 70.0,
-    "reason": "🟢 抄底后回升：评分1.4，保持7成"
+    "recommended_ratio": 10.0,
+    "reason": "🟢 抄底后回升：评分1.1，保持1成"
   },
   "scores": {
-    "composite_score": 1.35,
+    "composite_score": 1.1,
     "daily_score": 0.0,
-    "avg_score": 2.63,
-    "recent_avg": 0.81,
-    "recent_trend": 0.01,
+    "avg_score": 2.56,
+    "recent_avg": 0.76,
+    "recent_trend": 0.69,
     "high_ratio": 0.0,
     "low_ratio": 78.4
   },

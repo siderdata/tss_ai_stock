@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-10-19 14:38:50",
+  "timestamp": "2026-10-20 09:52:13",
   "market_sentiment": "neutral",
   "resonance_type": "tech_resonance",
-  "confidence": 0.78,
-  "description": "V7.2反弹至1.48(从1.46)且recent_trend持续转正+0.14, 上涨突破50.6%中性阈值, 主力流出收窄至-107.91亿, 红利/大盘强+科技杀跌结构延续, 持仓510880/512890顺势受益, 维持70%与V7.2基础一致",
+  "confidence": 0.7,
+  "description": "开盘恐慌后快速反弹(上涨42.9%→65.6%, 科创50转正+0.44%), 韩国-2.71%仍存, 但市场广度突破60%看多, V7.2[2,3]区间与广度矛盾, Rule 10否决减仓, 维持70%与V7.2基础一致",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 1.48,
-    "breadth_score": "中性",
-    "consistency": "partial",
+    "v72_score": 1.35,
+    "breadth_score": "看多",
+    "consistency": "contradictory",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "否决减仓"
   },
   "adjustments": {
-    "510880.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "红利防御, 日内+1.28%稳健, 累计+0.48%无顶部风险, V7.2基础70%与当前70%一致, 上涨突破50%但主力仍流出部分矛盾, 观望维持"
-    },
     "512890.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利低波100ETF, 日内+1.48%最强跟涨, 累计+1.64%无顶部风险, 涨停48+活跃度50.54%支撑防御品种, 科技/红利跷跷板结构明确"
+      "reason": "红利低波100, 日内-0.81%跟跌(科技反弹跷跷板), 累计+0.73%仍正, V7.2 [2,3]区间+广度看多矛盾, Rule 10否决减仓"
+    },
+    "515080.SH": {
+      "action": "HOLD",
+      "pct": 0,
+      "reason": "中证红利, 日内-1.01%跟跌, 累计-1.13%微亏, 同为红利阵营被科技反弹虹吸, 但持仓结构无系统性风险, 维持"
     }
   },
-  "expires_at": "2026-10-19 14:46:50"
+  "expires_at": "2026-10-20 10:00:13"
 }

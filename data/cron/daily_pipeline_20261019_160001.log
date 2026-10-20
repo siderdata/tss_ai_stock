@@ -1580,3 +1580,44 @@ A股牛市四阶段自动识别系统 V2(模块化版本)
 [2026-10-19 16:02:58] ▶ 步骤 5/5: copy_and_commit.sh (复制 data/report/trading → tss_ai_stock)
 开始复制目录...
 正在复制 data...
+✓ data 复制成功
+正在复制 report...
+✓ report 复制成功
+正在复制 trading...
+✓ trading 复制成功
+切换到目标目录: /home/user/projects/tss_ai_stock/
+添加文件到Git...
+提交更改: Add data, report, and trading directories
+Auto packing the repository in background for optimum performance.
+See "git help gc" for manual housekeeping.
+warning: The last gc run reported the following. Please correct the root cause
+and remove .git/gc.log
+Automatic cleanup will not be performed until the file is removed.
+
+error: pack-objects died of signal 9
+fatal: failed to run repack
+
+[main 304cc3b] Add data, report, and trading directories
+ 59 files changed, 14676 insertions(+), 1822 deletions(-)
+ rewrite data/CORE_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (75%)
+ rewrite data/CORE_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (78%)
+ rewrite data/CORE_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (77%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (73%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (92%)
+ rewrite data/LARGE_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (85%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_120min_ta_signals_120min_2days_data.csv (80%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_30min_ta_signals_30min_2days_data.csv (77%)
+ rewrite data/MID_SMALL_CAP_INDICES_ta_signals_60min_ta_signals_60min_2days_data.csv (80%)
+ create mode 100644 data/cron/daily_pipeline_20261019_151516.log
+ create mode 100644 data/cron/daily_pipeline_20261019_153002.log
+ create mode 100644 data/cron/daily_pipeline_20261019_154501.log
+ create mode 100644 data/cron/daily_pipeline_20261019_160001.log
+ rewrite data/industry-realtime-detail.json (91%)
+warning: redirecting to https://github.com/siderdata/tss_ai_stock.git/
+error: pack-objects died of signal 9
+error: pack-objects died of signal 9
+fatal: the remote end hung up unexpectedly
+send-pack: unexpected disconnect while reading sideband packet
+fatal: the remote end hung up unexpectedly
+error: failed to push some refs to 'https://github.com/siderdata/tss_ai_stock.git'
+✗ Git提交失败
