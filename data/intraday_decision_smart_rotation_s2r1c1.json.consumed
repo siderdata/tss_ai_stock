@@ -1,28 +1,28 @@
 {
-  "timestamp": "2026-10-20 13:51:44",
-  "market_sentiment": "bearish",
+  "timestamp": "2026-10-20 14:37:05",
+  "market_sentiment": "neutral",
   "resonance_type": "tech_resonance",
-  "confidence": 0.62,
-  "description": "V7.2杀跌期持续score持续下降(1.05→1.02), 系统已自动减仓至40.57%, 当前仓位远低70%base 30pp缺口, 市场情绪持续走弱(上涨52.0%/沪深主力-121.30亿-11.48亿/超大单-43.90亿/跌停6), 韩国-3.85%持续, 但40.57%在buffer[30%,90%]内+市场情绪走弱+持仓累计盈利收窄, 维持观望等V7.2矛盾解决",
+  "confidence": 0.65,
+  "description": "V7.2杀跌期持续但score显著上升(1.01→1.20), reason'抄底后回升评分1.2', 系统已减仓至40.58%, 上涨56.5%中性偏多+科创50转正, 但沪深主力-178亿持续恶化, V7.2内部矛盾持续(sub_phase杀跌期vs recommended 70%), 距收盘19分钟不调整, 维持观望",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 1.02,
+    "v72_score": 1.2,
     "breadth_score": "中性",
-    "consistency": "consistent",
+    "consistency": "partial",
     "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "rule10_outcome": "观望"
   },
   "adjustments": {
     "512890.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "V7.2杀跌期+score 1.02[0,2)严格执行减仓但当前40.57%已大幅低于70%base, 市场情绪持续走弱不应急加仓(与sub_phase矛盾), 累计+0.24%持平, 维持等V7.2状态稳定"
+      "reason": "V7.2杀跌期+score 1.20显著上升(reason'抄底后回升'), 当前40.58%远低70%base但市场广度部分矛盾(上涨>50%但主力恶化), 距收盘19分钟不调整, 累计+0.24%略升, 维持"
     },
     "515080.SH": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "V7.2杀跌期+score 1.02,但市场情绪持续走弱(主力-121.30亿), 当前40.57%已大幅减仓, 累计-1.70%微亏, 维持观望"
+      "reason": "V7.2杀跌期+score 1.20显著上升, 但市场广度部分矛盾, 累计-1.57%略升(从-1.70%), 距收盘19分钟不调整, 维持"
     }
   },
-  "expires_at": "2026-10-20 13:59:44"
+  "expires_at": "2026-10-20 14:45:05"
 }
