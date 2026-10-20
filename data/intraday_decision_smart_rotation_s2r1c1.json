@@ -1,28 +1,23 @@
 {
-  "timestamp": "2026-10-19 14:52:57",
+  "timestamp": "2026-10-20 11:29:21",
   "market_sentiment": "neutral",
-  "resonance_type": "tech_resonance",
-  "confidence": 0.75,
-  "description": "尾盘广度回落(上涨44.2%从50.6%/主力-122亿从-108亿), 科创50扩大至-2.04%, 但红利/大盘托底结构延续, 账户已由510880换仓至515080(中证红利), 持仓结构最优, 维持70%与V7.2基础一致",
+  "resonance_type": "none",
+  "confidence": 0.0,
+  "description": "Step 2d账户API连续3次超时(curl 错误15+错误28), 持仓基准缺失, 按Skill硬约束规则输出全部HOLD并报错, 不进入决策流程",
   "v72_breadth_check": {
-    "v72_phase": "杀跌期",
-    "v72_score": 1.4,
-    "breadth_score": "中性",
-    "consistency": "consistent",
-    "rule10_applied": true,
-    "rule10_outcome": "维持"
+    "v72_phase": "反弹期",
+    "v72_score": 1.54,
+    "breadth_score": "N/A",
+    "consistency": "N/A",
+    "rule10_applied": false,
+    "rule10_outcome": "N/A"
   },
   "adjustments": {
-    "512890.SH": {
+    "_error": {
       "action": "HOLD",
       "pct": 0,
-      "reason": "红利低波100, 日内+1.56%稳健, 累计+1.72%无顶部风险, 距收盘4分钟不动, 红利/大盘强+科技杀跌结构延续, 持仓结构最优"
-    },
-    "515080.SH": {
-      "action": "HOLD",
-      "pct": 0,
-      "reason": "中证红利(新仓, 今日建仓T+1锁), 日内-0.06%微亏, 累计-0.06%, available=0不可卖, 同为红利阵营对冲科技杀跌, 系统换仓510880→515080的延续持仓, 维持"
+      "reason": "Step 2d账户API连续3次超时, 无法获取持仓基准, 跳过本次决策"
     }
   },
-  "expires_at": "2026-10-19 15:00:57"
+  "expires_at": "2026-10-20 11:37:21"
 }
