@@ -1,5 +1,5 @@
 {
-  "timestamp": "2026-10-20 11:29:21",
+  "timestamp": "2026-10-20 13:01:12",
   "market_sentiment": "neutral",
   "resonance_type": "none",
   "confidence": 0.0,
@@ -19,5 +19,5 @@
       "reason": "Step 2d账户API连续3次超时, 无法获取持仓基准, 跳过本次决策"
     }
   },
-  "expires_at": "2026-10-20 11:37:21"
+  "expires_at": "2026-10-20 13:09:12"
 }
