@@ -2,22 +2,40 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-0.4100",
+      "average_rise": "-0.5020",
       "characteristics": "[\"全周期同步转弱，共振向下\", \"顶部结构确认，下降趋势形成\", \"资金持续流出，情绪转冷\", \"振幅呈收缩趋势，蓄势中\", \"最近阻力位3762（+1.2%，gap_downward）\"]",
-      "composite_score": "1.67",
+      "composite_score": "1.69",
       "daily_score": "0.30",
       "min120_score": "0.80",
       "min30_score": "4.70",
-      "min60_score": "4.20",
+      "min60_score": "4.30",
       "operation_suggestion": "清仓离场，等待机会，不抄底；【接近阻力位3762】",
-      "ratio": "1.0070",
+      "ratio": "0.9950",
       "risk_level": "高",
       "status_name": "趋势反转确认阶段",
       "status_type": "top_reversal",
-      "total_amount": 1070986815488,
-      "total_predicted_amount": 1448361086547,
+      "total_amount": 1169110526464,
+      "total_predicted_amount": 1418108169305,
+      "trade_time": "2026-10-21 15:00:00",
+      "up_ratio": "46.69"
+    },
+    {
+      "average_rise": "-0.6520",
+      "characteristics": "[\"全周期同步转弱，共振向下\", \"顶部结构确认，下降趋势形成\", \"资金持续流出，情绪转冷\", \"振幅呈收缩趋势，蓄势中\", \"最近阻力位3762（+1.3%，gap_downward）\"]",
+      "composite_score": "1.44",
+      "daily_score": "0.10",
+      "min120_score": "0.60",
+      "min30_score": "4.40",
+      "min60_score": "3.90",
+      "operation_suggestion": "清仓离场，等待机会，不抄底；【接近阻力位3762】",
+      "ratio": "0.9980",
+      "risk_level": "高",
+      "status_name": "趋势反转确认阶段",
+      "status_type": "top_reversal",
+      "total_amount": 1152056450048,
+      "total_predicted_amount": 1422636742581,
       "trade_time": "2026-10-21 14:00:00",
-      "up_ratio": "50.88"
+      "up_ratio": "43.15"
     },
     {
       "average_rise": "-0.3200",
@@ -36,24 +54,6 @@
       "total_predicted_amount": 1474832515052,
       "trade_time": "2026-10-21 11:30:00",
       "up_ratio": "56.28"
-    },
-    {
-      "average_rise": "-0.0980",
-      "characteristics": "[\"长周期向下，短周期技术性反弹\", \"反弹力度有限，可能是下跌中继\", \"关注关键阻力位\", \"振幅收敛至0.43%（1天）\", \"最近阻力位3762（+0.9%，gap_downward）\"]",
-      "composite_score": "1.91",
-      "daily_score": "0.40",
-      "min120_score": "0.80",
-      "min30_score": "5.50",
-      "min60_score": "4.80",
-      "operation_suggestion": "反弹减仓，不追高；【振幅收敛1天（蓄势中），关注杀跌回升信号 | 接近阻力位3762】",
-      "ratio": "1.0650",
-      "risk_level": "中高",
-      "status_name": "下跌反弹整理阶段",
-      "status_type": "bearish_bounce",
-      "total_amount": 706906294272,
-      "total_predicted_amount": 1553747392406,
-      "trade_time": "2026-10-21 10:30:00",
-      "up_ratio": "62.00"
     }
   ],
   "query": {
