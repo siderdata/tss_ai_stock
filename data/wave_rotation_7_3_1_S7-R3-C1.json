@@ -2,19 +2,19 @@
   "protocol": "strategy_action_v1",
   "strategy": "S7-R3-C1",
   "trade_date": "2026-10-21",
-  "timestamp": "2026-10-21T11:00:46",
+  "timestamp": "2026-10-21T12:00:35",
   "phase": {
     "main_phase": "逐浪 (S7-R3-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "510050.SH",
-      "name": "上证50",
+      "target": "510880.SH",
+      "name": "上证红利",
       "action": "BUY",
       "target_pct": 23.31,
       "weight_pct": 33.3,
-      "reason": "逐浪 (S7/R3/C1) 选品: 上证50"
+      "reason": "逐浪 (S7/R3/C1) 选品: 上证红利"
     },
     {
       "target": "159573.SZ",
