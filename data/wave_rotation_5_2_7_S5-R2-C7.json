@@ -1,34 +1,34 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "S5-R2-C7",
-  "trade_date": "2026-10-20",
-  "timestamp": "2026-10-20T15:55:35",
+  "trade_date": "2026-10-21",
+  "timestamp": "2026-10-21T10:03:51",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C7)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "510880.SH",
-      "name": "上证红利",
-      "action": "BUY",
-      "target_pct": 35.0,
-      "weight_pct": 50.0,
-      "reason": "逐浪 (S5/R2/C7) 选品: 上证红利"
-    },
-    {
       "target": "159573.SZ",
       "name": "创业200",
       "action": "BUY",
-      "target_pct": 35.0,
+      "target_pct": 5.0,
       "weight_pct": 50.0,
       "reason": "逐浪 (S5/R2/C7) 选品: 创业200"
+    },
+    {
+      "target": "512100.SH",
+      "name": "中证1000",
+      "action": "BUY",
+      "target_pct": 5.0,
+      "weight_pct": 50.0,
+      "reason": "逐浪 (S5/R2/C7) 选品: 中证1000"
     }
   ],
-  "reason": "逐浪选品 2 只, V7.2 仓位 7成",
+  "reason": "逐浪选品 2 只, V7.2 仓位 1成",
   "position_intent": {
-    "recommended_ratio": 70.0,
-    "reason": "逐浪选品 2 只, V7.2 仓位 7成"
+    "recommended_ratio": 10.0,
+    "reason": "逐浪选品 2 只, V7.2 仓位 1成"
   },
   "pool": "POOL_12",
   "macd_threshold": 0,
