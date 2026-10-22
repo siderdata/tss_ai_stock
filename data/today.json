@@ -2,7 +2,7 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-0.7000",
+      "average_rise": "-0.7800",
       "characteristics": "[\"全周期同步转弱，共振向下\", \"顶部结构确认，下降趋势形成\", \"资金持续流出，情绪转冷\", \"振幅呈收缩趋势，蓄势中\", \"最近阻力位3762（+1.3%，gap_downward）\"]",
       "composite_score": "1.42",
       "daily_score": "0.10",
@@ -10,14 +10,14 @@
       "min30_score": "4.10",
       "min60_score": "4.10",
       "operation_suggestion": "清仓离场，等待机会，不抄底；【接近阻力位3762】",
-      "ratio": "0.9600",
+      "ratio": "0.9700",
       "risk_level": "高",
       "status_name": "趋势反转确认阶段",
       "status_type": "top_reversal",
-      "total_amount": 1413794062336,
-      "total_predicted_amount": 1375032994653,
+      "total_amount": 1429348444160,
+      "total_predicted_amount": 1387848089995,
       "trade_time": "2026-10-21 15:00:00",
-      "up_ratio": "39.65"
+      "up_ratio": "38.88"
     },
     {
       "average_rise": "-0.6520",
