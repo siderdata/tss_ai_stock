@@ -13,3 +13,17 @@ docs/public/data/
 docs/public/trading/
 docs/public/journal-index.json
 .DS_Store
+
+# 2026-10-24: 防止 .git 无限膨胀
+# data/signals/signal_full.json (15MB) 及其 .history (15MB) 每 15 分钟被整体重新提交一次，
+# 45 天累积出 13G loose objects，且单文件已超出 GitHub 100MB 硬限制 → push 永远失败。
+# 这些是可从数据源重新生成的产物，不应进入版本库。
+data/signals/signal_full.json
+data/signals/signal_full.json.history
+data/signals/*.history
+
+# 运行时日志与进程输出
+*.log
+nohup.out
+data/cron/cron.log
+data/cron/cron.log.bak
