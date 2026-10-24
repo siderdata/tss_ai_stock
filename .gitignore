@@ -40,3 +40,10 @@ data/cron/.push_failed
 *.log.bak
 *.bak
 nohup.out
+
+# 运行时产物（2026-10-24 补）：data/cron/ 下每次流水线运行都会新生成
+# daily_pipeline_YYYYMMDD_HHMMSS.log，一天能攒几百个。
+# 之前它们在 2026-10-23 的提交里被 git add -A 一起提交了（当时还没有这条规则），
+# 后来虽加了 *.log 规则，但已跟踪文件不会被自动取消跟踪。
+data/cron/
+data/cron/daily_pipeline_*.log
