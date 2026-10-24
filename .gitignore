@@ -27,3 +27,16 @@ data/signals/*.history
 nohup.out
 data/cron/cron.log
 data/cron/cron.log.bak
+
+# 运行时产物（2026-10-24 补）
+# data/cron/cron.log 是流水线每 15 分钟追加的日志，copy_and_commit.sh 的
+# `git add -A` 会把它提交进来；一旦超过 100MB 就撞 GitHub GH001 大文件超限，
+# 导致 push 全面失败。同理 data/cron/cron.log.bak（轮转备份）。
+data/cron/
+data/cron/cron.log
+data/cron/cron.log.bak
+data/cron/.push_failed
+*.log
+*.log.bak
+*.bak
+nohup.out
