@@ -3,21 +3,21 @@
   "data": [
     {
       "average_rise": "-1.2050",
-      "characteristics": "[\"长周期弱势，短周期小幅反弹\", \"反弹力度有限，可能是下跌中继\", \"成交量不足，追高意愿弱\", \"最近阻力位3762（+2.0%，gap_downward）\"]",
-      "composite_score": "2.58",
-      "daily_score": "0.10",
-      "min120_score": "1.30",
-      "min30_score": "7.10",
+      "characteristics": "[\"长周期弱势，短周期小幅反弹\", \"反弹力度有限，可能是下跌中继\", \"成交量不足，追高意愿弱\", \"最近阻力位3762（+1.7%，gap_downward）\"]",
+      "composite_score": "2.70",
+      "daily_score": "0.20",
+      "min120_score": "1.50",
+      "min30_score": "7.30",
       "min60_score": "7.20",
       "operation_suggestion": "反弹减仓，控制仓位，不追高，若后续再次杀跌，不破支撑位，可适当加仓，总仓位不超6成；【接近阻力位3762】",
-      "ratio": "1.0420",
+      "ratio": "1.0500",
       "risk_level": "高",
       "status_name": "弱势反弹阶段",
       "status_type": "weak_bounce",
-      "total_amount": 1464115245568,
-      "total_predicted_amount": 1519932427191,
+      "total_amount": 1592355458560,
+      "total_predicted_amount": 1539629780293,
       "trade_time": "2026-10-26 15:00:00",
-      "up_ratio": "39.73"
+      "up_ratio": "40.43"
     },
     {
       "average_rise": "-1.0730",
