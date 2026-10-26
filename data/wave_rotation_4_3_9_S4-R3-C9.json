@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S4-R3-C9",
   "trade_date": "2026-10-26",
-  "timestamp": "2026-10-26T14:00:37",
+  "timestamp": "2026-10-26T15:00:33",
   "phase": {
     "main_phase": "逐浪 (S4-R3-C9)",
     "sub_phase": "动量轮动选品"
@@ -17,20 +17,20 @@
       "reason": "逐浪 (S4/R3/C9) 选品: 上证50"
     },
     {
-      "target": "159573.SZ",
-      "name": "创业200",
-      "action": "BUY",
-      "target_pct": 23.31,
-      "weight_pct": 33.3,
-      "reason": "逐浪 (S4/R3/C9) 选品: 创业200"
-    },
-    {
       "target": "510300.SH",
       "name": "沪深300",
       "action": "BUY",
       "target_pct": 23.31,
       "weight_pct": 33.3,
       "reason": "逐浪 (S4/R3/C9) 选品: 沪深300"
+    },
+    {
+      "target": "159573.SZ",
+      "name": "创业200",
+      "action": "BUY",
+      "target_pct": 23.31,
+      "weight_pct": 33.3,
+      "reason": "逐浪 (S4/R3/C9) 选品: 创业200"
     }
   ],
   "reason": "逐浪选品 3 只, V7.2 仓位 7成",
