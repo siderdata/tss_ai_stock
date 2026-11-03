@@ -1,17 +1,17 @@
 {
-  "market_sentiment": "volatile",
-  "resonance_type": "divergence",
-  "confidence": 0.6,
-  "description": "午前大盘修复加速: 宽基ETF半日放量430亿抄底(50ETF较昨全天放量189%), 沪深300收窄至-0.14%, 广度62.4%企稳(停止5连落), V7.2回升至1.52(30分4.4改善); 但科创50仍创新低-3.10%无反弹, KOSPI -3.3%继续深化, 科技端偏置仍空; 大盘稳/科技弱结构分化持续, 主力资金流中断第6档, Rule10 partial第6档→观望; 上证距3574防守拉开至0.97%, 阻力3638(+0.8%)",
+  "market_sentiment": "bearish",
+  "resonance_type": "systemic_decline",
+  "confidence": 0.65,
+  "description": "阴跌磨底: 全线续跌上证-1.39%(3587,距3574仅0.2%破位风险), 创业板-2.71%新低, 科创50 -4.67%; 大盘股防线松动(沪深300 -0.80%/上证50 -0.69%); A50期货-1.25%重回警戒线, 广度上涨33.2%持续看空区+跌停10只; V7.2评分1.02微幅企稳(30分2.0)但日线0.20地板, 杀跌期; KOSPI/台湾深水-3.8%; V7.2预案14:30后博弈超跌反弹, 尾盘14:45-14:50策略建仓窗口另行决策, 当前空仓纪律不变",
   "v72_breadth_check": {
     "v72_phase": "杀跌期",
-    "v72_score": 1.52,
+    "v72_score": 1.02,
     "breadth_score": "中性",
-    "consistency": "partial",
+    "consistency": "consistent",
     "rule10_applied": true,
-    "rule10_outcome": "观望"
+    "rule10_outcome": "严格减仓"
   },
   "adjustments": {},
-  "timestamp": "2026-11-03 11:23:45",
-  "expires_at": "2026-11-03 11:31:45"
+  "timestamp": "2026-11-03 13:53:05",
+  "expires_at": "2026-11-03 14:01:05"
 }
