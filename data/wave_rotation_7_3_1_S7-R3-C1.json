@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S7-R3-C1",
   "trade_date": "2026-11-03",
-  "timestamp": "2026-11-03T09:00:56",
+  "timestamp": "2026-11-03T10:00:42",
   "phase": {
     "main_phase": "逐浪 (S7-R3-C1)",
     "sub_phase": "动量轮动选品"
@@ -25,12 +25,12 @@
       "reason": "逐浪 (S7/R3/C1) 选品: 上证红利"
     },
     {
-      "target": "510500.SH",
-      "name": "中证500",
+      "target": "510300.SH",
+      "name": "沪深300",
       "action": "BUY",
       "target_pct": 23.31,
       "weight_pct": 33.3,
-      "reason": "逐浪 (S7/R3/C1) 选品: 中证500"
+      "reason": "逐浪 (S7/R3/C1) 选品: 沪深300"
     }
   ],
   "reason": "逐浪选品 3 只, V7.2 仓位 7成",
