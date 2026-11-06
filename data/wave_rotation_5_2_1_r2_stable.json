@@ -2,19 +2,19 @@
   "protocol": "strategy_action_v1",
   "strategy": "r2_stable",
   "trade_date": "2026-11-06",
-  "timestamp": "2026-11-06T09:00:40",
+  "timestamp": "2026-11-06T10:00:43",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C1)",
     "sub_phase": "动量轮动选品"
   },
   "actions": [
     {
-      "target": "510500.SH",
-      "name": "中证500",
+      "target": "588030.SH",
+      "name": "科创100",
       "action": "BUY",
       "target_pct": 35.0,
       "weight_pct": 50.0,
-      "reason": "逐浪 (S5/R2/C1) 选品: 中证500"
+      "reason": "逐浪 (S5/R2/C1) 选品: 科创100"
     },
     {
       "target": "588000.SH",
