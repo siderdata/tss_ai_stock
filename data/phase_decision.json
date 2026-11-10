@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
   "trade_date": "2026-11-10",
-  "timestamp": "2026-11-10T10:00:43",
+  "timestamp": "2026-11-10T11:03:04",
   "phase": {
     "main_phase": "低位震荡期",
     "sub_phase": "后期",
@@ -13,11 +13,11 @@
     "reason": "震荡持有3成，等待变盘"
   },
   "scores": {
-    "composite_score": 6.69,
-    "daily_score": 7.0,
-    "avg_score": 2.53,
-    "recent_avg": 6.03,
-    "recent_trend": 0.81,
+    "composite_score": 7.07,
+    "daily_score": 7.1,
+    "avg_score": 2.54,
+    "recent_avg": 6.11,
+    "recent_trend": 1.19,
     "high_ratio": 0.0,
     "low_ratio": 75.7
   },
@@ -27,7 +27,7 @@
     "is_single_peak": false,
     "single_peak_warning": "",
     "peak_score": 6.98,
-    "drop_from_peak": 0.29,
+    "drop_from_peak": -0.09,
     "is_trap_zone": false,
     "is_transition_danger": false,
     "transition_warning": ""
