@@ -1,33 +1,33 @@
 {
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
-  "trade_date": "2026-11-10",
-  "timestamp": "2026-11-11T09:00:44",
+  "trade_date": "2026-11-11",
+  "timestamp": "2026-11-11T10:02:58",
   "phase": {
     "main_phase": "低位震荡期",
-    "sub_phase": "后期",
-    "confidence": 72.0
+    "sub_phase": "中期",
+    "confidence": 70.0
   },
   "position_intent": {
     "recommended_ratio": 35.0,
     "reason": "震荡持有3成，等待变盘"
   },
   "scores": {
-    "composite_score": 6.71,
-    "daily_score": 6.8,
-    "avg_score": 2.59,
-    "recent_avg": 6.03,
-    "recent_trend": 0.83,
+    "composite_score": 6.2,
+    "daily_score": 6.7,
+    "avg_score": 2.68,
+    "recent_avg": 6.1,
+    "recent_trend": -0.78,
     "high_ratio": 0.0,
-    "low_ratio": 75.0
+    "low_ratio": 73.0
   },
   "warnings": {
     "is_false_breakout": false,
     "false_breakout_reason": "无突破9分记录",
     "is_single_peak": false,
     "single_peak_warning": "",
-    "peak_score": 6.98,
-    "drop_from_peak": 0.27,
+    "peak_score": 6.71,
+    "drop_from_peak": 0.51,
     "is_trap_zone": false,
     "is_transition_danger": false,
     "transition_warning": ""
