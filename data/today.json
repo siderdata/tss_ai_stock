@@ -2,22 +2,22 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "-0.3900",
+      "average_rise": "-0.6900",
       "characteristics": "[\"综合评分中性，多空平衡\", \"无明显方向性\", \"振幅收敛至0.47%（1天）\", \"最近支撑位3580（2.3%，cycle_low）\", \"最近阻力位3702（+1.0%，cycle_high）\"]",
-      "composite_score": "5.20",
-      "daily_score": "6.60",
-      "min120_score": "5.90",
-      "min30_score": "2.10",
-      "min60_score": "2.90",
+      "composite_score": "4.98",
+      "daily_score": "6.50",
+      "min120_score": "5.60",
+      "min30_score": "1.80",
+      "min60_score": "2.60",
       "operation_suggestion": "观望为主，等待方向选择；【振幅收敛1天（蓄势中），等待方向确认 | 接近阻力位3702（+1.0%）】",
-      "ratio": "0.9480",
+      "ratio": "0.9500",
       "risk_level": "中等",
       "status_name": "中性震荡阶段",
       "status_type": "neutral",
-      "total_amount": 830317581312,
-      "total_predicted_amount": 1473541033441,
+      "total_amount": 941308098560,
+      "total_predicted_amount": 1499591517890,
       "trade_time": "2026-11-13 11:30:00",
-      "up_ratio": "54.03"
+      "up_ratio": "49.66"
     },
     {
       "average_rise": "-0.2900",
