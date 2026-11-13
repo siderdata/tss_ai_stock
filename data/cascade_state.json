@@ -2,7 +2,7 @@
   "date": "2026-11-13",
   "actual_position": 5.0,
   "anchor": 5.0,
-  "base": 3.5,
+  "base": 3.0,
   "deltas": {
     "margin": 0,
     "kline": 0,
@@ -10,7 +10,7 @@
   },
   "band": [
     0,
-    5.5
+    5.0
   ],
   "constraint_note": "阶段4 ≤ 8",
   "prev_margin_adjust": 2,
