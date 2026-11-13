@@ -2,32 +2,32 @@
   "protocol": "strategy_action_v1",
   "strategy": "v72_balance",
   "trade_date": "2026-11-13",
-  "timestamp": "2026-11-13T13:00:39",
+  "timestamp": "2026-11-13T14:00:43",
   "phase": {
     "main_phase": "低位震荡期",
-    "sub_phase": "中期",
+    "sub_phase": "初期",
     "confidence": 65.0
   },
   "position_intent": {
     "recommended_ratio": 35.0,
-    "reason": "单峰陷阱第3天，建议再减仓1-2成（回落2.44分）"
+    "reason": "单峰陷阱第3天，建议再减仓1-2成（回落3.78分）"
   },
   "scores": {
-    "composite_score": 5.12,
-    "daily_score": 6.6,
-    "avg_score": 2.86,
-    "recent_avg": 6.08,
-    "recent_trend": -0.16,
+    "composite_score": 3.78,
+    "daily_score": 5.2,
+    "avg_score": 2.82,
+    "recent_avg": 5.81,
+    "recent_trend": -1.5,
     "high_ratio": 2.6,
-    "low_ratio": 69.2
+    "low_ratio": 71.8
   },
   "warnings": {
     "is_false_breakout": false,
     "false_breakout_reason": "无突破9分记录",
     "is_single_peak": true,
-    "single_peak_warning": "连续下跌确认：2天前峰值7.56分，连续2天回落2.44分至5.12分",
+    "single_peak_warning": "单峰陷阱警报！2天前峰值7.56分，现已回落3.78分至3.78分",
     "peak_score": 7.56,
-    "drop_from_peak": 2.44,
+    "drop_from_peak": 3.78,
     "is_trap_zone": false,
     "is_transition_danger": false,
     "transition_warning": ""
