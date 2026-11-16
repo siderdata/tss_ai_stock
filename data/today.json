@@ -2,6 +2,24 @@
   "count": 3,
   "data": [
     {
+      "average_rise": "-2.2000",
+      "characteristics": "[\"全周期同步转弱，共振向下\", \"顶部结构确认，下降趋势形成\", \"资金持续流出，情绪转冷\", \"振幅收敛至0.45%（1天）\", \"最近支撑位3580（0.5%，cycle_low）\", \"最近阻力位3624（+0.7%，gap_downward）\"]",
+      "composite_score": "2.98",
+      "daily_score": "4.50",
+      "min120_score": "3.20",
+      "min30_score": "0.40",
+      "min60_score": "0.90",
+      "operation_suggestion": "清仓离场，等待机会，不抄底；【振幅收敛1天（蓄势中），关注杀跌回升信号 | 接近支撑位3580（0.5%）】",
+      "ratio": "0.8200",
+      "risk_level": "高",
+      "status_name": "趋势反转确认阶段",
+      "status_type": "top_reversal",
+      "total_amount": 301184540672,
+      "total_predicted_amount": 1342989288359,
+      "trade_time": "2026-11-16 10:30:00",
+      "up_ratio": "12.35"
+    },
+    {
       "average_rise": "-2.1750",
       "characteristics": "[\"综合评分中性，多空平衡\", \"无明显方向性\", \"最近支撑位3580（1.5%，cycle_low）\", \"最近阻力位3702（+1.9%，cycle_high）\"]",
       "composite_score": "3.89",
@@ -36,24 +54,6 @@
       "total_predicted_amount": 1620086333512,
       "trade_time": "2026-11-13 14:00:00",
       "up_ratio": "14.35"
-    },
-    {
-      "average_rise": "-0.6330",
-      "characteristics": "[\"综合评分中性，多空平衡\", \"无明显方向性\", \"振幅收敛至0.47%（1天）\", \"最近支撑位3580（2.3%，cycle_low）\", \"最近阻力位3702（+1.0%，cycle_high）\"]",
-      "composite_score": "5.12",
-      "daily_score": "6.60",
-      "min120_score": "5.70",
-      "min30_score": "1.90",
-      "min60_score": "2.90",
-      "operation_suggestion": "观望为主，等待方向选择；【振幅收敛1天（蓄势中），等待方向确认 | 接近阻力位3702（+1.0%）】",
-      "ratio": "0.9530",
-      "risk_level": "中等",
-      "status_name": "中性震荡阶段",
-      "status_type": "neutral",
-      "total_amount": 979372271104,
-      "total_predicted_amount": 1515412338977,
-      "trade_time": "2026-11-13 11:30:00",
-      "up_ratio": "45.73"
     }
   ],
   "query": {
