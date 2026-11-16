@@ -22,11 +22,11 @@
     "latest_time": "13:20",
     "latest_type": "BUY",
     "indices_count": 8,
-    "total_events_today": 10,
+    "total_events_today": 12,
     "buy_signals": 5,
     "sell_signals": 3
   },
   "_source": "v32_resonance_adapter",
   "_stale": true,
-  "_stale_minutes": 40.1
+  "_stale_minutes": 95.1
 }
