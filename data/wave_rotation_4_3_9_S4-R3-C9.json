@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "S4-R3-C9",
   "trade_date": "2026-11-17",
-  "timestamp": "2026-11-17T13:00:45",
+  "timestamp": "2026-11-17T14:00:51",
   "phase": {
     "main_phase": "逐浪 (S4-R3-C9)",
     "sub_phase": "动量轮动选品"
@@ -25,12 +25,12 @@
       "reason": "逐浪 (S4/R3/C9) 选品: 创成长"
     },
     {
-      "target": "588030.SH",
-      "name": "科创100",
+      "target": "510300.SH",
+      "name": "沪深300",
       "action": "BUY",
       "target_pct": 3.33,
       "weight_pct": 33.3,
-      "reason": "逐浪 (S4/R3/C9) 选品: 科创100"
+      "reason": "逐浪 (S4/R3/C9) 选品: 沪深300"
     }
   ],
   "reason": "逐浪选品 3 只, V7.2 仓位 1成",
