@@ -1,32 +1,32 @@
 {
   "trade_date": "2026-11-20",
-  "timestamp": "2026-11-20 11:30",
+  "timestamp": "2026-11-20 14:25",
   "phase": {
     "current_phase": "V32共振-调整杀跌浪",
     "main_phase": "调整杀跌浪",
     "sub_phase": "V32信号驱动",
-    "confidence": 94
+    "confidence": 95
   },
   "position": {
     "recommended_ratio": 0.0,
     "position_desc": "0成",
     "position_min": 0,
     "position_max": 10.0,
-    "reason": "V32共振: 🔴反弹结束 6个指数 → 清仓",
+    "reason": "V32共振: 🔴反弹结束 8个指数 → 清仓",
     "actual_ratio": 0.0,
     "raw_v32_ratio": 0.0,
     "phase_recommended_ratio": null
   },
   "v32_detail": {
     "latest_signal": "🔴反弹结束",
-    "latest_time": "11:30",
+    "latest_time": "14:25",
     "latest_type": "SELL",
-    "indices_count": 6,
-    "total_events_today": 4,
+    "indices_count": 8,
+    "total_events_today": 7,
     "buy_signals": 2,
-    "sell_signals": 2
+    "sell_signals": 4
   },
   "_source": "v32_resonance_adapter",
   "_stale": true,
-  "_stale_minutes": 150.1
+  "_stale_minutes": 30.0
 }
