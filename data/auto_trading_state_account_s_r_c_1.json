@@ -26,6 +26,9 @@
     }
   },
   "circuit_breaker": {
-    "active": false
+    "active": true,
+    "reason": "单批次 3 笔失败,失败金额 ¥52822",
+    "activated_at": "2026-11-23T13:31:34.419166",
+    "until": "2026-11-23T23:59:59"
   }
 }
