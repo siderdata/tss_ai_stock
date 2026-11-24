@@ -2,22 +2,22 @@
   "count": 3,
   "data": [
     {
-      "average_rise": "1.8900",
-      "characteristics": "[\"综合评分偏低，空头占优\", \"但未形成明确共振\", \"上涨比例83%+平均涨幅1.86%，恐慌后资金回流\", \"近期低点3477（1.7%）为止损参考\", \"反弹目标3548（+0.4%，gap_downward）\", \"反弹目标3588（+1.5%，jump_down）\", \"反弹目标3624（+2.5%，gap_downward）\", \"最近阻力位3548（+0.4%，gap_downward）\"]",
-      "composite_score": "2.19",
+      "average_rise": "1.9450",
+      "characteristics": "[\"综合评分偏低，空头占优\", \"但未形成明确共振\", \"上涨比例84%+平均涨幅1.90%，恐慌后资金回流\", \"近期低点3477（1.8%）为止损参考\", \"反弹目标3548（+0.2%，gap_downward）\", \"反弹目标3588（+1.4%，jump_down）\", \"反弹目标3624（+2.4%，gap_downward）\", \"最近阻力位3548（+0.2%，gap_downward）\"]",
+      "composite_score": "2.21",
       "daily_score": "1.30",
       "min120_score": "1.60",
       "min30_score": "5.50",
-      "min60_score": "3.20",
-      "operation_suggestion": "暴跌后企稳反弹，可小仓位博弈或持仓不动（最高5成，严格止损3%）；【接近阻力位3548】；止损参考：跌破3477离场；反弹阻力位：3548(+0.4%)、3588(+1.5%)、3624(+2.5%)",
-      "ratio": "1.0870",
+      "min60_score": "3.30",
+      "operation_suggestion": "暴跌后企稳反弹，可小仓位博弈或持仓不动（最高5成，严格止损3%）；【接近阻力位3548】；止损参考：跌破3477离场；反弹阻力位：3548(+0.2%)、3588(+1.4%)、3624(+2.4%)",
+      "ratio": "1.1030",
       "risk_level": "高",
       "status_name": "弱势反弹阶段",
       "status_type": "bearish_bias",
-      "total_amount": 1523614241536,
-      "total_predicted_amount": 1624496374020,
+      "total_amount": 1552880193024,
+      "total_predicted_amount": 1646171890752,
       "trade_time": "2026-11-23 15:00:00",
-      "up_ratio": "82.57"
+      "up_ratio": "84.35"
     },
     {
       "average_rise": "1.9920",
