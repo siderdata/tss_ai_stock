@@ -2,7 +2,7 @@
   "protocol": "strategy_action_v1",
   "strategy": "smart_rotation_s5r2c1",
   "trade_date": "2026-11-25",
-  "timestamp": "2026-11-25T10:02:49",
+  "timestamp": "2026-11-25T11:03:11",
   "phase": {
     "main_phase": "逐浪 (S5-R2-C1)",
     "sub_phase": "日内战术"
@@ -11,22 +11,22 @@
     {
       "target": "159967.SZ",
       "action": "HOLD",
-      "target_pct": 15.978371735920376,
+      "target_pct": 15.845829560949893,
       "action_pct": 0.0,
-      "reason": "战术持有: 16.0% (无 LLM, 维持)"
+      "reason": "战术持有: 15.8% (无 LLM, 维持)"
     },
     {
       "target": "588000.SH",
       "action": "HOLD",
-      "target_pct": 8.600001497981392,
+      "target_pct": 8.517769072017607,
       "action_pct": 0.0,
-      "reason": "战术持有: 8.6% (无 LLM, 维持)"
+      "reason": "战术持有: 8.5% (无 LLM, 维持)"
     }
   ],
-  "reason": "SRC 25.0%, buffer [0%, 45%]; 当前 24.6%, 无 LLM → 维持",
+  "reason": "SRC 25.0%, buffer [0%, 45%]; 当前 24.4%, 无 LLM → 维持",
   "position_intent": {
-    "recommended_ratio": 24.58,
-    "reason": "SRC 25.0%, buffer [0%, 45%]; 当前 24.6%, 无 LLM → 维持"
+    "recommended_ratio": 24.36,
+    "reason": "SRC 25.0%, buffer [0%, 45%]; 当前 24.4%, 无 LLM → 维持"
   },
   "_source": "smart_rotation",
   "pool": "POOL_9",
@@ -39,11 +39,11 @@
     "macd_threshold": 10
   },
   "base_ratio": 25.0,
-  "adjusted_ratio": 24.58,
+  "adjusted_ratio": 24.36,
   "llm_decision_loaded": false,
   "phase_mode": "tactical",
   "current_position": {
-    "159967.SZ": 15.978371735920376,
-    "588000.SH": 8.600001497981392
+    "159967.SZ": 15.845829560949893,
+    "588000.SH": 8.517769072017607
   }
 }
