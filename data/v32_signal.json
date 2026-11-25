@@ -1,6 +1,6 @@
 {
-  "trade_date": "2026-11-24",
-  "timestamp": "2026-11-24 14:40",
+  "trade_date": "2026-11-25",
+  "timestamp": "2026-11-25 09:55",
   "phase": {
     "current_phase": "V32共振-调整杀跌浪",
     "main_phase": "调整杀跌浪",
@@ -19,12 +19,12 @@
   },
   "v32_detail": {
     "latest_signal": "🔴反弹结束",
-    "latest_time": "14:40",
+    "latest_time": "09:55",
     "latest_type": "SELL",
     "indices_count": 10,
-    "total_events_today": 14,
-    "buy_signals": 6,
-    "sell_signals": 5
+    "total_events_today": 2,
+    "buy_signals": 0,
+    "sell_signals": 2
   },
   "_source": "v32_resonance_adapter"
 }
