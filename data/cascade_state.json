@@ -1,5 +1,5 @@
 {
-  "date": "2026-11-25",
+  "date": "2026-11-26",
   "actual_position": 5.0,
   "anchor": 5.0,
   "base": 5.0,
@@ -17,6 +17,6 @@
   "prev_kline_adjust": 0,
   "baseline_margin_adjust": 2,
   "baseline_kline_adjust": 0,
-  "prev_macd_tier": 1,
-  "baseline_macd_tier": 2
+  "prev_macd_tier": 0,
+  "baseline_macd_tier": 1
 }
