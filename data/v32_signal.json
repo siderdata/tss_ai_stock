@@ -26,5 +26,7 @@
     "buy_signals": 5,
     "sell_signals": 1
   },
-  "_source": "v32_resonance_adapter"
+  "_source": "v32_resonance_adapter",
+  "_stale": true,
+  "_stale_minutes": 45.0
 }
