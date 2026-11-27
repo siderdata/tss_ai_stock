@@ -1,18 +1,5 @@
 {
-  "today_buys": {
-    "588220.SH": {
-      "date": "2026-11-26",
-      "qty": 6600
-    },
-    "159531.SZ": {
-      "date": "2026-11-26",
-      "qty": 5400
-    },
-    "510500.SH": {
-      "date": "2026-11-26",
-      "qty": 1200
-    }
-  },
+  "today_buys": {},
   "circuit_breaker": {
     "active": false
   }
